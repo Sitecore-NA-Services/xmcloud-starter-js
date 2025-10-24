@@ -48,3 +48,6 @@ packages/
 
 # VS Code settings
 .vscode/
+
+# Package lock files
+**/package-lock.json
