@@ -25,6 +25,7 @@ import * as AccordionBlock from 'components/accordion-block/AccordionBlock';
 import * as AlertBanner from 'components/alert-banner/AlertBanner.dev';
 import * as AnimatedSection from 'components/animated-section/AnimatedSection.dev';
 import * as ArticleHeader from 'components/article-header/ArticleHeader';
+import * as ArticleFull from 'components/article-full/article-full';
 import * as ArticleListing from 'components/article-listing/ArticleListing';
 import * as BackgroundThumbnail from 'components/background-thumbnail/BackgroundThumbnail.dev';
 import * as Breadcrumbs from 'components/breadcrumbs/Breadcrumbs';
@@ -78,6 +79,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['AlertBanner', AlertBanner],
   ['AnimatedSection', AnimatedSection],
   ['ArticleHeader', ArticleHeader],
+  ['ArticleFull', ArticleFull],
   ['ArticleListing', ArticleListing],
   ['BackgroundThumbnail', BackgroundThumbnail],
   ['Breadcrumbs', Breadcrumbs],
