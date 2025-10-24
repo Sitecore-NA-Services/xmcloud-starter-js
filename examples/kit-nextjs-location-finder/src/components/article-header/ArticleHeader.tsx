@@ -50,7 +50,7 @@ interface PersonItem extends ComponentProps {
 
 export const Default: React.FC<ArticleHeaderProps> = ({ fields, externalFields }) => {
   const { imageRequired, eyebrowOptional } = fields;
-  const { pageHeaderTitle, pageReadTime, pageDisplayDate, pageAuthor } = externalFields;
+  const { pageHeaderTitle, pageReadTime, pageDisplayDate, pageAuthor } = externalFields || {};
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const headerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
@@ -216,7 +216,7 @@ export const Default: React.FC<ArticleHeaderProps> = ({ fields, externalFields }
             >
               <ImageWrapper
                 image={imageRequired}
-                alt={pageHeaderTitle.value}
+                alt={pageHeaderTitle?.value || 'Article header image'}
                 className="h-full w-full object-cover"
                 priority
                 sizes="(max-width: 768px) 100vw, 800px"
@@ -280,20 +280,20 @@ export const Default: React.FC<ArticleHeaderProps> = ({ fields, externalFields }
                   <div className="@md:col-span-3 @md:justify-end @md:pt-4 @md:h-[250px] @md:items-start col-span-1 flex h-[auto] items-center justify-center gap-4 p-6 pb-6">
                     <Avatar>
                       <AvatarImage
-                        src={pageAuthor.value.personProfileImage?.value?.src}
-                        alt={`${pageAuthor.value.personFirstName?.value} ${pageAuthor.value.personLastName?.value}`}
+                        src={pageAuthor?.value?.personProfileImage?.value?.src}
+                        alt={`${pageAuthor?.value?.personFirstName?.value} ${pageAuthor?.value?.personLastName?.value}`}
                       />
-                      <AvatarFallback>{`${pageAuthor.value.personFirstName?.value} ${pageAuthor.value.personLastName?.value}`}</AvatarFallback>
+                      <AvatarFallback>{`${pageAuthor?.value?.personFirstName?.value} ${pageAuthor?.value?.personLastName?.value}`}</AvatarFallback>
                     </Avatar>
                     <div className="relative">
                       <p className="text-pretty font-medium text-white antialiased">
-                        {pageAuthor.value.personFirstName?.value}{' '}
-                        {pageAuthor.value.personLastName?.value}
+                        {pageAuthor?.value?.personFirstName?.value}{' '}
+                        {pageAuthor?.value?.personLastName?.value}
                       </p>
                       {pageAuthor?.value?.personJobTitle && (
                         <Text
                           tag={'p'}
-                          field={pageAuthor.value.personJobTitle}
+                          field={pageAuthor?.value?.personJobTitle}
                           className="text-pretty text-sm text-white/70 antialiased"
                         />
                       )}
@@ -313,7 +313,7 @@ export const Default: React.FC<ArticleHeaderProps> = ({ fields, externalFields }
                 <div className="@md:col-span-6 relative z-10 col-span-2 mx-auto flex aspect-[16/9] w-full max-w-[800px] justify-center overflow-hidden rounded-[24px]">
                   <ImageWrapper
                     image={imageRequired}
-                    alt={pageHeaderTitle.value}
+                    alt={pageHeaderTitle?.value || 'Article header image'}
                     className="object-cover"
                     priority
                     sizes="(max-width: 768px) 100vw, 800px"

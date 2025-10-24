@@ -15,6 +15,10 @@ Languages:
   Versions:
   - Version: 2
     Fields:
+    - ID: "22427604-b117-4985-a6a4-cc8aba4e044d"
+      Hint: image 1
+      Value: |
+        <image mediaid="{191C7548-7B38-4866-AD35-A1918EB7F9C0}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20250218T210759Z
@@ -29,13 +33,25 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "60629870-4b2c-4574-a086-ad5cf20fce16"
+      Hint: link1
+      Value: |
+        <link text="CTA Primary Link" linktype="external" url="https://sitecore.ai" anchor="" target="" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "fa340337-c491-4eea-ad2f-8bad18379471"
+      Value: "07e8d2e3-bfb5-4410-8fb9-d8c4fba8c074"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\anton.kechashin@sitecore.com
+        sitecore\richard.seal@sitecore.com
+    - ID: "c1dedbd1-c877-4834-8b0b-0ef9ce90af87"
+      Hint: image2
+      Value: |
+        <image mediaid="{0FA8E7E7-E14B-4992-9FC8-AFF70C25F214}" />
+    - ID: "c4d68c1f-0cd0-41e2-b986-0fec9a910176"
+      Hint: link2
+      Value: |
+        <link text="CTA Link 2" linktype="external" url="https://www.sitecore.com" anchor="" target="" />
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250717T133024Z
+      Value: 20250807T134205Z

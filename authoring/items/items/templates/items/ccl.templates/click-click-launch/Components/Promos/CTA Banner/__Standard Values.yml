@@ -26,13 +26,23 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "7a8c2095-39f5-4f40-b69d-16ddff188a68"
+      Hint: titleRequired
+      Value: This is the Banner Title field
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8b0b0fdc-d5dd-41f3-9903-edf3083a58a3"
+      Value: "02423626-de95-4ec9-ac86-27486d26c9c4"
+    - ID: "9fdcf3e1-5289-4ae0-b4e4-9460ad50814f"
+      Hint: linkOptional
+      Value: |
+        <link text="Click Here" linktype="external" url="https://sitecore.ai" anchor="" target="" />
+    - ID: "a35015fe-805c-45d7-9446-f88b33a157d4"
+      Hint: descriptionOptional
+      Value: This is the CTA Banner description field, the text can be longer here
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\anton.kechashin@sitecore.com
+        sitecore\richard.seal@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250717T132858Z
+      Value: 20250807T132309Z

@@ -21,6 +21,10 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20250214T165012Z
+    - ID: "3a2a1142-68ca-4f5b-afb0-c17d2c0ef8ea"
+      Hint: secondaryLink
+      Value: |
+        <link text="Secondary Link CTA" linktype="external" url="https://www.sitecore.com" anchor="" target="" />
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: 
@@ -35,17 +39,24 @@ Languages:
     - ID: "84a2a397-786e-43bd-85a0-bfbcc51fc3f3"
       Hint: image
       Value: |
-        <image mediaid="{567F4754-89CD-4DD9-9033-8D6E29B806C7}" />
+        <image mediaid="{BBFF51AC-334E-4023-A26F-E051EBEDB369}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8a3350e8-6499-48c4-96e8-e9731f196953"
+      Value: "9dcb454c-83dd-423d-907d-5a0e93b08eda"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\anton.kechashin@sitecore.com
+        sitecore\richard.seal@sitecore.com
+    - ID: "c00d4bd2-a452-4067-a861-e8c6d47201a7"
+      Hint: description
+      Value: This is a description field and can be longer for more information.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250717T132745Z
+      Value: 20250807T134018Z
     - ID: "da7db0f2-08eb-47c5-af07-ed12a1e998db"
       Hint: title
-      Value: $name
+      Value: Animated Promo Title
+    - ID: "e9e9c847-e0f0-497d-8e41-5211a087029a"
+      Hint: primaryLink
+      Value: |
+        <link text="Primary Link CTA" linktype="external" url="https://sitecore.ai" anchor="" target="" />

@@ -30,8 +30,8 @@ export const ImageCarouselPreviewBelow = (props: ImageCarouselProps) => {
   const thumbnailImageClasses = 'h-auto w-full transition-all border-2 border-transparent';
   const thumbnailActiveClasses = '';
 
-  const { title, imageItems } = fields.data.datasource;
-  const { results: slides } = imageItems;
+  const { title, imageItems } = fields?.data?.datasource || {};
+  const { results: slides = [] } = imageItems || {};
 
   // State for tracking current slide
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +45,7 @@ export const ImageCarouselPreviewBelow = (props: ImageCarouselProps) => {
   // Update the live region when the current slide changes
   useEffect(() => {
     if (liveRegionRef.current && mainApi && slides && slides.length > 0) {
-      liveRegionRef.current.textContent = `Showing slide ${currentIndex + 1} of ${slides.length}`;
+      liveRegionRef.current.textContent = `Showing slide ${currentIndex + 1} of ${slides?.length || 0}`;
     }
   }, [currentIndex, slides, mainApi]);
 
@@ -102,7 +102,7 @@ export const ImageCarouselPreviewBelow = (props: ImageCarouselProps) => {
           reducedMotion={isReducedMotion}
         >
           <div className="mb-4 w-full space-y-4 px-4">
-            <Text tag="h2" field={title.jsonValue} className={titleClasses} />
+            <Text tag="h2" field={title?.jsonValue} className={titleClasses} />
           </div>
         </AnimatedSection>
         <AnimatedSection
@@ -115,7 +115,7 @@ export const ImageCarouselPreviewBelow = (props: ImageCarouselProps) => {
             {slides[currentIndex]?.link?.jsonValue && (
               <EditableButton
                 variant="default"
-                buttonLink={slides[currentIndex].link.jsonValue}
+                buttonLink={slides[currentIndex].link?.jsonValue}
                 isPageEditing={isPageEditing}
               />
             )}
@@ -145,7 +145,7 @@ export const ImageCarouselPreviewBelow = (props: ImageCarouselProps) => {
               data-component-part="main-carousel"
             >
               <div id={`${slideshowId}-title`} className="sr-only">
-                {currentIndex + 1} of {slides.length}
+                {currentIndex + 1} of {slides?.length || 0}
               </div>
 
               <CarouselContent

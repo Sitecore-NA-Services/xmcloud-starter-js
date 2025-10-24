@@ -41,7 +41,7 @@ export const Default: React.FC<HeroProps> = ({ fields, params }) => {
     heroImageOptional3,
     heroVideoOptional4,
     heroImageOptional4,
-  } = fields;
+  } = fields || {};
 
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const { page } = useSitecore();

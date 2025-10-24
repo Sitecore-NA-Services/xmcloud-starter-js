@@ -41,7 +41,7 @@ export const AccordionBlockOneColumnTitleLeft: React.FC<AccordionProps> = (props
                 <Text
                   tag="h2"
                   className="max-w-screen-sm text-pretty font-light leading-tight tracking-tighter antialiased"
-                  field={heading.jsonValue}
+                  field={heading?.jsonValue}
                 />
               )}
             </div>

@@ -14,7 +14,7 @@ export const ImageGalleryFiftyFifty: React.FC<ImageGalleryProps> = (props) => {
   const { fields, isPageEditing } = props;
   const prefersReducedMotion = useMatchMedia('(prefers-reduced-motion: reduce)');
   const containerRef = useRef<HTMLDivElement>(null);
-  const { title, description, image1, image2, image3, image4 } = fields;
+  const { title, description, image1, image2, image3, image4 } = fields || {};
   // Use our enhanced parallax hook with reduced motion check
   const { isParallaxActive } = useParallaxEnhancedOptimized(containerRef, {
     disabled: isPageEditing || prefersReducedMotion,

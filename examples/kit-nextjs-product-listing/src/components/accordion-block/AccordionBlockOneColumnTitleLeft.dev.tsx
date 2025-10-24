@@ -13,8 +13,8 @@ import { cn } from '@/lib/utils';
 export const AccordionBlockOneColumnTitleLeft: React.FC<AccordionProps> = (props) => {
   const { fields, isPageEditing } = props;
 
-  const { heading, description, link, children } = fields?.data?.datasource ?? {};
-  const accordionItems = children?.results ?? [];
+  const { heading, description, link, children } = fields?.data?.datasource || {};
+  const accordionItems = (children?.results ?? []).filter(Boolean);
   const acordionItemValues = [
     ...accordionItems.map((_, index) => `accordion-block-item-${index + 1}`),
   ];
@@ -41,7 +41,7 @@ export const AccordionBlockOneColumnTitleLeft: React.FC<AccordionProps> = (props
                 <Text
                   tag="h2"
                   className="max-w-screen-sm text-pretty font-light leading-tight tracking-tighter antialiased"
-                  field={heading.jsonValue}
+                  field={heading?.jsonValue}
                 />
               )}
             </div>

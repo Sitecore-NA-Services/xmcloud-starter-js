@@ -170,19 +170,22 @@ export const AnimatedHoverNav = ({
     >
       {/* Hover background indicator */}
       <motion.span
-        className={`z-1 absolute block ${indicatorClassName}`}
+        className={`z-0 absolute block ${indicatorClassName}`}
         initial={{ opacity: 0 }}
         animate={
           isHorizontal
             ? {
                 left: hoverStyle.left + 4,
+                top: 0,
                 width: hoverStyle.width - 8,
+                height: '100%',
                 opacity: hoverStyle.opacity,
               }
             : {
                 left: hoverStyle.left + 4,
                 top: hoverStyle.top + 4,
                 width: hoverStyle.width - 8,
+                height: hoverStyle.height - 8,
                 opacity: hoverStyle.opacity,
               }
         }

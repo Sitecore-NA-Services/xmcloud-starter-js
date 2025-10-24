@@ -20,14 +20,18 @@ export const AccordionBlockItem = ({
       className="border-foreground border-b p-0"
     >
       <AccordionTrigger className="font-heading flex w-full justify-between py-4 text-left text-base font-medium">
-        <Text
-          field={child.heading.jsonValue}
-          className="font-heading text-left text-base font-medium"
-        />
+        {child?.heading?.jsonValue && (
+          <Text
+            field={child.heading.jsonValue}
+            className="font-heading text-left text-base font-medium"
+          />
+        )}
       </AccordionTrigger>
       <AccordionContent>
         <div className="font-body py-4 pt-2 text-base font-medium">
-          {child?.description && <RichText tag="div" field={child.description.jsonValue} />}
+          {child?.description?.jsonValue && (
+            <RichText tag="div" field={child.description.jsonValue} />
+          )}
         </div>
       </AccordionContent>
     </AccordionItem>

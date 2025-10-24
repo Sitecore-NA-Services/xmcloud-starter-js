@@ -26,13 +26,16 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\anton.kechashin@sitecore.com
+    - ID: "836c70ce-28c6-4481-a55a-4b454c02486d"
+      Hint: eyebrow
+      Value: "Multi-Promo Eyebrow Field"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9553135c-1776-43ee-9383-037efa3fe708"
+      Value: "da54a943-1cfc-4413-83e3-853ea71b1091"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\anton.kechashin@sitecore.com
+        sitecore\richard.seal@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250717T133003Z
+      Value: 20250807T134101Z

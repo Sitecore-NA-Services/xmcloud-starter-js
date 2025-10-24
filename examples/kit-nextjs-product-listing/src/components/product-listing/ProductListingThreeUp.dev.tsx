@@ -14,7 +14,7 @@ export const ProductListingThreeUp: React.FC<ProductListingProps> = (props) => {
   const { fields, isPageEditing } = props;
   const isReducedMotion = useMatchMedia('(prefers-reduced-motion: reduce)');
   const [activeCard, setActiveCard] = useState<string | null>(null);
-  const { products, title, viewAllLink } = fields.data.datasource;
+  const { products, title, viewAllLink } = fields?.data?.datasource ?? {};
 
   if (fields) {
     const getCardClasses = (productId: string) => {

@@ -64,7 +64,7 @@ export const Default: React.FC<CtaBannerProps> = (props) => {
   const { fields, params } = props;
 
   if (fields) {
-    const { titleRequired, descriptionOptional, linkOptional } = fields;
+    const { titleRequired, descriptionOptional, linkOptional } = fields || {};
     const colorScheme = params.colorScheme ?? undefined;
 
     return (

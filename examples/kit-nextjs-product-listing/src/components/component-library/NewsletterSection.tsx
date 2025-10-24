@@ -29,6 +29,10 @@ type NewsletterSectionTemplateProps = NewsletterSectionProps & {
 };
 
 const NewsletterSectionTemplate = (props: NewsletterSectionTemplateProps) => {
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section className={`relative py-24 px-4 ${props.params.styles}`}>
       {props.withBackgroundImage && (

@@ -28,8 +28,8 @@ export const ImageCarouselThumbnails = (props: ImageCarouselProps) => {
   const prevButtonClasses = `${navButtonClasses} left-4`;
   const nextButtonClasses = `${navButtonClasses} right-4`;
 
-  const { title, imageItems } = fields.data.datasource;
-  const { results: slides } = imageItems;
+  const { title, imageItems } = fields?.data?.datasource || {};
+  const { results: slides = [] } = imageItems || {};
 
   // State for tracking current slide
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +44,7 @@ export const ImageCarouselThumbnails = (props: ImageCarouselProps) => {
   useEffect(() => {
     if (liveRegionRef.current && api && slides && slides.length > 0) {
       const currentSlide = slides[currentIndex];
-      liveRegionRef.current.textContent = `Showing slide ${currentIndex + 1} of ${slides.length}: ${
+      liveRegionRef.current.textContent = `Showing slide ${currentIndex + 1} of ${slides?.length || 0}: ${
         currentSlide.backgroundText?.jsonValue?.value
       }.`;
     }
@@ -93,7 +93,7 @@ export const ImageCarouselThumbnails = (props: ImageCarouselProps) => {
           reducedMotion={isReducedMotion}
         >
           <div className="mb-12 w-full space-y-4 px-4 group-[.position-center]:text-center group-[.position-right]:text-right">
-            <Text tag="h2" field={title.jsonValue} className={titleClasses} />
+            <Text tag="h2" field={title?.jsonValue} className={titleClasses} />
           </div>
         </AnimatedSection>
 
@@ -116,7 +116,7 @@ export const ImageCarouselThumbnails = (props: ImageCarouselProps) => {
               data-component-part="carousel"
             >
               <div id={`${slideshowId}-title`} className="sr-only">
-                Vehicle Models Slideshow, {currentIndex + 1} of {slides.length}
+                Vehicle Models Slideshow, {currentIndex + 1} of {slides?.length || 0}
               </div>
 
               <CarouselContent
@@ -222,7 +222,7 @@ export const ImageCarouselThumbnails = (props: ImageCarouselProps) => {
             {slides[currentIndex]?.link?.jsonValue && (
               <EditableButton
                 variant="secondary"
-                buttonLink={slides[currentIndex].link.jsonValue}
+                buttonLink={slides[currentIndex].link?.jsonValue}
               />
             )}
           </div>

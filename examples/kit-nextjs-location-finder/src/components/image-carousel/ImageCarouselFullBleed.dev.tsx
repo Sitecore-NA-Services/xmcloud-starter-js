@@ -15,8 +15,8 @@ import { ImageCarouselEditMode } from './ImageCarouselEditMode.dev';
 import { cn } from '@/lib/utils';
 export const ImageCarouselFullBleed = (props: ImageCarouselProps) => {
   const { fields, isPageEditing } = props;
-  const { title, imageItems } = fields.data.datasource;
-  const { results: slides } = imageItems;
+  const { title, imageItems } = fields?.data?.datasource || {};
+  const { results: slides = [] } = imageItems || {};
 
   // Common Tailwind class groups
   const containerClasses = '@container group bg-primary grid w-full grid-cols-1 gap-9';
@@ -45,7 +45,7 @@ export const ImageCarouselFullBleed = (props: ImageCarouselProps) => {
   // Update the live region when the current slide changes
   useEffect(() => {
     if (liveRegionRef.current && api && slides && slides.length > 0) {
-      liveRegionRef.current.textContent = `Showing slide ${currentIndex + 1} of ${slides.length}`;
+      liveRegionRef.current.textContent = `Showing slide ${currentIndex + 1} of ${slides?.length || 0}`;
     }
   }, [currentIndex, slides, api]);
 
@@ -91,7 +91,7 @@ export const ImageCarouselFullBleed = (props: ImageCarouselProps) => {
               reducedMotion={isReducedMotion}
               className="max-w-screen-md"
             >
-              <Text tag="h2" field={title.jsonValue} className={titleClasses} />
+              <Text tag="h2" field={title?.jsonValue} className={titleClasses} />
             </AnimatedSection>
 
             <AnimatedSection
@@ -104,7 +104,7 @@ export const ImageCarouselFullBleed = (props: ImageCarouselProps) => {
                 {slides[currentIndex]?.link?.jsonValue && (
                   <EditableButton
                     variant="secondary"
-                    buttonLink={slides[currentIndex].link.jsonValue}
+                    buttonLink={slides[currentIndex].link?.jsonValue}
                     className="mb-6"
                   />
                 )}
@@ -132,7 +132,7 @@ export const ImageCarouselFullBleed = (props: ImageCarouselProps) => {
             data-component-part="carousel"
           >
             <div id={`${slideshowId}-title`} className="sr-only">
-              Vehicle Models Slideshow, {currentIndex + 1} of {slides.length}
+              Vehicle Models Slideshow, {currentIndex + 1} of {slides?.length || 0}
             </div>
 
             {/* Remove any default spacing from CarouselContent */}

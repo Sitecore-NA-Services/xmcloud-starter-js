@@ -17,7 +17,7 @@ import { Button } from '@/components/ui/button';
 import { Url } from 'next/dist/shared/lib/router/router';
 
 export const Default: React.FC<GlobalHeaderProps> = (props) => {
-  const { fields } = props;
+  const { fields } = props ?? {};
   const { logo, headerContact } = fields?.data?.item ?? {};
   const links = fields?.data?.item?.children?.results ?? [];
   const [isOpen, setIsOpen] = useState(false);
@@ -58,9 +58,9 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
         <div className="@xl:px-8 mx-auto flex h-16 w-full max-w-screen-xl items-center px-4">
           <div className="mr-8">
             {pageEditing ? (
-              <Image field={logo.jsonValue} className="h-10 w-auto" />
+              <Image field={logo?.jsonValue} className="h-10 w-auto" />
             ) : (
-              logo.jsonValue?.value && (
+              logo?.jsonValue?.value && (
                 <Link
                   href="/"
                   className="flex w-[164px] items-stretch space-x-2 [&_.image-container]:w-full"
@@ -75,14 +75,15 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
             <NavigationMenu>
               <NavigationMenuList>
                 {links &&
+                  links.length > 0 &&
                   links.map((item, i) => (
                     <Fragment key={`desktop-nav-menu-list-item-${i}`}>
                       {pageEditing ? (
                         <Button variant="ghost" asChild className="font-body text-base font-medium">
-                          <SitecoreLink field={item.link.jsonValue} />
+                          <SitecoreLink field={item.link?.jsonValue} />
                         </Button>
                       ) : (
-                        item.link.jsonValue?.value?.href && (
+                        item.link?.jsonValue?.value?.href && (
                           <NavigationMenuItem>
                             <Button
                               variant="ghost"
@@ -105,7 +106,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
           {pageEditing ? (
             <div className="@lg:flex @lg:items-center @lg:justify-end hidden">
               <Button variant="outline" asChild className="font-heading text-medium rounded-full">
-                <SitecoreLink field={headerContact.jsonValue} />
+                <SitecoreLink field={headerContact?.jsonValue} />
               </Button>
             </div>
           ) : (
@@ -131,9 +132,10 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
               <SheetContent side="right" className="[&>button_svg]:size-8">
                 <nav className="mt-[70px] flex flex-col space-y-4">
                   {links &&
+                    links.length > 0 &&
                     links.map(
                       (item) =>
-                        item.link.jsonValue?.value?.href && (
+                        item.link?.jsonValue?.value?.href && (
                           <Button
                             key={`${item.link.jsonValue.value.text}-mobile`}
                             variant="ghost"

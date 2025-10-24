@@ -19,6 +19,10 @@ type PageHeaderSTProps = {
 };
 
 export const Default = (props: PageHeaderSTProps) => {
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section
       className={`relative min-h-[20rem] lg:min-h-[40rem] flex items-center py-18 ${props.params.styles}`}
@@ -26,7 +30,7 @@ export const Default = (props: PageHeaderSTProps) => {
     >
       <div className="absolute inset-0 z-10">
         <ContentSdkImage
-          field={props.fields.Image}
+          field={props.fields?.Image}
           width={1920}
           height={1080}
           className="w-full h-full object-cover"
@@ -35,10 +39,10 @@ export const Default = (props: PageHeaderSTProps) => {
       <div className="relative container px-4 mx-auto z-20">
         <div className="grid gap-12 items-center w-full lg:grid-cols-2">
           <h1 className="text-primary text-4xl lg:text-7xl">
-            <ContentSdkText field={props.fields.Title} />
+            <ContentSdkText field={props.fields?.Title} />
           </h1>
           <div className="text-white text-xl lg:text-3xl font-medium">
-            <ContentSdkRichText field={props.fields.Body} />
+            <ContentSdkRichText field={props.fields?.Body} />
           </div>
         </div>
       </div>
@@ -47,6 +51,10 @@ export const Default = (props: PageHeaderSTProps) => {
 };
 
 export const TextRight = (props: PageHeaderSTProps) => {
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section
       className={`relative min-h-[20rem] lg:min-h-[40rem] flex items-center py-18 ${props.params.styles}`}
@@ -54,7 +62,7 @@ export const TextRight = (props: PageHeaderSTProps) => {
     >
       <div className="absolute inset-0 z-10">
         <ContentSdkImage
-          field={props.fields.Image}
+          field={props.fields?.Image}
           width={1920}
           height={1080}
           className="w-full h-full object-cover"
@@ -63,10 +71,10 @@ export const TextRight = (props: PageHeaderSTProps) => {
       <div className="relative container px-4 mx-auto z-20">
         <div className="grid gap-12 max-w-[36rem]">
           <h1 className="text-primary text-4xl lg:text-7xl">
-            <ContentSdkText field={props.fields.Title} />
+            <ContentSdkText field={props.fields?.Title} />
           </h1>
           <div className="text-white text-xl lg:text-3xl font-medium">
-            <ContentSdkRichText field={props.fields.Body} />
+            <ContentSdkRichText field={props.fields?.Body} />
           </div>
         </div>
       </div>
@@ -75,6 +83,10 @@ export const TextRight = (props: PageHeaderSTProps) => {
 };
 
 export const SplitScreen = (props: PageHeaderSTProps) => {
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section
       className={`relative min-h-[20rem] lg:min-h-[40rem] flex flex-col lg:flex-row items-center pb-18 lg:py-18 bg-primary ${props.params.styles}`}
@@ -82,7 +94,7 @@ export const SplitScreen = (props: PageHeaderSTProps) => {
     >
       <div className="w-full mb-18 lg:absolute lg:inset-0 lg:mb-0 lg:z-10">
         <ContentSdkImage
-          field={props.fields.Image}
+          field={props.fields?.Image}
           width={1920}
           height={1080}
           className="w-full h-[20rem] lg:h-full object-cover lg:w-1/2 lg:ml-auto"
@@ -91,10 +103,10 @@ export const SplitScreen = (props: PageHeaderSTProps) => {
       <div className="relative container px-4 mx-auto z-20">
         <div className="grid gap-8 lg:max-w-[50%] pr-8">
           <h1 className="text-foreground text-4xl lg:text-7xl">
-            <ContentSdkText field={props.fields.Title} />
+            <ContentSdkText field={props.fields?.Title} />
           </h1>
           <div className="text-foreground text-xl lg:text-3xl font-medium">
-            <ContentSdkRichText field={props.fields.Body} />
+            <ContentSdkRichText field={props.fields?.Body} />
           </div>
         </div>
       </div>
@@ -103,15 +115,19 @@ export const SplitScreen = (props: PageHeaderSTProps) => {
 };
 
 export const Stacked = (props: PageHeaderSTProps) => {
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section className={`relative py-18 ${props.params.styles}`} data-class-change>
       <div className="container px-4 mx-auto">
         <div className="grid gap-x-12 gap-y-8 items-center w-full lg:grid-cols-2">
           <h1 className="text-4xl lg:text-7xl">
-            <ContentSdkText field={props.fields.Title} />
+            <ContentSdkText field={props.fields?.Title} />
           </h1>
           <div className="text-xl lg:text-3xl font-medium">
-            <ContentSdkRichText field={props.fields.Body} />
+            <ContentSdkRichText field={props.fields?.Body} />
           </div>
         </div>
       </div>
@@ -126,20 +142,24 @@ export const Stacked = (props: PageHeaderSTProps) => {
 };
 
 export const TwoColumn = (props: PageHeaderSTProps) => {
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section className={`relative pt-18 bg-primary ${props.params.styles}`} data-class-change>
       <div className="container px-4 mx-auto">
         <div className="grid gap-x-12 gap-y-8 w-full lg:grid-cols-2">
           <div>
             <h1 className="text-4xl lg:text-7xl mb-8">
-              <ContentSdkText field={props.fields.Title} />
+              <ContentSdkText field={props.fields?.Title} />
             </h1>
             <div className="text-xl lg:text-3xl font-medium">
-              <ContentSdkRichText field={props.fields.Body} />
+              <ContentSdkRichText field={props.fields?.Body} />
             </div>
           </div>
           <ContentSdkImage
-            field={props.fields.Image}
+            field={props.fields?.Image}
             width={1080}
             height={1080}
             className="w-full h-full aspect-3/2 object-cover lg:aspect-square"

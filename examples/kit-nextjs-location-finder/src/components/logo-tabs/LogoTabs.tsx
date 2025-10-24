@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 // Default display of the component
 
 export const Default: React.FC<LogoTabsProps> = ({ fields }) => {
-  const { title, backgroundImage, logos, logoTabContent } = fields?.data?.datasource ?? {};
+  const { title, backgroundImage, logos, logoTabContent } = fields?.data?.datasource || {};
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
@@ -37,7 +37,7 @@ export const Default: React.FC<LogoTabsProps> = ({ fields }) => {
     }
   };
 
-  if (fields?.data?.datasource) {
+  if (fields) {
     return (
       <div className="relative min-h-[800px] w-full overflow-hidden">
         {/* Background Image */}
@@ -51,7 +51,7 @@ export const Default: React.FC<LogoTabsProps> = ({ fields }) => {
         {/* Content */}
         <div className="@container relative z-10 mx-auto max-w-7xl px-4 py-[88px] sm:px-6 lg:px-8">
           {/* Title */}
-          {title && (
+          {title?.jsonValue && (
             <Text
               tag="h2"
               field={title.jsonValue}
@@ -62,7 +62,7 @@ export const Default: React.FC<LogoTabsProps> = ({ fields }) => {
           {/* Logo Navigation Container */}
           <div className="@container mb-28">
             {/* Logo Navigation */}
-            {logos?.results && (
+            {logos?.results && logos.results.length > 0 && (
               <div
                 role="tablist"
                 aria-label={title?.jsonValue?.value || 'Brand tabs'}
@@ -100,14 +100,14 @@ export const Default: React.FC<LogoTabsProps> = ({ fields }) => {
                   )}
                   hidden={activeTabIndex !== index}
                 >
-                  {content.heading && (
+                  {content?.heading?.jsonValue && (
                     <Text
                       tag="h3"
                       field={content.heading.jsonValue}
                       className="font-heading text-primary-foreground mb-4 text-2xl font-medium leading-tight md:text-3xl"
                     />
                   )}
-                  {content.cta?.jsonValue && (
+                  {content?.cta?.jsonValue && (
                     <Button
                       buttonLink={content.cta.jsonValue}
                       variant="rounded-white"

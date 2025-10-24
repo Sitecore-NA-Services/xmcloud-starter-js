@@ -42,7 +42,7 @@ export const Accordion5050TitleAbove: React.FC<AccordionProps> = (props) => {
                 <Text
                   tag="h2"
                   className="font-heading @md:text-6xl @lg:text-7xl mb-8 max-w-screen-sm text-pretty text-5xl font-light leading-[1.1] tracking-tighter antialiased"
-                  field={heading.jsonValue}
+                  field={heading?.jsonValue}
                 />
               )}
             </div>

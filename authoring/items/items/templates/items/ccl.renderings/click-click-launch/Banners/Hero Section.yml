@@ -6,7 +6,7 @@ Path: "/sitecore/layout/Renderings/Project/click-click-launch/Banners/Hero Secti
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: hero
+  Value: CLHero
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Office/32x32/flatscreen_tv.png

@@ -24,23 +24,23 @@ export const Default: React.FC<MultiPromoTabsProps> = (props) => {
   const id = useId();
 
   if (fields) {
-    const tabItems = fields.data.datasource.children?.results ?? [];
+    const tabItems = fields.data?.datasource?.children?.results ?? [];
 
     return (
       <div className="multi-promo-tabs @container bg-primary @md:p-12 @md:my-16 my-8 w-full group-[.is-inset]:px-4 sm:group-[.is-inset]:px-0">
         <Text
           tag="h2"
-          field={fields.data.datasource.title?.jsonValue}
+          field={fields.data?.datasource?.title?.jsonValue}
           className="text-box-trim-both-baseline text-primary-foreground @md:text-6xl font-heading border-accent @sm:text-5xl -ml-1 mb-8 max-w-[20ch] text-pretty text-4xl font-normal leading-[1.1333] tracking-tighter antialiased md:max-w-[17.5ch]"
         />
 
         <div className="@md:hidden flex flex-col">
-          {fields.data.datasource.droplistLabel?.jsonValue && (
+          {fields.data?.datasource?.droplistLabel?.jsonValue && (
             <Text
               htmlFor={id}
               tag="label"
               className="text-primary-foreground font-body mb-2 block text-base font-normal"
-              field={fields.data.datasource.droplistLabel?.jsonValue}
+              field={fields.data?.datasource?.droplistLabel?.jsonValue}
             />
           )}
           <Select

@@ -47,17 +47,17 @@ export const Default = (props: MegaMenuItemProps) => {
     ref: menuRef,
   } = useToggleWithClickOutside<HTMLLIElement>(false);
 
-  const featuredProduct = props.fields.FeaturedProduct;
+  const featuredProduct = props.fields?.FeaturedProduct;
 
   return (
     <li
       ref={menuRef}
-      className={`font-(family-name:--font-accent) font-medium ${props.params.styles}`}
+      className={`font-(family-name:--font-accent) font-medium ${props.params?.styles}`}
       data-class-change
     >
-      {props.params.isSimpleLink ? (
+      {props.params?.isSimpleLink ? (
         <ContentSdkLink
-          field={props.fields.Link}
+          field={props.fields?.Link}
           className="inline-block p-4 font-[inherit] whitespace-nowrap cursor-pointer"
         />
       ) : (
@@ -66,7 +66,7 @@ export const Default = (props: MegaMenuItemProps) => {
             className="inline-block p-4 font-[inherit] whitespace-nowrap cursor-pointer"
             onClick={() => setIsSubmenuVisible(!isSubmenuVisible)}
           >
-            <ContentSdkText field={props.fields.Title} />
+            <ContentSdkText field={props.fields?.Title} />
           </span>
           <div
             className={`fixed lg:absolute top-14 left-0 right-0 lg:top-full lg:left-0 lg:right-0
@@ -89,36 +89,38 @@ export const Default = (props: MegaMenuItemProps) => {
               </div>
               <div className="text-2xl **:font-(family-name:--font-heading) uppercase pb-8">
                 <Placeholder
-                  name={`mega-menu-item-primary-links-${props.params.DynamicPlaceholderId}`}
+                  name={`mega-menu-item-primary-links-${props.params?.DynamicPlaceholderId}`}
                   rendering={props.rendering}
                 />
               </div>
               <div className="flex flex-col gap-6 pb-8">
                 <Placeholder
-                  name={`mega-menu-item-secondary-links-${props.params.DynamicPlaceholderId}`}
+                  name={`mega-menu-item-secondary-links-${props.params?.DynamicPlaceholderId}`}
                   rendering={props.rendering}
                 />
               </div>
 
-              {featuredProduct && (
-                <div className="relative self-end lg:justify-self-end max-w-lg pb-12 lg:pb-0 lg:pl-[20%]">
-                  <div className="aspect-square">
-                    <ContentSdkImage
-                      field={featuredProduct.fields.FeaturedImage}
-                      className="w-full h-full object-cover"
-                    />
+              {featuredProduct &&
+                featuredProduct.fields &&
+                featuredProduct.fields.FeaturedImage && (
+                  <div className="relative self-end lg:justify-self-end max-w-lg pb-12 lg:pb-0 lg:pl-[20%]">
+                    <div className="aspect-square">
+                      <ContentSdkImage
+                        field={featuredProduct.fields.FeaturedImage}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="absolute bottom-0 lg:bottom-8 left-0 p-4 text-center bg-background shadow-lg">
+                      <h5 className="mb-4 text-sm">
+                        <ContentSdkText field={featuredProduct.fields.ProductName} />
+                      </h5>
+                      <Link href={featuredProduct.url} className="btn btn-primary btn-sharp">
+                        {t(DICTIONARY_KEYS.EXPLORE_BUTTON_LABEL) || 'Explore'}
+                        {featuredProduct.fields.ProductName?.value}
+                      </Link>
+                    </div>
                   </div>
-                  <div className="absolute bottom-0 lg:bottom-8 left-0 p-4 text-center bg-background shadow-lg">
-                    <h5 className="mb-4 text-sm">
-                      <ContentSdkText field={featuredProduct.fields.ProductName} />
-                    </h5>
-                    <Link href={featuredProduct.url} className="btn btn-primary btn-sharp">
-                      {t(DICTIONARY_KEYS.EXPLORE_BUTTON_LABEL) || 'Explore'}
-                      {featuredProduct.fields.ProductName.value}
-                    </Link>
-                  </div>
-                </div>
-              )}
+                )}
             </div>
           </div>
         </>

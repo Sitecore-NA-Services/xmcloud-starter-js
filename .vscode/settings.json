@@ -1,4 +1,4 @@
-{
+﻿{
   "files.associations": {
     "*.sicpackage": "json"
   },
@@ -15,23 +15,5 @@
       "fileMatch": ["*.module.json"],
       "url": "./.sitecore/schemas/ModuleFile.schema.json"
     }
-  ],
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#FFD700",
-    "titleBar.activeForeground": "#000000",
-    "titleBar.inactiveBackground": "#FFD700",
-    "titleBar.inactiveForeground": "#000000",
-    "menuBar.selectionBackground": "#FFD700",
-    "menuBar.selectionForeground": "#000000",
-    "menu.background": "#FFD700",
-    "menu.foreground": "#000000",
-    "menu.selectionBackground": "#FFA500",
-    "menu.selectionForeground": "#000000",
-    "menubar.selectionBackground": "#FFD700",
-    "menubar.selectionForeground": "#000000",
-    "statusBar.background": "#FFD700",
-    "statusBar.foreground": "#000000",
-    "statusBar.noFolderBackground": "#FFD700",
-    "statusBar.debuggingBackground": "#FFD700"
-  }
+  ]
 }

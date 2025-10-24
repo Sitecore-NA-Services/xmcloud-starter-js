@@ -39,6 +39,11 @@ export const Banner = (props: ImageProps): JSX.Element => {
   const backgroundStyle = (props?.fields?.Image?.value?.src && {
     backgroundImage: `url('${props.fields.Image.value.src}')`,
   }) as CSSProperties;
+
+  if (!props.fields?.Image) {
+    return <ImageDefault {...props} />;
+  }
+
   const modifyImageProps = {
     ...props.fields.Image,
     value: {

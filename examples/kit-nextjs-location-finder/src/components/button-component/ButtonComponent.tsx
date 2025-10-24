@@ -29,6 +29,7 @@ export type ButtonFields = {
     iconClassName?: string;
     isPageEditing?: boolean;
   };
+  page?: { mode?: { isEditing?: boolean } };
 };
 
 export type ButtonRendering = { rendering: ComponentRendering };
@@ -159,13 +160,14 @@ const EditableButton = (props: {
 };
 
 const Default = (props: ButtonComponentProps): JSX.Element | null => {
-  const { fields, params } = props;
+  const { fields, params, page } = props;
   const { buttonLink, icon, isAriaHidden = true } = fields || {};
   const { size, iconPosition = 'trailing', iconClassName, isPageEditing } = params || {};
   const { variant } = props || ButtonVariants.DEFAULT;
   const ariaHidden = typeof isAriaHidden === 'boolean' ? isAriaHidden : true;
   const iconName = icon?.value as EnumValues<typeof IconName>;
-  if (!isPageEditing && !linkIsValid(buttonLink)) return null;
+  const isEditing = isPageEditing || page?.mode?.isEditing;
+  if (!isEditing && !linkIsValid(buttonLink)) return null;
 
   const buttonIcon: EnumValues<typeof IconName> =
     (buttonLink?.value?.linktype as EnumValues<typeof IconName>) ||
@@ -174,10 +176,10 @@ const Default = (props: ButtonComponentProps): JSX.Element | null => {
   if (fields) {
     return (
       <Button asChild variant={variant} size={size}>
-        {isPageEditing ? (
+        {isEditing ? (
           <Link field={buttonLink} editable={true} />
         ) : (
-          <Link editable={isPageEditing} field={buttonLink}>
+          <Link editable={isEditing} field={buttonLink}>
             {iconPosition === IconPosition.LEADING && (
               <Icon iconName={buttonIcon} className={iconClassName} isAriaHidden={ariaHidden} />
             )}

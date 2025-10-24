@@ -23,12 +23,12 @@ export const Default: React.FC<MultiPromoTabsProps> = (props) => {
   const id = useId();
 
   if (fields) {
-    const tabItems = fields.data.datasource.children?.results ?? [];
+    const tabItems = fields.data?.datasource?.children?.results ?? [];
     // Get the initially selected tab title for the dropdown display
     const initialTabTitle = tabItems[0]?.title?.jsonValue?.value || 'Select an option';
     // Get dropdown label text or use default
     const droplistLabelText =
-      fields.data.datasource.droplistLabel?.jsonValue?.value || 'Select a value';
+      fields.data?.datasource?.droplistLabel?.jsonValue?.value || 'Select a value';
 
     // When in editor mode, render all tabs stacked
     if (isEditMode) {
@@ -36,7 +36,7 @@ export const Default: React.FC<MultiPromoTabsProps> = (props) => {
         <div className="multi-promo-tabs @container bg-primary @md:p-12 @md:my-16 my-8 w-full group-[.is-inset]:px-4 sm:group-[.is-inset]:px-0">
           <Text
             tag="h2"
-            field={fields.data.datasource.title?.jsonValue}
+            field={fields.data?.datasource?.title?.jsonValue}
             className="text-box-trim-both text-box-edge-asc-baseline text-primary-foreground @md:text-6xl font-heading border-accent @sm:text-5xl -ml-1 mb-8 max-w-[20ch] text-pretty text-4xl font-normal leading-[1.1333] tracking-tighter md:max-w-[17.5ch]"
           />
 
@@ -60,7 +60,7 @@ export const Default: React.FC<MultiPromoTabsProps> = (props) => {
       <div className="multi-promo-tabs @container bg-primary @md:p-12 @md:my-16 my-8 w-full group-[.is-inset]:px-4 sm:group-[.is-inset]:px-0">
         <Text
           tag="h2"
-          field={fields.data.datasource.title?.jsonValue}
+          field={fields.data?.datasource?.title?.jsonValue}
           className="text-box-trim-both text-box-edge-asc-baseline text-primary-foreground @md:text-6xl font-heading border-accent @sm:text-5xl -ml-1 mb-8 max-w-[20ch] text-pretty text-4xl font-normal leading-[1.1333] tracking-tighter md:max-w-[17.5ch]"
         />
 

@@ -78,9 +78,14 @@ interface PersonItem {
 }
 
 export const Default: React.FC<ArticleHeaderProps> = ({ fields }) => {
-  const { imageRequired, eyebrowOptional } = fields.data?.datasource ?? {};
-  const { pageHeaderTitle, pageReadTime, pageDisplayDate, pageAuthor } =
-    fields?.data?.externalFields ?? {};
+  const { imageRequired, eyebrowOptional } = fields?.data?.datasource ?? {};
+  const externalFields = fields?.data?.externalFields ?? {};
+  const {
+    pageHeaderTitle = null,
+    pageReadTime = null,
+    pageDisplayDate = null,
+    pageAuthor = null,
+  } = externalFields;
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const headerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
@@ -129,7 +134,7 @@ export const Default: React.FC<ArticleHeaderProps> = ({ fields }) => {
     };
   }, []);
 
-  if (fields.data.datasource) {
+  if (fields) {
     const parallaxStyle = imageRequired?.jsonValue?.value?.src
       ? {
           transform: prefersReducedMotion

@@ -10,11 +10,11 @@ import * as ArticleHeader from 'components/article-header/ArticleHeader';
 import * as BackgroundThumbnail from 'components/background-thumbnail/BackgroundThumbnail.dev';
 import * as Breadcrumbs from 'components/breadcrumbs/Breadcrumbs';
 import * as ButtonComponent from 'components/button-component/ButtonComponent';
-import * as CallToAction from 'components/component-library/calltoaction';
+import * as CallToAction from 'components/component-library/CallToAction';
 import * as Card from 'components/card/Card.dev';
 import * as CardSpotlight from 'components/card-spotlight/card-spotlight.dev';
 import * as Carousel from 'components/carousel/Carousel';
-import * as CLHero from 'components/component-library/hero';
+import * as CLHero from 'components/component-library/Hero';
 import * as ColumnSplitter from 'components/sxa/ColumnSplitter';
 import * as ContactSection from 'components/component-library/ContactSection';
 import * as Container from 'components/sxa/Container';
@@ -65,7 +65,6 @@ import * as PlaceholderTabs from 'components/component-library/PlaceholderTabs';
 import * as Portal from 'components/portal/portal.dev';
 import * as ProductListing from 'components/product-listing/ProductListing';
 import * as ProductsSection from 'components/component-library/ProductsSection';
-import * as Promo from 'components/sxa/Promo';
 import * as PromoAnimated from 'components/promo-animated/PromoAnimated';
 import * as PromoBlock from 'components/promo-block/PromoBlock';
 import * as PromoImage from 'components/promo-image/PromoImage';
@@ -80,7 +79,7 @@ import * as SubmissionForm from 'components/submission-form/SubmissionForm';
 import * as SubscriptionBanner from 'components/subscription-banner/SubscriptionBanner';
 import * as TeamSection from 'components/component-library/TeamSection';
 import * as TestimonialCarousel from 'components/testimonial-carousel/TestimonialCarousel';
-import * as Testimonials from 'components/component-library/testimonials';
+import * as Testimonials from 'components/component-library/Testimonials';
 import * as TextBanner from 'components/text-banner/TextBanner';
 import * as ThemeProvider from 'components/theme-provider/theme-provider.dev';
 import * as Title from 'components/sxa/Title';
@@ -157,7 +156,6 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Portal', Portal],
   ['ProductListing', ProductListing],
   ['ProductsSection', ProductsSection],
-  ['Promo', Promo],
   ['PromoAnimated', PromoAnimated],
   ['PromoBlock', PromoBlock],
   ['PromoImage', PromoImage],

@@ -44,21 +44,26 @@ export const Default = ({ params, fields }: TitleProps): JSX.Element => {
   const { page } = useSitecore();
   const { styles, RenderingIdentifier: id } = params;
   const datasource = fields?.data?.datasource || fields?.data?.contextItem;
-  const text: TextField = datasource?.field?.jsonValue || {};
+  const datasourceField: TextField = datasource?.field?.jsonValue as TextField;
+  const contextField: TextField = page.layout.sitecore.route?.fields?.Title as TextField;
+  const titleField: TextField = datasourceField || contextField;
+
   const link: LinkField = {
     value: {
       href: datasource?.url?.path,
-      title: datasource?.field?.jsonValue?.value,
+      title:
+        (titleField?.value ? String(titleField.value) : undefined) ||
+        datasource?.field?.jsonValue?.value,
     },
   };
 
   return (
     <ComponentContent styles={styles} id={id}>
       {page.mode.isEditing ? (
-        <Text field={text} />
+        <Text field={titleField} />
       ) : (
         <Link field={link}>
-          <Text field={text} />
+          <Text field={titleField} />
         </Link>
       )}
     </ComponentContent>

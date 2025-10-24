@@ -38,6 +38,10 @@ type HeaderTemplateProps = HeaderProps & {
 const HeaderTemplate = (props: HeaderTemplateProps) => {
   const [isVisible, domRef] = useVisibility();
 
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section className={`relative py-24 px-4 ${props.params.styles}`} data-class-change>
       {props.withBackgroundImage && (
@@ -143,6 +147,10 @@ export const Header8 = (props: HeaderProps) => {
 export const Header9 = (props: HeaderProps) => {
   const [isVisible, domRef] = useVisibility();
 
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section className={`py-24 px-4 ${props.params.styles}`} data-class-change>
       <div className="container mx-auto">
@@ -188,6 +196,10 @@ export const Header9 = (props: HeaderProps) => {
 };
 
 export const Header10 = (props: HeaderProps) => {
+  if (!props.fields) {
+    return null;
+  }
+
   return (
     <section className={`relative py-24 px-4 ${props.params.styles}`} data-class-change>
       <div className={`container mx-auto`}>

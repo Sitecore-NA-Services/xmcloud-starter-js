@@ -48,18 +48,24 @@ const DICTIONARY_KEYS = {
 };
 
 const transformProductData = (products: ProductFields[]) => {
+  if (!products || !Array.isArray(products) || products.length === 0) {
+    return [];
+  }
+
   const specMeta = new Map();
 
   products.forEach((product: ProductFields) => {
-    product.fields.Specifications.forEach((spec) => {
-      const name = spec.name;
-      const displayName = spec.displayName;
-      const order = parseInt(spec.fields.Value.value);
+    if (product?.fields?.Specifications && Array.isArray(product.fields.Specifications)) {
+      product.fields.Specifications.forEach((spec) => {
+        const name = spec.name;
+        const displayName = spec.displayName;
+        const order = parseInt(spec.fields?.Value?.value || '0');
 
-      if (!specMeta.has(name) || specMeta.get(name).order > order) {
-        specMeta.set(name, { displayName, order });
-      }
-    });
+        if (!specMeta.has(name) || specMeta.get(name).order > order) {
+          specMeta.set(name, { displayName, order });
+        }
+      });
+    }
   });
 
   const orderedSpecKeys = Array.from(specMeta.entries())
@@ -67,25 +73,29 @@ const transformProductData = (products: ProductFields[]) => {
     .map(([name]) => name);
 
   return products.map((product) => {
-    const { ProductName, Price, ProductImage, AmpPower, Specifications } = product.fields;
+    const { ProductName, Price, ProductImage, AmpPower, Specifications } = product?.fields || {};
 
     const specMap: Record<string, string> = {};
-    Specifications.forEach((spec) => {
-      specMap[spec.name] = spec.name || spec.displayName;
-    });
+    if (Specifications && Array.isArray(Specifications)) {
+      Specifications.forEach((spec) => {
+        if (spec?.name) {
+          specMap[spec.name] = spec.name || spec.displayName || '-';
+        }
+      });
+    }
 
     const orderedSpecs = orderedSpecKeys.map((specName) => {
       return specMap[specName] || '-';
     });
 
     return {
-      id: product.id,
+      id: product?.id || '',
       image: ProductImage,
       name: ProductName,
       price: Price,
       ampPower: AmpPower,
       specs: orderedSpecs,
-      url: product.url,
+      url: product?.url || '#',
     };
   });
 };
@@ -94,8 +104,8 @@ export const Default = (props: ProductComparisonProps) => {
   const { t } = useI18n();
 
   const formattedProducts = useMemo(
-    () => transformProductData(props.fields.Products),
-    [props.fields.Products]
+    () => transformProductData(props.fields?.Products || []),
+    [props.fields?.Products]
   );
 
   return (

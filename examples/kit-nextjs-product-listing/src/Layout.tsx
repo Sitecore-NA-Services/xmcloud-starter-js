@@ -77,6 +77,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
   const isPartialDesignEditing = route?.templateName === 'Partial Design';
   const mainClassPartialDesignEditing = isPartialDesignEditing ? 'partial-editing-mode' : '';
   const mainClassPageEditing = isEditing ? 'editing-mode' : 'prod-mode';
+  const importMapDynamic = () => import('.sitecore/import-map');
   const classNamesMain = `${mainClassPageEditing} ${mainClassPartialDesignEditing} ${accent.variable} ${body.variable} ${heading.variable} main-layout`;
 
   const metaTitle =
@@ -120,7 +121,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
         >
           <div className={`min-h-screen flex flex-col ${classNamesMain}`}>
             {page.mode.isDesignLibrary ? (
-              <DesignLibrary />
+              <DesignLibrary loadImportMap={importMapDynamic} />
             ) : (
               <>
                 <header

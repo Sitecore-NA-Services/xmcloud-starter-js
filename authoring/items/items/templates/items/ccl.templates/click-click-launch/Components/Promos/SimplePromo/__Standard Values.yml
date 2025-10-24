@@ -22,9 +22,12 @@ Languages:
       Hint: __Owner
       Value: |
         sitecore\Admin
+    - ID: "54a924ec-8e98-4597-b9c2-d616dd66cc7c"
+      Hint: description
+      Value: This is a description field, the text can be longer and provide some information about the promo.
     - ID: "5c33f772-5806-4ad8-a236-730f1b299531"
       Hint: heading
-      Value: $name
+      Value: This is the Promo Heading
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -32,14 +35,18 @@ Languages:
     - ID: "7eca61ae-f0c1-49e6-b131-686ab895a1dc"
       Hint: image
       Value: |
-        <image mediaid="{567F4754-89CD-4DD9-9033-8D6E29B806C7}" />
+        <image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6d3e171c-0ba2-4e92-995e-b3b7e05dbbe5"
+      Value: "696dd79f-75c1-49d5-84c5-ab14651b82e6"
+    - ID: "8ec6e4b8-3a38-4115-a892-38051924f3f1"
+      Hint: link
+      Value: |
+        <link text="This is a Call to Action link" linktype="external" url="https://sitecore.ai" anchor="" target="" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\anton.kechashin@sitecore.com
+        sitecore\richard.seal@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250717T133035Z
+      Value: 20250807T132547Z

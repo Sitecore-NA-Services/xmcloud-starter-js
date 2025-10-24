@@ -16,10 +16,12 @@ export const Default: React.FC<HeroProps> = (props) => {
   const { isEditing } = page.mode;
   const { t } = useI18n();
   const dictionary = {
-    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel),
-    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder),
+    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel) || '',
+    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder) || '',
   };
-  props.fields.dictionary = dictionary;
+  if (props.fields) {
+    props.fields.dictionary = dictionary;
+  }
 
   return <HeroDefault {...props} isPageEditing={isEditing} />;
 };
@@ -30,10 +32,12 @@ export const ImageBottom: React.FC<HeroProps> = (props) => {
   const { isEditing } = page.mode;
   const { t } = useI18n();
   const dictionary = {
-    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel),
-    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder),
+    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel) || '',
+    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder) || '',
   };
-  props.fields.dictionary = dictionary;
+  if (props.fields) {
+    props.fields.dictionary = dictionary;
+  }
 
   return <HeroImageBottom {...props} isPageEditing={isEditing} />;
 };
@@ -43,10 +47,12 @@ export const ImageBottomInset: React.FC<HeroProps> = (props) => {
   const { isEditing } = page.mode;
   const { t } = useI18n();
   const dictionary = {
-    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel),
-    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder),
+    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel) || '',
+    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder) || '',
   };
-  props.fields.dictionary = dictionary;
+  if (props.fields) {
+    props.fields.dictionary = dictionary;
+  }
 
   return <HeroImageBottomInset {...props} isPageEditing={isEditing} />;
 };
@@ -56,10 +62,12 @@ export const ImageBackground: React.FC<HeroProps> = (props) => {
   const { isEditing } = page.mode;
   const { t } = useI18n();
   const dictionary = {
-    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel),
-    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder),
+    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel) || '',
+    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder) || '',
   };
-  props.fields.dictionary = dictionary;
+  if (props.fields) {
+    props.fields.dictionary = dictionary;
+  }
 
   return <HeroImageBackground {...props} isPageEditing={isEditing} />;
 };
@@ -69,9 +77,11 @@ export const ImageRight: React.FC<HeroProps> = (props) => {
   const { isEditing } = page.mode;
   const { t } = useI18n();
   const dictionary = {
-    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel),
-    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder),
+    SubmitCTALabel: t(dictionaryKeys.HERO_SubmitCTALabel) || '',
+    ZipPlaceholder: t(dictionaryKeys.HERO_ZipPlaceholder) || '',
   };
-  props.fields.dictionary = dictionary;
+  if (props.fields) {
+    props.fields.dictionary = dictionary;
+  }
   return <HeroImageRight {...props} isPageEditing={isEditing} />;
 };

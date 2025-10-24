@@ -17,8 +17,8 @@ import { useContainerQuery } from '@/hooks/use-container-query';
 export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
   const { fields, isPageEditing } = props;
 
-  const { title, imageItems } = fields.data.datasource;
-  const { results: slides } = imageItems;
+  const { title, imageItems } = fields?.data?.datasource || {};
+  const { results: slides = [] } = imageItems || {};
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [slideOrder, setSlideOrder] = useState<number[]>([]);
@@ -34,19 +34,19 @@ export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
   // Initialize slide order
   useEffect(() => {
     if (slides && slides.length > 0) {
-      setSlideOrder(Array.from({ length: slides.length }, (_, i) => i));
+      setSlideOrder(Array.from({ length: slides?.length || 0 }, (_, i) => i));
     }
   }, [slides]);
 
   // Update the live region when the current slide changes
   useEffect(() => {
     if (liveRegionRef.current && slides && slides.length > 0) {
-      liveRegionRef.current.textContent = `Showing slide ${activeIndex + 1} of ${slides.length}`;
+      liveRegionRef.current.textContent = `Showing slide ${activeIndex + 1} of ${slides?.length || 0}`;
     }
   }, [activeIndex, slides]);
 
   const handleNext = () => {
-    if (isAnimating || slides.length <= 1) return;
+    if (isAnimating || (slides?.length || 0) <= 1) return;
 
     setIsAnimating(true);
 
@@ -54,7 +54,7 @@ export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
     setNextSlideIndex(1);
 
     // Update active index
-    setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % (slides?.length || 1));
 
     // Wait for the animation to complete before updating the slide order
     setTimeout(
@@ -127,7 +127,7 @@ export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
             >
               <Text
                 tag="h2"
-                field={title.jsonValue}
+                field={title?.jsonValue}
                 className="font-heading @md:text-7xl max-w-[760px] text-pretty text-5xl font-light leading-none tracking-normal antialiased group-[.position-left]:text-left group-[.position-center]:text-center group-[.position-right]:text-right"
               />
             </AnimatedSection>
@@ -147,7 +147,7 @@ export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
                 {slideOrder.length > 0 &&
                   slides[slideOrder[nextSlideIndex === 1 ? 1 : 0]]?.link?.jsonValue && (
                     <EditableButton
-                      buttonLink={slides[slideOrder[nextSlideIndex === 1 ? 1 : 0]].link.jsonValue}
+                      buttonLink={slides[slideOrder[nextSlideIndex === 1 ? 1 : 0]].link?.jsonValue}
                       className="mb-6"
                     />
                   )}
@@ -296,7 +296,7 @@ export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
                           aria-roledescription="slide"
                           aria-label={`${isActive || isNext ? 'Current slide' : 'Slide'} ${
                             slideIndex + 1
-                          } of ${slides.length}`}
+                          } of ${slides?.length || 0}`}
                         >
                           <div
                             className={cn(
@@ -307,7 +307,7 @@ export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
                             )}
                           >
                             <ImageWrapper
-                              image={slides[slideIndex].image.jsonValue}
+                              image={slides[slideIndex].image?.jsonValue}
                               className="object-cover"
                             />
                           </div>
@@ -323,7 +323,7 @@ export const ImageCarouselFeaturedImageLeft = (props: ImageCarouselProps) => {
               <Button
                 onClick={handleNext}
                 variant="outline"
-                disabled={isAnimating || slides.length <= 1}
+                disabled={isAnimating || (slides?.length || 0) <= 1}
               >
                 Next Image
               </Button>

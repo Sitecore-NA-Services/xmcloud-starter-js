@@ -90,6 +90,7 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
         indicatorClassName={indicatorClassName}
         itemsAlign={(alignItems as 'start' | 'end' | 'center') || 'start'}
         orientation={orientation}
+        mobileBreakpoint="sm"
       >
         <ul
           className={cn(listClassName, {

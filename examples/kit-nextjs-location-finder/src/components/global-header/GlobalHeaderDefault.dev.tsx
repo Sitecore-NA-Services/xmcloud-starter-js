@@ -21,7 +21,7 @@ import { useMatchMedia } from '@/hooks/use-match-media';
 import { AnimatedHoverNav } from '@/components/ui/animated-hover-nav';
 
 export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
-  const { fields, isPageEditing } = props;
+  const { fields, isPageEditing } = props ?? {};
   const { logo, primaryNavigationLinks, headerContact } = fields?.data?.item ?? {};
   const [isOpen, setIsOpen] = useState(false);
   const [sheetAnimationComplete, setSheetAnimationComplete] = useState(false);
@@ -90,24 +90,25 @@ export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
             </div>
           </div>
           {/* Desktop Navigation */}
-          <div className="@lg:flex @lg:flex-1 hidden" ref={navRef}>
+          <div className="@lg:flex @lg:flex-[2] hidden" ref={navRef}>
             <NavigationMenu className="w-full">
               <div className="relative w-full">
                 <AnimatedHoverNav
-                  mobileBreakpoint="md"
+                  mobileBreakpoint="xs"
                   parentRef={navRef}
                   indicatorClassName="bg-primary rounded-default absolute inset-0 -z-10 block"
                 >
                   <NavigationMenuList className="flex w-full justify-between">
                     {primaryNavigationLinks?.targetItems &&
+                      primaryNavigationLinks.targetItems.length > 0 &&
                       primaryNavigationLinks?.targetItems.map((item, index) => (
-                        <NavigationMenuItem key={`${item.link.jsonValue.value.text}-${index}`}>
+                        <NavigationMenuItem key={`${item.link?.jsonValue?.value?.text}-${index}`}>
                           <Button
                             variant="ghost"
                             asChild
                             className="font-body bg-transparent text-base font-medium hover:bg-transparent"
                           >
-                            <ContentSdkLink field={item.link.jsonValue} prefetch={false} />
+                            <ContentSdkLink field={item.link?.jsonValue} prefetch={false} />
                           </Button>
                         </NavigationMenuItem>
                       ))}
@@ -118,7 +119,7 @@ export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
           </div>
           {/* Desktop CTA */}
           {headerContact?.jsonValue?.value && (
-            <div className="@lg:flex @lg:items-center @lg:justify-end hidden">
+            <div className="@lg:flex @lg:items-center @lg:justify-end @lg:flex-1 hidden">
               <Button asChild className="font-heading text-base font-medium">
                 <ContentSdkLink field={headerContact.jsonValue} prefetch={false} />
               </Button>
@@ -167,9 +168,10 @@ export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
                         className="flex flex-col space-y-4"
                       >
                         {primaryNavigationLinks?.targetItems &&
+                          primaryNavigationLinks.targetItems.length > 0 &&
                           primaryNavigationLinks?.targetItems.map((item, index) => (
                             <motion.div
-                              key={`${item.link.jsonValue.value.text}-mobile`}
+                              key={`${item.link?.jsonValue?.value?.text}-mobile`}
                               initial={{ opacity: 0, y: 20 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{
@@ -179,7 +181,7 @@ export const GlobalHeaderDefault: React.FC<GlobalHeaderProps> = (props) => {
                               className="flex justify-center"
                             >
                               <Button variant="ghost" asChild onClick={() => setIsOpen(false)}>
-                                <ContentSdkLink field={item.link.jsonValue} prefetch={false} />
+                                <ContentSdkLink field={item.link?.jsonValue} prefetch={false} />
                               </Button>
                             </motion.div>
                           ))}

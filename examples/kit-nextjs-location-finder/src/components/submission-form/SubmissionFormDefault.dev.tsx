@@ -10,8 +10,8 @@ import { useI18n } from 'next-localization';
 import { dictionaryKeys } from '@/variables/dictionary';
 
 export const SubmissionFormDefault: React.FC<SubmissionFormProps> = (props) => {
-  const { fields } = props;
-  const { title } = fields;
+  const { fields } = props || {};
+  const { title } = fields || {};
   const { t } = useI18n();
   const dictionary = {
     SUBMITINFOFORM_FirstNameLabel: t(dictionaryKeys.SUBMITINFOFORM_FirstNameLabel),

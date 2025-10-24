@@ -11,7 +11,7 @@ export const Default: React.FC<TopicListingProps> = (props) => {
   } = props;
   const { title, children } = fields?.data?.datasource ?? {};
 
-  if (fields?.data?.datasource) {
+  if (fields) {
     return (
       <div
         className="bg-primary relative overflow-hidden py-24 md:pb-[128px] md:pt-28 @container"

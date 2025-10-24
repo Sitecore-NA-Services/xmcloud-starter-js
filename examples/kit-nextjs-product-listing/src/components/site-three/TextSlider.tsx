@@ -18,8 +18,8 @@ export const Default = (props: TextSliderProps) => {
   const [ready, setReady] = useState(false);
 
   const phrase = useMemo(() => {
-    return props.fields.Text?.value || 'No text in field';
-  }, [props.fields.Text?.value]);
+    return props?.fields?.Text?.value || 'No text in field';
+  }, [props?.fields?.Text?.value]);
 
   useEffect(() => {
     if (page.mode.isEditing) {
@@ -87,7 +87,7 @@ export const Default = (props: TextSliderProps) => {
                   key={i}
                   className="font-[inherit] [.bg-gradient-secondary_&:nth-child(4n-3)]:text-white [.bg-gradient-secondary_&:nth-child(4n-2)]:text-white"
                 >
-                  {i === 0 ? <ContentSdkText field={props.fields.Text} /> : phrase}
+                  {i === 0 ? <ContentSdkText field={props?.fields?.Text} /> : phrase}
                   <span className="font-[inherit] text-primary">. </span>
                 </span>
               ))}

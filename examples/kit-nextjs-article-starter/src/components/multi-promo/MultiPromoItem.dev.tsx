@@ -4,16 +4,16 @@ import { MultiPromoItemProps } from '@/components/multi-promo/multi-promo.props'
 import { Default as ImageWrapper } from '@/components/image/ImageWrapper.dev';
 const mapToItemProps = (fields: MultiPromoItemProps) => {
   return {
-    title: fields.heading.jsonValue,
-    image: fields.image.jsonValue,
-    link: fields.link?.jsonValue,
-    isPageEditing: fields.isPageEditing,
+    title: fields?.heading?.jsonValue,
+    image: fields?.image?.jsonValue,
+    link: fields?.link?.jsonValue,
+    isPageEditing: fields?.isPageEditing,
   };
 };
 
 export const Default: React.FC<MultiPromoItemProps> = (props) => {
-  const itemProps = mapToItemProps(props);
-  const { title, image, link, isPageEditing } = itemProps;
+  const itemProps = mapToItemProps(props || {});
+  const { title, image, link, isPageEditing } = itemProps || {};
 
   return (
     <>

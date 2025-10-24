@@ -163,10 +163,10 @@ SharedFields:
             Set-ItemTemplate -Path "$sitePath/Home/Video" -Template $pageTemplate.ID
             
             Write-Verbose "Update the home page renderings"
-            $renderingHeroST = Get-Item -Path '/sitecore/layout/Renderings/Project/click-click-launch/Site 3/HeroST'
-            $renderingTextSlider = Get-Item -Path '/sitecore/layout/Renderings/Project/click-click-launch/Site 3/TextSlider'
+            $renderingHeroST = Get-Item -Path '/sitecore/layout/Renderings/Project/click-click-launch/Banners/HeroST'
+            $renderingTextSlider = Get-Item -Path '/sitecore/layout/Renderings/Project/click-click-launch/Page Content/TextSlider'
             $renderingMultiPromo = Get-Item -Path '/sitecore/layout/Renderings/Project/click-click-launch/Promos/MultiPromo'
-            $renderingSignupBanner = Get-Item -Path '/sitecore/layout/Renderings/Project/click-click-launch/Site 3/SignupBanner'
+            $renderingSignupBanner = Get-Item -Path '/sitecore/layout/Renderings/Project/click-click-launch/Banners/SignupBanner'
         
             Write-Host "Get the rendering definitions"
             $renderingHeroSTDefinition = $renderingHeroST | New-Rendering

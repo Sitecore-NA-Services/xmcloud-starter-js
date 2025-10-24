@@ -6,13 +6,13 @@ Path: "/sitecore/layout/Renderings/Project/click-click-launch/Promos/CallToActio
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: calltoaction
+  Value: CallToAction
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: SXA_MDI/16x16/Promo.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: "/sitecore/templates/Project/xmc-cl/Component Library/CTA Sectoins/CallToAction"
+  Value: "/sitecore/templates/Project/click-click-launch/Components/CTA Sectoins/CallToAction"
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 0

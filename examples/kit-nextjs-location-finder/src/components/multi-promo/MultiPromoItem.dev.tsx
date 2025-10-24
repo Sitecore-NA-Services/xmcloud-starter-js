@@ -5,15 +5,15 @@ import { Default as ImageWrapper } from '@/components/image/ImageWrapper.dev';
 
 const mapToItemProps = (fields: MultiPromoItemProps) => {
   return {
-    title: fields.heading.jsonValue,
-    image: fields.image.jsonValue,
-    link: fields.link?.jsonValue,
+    title: fields?.heading?.jsonValue,
+    image: fields?.image?.jsonValue,
+    link: fields?.link?.jsonValue,
   };
 };
 
 export const Default: React.FC<MultiPromoItemProps> = (props) => {
-  const itemProps = mapToItemProps(props);
-  const { title, image, link } = itemProps;
+  const itemProps = mapToItemProps(props || {});
+  const { title, image, link } = itemProps || {};
 
   return (
     <>

@@ -11,7 +11,7 @@ import { USER_ZIPCODE } from '@/lib/constants';
 
 export const HeroDefault: React.FC<HeroProps> = (props) => {
   const { fields, isPageEditing } = props;
-  const { title, description, bannerText, bannerCTA, image, dictionary, searchLink } = fields;
+  const { title, description, bannerText, bannerCTA, image, dictionary, searchLink } = fields || {};
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export const HeroDefault: React.FC<HeroProps> = (props) => {
   if (fields) {
     const needsBanner: boolean = isPageEditing
       ? true
-      : bannerText?.value !== '' || bannerCTA?.value.href !== ''
+      : bannerText?.value !== '' || bannerCTA?.value?.href !== ''
         ? true
         : false;
 
@@ -89,11 +89,11 @@ export const HeroDefault: React.FC<HeroProps> = (props) => {
               delay={400}
             >
               <ZipcodeSearchForm
-                placeholder={dictionary.ZipPlaceholder}
-                buttonText={dictionary?.SubmitCTALabel}
+                placeholder={dictionary.ZipPlaceholder || ''}
+                buttonText={dictionary?.SubmitCTALabel || ''}
                 onSubmit={(values) => {
                   sessionStorage.setItem(USER_ZIPCODE, values.zipcode);
-                  if (searchLink) {
+                  if (searchLink?.value?.href) {
                     window.location.href = `${searchLink.value.href}`;
                   }
                 }}
