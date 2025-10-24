@@ -1,40 +1,43 @@
-'use client';
+import type React from 'react';
+import { Text, RichText as ContentSdkRichText } from '@sitecore-content-sdk/nextjs';
+import { ArticleFullProps } from './article-full.props';
+import { cn } from '@/lib/utils';
+import { NoDataFallback } from '@/utils/NoDataFallback';
 
-import { Text as ContentSdkText, Field } from '@sitecore-content-sdk/nextjs';
+export const Default: React.FC<ArticleFullProps> = (props) => {
+  const { fields, params } = props;
+  const id = params?.RenderingIdentifier;
 
-interface ArticleFields {
-  ArticleAuthor: Field<string>;
-  ArticleTitle: Field<string>;
-  ArticleText: Field<string>;
-}
+  if (!fields) {
+    return <NoDataFallback componentName="Article Full" />;
+  }
 
-type ArticleFullProps = {
-  params: { [key: string]: string };
-  fields: ArticleFields;
-};
-
-export const Default = (props: ArticleFullProps) => {
   return (
-    <article
-      className={`relative flex flex-col gap-6 p-10 max-w-4xl mx-auto ${props.params?.styles}`}
-      data-class-change
+    <div
+      className={cn('article-full', { [props?.params?.styles]: props?.params?.styles })}
+      id={id ? id : undefined}
+      data-component-name="article-full"
     >
       {/* Article Title */}
-      <header>
+      {fields.ArticleTitle && (
         <h1 className="text-4xl font-bold mb-4">
-          <ContentSdkText field={props.fields?.ArticleTitle} />
+          <Text field={fields.ArticleTitle} />
         </h1>
+      )}
 
-        {/* Article Author */}
-        <div className="text-lg text-gray-600 mb-6">
-          By <ContentSdkText field={props.fields?.ArticleAuthor} />
+      {/* Article Author */}
+      {fields.ArticleAuthor && (
+        <p className="text-lg text-gray-600 mb-6">
+          By <Text field={fields.ArticleAuthor} />
+        </p>
+      )}
+
+      {/* Article Text */}
+      {fields.ArticleText && (
+        <div className="prose max-w-none">
+          <ContentSdkRichText field={fields.ArticleText} />
         </div>
-      </header>
-
-      {/* Article Content */}
-      <div className="prose prose-lg max-w-none">
-        <ContentSdkText field={props.fields?.ArticleText} />
-      </div>
-    </article>
+      )}
+    </div>
   );
 };
