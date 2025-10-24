@@ -22,7 +22,7 @@ export const Default: React.FC<ArticleFullProps> = (props) => {
 
   return (
     <div
-      className={cn('article-full', { [props?.params?.styles]: props?.params?.styles })}
+      className={cn('article-full px-4 md:px-6 lg:px-8', { [props?.params?.styles]: props?.params?.styles })}
       id={id ? id : undefined}
       data-component-name="article-full"
     >
