@@ -1,9 +1,6 @@
 'use client';
 
-import {
-  Text as ContentSdkText,
-  Field,
-} from '@sitecore-content-sdk/nextjs';
+import { Text as ContentSdkText, Field } from '@sitecore-content-sdk/nextjs';
 
 interface ArticleFields {
   ArticleAuthor: Field<string>;
