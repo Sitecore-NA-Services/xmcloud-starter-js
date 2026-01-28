@@ -1,18 +1,27 @@
 {
   "renderingHosts": {
     "nextjsstarter": {
-      "path": "./examples/basic-nextjs",
-      "nodeVersion": "22.11.0",
-      "jssDeploymentSecret": "no-token-required",
-      "enabled": false,
+      "path": "./examples/kit-nextjs-skate-park",
+      "nodeVersion": "22.22.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+      "enabled": true,
       "type": "sxa",
       "buildCommand": "build",
       "runCommand": "next:start"
     },
+    "angularstarter": {
+      "path": "./examples/basic-spa",
+      "nodeVersion": "22.22.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+      "enabled": false,
+      "type": "sxa",
+      "buildCommand": "install-build:angular",
+      "runCommand": "start:angular"
+    },
     "kit-nextjs-article-starter": {
       "path": "./examples/kit-nextjs-article-starter",
-      "nodeVersion": "22.11.0",
-      "jssDeploymentSecret": "no-token-required",
+      "nodeVersion": "22.22.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
       "enabled": true,
       "type": "sxa",
       "buildCommand": "build",
@@ -20,40 +29,57 @@
     },
     "kit-nextjs-location-starter": {
       "path": "./examples/kit-nextjs-location-finder",
-      "nodeVersion": "22.11.0",
-      "jssDeploymentSecret": "no-token-required",
-      "enabled": false,
+      "nodeVersion": "22.22.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+      "enabled": true,
       "type": "sxa",
       "buildCommand": "build",
       "runCommand": "next:start"
     },
     "kit-nextjs-product-starter": {
       "path": "./examples/kit-nextjs-product-listing",
-      "nodeVersion": "22.11.0",
-      "jssDeploymentSecret": "no-token-required",
-      "enabled": false,
+      "nodeVersion": "22.22.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+      "enabled": true,
       "type": "sxa",
       "buildCommand": "build",
       "runCommand": "next:start"
     },
-    "nextjsstarter-skate-park": {
-      "path": "./examples/kit-nextjs-skate-park",
-      "nodeVersion": "22.11.0",
-      "jssDeploymentSecret": "no-token-required",
-      "enabled": false,
+    "basic-nextjs": {
+      "path": "./examples/basic-nextjs",
+      "nodeVersion": "22.22.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+      "enabled": true,
       "type": "sxa",
       "buildCommand": "build",
       "runCommand": "next:start"
     },
-    "angularstarter": {
-      "path": "./examples/basic-spa/angular",
-      "nodeVersion": "22.11.0",
-      "jssDeploymentSecret": "no-token-required",
+    "basic-nextjs-pages-router": {
+      "path": "./examples/basic-nextjs-pages-router",
+      "nodeVersion": "22.22.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
       "enabled": false,
       "type": "sxa",
       "buildCommand": "build",
-      "runCommand": "start",
-      "proxyPath": "./examples/basic-spa/proxy"
+      "runCommand": "next:start"
     }
-  }
+  },
+  "postActions": {
+    "actions": {
+      "warmUpCm": {
+        "urls": [
+          "/sitecore/shell",
+          "/sitecore/shell/Applications/Content%20Editor.aspx?sc_bw=1",
+          "/sitecore/client/Applications/Launchpad"
+        ]
+      },
+      "populateSchema": {
+        "indexNames": []
+      },
+      "reindex": {
+        "indexNames": []
+      }
+    }
+  },
+  "authoringPath": "./authoring"
 }
