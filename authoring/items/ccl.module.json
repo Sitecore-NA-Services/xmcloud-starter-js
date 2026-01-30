@@ -6,6 +6,7 @@
             {
                 "name": "ccl.templates",
                 "path": "/sitecore/templates/Project/click-click-launch",
+                "scope": "itemAndDescendants",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
