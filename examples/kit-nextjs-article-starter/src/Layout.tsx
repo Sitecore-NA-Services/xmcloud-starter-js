@@ -1,7 +1,7 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { type JSX } from 'react';
+import React, { Suspense, type JSX } from 'react';
 import Head from 'next/head';
 import {
   Page,
@@ -12,6 +12,7 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'components/content-sdk/SitecoreStyles';
+import GuestDataCapture from 'components/content-sdk/GuestDataCapture';
 import { Figtree } from 'next/font/google';
 import componentMap from '.sitecore/component-map';
 import Providers from './Providers';
@@ -94,6 +95,10 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
         {ogImage && <meta property="og:image " content={ogImage} />}
       </Head>
       <Providers page={page}>
+        {/* Capture query string parameters for CDP personalization */}
+        <Suspense fallback={null}>
+          <GuestDataCapture />
+        </Suspense>
         {/* root placeholder for the app, which we add components to using route data */}
         <div className={`min-h-screen flex flex-col ${classNamesMain}`}>
           {mode.isDesignLibrary ? (
