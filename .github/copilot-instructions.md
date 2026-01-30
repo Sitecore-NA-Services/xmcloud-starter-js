@@ -256,6 +256,63 @@ it('shows empty fields in editing mode', () => {
 - Provides AI agents with direct access to Sitecore XM Cloud operations
 - Use for querying Sitecore content, pages, components, and site structure
 
+**Sitecore CLI for Content Serialization:**
+- CLI configuration is in `/authoring/sitecore.json`
+- Module files are in `/authoring/items/*.module.json`
+- Serialized items are stored in `/authoring/items/items/templates/items/`
+
+```powershell
+# Navigate to authoring folder first
+cd authoring
+
+# Initialize CLI (first time only)
+dotnet sitecore init
+
+# Install XM Cloud plugin (first time only)
+dotnet sitecore plugin add -n Sitecore.DevEx.Extensibility.XMCloud
+
+# Login to Sitecore Cloud
+dotnet sitecore cloud login
+
+# List projects
+dotnet sitecore cloud project list
+
+# List environments for ps-shared project
+dotnet sitecore cloud environment list --project-id Uhoyk4uSHBdm0Fn2Da2aY
+
+# Connect to ps-shared-dev environment with write access
+dotnet sitecore cloud environment connect --environment-id 35yxRJsnSIqo3WAkXGkKp5 --allow-write
+
+# Check serialization configuration
+dotnet sitecore ser info
+
+# Pull items from XM Cloud to local
+dotnet sitecore ser pull
+
+# Push items from local to XM Cloud
+dotnet sitecore ser push
+
+# Validate serialization (dry run)
+dotnet sitecore ser validate
+```
+
+**XM Cloud Environment IDs (ps-shared project):**
+- Project ID: `Uhoyk4uSHBdm0Fn2Da2aY`
+- ps-shared-dev (CM): `35yxRJsnSIqo3WAkXGkKp5` - `xmc-professionaad47-psshared23db-psshareddevad68.sitecorecloud.io`
+- ps-shared-qa (CM): `3naHuQOe0onKH2lE4N374z`
+- kit-nextjs-article-starter (EH): `5Ryb2qdWEc8OOohKAPhL5r`
+- kit-nextjs-location-starter (EH): `55Rm61ljRcR6fe2tVR59nY`
+- kit-nextjs-product-starter (EH): `wfSShGvbv6WWYpNclzjIe`
+- nextjsstarter (EH): `27j6H8GdZVTINQrBke25RE`
+
+**Serialization Module Configuration:**
+The `ccl.module.json` deploys all shared templates. Key properties:
+- `items.path`: Relative path from module to .yml files (e.g., `"items/templates/items"`)
+- `includes[].name`: Folder name where items are stored
+- `includes[].path`: Sitecore path to serialize
+- `includes[].scope`: `itemAndDescendants`, `singleItem`, `itemAndChildren`
+- `includes[].allowedPushOperations`: `CreateUpdateAndDelete`, `CreateAndUpdate`, `CreateOnly`
+
 ## Additional Context
 
 **Tailwind + Shadcn/ui:**
