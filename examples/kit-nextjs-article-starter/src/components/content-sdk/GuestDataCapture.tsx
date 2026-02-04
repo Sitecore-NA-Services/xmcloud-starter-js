@@ -39,6 +39,12 @@ const GuestDataCapture = (): JSX.Element => {
       return;
     }
 
+    // Skip in development mode (Events SDK not initialized)
+    if (process.env.NODE_ENV === 'development') {
+      console.debug('[GuestDataCapture] Skipped in development mode');
+      return;
+    }
+
     // Extract query parameters for personalization
     const zipcode = searchParams.get('zipcode');
     const webid = searchParams.get('webid');
@@ -65,28 +71,26 @@ const GuestDataCapture = (): JSX.Element => {
       extensionData['utmSource'] = utmSource;
     }
 
-    // Send the IDENTITY event with extension data
-    const sendGuestData = async () => {
-      try {
-        await identity({
-          channel: 'WEB',
-          identifiers: [
-            {
-              id: 'anonymous_session',
-              provider: 'SESSION',
-            },
-          ],
-          extensionData,
-        });
-
-        console.log('[GuestDataCapture] Sent guest extension data:', extensionData);
-      } catch (error) {
-        console.error('[GuestDataCapture] Failed to send guest data:', error);
-      }
-    };
-
     hasRun.current = true;
-    sendGuestData();
+
+    // Send IDENTITY event with extension data (similar pattern to pageView in CdpPageView)
+    identity({
+      channel: 'WEB',
+      currency: 'USD',
+      identifiers: [
+        {
+          id: 'anonymous_visitor',
+          provider: 'WEBSITE',
+        },
+      ],
+      extensionData,
+    })
+      .then(() => {
+        console.log('[GuestDataCapture] Sent guest extension data:', extensionData);
+      })
+      .catch((error) => {
+        console.debug('[GuestDataCapture] Failed to send guest data:', error);
+      });
   }, [searchParams]);
 
   return <></>;

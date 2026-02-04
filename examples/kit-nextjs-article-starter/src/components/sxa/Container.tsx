@@ -15,7 +15,7 @@ interface ContainerProps extends ComponentProps {
 const DefaultContainer = (props: ContainerProps): JSX.Element => {
   const containerStyles =
     props.params && props.params.Styles ? props.params.Styles : '';
-  const styles = `${props.params.GridParameters} ${containerStyles}`.trimEnd();
+  const styles = `${props.params?.GridParameters || ''} ${containerStyles}`.trimEnd();
   const phKey = `container-${props.params.DynamicPlaceholderId}`;
   const id = props.params.RenderingIdentifier;
   const mediaUrlPattern = new RegExp(/mediaurl=\"([^"]*)\"/, 'i');
