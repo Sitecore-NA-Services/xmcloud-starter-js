@@ -121,6 +121,8 @@ import * as BackgroundThumbnaildev from 'src/components/background-thumbnail/Bac
 import * as ArticleListing from 'src/components/article-listing/ArticleListing';
 import * as ArticleHeader from 'src/components/article-header/ArticleHeader';
 import * as articleheaderdictionary from 'src/components/article-header/article-header.dictionary';
+import * as ArticleFullprops from 'src/components/article-full/ArticleFull.props';
+import * as ArticleFull from 'src/components/article-full/ArticleFull';
 import * as AnimatedSectiondev from 'src/components/animated-section/AnimatedSection.dev';
 import * as AlertBannerdev from 'src/components/alert-banner/AlertBanner.dev';
 import * as AccordionBlockItemdev from 'src/components/accordion-block/AccordionBlockItem.dev';
@@ -247,6 +249,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ArticleListing', { ...ArticleListing, componentType: 'client' }],
   ['ArticleHeader', { ...ArticleHeader, componentType: 'client' }],
   ['article-header', { ...articleheaderdictionary }],
+  ['ArticleFull', { ...ArticleFullprops, ...ArticleFull, componentType: 'client' }],
   ['AnimatedSection', { ...AnimatedSectiondev }],
   ['AlertBanner', { ...AlertBannerdev }],
   ['AccordionBlockItem', { ...AccordionBlockItemdev }],

@@ -8,6 +8,13 @@ import { GqlField } from '@/types/gql.props';
  */
 export type GlobalHeaderProps = ComponentProps & PlaceholderProps & GlobalHeaderFields;
 
+export type NavigationItem = {
+  link: GqlField<LinkField>;
+  children?: {
+    results?: NavigationItem[];
+  };
+};
+
 export type GlobalHeaderFields = {
   fields: {
     data: {
@@ -16,11 +23,7 @@ export type GlobalHeaderFields = {
           jsonValue?: ImageField;
         };
         children: {
-          results?: [
-            {
-              link: GqlField<LinkField>;
-            },
-          ];
+          results?: NavigationItem[];
         };
         headerContact: GqlField<LinkField>;
       };

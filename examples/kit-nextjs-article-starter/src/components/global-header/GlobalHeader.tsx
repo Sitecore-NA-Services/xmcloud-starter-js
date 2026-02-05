@@ -11,10 +11,13 @@ import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
 } from '@/components/ui/navigation-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Default as Logo } from '@/components/logo/Logo.dev';
-import { GlobalHeaderProps } from './global-header.props';
+import { GlobalHeaderProps, NavigationItem } from './global-header.props';
 import { Button } from '@/components/ui/button';
 import { Url } from 'next/dist/shared/lib/router/router';
 
@@ -77,29 +80,64 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
               <NavigationMenuList>
                 {links &&
                   links.length > 0 &&
-                  links.map((item, i) => (
-                    <Fragment key={`desktop-nav-menu-list-item-${i}`}>
-                      {pageEditing ? (
-                        <Button variant="ghost" asChild className="font-body text-base font-medium">
-                          <SitecoreLink field={item.link?.jsonValue} />
-                        </Button>
-                      ) : (
-                        item.link?.jsonValue?.value?.href && (
+                  links.map((item, i) => {
+                    const hasChildren =
+                      item.children?.results && item.children.results.length > 0;
+
+                    return (
+                      <Fragment key={`desktop-nav-menu-list-item-${i}`}>
+                        {pageEditing ? (
+                          <Button
+                            variant="ghost"
+                            asChild
+                            className="font-body text-base font-medium"
+                          >
+                            <SitecoreLink field={item.link?.jsonValue} />
+                          </Button>
+                        ) : (
                           <NavigationMenuItem>
-                            <Button
-                              variant="ghost"
-                              asChild
-                              className="font-body text-base font-medium"
-                            >
-                              <Link href={item.link.jsonValue.value.href as string}>
-                                {item.link.jsonValue.value.text}
-                              </Link>
-                            </Button>
+                            {hasChildren ? (
+                              <>
+                                <NavigationMenuTrigger className="font-body text-base font-medium">
+                                  {item.link?.jsonValue?.value?.text}
+                                </NavigationMenuTrigger>
+                                <NavigationMenuContent>
+                                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+                                    {item.children!.results!.map((child, j) => (
+                                      <li key={`submenu-${i}-${j}`}>
+                                        <NavigationMenuLink asChild>
+                                          <Link
+                                            href={child.link?.jsonValue?.value?.href as string}
+                                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                          >
+                                            <div className="text-sm font-medium leading-none">
+                                              {child.link?.jsonValue?.value?.text}
+                                            </div>
+                                          </Link>
+                                        </NavigationMenuLink>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </NavigationMenuContent>
+                              </>
+                            ) : (
+                              item.link?.jsonValue?.value?.href && (
+                                <Button
+                                  variant="ghost"
+                                  asChild
+                                  className="font-body text-base font-medium"
+                                >
+                                  <Link href={item.link.jsonValue.value.href as string}>
+                                    {item.link.jsonValue.value.text}
+                                  </Link>
+                                </Button>
+                              )
+                            )}
                           </NavigationMenuItem>
-                        )
-                      )}
-                    </Fragment>
-                  ))}
+                        )}
+                      </Fragment>
+                    );
+                  })}
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -134,8 +172,36 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                 <nav className="mt-[70px] flex flex-col space-y-4">
                   {links &&
                     links.length > 0 &&
-                    links.map(
-                      (item) =>
+                    links.map((item, i) => {
+                      const hasChildren =
+                        item.children?.results && item.children.results.length > 0;
+
+                      if (hasChildren) {
+                        return (
+                          <div key={`mobile-nav-${i}`} className="flex flex-col space-y-2">
+                            <div className="font-body text-base font-medium px-4 py-2">
+                              {item.link?.jsonValue?.value?.text}
+                            </div>
+                            <div className="pl-4 flex flex-col space-y-1">
+                              {item.children!.results!.map((child, j) => (
+                                <Button
+                                  key={`mobile-submenu-${i}-${j}`}
+                                  variant="ghost"
+                                  asChild
+                                  onClick={() => setIsOpen(false)}
+                                  className="justify-start"
+                                >
+                                  <Link href={child.link?.jsonValue?.value?.href as string}>
+                                    {child.link?.jsonValue?.value?.text}
+                                  </Link>
+                                </Button>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      }
+
+                      return (
                         item.link?.jsonValue?.value?.href && (
                           <Button
                             key={`${item.link.jsonValue.value.text}-mobile`}
@@ -148,7 +214,8 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                             </Link>
                           </Button>
                         )
-                    )}
+                      );
+                    })}
                   {headerContact?.jsonValue?.value?.href && (
                     <Button
                       variant="outline"
