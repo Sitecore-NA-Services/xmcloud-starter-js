@@ -206,6 +206,44 @@ Deployment is controlled by `xmcloud.build.json`:
 - `runCommand` must be `"next:start"` for Next.js starters
 - Each editing host runs independently but shares the authoring environment
 
+### Vercel Deployment
+
+**Working Directory for Vercel CLI:**
+All Vercel CLI commands must be run from the individual starter directory, not the repository root:
+
+```bash
+# Navigate to the starter directory FIRST
+cd C:\Repo\xmcloud-starter-js\examples\kit-nextjs-article-starter
+
+# Then run Vercel commands
+vercel --prod          # Deploy to production
+vercel ls              # List deployments
+vercel logs <url>      # View logs for a deployment
+```
+
+**Common Vercel Commands:**
+```bash
+# Deploy to production
+vercel --prod
+
+# Deploy to preview
+vercel
+
+# List recent deployments
+vercel ls
+
+# View logs (requires deployment URL)
+vercel logs https://article-starter-xyz.vercel.app
+
+# View logs in JSON format for filtering
+vercel logs <deployment-url> --format=json
+
+# View environment variables
+vercel env ls
+```
+
+**Important:** Running Vercel commands from the wrong directory will fail. Always `cd` to the specific starter directory first.
+
 ## Development Constraints
 
 **Multi-Starter Independence:**

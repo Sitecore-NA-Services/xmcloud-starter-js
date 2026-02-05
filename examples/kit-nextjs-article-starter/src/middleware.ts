@@ -6,6 +6,7 @@ import {
   RedirectsMiddleware,
   LocaleMiddleware,
 } from '@sitecore-content-sdk/nextjs/middleware';
+import type { ExperienceParams } from '@sitecore-content-sdk/nextjs/types/middleware/personalize-middleware';
 import sites from '.sitecore/sites.json';
 import scConfig from 'sitecore.config';
 import { routing } from './i18n/routing';
@@ -53,7 +54,29 @@ const redirects = new RedirectsMiddleware({
   skip: () => false,
 });
 
-const personalize = new PersonalizeMiddleware({
+type ExtendedExperienceParams = ExperienceParams & { sampleParam?: string };
+
+// Extend middleware so sampleParam is emitted as a top-level request param
+class SampleParamPersonalizeMiddleware extends PersonalizeMiddleware {
+  protected getExperienceParams(req: NextRequest): ExperienceParams {
+    console.log('[Personalize Middleware] Getting experience params for:', req.nextUrl.pathname);
+    const params = super.getExperienceParams(req) as ExtendedExperienceParams;
+
+    const sampleValue =
+      req.nextUrl.searchParams.get('sampleParam') ||
+      undefined;
+
+    if (sampleValue) {
+      params.sampleParam = sampleValue;
+      console.log('[Personalize Middleware] sampleParam captured:', sampleValue);
+    }
+
+    console.log('[Personalize Middleware] Experience params:', JSON.stringify(params, null, 2));
+    return params;
+  }
+}
+
+const personalize = new SampleParamPersonalizeMiddleware({
   /**
    * List of sites for site resolver to work with
    */
@@ -68,6 +91,7 @@ const personalize = new PersonalizeMiddleware({
 });
 
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
+  console.log('[Middleware] Processing request:', req.nextUrl.pathname);
   return defineMiddleware(locale, multisite, redirects, personalize).exec(req, ev);
 }
 
