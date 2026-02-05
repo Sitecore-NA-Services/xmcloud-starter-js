@@ -3,10 +3,8 @@
 import type React from 'react';
 import {
   Text,
-  RichText as ContentSdkRichText,
   useSitecore,
   Field,
-  RichTextField,
 } from '@sitecore-content-sdk/nextjs';
 import { ArticleFullProps } from './ArticleFull.props';
 import { cn } from '@/lib/utils';
@@ -20,7 +18,7 @@ interface RouteFields {
       personLastName?: Field<string>;
     };
   };
-  Content?: RichTextField;
+  pageSummary?: Field<string>;
 }
 
 export const Default: React.FC<ArticleFullProps> = (props) => {
@@ -32,7 +30,7 @@ export const Default: React.FC<ArticleFullProps> = (props) => {
   const contextFields = page?.layout?.sitecore?.route?.fields as RouteFields;
   const pageTitle = contextFields?.pageHeaderTitle;
   const pageAuthor = contextFields?.pageAuthor;
-  const pageContent = contextFields?.Content;
+  const pageSummary = contextFields?.pageSummary;
 
   // Build author display name from person reference
   const authorFirstName = pageAuthor?.fields?.personFirstName?.value || '';
@@ -40,7 +38,7 @@ export const Default: React.FC<ArticleFullProps> = (props) => {
   const authorName = [authorFirstName, authorLastName].filter(Boolean).join(' ');
 
   // Only show fallback if no fields are available at all
-  if (!pageTitle && !pageAuthor && !pageContent && !page.mode.isEditing) {
+  if (!pageTitle && !pageAuthor && !pageSummary && !page.mode.isEditing) {
     return <NoDataFallback componentName="Article Full" />;
   }
 
@@ -64,10 +62,10 @@ export const Default: React.FC<ArticleFullProps> = (props) => {
         <p className="text-lg text-gray-600 mb-6">By {authorName || '[Author]'}</p>
       )}
 
-      {/* Article Content */}
-      {(pageContent?.value || page.mode.isEditing) && (
+      {/* Article Summary */}
+      {(pageSummary?.value || page.mode.isEditing) && (
         <div className="prose max-w-none">
-          <ContentSdkRichText field={pageContent} />
+          <Text field={pageSummary} />
         </div>
       )}
     </div>
