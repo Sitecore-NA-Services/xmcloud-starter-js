@@ -3,22 +3,19 @@
 import type React from 'react';
 import {
   Text,
+  RichText as ContentSdkRichText,
   useSitecore,
   Field,
+  RichTextField,
 } from '@sitecore-content-sdk/nextjs';
 import { ArticleFullProps } from './ArticleFull.props';
 import { cn } from '@/lib/utils';
 import { NoDataFallback } from '@/utils/NoDataFallback';
 
 interface RouteFields {
-  pageHeaderTitle?: Field<string>;
-  pageAuthor?: {
-    fields?: {
-      personFirstName?: Field<string>;
-      personLastName?: Field<string>;
-    };
-  };
-  pageSummary?: Field<string>;
+  ArticleTitle?: Field<string>;
+  ArticleAuthor?: Field<string>;
+  ArticleContent?: RichTextField;
 }
 
 export const Default: React.FC<ArticleFullProps> = (props) => {
@@ -28,17 +25,12 @@ export const Default: React.FC<ArticleFullProps> = (props) => {
 
   // Get fields from the current page/route context
   const contextFields = page?.layout?.sitecore?.route?.fields as RouteFields;
-  const pageTitle = contextFields?.pageHeaderTitle;
-  const pageAuthor = contextFields?.pageAuthor;
-  const pageSummary = contextFields?.pageSummary;
-
-  // Build author display name from person reference
-  const authorFirstName = pageAuthor?.fields?.personFirstName?.value || '';
-  const authorLastName = pageAuthor?.fields?.personLastName?.value || '';
-  const authorName = [authorFirstName, authorLastName].filter(Boolean).join(' ');
+  const articleTitle = contextFields?.ArticleTitle;
+  const articleAuthor = contextFields?.ArticleAuthor;
+  const articleContent = contextFields?.ArticleContent;
 
   // Only show fallback if no fields are available at all
-  if (!pageTitle && !pageAuthor && !pageSummary && !page.mode.isEditing) {
+  if (!articleTitle && !articleAuthor && !articleContent && !page.mode.isEditing) {
     return <NoDataFallback componentName="Article Full" />;
   }
 
@@ -51,21 +43,23 @@ export const Default: React.FC<ArticleFullProps> = (props) => {
       data-component-name="article-full"
     >
       {/* Article Title */}
-      {(pageTitle?.value || page.mode.isEditing) && (
+      {(articleTitle?.value || page.mode.isEditing) && (
         <h1 className="text-4xl font-bold mb-4">
-          <Text field={pageTitle} />
+          <Text field={articleTitle} />
         </h1>
       )}
 
       {/* Article Author */}
-      {(authorName || page.mode.isEditing) && (
-        <p className="text-lg text-gray-600 mb-6">By {authorName || '[Author]'}</p>
+      {(articleAuthor?.value || page.mode.isEditing) && (
+        <p className="text-lg text-gray-600 mb-6">
+          By <Text field={articleAuthor} />
+        </p>
       )}
 
-      {/* Article Summary */}
-      {(pageSummary?.value || page.mode.isEditing) && (
+      {/* Article Content */}
+      {(articleContent?.value || page.mode.isEditing) && (
         <div className="prose max-w-none">
-          <Text field={pageSummary} />
+          <ContentSdkRichText field={articleContent} />
         </div>
       )}
     </div>
