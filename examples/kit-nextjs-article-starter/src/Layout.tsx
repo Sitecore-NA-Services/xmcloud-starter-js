@@ -13,6 +13,7 @@ import {
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'components/content-sdk/SitecoreStyles';
 import GuestDataCapture from 'components/content-sdk/GuestDataCapture';
+import DictionaryTest from 'components/content-sdk/DictionaryTest';
 import { Figtree } from 'next/font/google';
 import componentMap from '.sitecore/component-map';
 import Providers from './Providers';
@@ -99,6 +100,8 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
         <Suspense fallback={null}>
           <GuestDataCapture />
         </Suspense>
+        {/* Temporary: test dictionary entry from Sitecore */}
+        <DictionaryTest />
         {/* root placeholder for the app, which we add components to using route data */}
         <div className={`min-h-screen flex flex-col ${classNamesMain}`}>
           {mode.isDesignLibrary ? (
