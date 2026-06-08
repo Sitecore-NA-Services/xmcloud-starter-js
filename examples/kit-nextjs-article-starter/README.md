@@ -51,3 +51,13 @@ Additional Info: You do not have to create rendering host items in XM Cloud as t
 
 
 [Documentation](https://doc.sitecore.com/xmc/en/developers/content-sdk/sitecore-content-sdk-for-xm-cloud.html)
+
+## Sitecore Search Integration
+
+This starter includes a Sitecore Search API proxy and a header search box for article lookup.
+
+- API route: `src/app/api/search/articles/route.ts`
+- UI component: `src/components/sitecore-search/ArticleSearchBox.tsx`
+- Setup guide: `SITECORE_SEARCH_SETUP.md`
+
+To enable it, populate the `SITECORE_SEARCH_*` environment variables in `.env.local`.

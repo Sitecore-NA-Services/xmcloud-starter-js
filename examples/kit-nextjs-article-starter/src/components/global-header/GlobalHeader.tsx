@@ -17,9 +17,10 @@ import {
 } from '@/components/ui/navigation-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Default as Logo } from '@/components/logo/Logo.dev';
-import { GlobalHeaderProps, NavigationItem } from './global-header.props';
+import { GlobalHeaderProps } from './global-header.props';
 import { Button } from '@/components/ui/button';
 import { Url } from 'next/dist/shared/lib/router/router';
+import { ArticleSearchBox } from '@/components/sitecore-search/ArticleSearchBox';
 
 export const Default: React.FC<GlobalHeaderProps> = (props) => {
   const { fields, page } = props ?? {};
@@ -142,6 +143,9 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
             </NavigationMenu>
           </div>
           {/* Desktop CTA */}
+          <div className="@xl:flex hidden justify-end pr-4">
+            <ArticleSearchBox />
+          </div>
           {pageEditing ? (
             <div className="@lg:flex @lg:items-center @lg:justify-end hidden">
               <Button variant="outline" asChild className="font-heading text-medium rounded-full">
@@ -170,6 +174,9 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
               </SheetTrigger>
               <SheetContent side="right" className="[&>button_svg]:size-8">
                 <nav className="mt-[70px] flex flex-col space-y-4">
+                  <div className="px-2">
+                    <ArticleSearchBox />
+                  </div>
                   {links &&
                     links.length > 0 &&
                     links.map((item, i) => {
