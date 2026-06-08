@@ -77,6 +77,12 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
+                "name": "ccl.solterra.topicListings",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Data/Topic Listings",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
                 "name": "ccl.solterra2.presentation",
                 "path": "/sitecore/content/nextjs-article_starter/solterra2/Presentation",
                 "scope": "itemAndDescendants",
@@ -85,6 +91,12 @@
             {
                 "name": "ccl.solterra2.articles",
                 "path": "/sitecore/content/nextjs-article_starter/solterra2/Home/Articles",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ccl.solterra2.topicListings",
+                "path": "/sitecore/content/nextjs-article_starter/solterra2/Data/Topic Listings",
                 "scope": "itemAndDescendants",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             }
