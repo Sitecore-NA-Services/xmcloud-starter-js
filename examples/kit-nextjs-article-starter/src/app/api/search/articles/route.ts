@@ -124,42 +124,42 @@ function normalizeItems(raw: unknown, entity: string): SearchResultItem[] {
     if (source.length > 0) break;
   }
 
-  const mapped: Array<SearchResultItem | null> = source
-    .map((item, index) => {
-      const title = pickFirstString(item, ['title', 'name', 'pageTitle', 'ArticleTitle']);
-      const url = pickFirstString(item, ['url', 'link', 'path']);
-      const excerpt = pickFirstString(item, [
-        'excerpt',
-        'description',
-        'summary',
-        'pageSummary',
-        'ogDescription',
-      ]);
-      const image = pickFirstString(item, ['image', 'thumbnail', 'pageThumbnail']);
-      const author = pickFirstString(item, ['author', 'authorName', 'taxAuthor', 'personName']);
-      const contentType = pickFirstString(item, [
-        'contentType',
-        'articleType',
-        'taxContentType',
-        'type',
-      ]);
-      const topics = pickFirstStringArray(item, ['topics', 'topic', 'tags', 'taxTopic']);
-      const id = pickFirstString(item, ['id', 'item_id', 'entity_id']) || `result-${index}`;
+  const mapped: SearchResultItem[] = [];
 
-      if (!title || !url) return null;
+  source.forEach((item, index) => {
+    const title = pickFirstString(item, ['title', 'name', 'pageTitle', 'ArticleTitle']);
+    const url = pickFirstString(item, ['url', 'link', 'path']);
+    const excerpt = pickFirstString(item, [
+      'excerpt',
+      'description',
+      'summary',
+      'pageSummary',
+      'ogDescription',
+    ]);
+    const image = pickFirstString(item, ['image', 'thumbnail', 'pageThumbnail']);
+    const author = pickFirstString(item, ['author', 'authorName', 'taxAuthor', 'personName']);
+    const contentType = pickFirstString(item, [
+      'contentType',
+      'articleType',
+      'taxContentType',
+      'type',
+    ]);
+    const topics = pickFirstStringArray(item, ['topics', 'topic', 'tags', 'taxTopic']);
+    const id = pickFirstString(item, ['id', 'item_id', 'entity_id']) || `result-${index}`;
 
-      return {
-        id,
-        title,
-        url,
-        excerpt: excerpt || undefined,
-        image: image || undefined,
-        author: author || undefined,
-        contentType: contentType || undefined,
-        topics: topics.length > 0 ? topics : undefined,
-      };
-    })
-    .filter((item): item is SearchResultItem => item !== null);
+    if (!title || !url) return;
+
+    mapped.push({
+      id,
+      title,
+      url,
+      excerpt: excerpt || undefined,
+      image: image || undefined,
+      author: author || undefined,
+      contentType: contentType || undefined,
+      topics: topics.length > 0 ? topics : undefined,
+    });
+  });
 
   return mapped;
 }
