@@ -83,6 +83,12 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
+                "name": "ccl.solterra.taxonomy",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Data/Taxonomy",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
                 "name": "ccl.solterra2.presentation",
                 "path": "/sitecore/content/nextjs-article_starter/solterra2/Presentation",
                 "scope": "itemAndDescendants",
@@ -97,6 +103,12 @@
             {
                 "name": "ccl.solterra2.topicListings",
                 "path": "/sitecore/content/nextjs-article_starter/solterra2/Data/Topic Listings",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ccl.solterra2.taxonomy",
+                "path": "/sitecore/content/nextjs-article_starter/solterra2/Data/Taxonomy",
                 "scope": "itemAndDescendants",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             }

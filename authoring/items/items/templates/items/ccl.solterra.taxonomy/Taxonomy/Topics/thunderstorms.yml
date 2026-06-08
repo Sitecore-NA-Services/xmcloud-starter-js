@@ -1,0 +1,16 @@
+---
+ID: "8f5ffa64-4d41-4856-8ee8-2abd9cf860f9"
+Parent: "772ba26b-e9b5-4c55-8df6-3730464a3b9e"
+Template: "b26a9c54-47e8-4db1-9222-8d93f026d610"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Data/Taxonomy/Topics/thunderstorms"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T172836Z
+    - ID: "42dd2c70-c3fc-4fb1-a90e-b3f51fa2b82f"
+      Hint: titleRequired
+      Value: thunderstorms

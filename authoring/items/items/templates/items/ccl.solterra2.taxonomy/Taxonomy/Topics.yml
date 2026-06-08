@@ -1,0 +1,13 @@
+---
+ID: "df70b159-fde1-4296-ad66-256f8cd08409"
+Parent: "1bbb1270-3b7d-4012-ae81-ecec6ab64218"
+Template: "2b5c5e0d-9472-42b3-a14a-3e1cf6504acf"
+Path: "/sitecore/content/nextjs-article_starter/solterra2/Data/Taxonomy/Topics"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T172836Z
