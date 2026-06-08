@@ -1,0 +1,42 @@
+﻿---
+ID: "37b660a2-84c6-4b06-8193-639c545df202"
+Parent: "0aa83316-cd9a-4ba8-8d7d-2ec66413cb05"
+Template: "a69bf910-1787-4da3-90a4-1f3277f18ce2"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Presentation/Page Designs"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7b8515D60B-6E85-4922-AF30-4639A55950BF%7d%3d%257B229AA6CF-5BE3-4BB0-85B3-62725FD09016%257D%26%7bA5CF18A6-F142-4415-AA43-2411590C8B8D%7d%3d%257B229AA6CF-5BE3-4BB0-85B3-62725FD09016%257D%26%7b0BFA1991-CB14-42FB-BEEF-5700F0C79394%7d%3d%257BCEEAF66D-193F-4832-9B8D-F4E109735304%257D%26%7b3BFE9AC6-47A2-4CCC-A2B0-7F5F623CC388%7d%3d%257B229AA6CF-5BE3-4BB0-85B3-62725FD09016%257D%26%7bF2D4DB83-3E54-4B3D-8577-F0772AE289F0%7d%3d%257B229AA6CF-5BE3-4BB0-85B3-62725FD09016%257D%26%7b439A00B9-E5C6-4752-BBE3-4B284866E0F1%7d%3d%257B229AA6CF-5BE3-4BB0-85B3-62725FD09016%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "69a9786d-6d7f-4fb0-a4f9-83fbb4d1fe9e"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250827T180413Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6fe0d234-e605-4a5a-bba5-2860189d78ca"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251024T161200Z

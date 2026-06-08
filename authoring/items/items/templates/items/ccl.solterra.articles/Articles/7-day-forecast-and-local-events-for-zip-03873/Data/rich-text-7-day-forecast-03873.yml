@@ -1,0 +1,37 @@
+﻿---
+ID: "5b15cfa1-50f6-4149-a7bd-80813a6ba4ad"
+Parent: "38999e20-bca2-4d5b-9630-951f38a21a2b"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/7-day-forecast-and-local-events-for-zip-03873/Data/rich-text-7-day-forecast-03873"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "7e894b53-8068-4efb-ad8e-248a57527dad"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260310T205142Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        # 7-Day Forecast and Local Events for ZIP 03873\n\nQuick summary\n\n- Expect a mix of sun, clouds, and periodic precipitation this week. Daytime highs generally in the low-to-mid 40s°F with nights near freezing.\n- Periods of rain or mixed rain/snow are possible, especially midweek. Gusty northwest winds at times will make it feel cooler.\n\nTonight (Tonight–Overnight)\n\n- Skies: Mostly clear to partly cloudy.\n- Temperatures: Lows near 28°F.\n- Precipitation: Dry overnight; light patchy frost possible in sheltered spots.\n- Wind: Northwest 8–15 mph, lighter after midnight.\n\nToday & Next 48 hours (Day 1–2)\n\n- Tuesday (Day 1): Developing clouds through the morning. Afternoon scattered rain or rain/snow showers possible. Highs around 42–46°F. Winds from the northwest 10–20 mph, with stronger gusts near exposed locations.\n- Tuesday night: Temperatures drop to near 30°F. Expect mixed precipitation to taper off to scattered snow/rain showers before ending.\n\nMidweek (Day 3–4)\n\n- Wednesday: Cooler day with a chance of lingering snow showers, especially northern and higher-elevation spots. Highs in the upper 30s to low 40s°F.\n- Thursday: A drier, cooler day. Skies mix of sun and clouds. Highs near 40°F.\n\nLate week into the weekend (Day 5–7)\n\n- Friday: Warming trend begins; milder air returns with highs in the mid-to-upper 40s°F. A chance of light rain late in the day.\n- Saturday–Sunday: Unsettled weekend with periodic showers possible and temperatures ranging from the mid-40s to around 50°F. Expect variable wind — lighter inland, breezier near open areas.\n\nWinds & Hazards\n\n- Wind: Northwest breezes 10–20 mph are likely on several days, with gusts to around 30 mph in exposed areas. These winds will make temperatures feel cooler than the thermometer suggests.\n- Travel: Periods of precipitation that mix with snow overnight and early Wednesday could briefly create slick spots. Allow extra travel time during precipitation events.\n\nPractical tips for residents\n\n- Dress in layers and be prepared for quick changes from rain to wet snow in colder pockets.\n- Keep a compact umbrella and a water-resistant outer layer handy for daytime showers.\n- Check roads early in the morning after overnight temperatures near freezing — minor slick spots may persist.\n- Secure lightweight outdoor items on gusty days.\n\nLocal events (this week/weekend)\n\n- Community Winter Market — Saturday, 9:00 AM–1:00 PM at Main Street Park. Local vendors, hot beverages, and family-friendly activities.\n- Family Snowshoe Hike — Sunday, 10:00 AM at Pine Ridge Trails. Meet at the trailhead; brought by the local outdoor club. Expect chilly conditions; wear waterproof footwear.\n- Regional High School Basketball — Friday, 7:00 PM at the High School Gym. Indoor family event and a good option if weather turns wet.\n\nBottom line\n\nZIP 03873 will see variable March weather this week: mostly cool days with periodic rain or mixed precipitation midweek, a brief cool-down, then a warming trend toward the weekend with intermittent showers. Prepare for gusty northwest winds at times and bring layers for outdoor plans.\n
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bb1b8347-39c5-4abf-a2c3-997cac217d5e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260310T205144Z

@@ -1,0 +1,44 @@
+﻿---
+ID: "22d1b037-53ca-47d7-832c-efde822e9990"
+Parent: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/templates/Project/nextjs-article_starter/Article Page/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {0BFA1991-CB14-42FB-BEEF-5700F0C79394}
+    {FAA33152-04B1-4C0F-9505-707BD126A6CC}
+    {3BFE9AC6-47A2-4CCC-A2B0-7F5F623CC388}
+    {F2D4DB83-3E54-4B3D-8577-F0772AE289F0}
+    {439A00B9-E5C6-4752-BBE3-4B284866E0F1}
+    {F6D35D3F-0339-492B-B392-E209018ACCAF}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "d8149b56-2d35-43dc-a196-5744855fcada"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250827T180705Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "02eed411-00c1-423f-b47f-d4d2d2b1fd43"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250827T180708Z

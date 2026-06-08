@@ -1,0 +1,85 @@
+﻿---
+ID: "102da6bd-52b4-4c90-952e-9c5c3400d8dc"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/the-platinum-falcon-and-the-sapphire-quill"
+SharedFields:
+- ID: "508c54c0-cd02-4266-8b68-d71f88de1aa9"
+  Hint: ChangeFrequency
+  Value: Monthly
+- ID: "76fb6ffd-4487-4028-a1cf-705fbe360cba"
+  Hint: Priority
+  Value: 0.5
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{B4F49B23-4BBA-4C79-BA22-F89F5F0D4E4F}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{1B048F6B-3AE9-4434-B911-1BC6FE71DF8A}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "65b9ee10-3f70-4ca6-a1f1-41ff55803534"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "9aa225f4-a3bc-44ae-9129-16c934f73610"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: The Platinum Falcon and the Sapphire Quill
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: |
+        Space pirate Han Duo and his murrik co-conspirator Fluffy take a “quiet” job: steal the Sapphire Quill from the Kaviri vaults in Kerez-Sha, a floating city that trades in history and law.
+        
+        After Fluffy distracts the memory-winds guarding the Vault of Looms, Han secures the Quill—triggering alarms and a pursuit led by Marshal Vree. The Platinum Falcon escapes through a comet-sluice using song, tricks, and misdirection.
+        
+        In the Outer Rings, Old Maru hollows the Quill and releases a stolen apprentice’s memory. Han refuses coin but accepts a story, then sets course for more work—small, messy justice among the stars.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260312T173809Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: Platinum Falcon
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "4dd4e18f-b1a3-4225-967f-b4ec9f68928c"
+      Hint: ogDescription
+      Value: "Han Duo and Fluffy steal the Sapphire Quill from Kerez-Sha—and race Marshal Vree through the sky-lanes to turn theft into justice."
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: "Han Duo and Fluffy steal a relic from the floating city of Kerez-Sha—and outrun Marshal Vree."
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: The Platinum Falcon and the Sapphire Quill
+    - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
+      Hint: metadataTitle
+      Value: The Platinum Falcon and the Sapphire Quill
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "169ab917-41ed-4eeb-b01c-9e150054f99c"
+    - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
+      Hint: metadataDescription
+      Value: "Read a science-fiction tale of Han Duo and Fluffy aboard the Platinum Falcon as they steal the Sapphire Quill from Kerez-Sha, evade Marshal Vree’s corsairs, and turn a dangerous relic into an act of justice."
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: The Platinum Falcon and the Sapphire Quill
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260312T173810Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: The Platinum Falcon and the Sapphire Quill
+    - ID: "f6fcc0b6-31b2-49cd-8a66-4ba282a8ad24"
+      Hint: metadataKeywords
+      Value: "Platinum Falcon, Sapphire Quill, Han Duo, Fluffy, Kerez-Sha, Kaviri, space pirate, sci-fi short story"

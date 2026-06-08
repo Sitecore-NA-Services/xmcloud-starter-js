@@ -1,0 +1,87 @@
+﻿---
+ID: "27fa7d24-cd5c-48a5-9489-e7abd385dc2e"
+Parent: "990962ac-ca5e-49c8-9d13-5741a83420d3"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/tampa-fl-weather-update-mar-9-12-2026-warm-sunshine-then-stormier-thursday/Data/tampa-weather-update-mar-9-12-2026-body"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "66ddfcdf-903d-461d-99b0-4298ade4929e"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260309T193739Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <p><strong>Summary:</strong> Tampa stays hot and sunny Tuesday and Wednesday (highs near 88–89°F), then turns wetter Thursday with a 60% chance of showers and possible thunderstorms after 2 PM, plus gusts up to 18 mph.</p>
+        
+        <h2>Current Conditions (Tampa, FL)</h2>
+        <ul>
+          <li><strong>As of:</strong> 2:53 PM EDT, Mar 9, 2026</li>
+          <li><strong>Sky:</strong> A few clouds</li>
+          <li><strong>Temperature:</strong> 81°F (<strong>Heat Index:</strong> 84°F)</li>
+          <li><strong>Humidity:</strong> 69%</li>
+          <li><strong>Wind:</strong> SW 6 mph</li>
+          <li><strong>Visibility:</strong> 10 miles</li>
+        </ul>
+        
+        <h2>3-Day Forecast</h2>
+        
+        <h3>Tuesday, Mar 10, 2026</h3>
+        <ul>
+          <li><strong>Forecast:</strong> Sunny</li>
+          <li><strong>High / Low:</strong> 89°F / 67°F</li>
+          <li><strong>Rain:</strong> Not indicated</li>
+          <li><strong>Wind:</strong> Light; becoming S/SE around 5 mph during the afternoon</li>
+        </ul>
+        
+        <h3>Wednesday, Mar 11, 2026</h3>
+        <ul>
+          <li><strong>Forecast:</strong> Sunny (night: partly cloudy)</li>
+          <li><strong>High / Low:</strong> 88°F / 68°F</li>
+          <li><strong>Rain:</strong> Not indicated</li>
+          <li><strong>Wind:</strong> SE 5–8 mph</li>
+        </ul>
+        
+        <h3>Thursday, Mar 12, 2026</h3>
+        <ul>
+          <li><strong>Forecast:</strong> Showers likely, with a possible thunderstorm after 2 PM (night: showers and thunderstorms likely early)</li>
+          <li><strong>High / Low:</strong> 83°F / 64°F</li>
+          <li><strong>Rain chance:</strong> 60%</li>
+          <li><strong>Wind:</strong> S 5–11 mph with gusts up to 18 mph (night: NE 5–7 mph)</li>
+        </ul>
+        
+        <h2>Event Weather Notes (Mar 11–12)</h2>
+        <ul>
+          <li><strong>Wed evening (Mar 11): Lightning vs. Red Wings</strong> &mdash; Indoor event, but expect warm conditions for getting to/from the arena; light winds and no rain indicated.</li>
+          <li><strong>Wed morning (Mar 11, 8:30–10:00 AM): “Coffee Connection”</strong> &mdash; Sunny and warm; favorable commute and comfortable conditions for any brief outdoor time.</li>
+          <li><strong>Thu evening (Mar 12, 5:30–8:00 PM): “TogetHER 2026” (Hyde Park area)</strong> &mdash; Highest weather risk in this period: showers likely and possible thunderstorms after mid-afternoon. Plan rain gear, allow extra travel time, and watch for slick roads and brief downpours.</li>
+        </ul>
+        
+        <h2>Quick Planning Tips</h2>
+        <ul>
+          <li><strong>Heat:</strong> Tuesday and Wednesday will run hot for early March (upper 80s). Dress for warmth, stay hydrated, and expect warmer cars/parking lots in the afternoon.</li>
+          <li><strong>Thursday storms:</strong> If you’ll be outdoors Thursday afternoon/evening, build in flexibility for lightning delays and heavier bursts of rain.</li>
+          <li><strong>Wind:</strong> Gusts up to 18 mph Thursday may make umbrellas less effective during downpours; a light rain jacket can be easier to manage.</li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53cb4020-6a98-4f0e-9713-093db4598964"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260309T193740Z

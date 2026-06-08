@@ -1,0 +1,50 @@
+﻿---
+ID: "b52987b7-1ec5-4ef8-88c8-a7c26cf35002"
+Parent: "f2211d47-2568-4232-bc4c-0c718348346e"
+Template: "efd96479-7bf2-4be1-a08a-b01e59f92cdc"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Presentation/Partial Designs/Global/Header/Data/Global Header"
+BranchID: "ed920ceb-2272-432a-829e-4610b6b94945"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{615185A5-8A93-4119-9E26-A8494A6A2135}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250827T180612Z
+    - ID: "4da75bcf-390e-46fa-ad87-926ec4db0876"
+      Hint: headerLogo
+      Value: |
+        <image mediaid="{E732C884-8655-4A03-B8B0-F7EBA817E231}" alt="Logo" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e3aeded3-f63c-4d48-b010-84fcb51c7b68"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250827T180717Z
+    - ID: "e3289100-a242-4fc7-814f-0ffef0ffe8bd"
+      Hint: headerContact
+      Value: |
+        <link class="" querystring="" id="{2187E003-8E2A-4AF2-97FF-811A1105199E}" anchor="" target="" title="" linktype="internal" text="Get In Touch" url="" />
+    - ID: "f073d52d-022c-4560-90c2-71fc674cf8bf"
+      Hint: primaryNavigationLinks
+      Value: |
+        {5E2EE404-D626-4173-9E3C-F3792442EDB0}
+        {2D319278-C4C4-4808-ABE9-CC48633D28E3}
+        {9365B042-0D8A-47B8-96E3-AAF0801AF2EB}

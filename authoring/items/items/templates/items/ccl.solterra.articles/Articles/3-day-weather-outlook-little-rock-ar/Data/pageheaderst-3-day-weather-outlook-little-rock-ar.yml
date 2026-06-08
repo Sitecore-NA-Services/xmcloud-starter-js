@@ -1,0 +1,47 @@
+﻿---
+ID: "c711a071-af32-481d-bdee-6ea34abb1274"
+Parent: "d53729d5-f334-454d-8f18-a532e8553fab"
+Template: "c2dc5c8b-6b22-4bb3-bdc5-01bfc65e3c53"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/3-day-weather-outlook-little-rock-ar/Data/pageheaderst-3-day-weather-outlook-little-rock-ar"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "48be1989-0cf7-4a21-9d33-123f7d564eff"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260309T181426Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5d401e5c-69f7-474c-bc48-e06bc605cc3e"
+      Hint: Title
+      Value: "3-Day Weather Outlook — Little Rock, AR"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b96ccc2a-6412-4820-b11f-e29eab4dedbb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260309T181428Z
+    - ID: "eb9851b1-2695-4f12-996f-c27bb30e564a"
+      Hint: Body
+      Value: "<p>No external research was provided. This 3-day outlook is AI-generated using recent climatology for early March in central Arkansas and general synoptic expectations. Expect mild spring-like temperatures with mostly cloudy skies, a few rounds of light rain or sprinkles (highest chance on Tuesday), and breezy periods. Details below note where assumptions were made.</p><p><strong>Location:</strong> Little Rock, Arkansas (requested location)</p>"

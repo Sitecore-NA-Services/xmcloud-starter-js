@@ -1,0 +1,53 @@
+﻿---
+ID: "0036a8f6-ef1a-499c-b0e4-ca0245fc4813"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/test demo"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{B4F49B23-4BBA-4C79-BA22-F89F5F0D4E4F}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{6F4A8218-0E53-4CB0-9E0D-EBF7691F334D}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "9adba760-4c18-4c41-b0ed-4716c74fd14a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260601T163628Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: |
+        <div class="ck-content"><p>here is where I build my full article</p><p>&nbsp;</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4df08382-eba9-4769-9676-1ef15742cf41"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Kevin Buckley
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260601T163706Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: test demo
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: This is my title for the Article

@@ -1,0 +1,221 @@
+﻿---
+ID: "4c8cda9f-9550-457b-9e96-a00f7811dd16"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/microsoft-paint"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{B4F49B23-4BBA-4C79-BA22-F89F5F0D4E4F}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{FC637324-AE4B-47F4-831B-D031F9AC88E0}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "65bbf8ca-4d39-4f0d-8078-39f073808ce6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260417T190918Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: "Microsoft Paint (formerly Paintbrush, then Paint) is a simple raster graphics editor that has been included with all versions of Microsoft Windows. The program opens and saves files in Windows bitmap (BMP), JPEG, GIF, PNG, and single-page TIFF formats. The program can be in color mode or two-color black-and-white, but there is no grayscale mode. For its simplicity and wide availability, it quickly became one of the most used applications in the early versions of Windows, introducing many to basic computer drawing. In recent years, it has been updated with modern features like layers and Cocreator, continuing its legacy in the digital age."
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3874094e-85b3-46e0-95a7-09c4811ab702"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Microsoft Enthusiast
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260417T190934Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: "microsoft-paint"
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: "The Evolution of Microsoft Paint: A Digital Legacy"
+  - Version: 2
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T182821Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: "Microsoft Paint (formerly Paintbrush, then Paint) is a simple raster graphics editor that has been included with all versions of Microsoft Windows. The program opens and saves files in Windows bitmap (BMP), JPEG, GIF, PNG, and single-page TIFF formats. The program can be in color mode or two-color black-and-white, but there is no grayscale mode. For its simplicity and wide availability, it quickly became one of the most used applications in the early versions of Windows, introducing many to basic computer drawing. In recent years, it has been updated with modern features like layers and Cocreator, continuing its legacy in the digital age."
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "10fd470f-edc3-4636-9959-24cb77063e48"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Microsoft Enthusiast
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20260429T182821Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T182821Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: "microsoft-paint"
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: "The Evolution of Microsoft Paint: A Digital Legacy"
+- Language: es
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T195937Z
+    - ID: "3633f963-7d65-4567-844c-d837e8821546"
+      Hint: noFollow
+      Value: false
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "67aec10e-8df5-4214-b4e2-f5aea1af19b2"
+      Hint: noIndex
+      Value: false
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: Microsoft Paint (antes Paintbrush, luego Paint) es un editor de gráficos rasterizados sencillo que se ha incluido en todas las versiones de Microsoft Windows. El programa abre y guarda archivos en los formatos Windows bitmap (BMP), JPEG, GIF, PNG y TIFF de una sola página. Puede funcionar en modo a color o en blanco y negro de dos tonos, pero no dispone de un modo de escala de grises. Por su sencillez y amplia disponibilidad, se convirtió rápidamente en una de las aplicaciones más usadas en las primeras versiones de Windows, introduciendo a muchos en el dibujo básico por computadora. En los últimos años se ha actualizado con funciones modernas como capas y Cocreator, conservando su legado en la era digital.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "38632e64-f5b6-4eea-b541-08a453720dfd"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Entusiasta de Microsoft
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T195937Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: "microsoft-paint"
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: "La evolución de Microsoft Paint: un legado digital"
+- Language: ja
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T195831Z
+    - ID: "3633f963-7d65-4567-844c-d837e8821546"
+      Hint: noFollow
+      Value: false
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "67aec10e-8df5-4214-b4e2-f5aea1af19b2"
+      Hint: noIndex
+      Value: false
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: Microsoft Paint（旧称 Paintbrush、後に Paint）は、すべてのバージョンの Microsoft Windows に付属しているシンプルなラスターグラフィックエディタです。プログラムは Windows ビットマップ（BMP）、JPEG、GIF、PNG、および単一ページの TIFF 形式のファイルを開いたり保存したりできます。カラーモードまたは二色の白黒モードで動作しますが、グレースケールモードはありません。その簡潔さと広い普及により、初期の Windows では非常に多く利用され、基本的なコンピュータ描画を多くの人に紹介しました。近年ではレイヤーや Cocreator のようなモダンな機能が追加され、デジタル時代におけるその遺産を受け継いでいます。
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "10460423-6df3-4631-90f5-4794678c9c23"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: マイクロソフト愛好家
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T195832Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: "microsoft-paint"
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: Microsoft Paintの進化：デジタルの遺産
+  - Version: 2
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T195907Z
+    - ID: "3633f963-7d65-4567-844c-d837e8821546"
+      Hint: noFollow
+      Value: false
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "67aec10e-8df5-4214-b4e2-f5aea1af19b2"
+      Hint: noIndex
+      Value: false
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: Microsoft Paint（旧称 Paintbrush、後に Paint）は、すべてのバージョンの Microsoft Windows に付属しているシンプルなラスターグラフィックエディタです。プログラムは Windows ビットマップ（BMP）、JPEG、GIF、PNG、および単一ページの TIFF 形式のファイルを開いたり保存したりできます。カラーモードまたは二色の白黒モードで動作しますが、グレースケールモードはありません。その簡潔さと広い普及により、初期の Windows では非常に多く利用され、基本的なコンピュータ描画を多くの人に紹介しました。近年ではレイヤーや Cocreator のようなモダンな機能が追加され、デジタル時代におけるその遺産を受け継いでいます。
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "528cad10-7fa2-49ae-9feb-6ffd3a344fcc"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: マイクロソフト愛好家
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20260429T195907Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T195907Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: "microsoft-paint"
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: Microsoft Paintの進化：デジタルの遺産

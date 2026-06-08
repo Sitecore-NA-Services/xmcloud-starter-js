@@ -1,0 +1,84 @@
+﻿---
+ID: "bb10e9b9-7873-4fc8-8e9b-93d212f83c2e"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/Pizza Story Article"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{B4F49B23-4BBA-4C79-BA22-F89F5F0D4E4F}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{28B1DCF0-5AA8-46C1-A2CB-2519BFE2A28A}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "4fa0c7b0-822e-4239-bf79-cc5a9767da6f"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251121T181444Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: |
+        Pizza has always been about more than just food at Solterra—it’s about people, patience, and getting the details right. Our pizza story starts with simple ingredients and a lot of care, turning dough, sauce, and heat into something that brings everyone together.\n\nFrom experimenting with crust textures to debating sauce-to-cheese ratios, pizza became a shared ritual. It showed us that great results come from iteration, collaboration, and not being afraid to try again when the first slice isn’t perfect.\n\nMuch like the communities Solterra builds, good pizza takes time. You plan carefully, adjust along the way, and trust the process. This story celebrates pizza as a symbol of craftsmanship, creativity, and connection—and yes, it’s also really good with friends around the table.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "82d7e25e-ca67-4456-a0b6-74d8b85ab000"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Solterra Editorial Team
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\DKJmq5N3CqfXRTdVkz2XrrqXZUcmMqXy
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260205T220630Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: Pizza Story Article
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: "Our Pizza Story: From Dough to Community"
+  - Version: 2
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260415T164836Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: |
+        Pizza has always been about more than just food at Solterra—it’s about people, patience, and getting the details right. Our pizza story starts with simple ingredients and a lot of care, turning dough, sauce, and heat into something that brings everyone together.\n\nFrom experimenting with crust textures to debating sauce-to-cheese ratios, pizza became a shared ritual. It showed us that great results come from iteration, collaboration, and not being afraid to try again when the first slice isn’t perfect.\n\nMuch like the communities Solterra builds, good pizza takes time. You plan carefully, adjust along the way, and trust the process. This story celebrates pizza as a symbol of craftsmanship, creativity, and connection—and yes, it’s also really good with friends around the table.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47dd6f9e-2b22-4696-920c-2d5df5fa8b5f"
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Solterra Editorial Team
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20260415T164836Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260415T164837Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: Pizza Story Article
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: "Our Pizza Story: From Dough to Community"

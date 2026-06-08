@@ -56,12 +56,25 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260130T205710Z
     - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
       Hint: Name
       Value: Basis
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6e45c2a4-96fb-4f82-81c3-c1333d4cec2b"
     - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
       Hint: Description
       Value: Et eksempel på et enkelt website med startside, underside, navigation og footer
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260130T205710Z
 - Language: "de-DE"
   Fields:
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"

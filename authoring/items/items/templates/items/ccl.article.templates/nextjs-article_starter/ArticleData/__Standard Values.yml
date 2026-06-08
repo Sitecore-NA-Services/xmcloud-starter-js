@@ -1,0 +1,44 @@
+﻿---
+ID: "26a05efd-3daf-4ba1-b7b7-7699ed48caab"
+Parent: "7d55afdb-8ba4-4a89-94b3-5f0fb602a2c0"
+Template: "7d55afdb-8ba4-4a89-94b3-5f0fb602a2c0"
+Path: "/sitecore/templates/Project/nextjs-article_starter/ArticleData/__Standard Values"
+SharedFields:
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "d60969bb-cd41-479c-ae6d-31517fe3fb0f"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251027T190319Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b83f389-36ff-4f0b-8a50-0553fddbf2bf"
+    - ID: "b928ff0c-2df4-42e1-8d04-b11d7a89583f"
+      Hint: Author
+      Value: John Smith
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251027T192800Z

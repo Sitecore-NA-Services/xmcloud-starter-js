@@ -1,0 +1,42 @@
+﻿---
+ID: "85be9b42-bc62-480f-9072-e50d53c2ef3a"
+Parent: "4e672f10-1814-451f-b201-2219b6a1e45c"
+Template: "a69bf910-1787-4da3-90a4-1f3277f18ce2"
+Path: "/sitecore/content/nextjs-article_starter/solterra2/Presentation/Page Designs"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7b8515D60B-6E85-4922-AF30-4639A55950BF%7d%3d%257B5229C7FF-7D53-4434-9E03-3B4D4395B794%257D%26%7bA5CF18A6-F142-4415-AA43-2411590C8B8D%7d%3d%257B5229C7FF-7D53-4434-9E03-3B4D4395B794%257D%26%7bFAA33152-04B1-4C0F-9505-707BD126A6CC%7d%26%7b0BFA1991-CB14-42FB-BEEF-5700F0C79394%7d%3d%257B5229C7FF-7D53-4434-9E03-3B4D4395B794%257D%26%7b3BFE9AC6-47A2-4CCC-A2B0-7F5F623CC388%7d%3d%257B5229C7FF-7D53-4434-9E03-3B4D4395B794%257D%26%7bF2D4DB83-3E54-4B3D-8577-F0772AE289F0%7d%3d%257B5229C7FF-7D53-4434-9E03-3B4D4395B794%257D%26%7b439A00B9-E5C6-4752-BBE3-4B284866E0F1%7d%3d%257B5229C7FF-7D53-4434-9E03-3B4D4395B794%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6500fffe-a18d-423d-9639-f160ce811225"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251027T141313Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b6c58f5b-c29c-4a2c-82e4-1a2094a0ae76"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251027T141627Z
