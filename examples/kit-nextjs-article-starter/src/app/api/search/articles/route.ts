@@ -124,7 +124,7 @@ function normalizeItems(raw: unknown, entity: string): SearchResultItem[] {
     if (source.length > 0) break;
   }
 
-  return source
+  const mapped: Array<SearchResultItem | null> = source
     .map((item, index) => {
       const title = pickFirstString(item, ['title', 'name', 'pageTitle', 'ArticleTitle']);
       const url = pickFirstString(item, ['url', 'link', 'path']);
@@ -160,6 +160,8 @@ function normalizeItems(raw: unknown, entity: string): SearchResultItem[] {
       };
     })
     .filter((item): item is SearchResultItem => item !== null);
+
+  return mapped;
 }
 
 function getEnvOrThrow(name: string): string {
