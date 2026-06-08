@@ -41,7 +41,7 @@ Languages:
     Value: "c5c658c5-491c-4829-b872-6c80e4610df5"
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: "3-Day Weather Forecast — Boise, ID (Mar 9–11, 2026)"
+    Value: "3-Day Weather Forecast â€” Boise, ID (Mar 9â€“11, 2026)"
   Versions:
   - Version: 1
     Fields:
@@ -53,7 +53,7 @@ Languages:
       Value: 20260309T182221Z
     - ID: "27cd428b-f652-4534-b76f-33f64b742659"
       Hint: pageShortTitle
-      Value: "Boise 3-Day Forecast (Mar 9–11, 2026)"
+      Value: "Boise 3-Day Forecast (Mar 9â€“11, 2026)"
     - ID: "2fcae033-cf44-4b77-b8ad-91f41b56cb1c"
       Hint: pageDisplayDate
       Value: 20260309T000000Z
@@ -68,46 +68,46 @@ Languages:
       Value: Temps, precipitation chances, wind, event impacts, and travel advisory for Boise, Idaho.
     - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
       Hint: pageTitle
-      Value: "3-Day Weather Forecast — Boise, ID (Mar 9–11, 2026)"
+      Value: "3-Day Weather Forecast â€” Boise, ID (Mar 9â€“11, 2026)"
     - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
       Hint: taxContentType
-      Value: Forecast
+      Value: {6C283D5F-C95E-40C8-91D5-33A467C44775}
     - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
       Hint: metadataTitle
-      Value: "3-Day Weather Forecast — Boise, ID (Mar 9–11, 2026)"
+      Value: "3-Day Weather Forecast â€” Boise, ID (Mar 9â€“11, 2026)"
     - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
       Hint: ArticleContent
       Value: |
-        <h2>3-Day Weather Forecast — Boise, ID (Mar 9–11, 2026)</h2>
+        <h2>3-Day Weather Forecast â€” Boise, ID (Mar 9â€“11, 2026)</h2>
         <p><strong>Assumption:</strong> No specific local-event listings were provided in the research; this forecast addresses general public activities and common outdoor events. If you have a specific event, check the timing below against local schedules.</p>
         <hr />
         <h3>Overview</h3>
         <p>Mild early-spring conditions are expected across Boise over the next three days with daytime highs in the upper 50s to low 60s F, cool nights in the mid-to-upper 30s F, light chance of evening showers tonight, mostly dry and mild Tuesday, and a slightly increased chance of afternoon showers Wednesday with breezy west winds.</p>
         <hr />
-        <h3>Today — Monday, Mar 9, 2026 (Today)</h3>
+        <h3>Today â€” Monday, Mar 9, 2026 (Today)</h3>
         <ul>
           <li><strong>Conditions:</strong> Partly sunny through the afternoon, increasing high clouds late afternoon and evening.</li>
-          <li><strong>Temperatures:</strong> High 58°F, Low 36°F overnight.</li>
+          <li><strong>Temperatures:</strong> High 58Â°F, Low 36Â°F overnight.</li>
           <li><strong>Precipitation:</strong> Small chance of light rain late evening (20% after 9 PM), otherwise dry during daytime.</li>
-          <li><strong>Wind:</strong> South winds 10–15 mph, gusts to 25 mph in the afternoon/evening.</li>
+          <li><strong>Wind:</strong> South winds 10â€“15 mph, gusts to 25 mph in the afternoon/evening.</li>
           <li><strong>Impact:</strong> Pleasant daytime for outdoor activities; light rain late evening may make surfaces briefly damp.</li>
         </ul>
         <hr />
-        <h3>Tuesday — Mar 10, 2026</h3>
+        <h3>Tuesday â€” Mar 10, 2026</h3>
         <ul>
           <li><strong>Conditions:</strong> Mostly sunny and mild.</li>
-          <li><strong>Temperatures:</strong> High 62°F, Low 38°F.</li>
-          <li><strong>Precipitation:</strong> Little to no precipitation expected (near 0–5%).</li>
-          <li><strong>Wind:</strong> South to southwest 8–12 mph, gusts to 20 mph.</li>
+          <li><strong>Temperatures:</strong> High 62Â°F, Low 38Â°F.</li>
+          <li><strong>Precipitation:</strong> Little to no precipitation expected (near 0â€“5%).</li>
+          <li><strong>Wind:</strong> South to southwest 8â€“12 mph, gusts to 20 mph.</li>
           <li><strong>Impact:</strong> Good day for outdoor work, recreation, and commuting with comfortable highs and minimal rain risk.</li>
         </ul>
         <hr />
-        <h3>Wednesday — Mar 11, 2026</h3>
+        <h3>Wednesday â€” Mar 11, 2026</h3>
         <ul>
           <li><strong>Conditions:</strong> Morning sunshine giving way to increasing clouds; scattered afternoon/evening showers possible.</li>
-          <li><strong>Temperatures:</strong> High 60°F, Low 39°F.</li>
-          <li><strong>Precipitation:</strong> Chance of scattered showers 30%–40% in the afternoon and evening.</li>
-          <li><strong>Wind:</strong> West winds 10–18 mph, gusts up to 30 mph possible during showers.</li>
+          <li><strong>Temperatures:</strong> High 60Â°F, Low 39Â°F.</li>
+          <li><strong>Precipitation:</strong> Chance of scattered showers 30%â€“40% in the afternoon and evening.</li>
+          <li><strong>Wind:</strong> West winds 10â€“18 mph, gusts up to 30 mph possible during showers.</li>
           <li><strong>Impact:</strong> Plan for breezy conditions and spotty wet weather in the afternoon/evening. Showers could cause brief slippery spots on roadways.</li>
         </ul>
         <hr />
@@ -116,7 +116,7 @@ Languages:
           <li>No specific local events were listed in the provided research. Assuming typical local outdoor activities (markets, park events, late-afternoon recreational events):
             <ul>
               <li>Monday evening outdoor events may see a light risk of brief rain after 9 PM; consider quick-cover options or moving activities indoors.</li>
-              <li>Tuesday is favorable for outdoor events — mild, mostly dry.</li>
+              <li>Tuesday is favorable for outdoor events â€” mild, mostly dry.</li>
               <li>Wednesday afternoon/evening events should plan for possible scattered showers and breezy conditions; secure tents and lightweight structures against gusts.</li>
             </ul>
           </li>
@@ -145,7 +145,7 @@ Languages:
       Value: 4 min read
     - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
       Hint: pageHeaderTitle
-      Value: "3-Day Weather Forecast — Boise, ID (Mar 9–11, 2026)"
+      Value: "3-Day Weather Forecast â€” Boise, ID (Mar 9â€“11, 2026)"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -155,10 +155,10 @@ Languages:
       Value: 20260309T182224Z
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
-      Value: "3-Day Weather Forecast — Boise, ID (Mar 9–11, 2026)"
+      Value: "3-Day Weather Forecast â€” Boise, ID (Mar 9â€“11, 2026)"
     - ID: "f6fcc0b6-31b2-49cd-8a66-4ba282a8ad24"
       Hint: metadataKeywords
       Value: "Boise weather 3-day forecast, Boise, weather, 3-day forecast, Idaho, travel advisory"
     - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
       Hint: ArticleTitle
-      Value: "3-Day Weather Forecast — Boise, ID (Mar 9–11, 2026)"
+      Value: "3-Day Weather Forecast â€” Boise, ID (Mar 9â€“11, 2026)"

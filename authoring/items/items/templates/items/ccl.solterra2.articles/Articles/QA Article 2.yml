@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "143cee06-ec55-427b-a19c-2b423315957f"
 Parent: "84247c09-51e4-4a22-a582-a5b02e131a5d"
 Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
@@ -51,7 +51,7 @@ Languages:
         sitecore\kevin.buckley@sitecore.com
     - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
       Hint: taxContentType
-      Value: QA Content Type
+      Value: {7AED3528-BE1C-4B1C-AA23-3D96E7335C9D}
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "ba49255d-2ec6-4c5f-9fbe-1f93756f987f"
