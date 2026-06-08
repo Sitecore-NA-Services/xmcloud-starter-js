@@ -1,8 +1,8 @@
 ---
-ID: "0a0ebf6d-b4dd-4bec-ab56-f3a428698e26"
+ID: "1ceea3c1-536f-4453-83a5-536eeb0d5f69"
 Parent: "fca314dd-1528-4942-a335-bcfbee0abc91"
-Template: "6cdb8069-9bae-4b0b-9cb7-85b06808b777"
-Path: "/sitecore/content/nextjs-article_starter/solterra/Data/Taxonomy/Content Types"
+Template: "2b5c5e0d-9472-42b3-a14a-3e1cf6504acf"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Data/Taxonomy/People"
 Languages:
 - Language: en
   Versions:

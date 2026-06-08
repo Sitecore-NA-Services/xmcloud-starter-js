@@ -1,0 +1,16 @@
+---
+ID: "0839d816-0b23-4a7e-9fe2-28bbe8e69363"
+Parent: "0a0ebf6d-b4dd-4bec-ab56-f3a428698e26"
+Template: "a97e3c2d-727a-4703-9eae-8d21b200953d"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Data/Taxonomy/Content Types/Technology Deep Dive"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T173925Z
+    - ID: "42dd2c70-c3fc-4fb1-a90e-b3f51fa2b82f"
+      Hint: titleRequired
+      Value: Technology Deep Dive

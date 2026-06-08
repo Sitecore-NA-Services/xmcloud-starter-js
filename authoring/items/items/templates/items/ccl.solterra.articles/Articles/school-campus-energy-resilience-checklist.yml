@@ -1,0 +1,56 @@
+---
+ID: "0ebd3c96-9f21-4702-8ed7-261c4d811ae3"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/school-campus-energy-resilience-checklist"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: A practical checklist for school leaders planning resilient energy upgrades.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T173925Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: School Campus Energy Resilience Checklist
+    - ID: "288c11f5-7457-4e7f-880a-a76a98a0e296"
+      Hint: taxAuthor
+      Value: {17EC4216-589B-496E-9EE7-4FD6A0A2FBB0}
+    - ID: "2fcae033-cf44-4b77-b8ad-91f41b56cb1c"
+      Hint: pageDisplayDate
+      Value: "2026-04-09"
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: Plan first, pilot carefully, communicate clearly.
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: School Campus Energy Resilience Checklist
+    - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
+      Hint: taxContentType
+      Value: {FA2B17D0-471B-4B5F-814B-B9B09844AFBF}
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: |
+        <p>This checklist covers emergency load mapping, staffing readiness, and maintenance intervals. It also includes guidance for communicating scope and limits to parents, staff, and local stakeholders.</p><p>Generated test content aligned to Solterra and Co brand context: clarity, confidence, and community-centric communication.</p>
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Maya Chen
+    - ID: "a586cc74-9fee-4a68-8df5-c7c285cd71aa"
+      Hint: taxTopic
+      Value: {75327B53-4611-4F61-8125-F124F71EE906}|{79D7702C-879F-4088-8122-A6E45CB387B5}|{C4C99874-7F38-48C3-B81F-395A14F67461}
+    - ID: "afd3e865-f6ac-4485-95f2-cae591dd8f0a"
+      Hint: pageReadTime
+      Value: 5 min
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: Ten Questions Every Facilities Team Should Ask
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: School Campus Energy Resilience Checklist
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: School Campus Energy Resilience Checklist

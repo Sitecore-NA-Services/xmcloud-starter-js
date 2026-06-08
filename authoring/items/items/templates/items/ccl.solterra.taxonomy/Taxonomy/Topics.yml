@@ -1,5 +1,5 @@
 ---
-ID: "772ba26b-e9b5-4c55-8df6-3730464a3b9e"
+ID: "630f0c27-b771-4756-a7ec-664e70b594ed"
 Parent: "fca314dd-1528-4942-a335-bcfbee0abc91"
 Template: "2b5c5e0d-9472-42b3-a14a-3e1cf6504acf"
 Path: "/sitecore/content/nextjs-article_starter/solterra/Data/Taxonomy/Topics"
@@ -10,4 +10,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260608T172836Z
+      Value: 20260608T173925Z

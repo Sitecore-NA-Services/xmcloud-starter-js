@@ -1,0 +1,56 @@
+---
+ID: "6cd7911d-9c21-4608-abf2-528c6443b28d"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/impact-dashboard-what-we-measure-and-why"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: An overview of the baselines and KPIs we publish to avoid vague sustainability claims.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T173925Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: Impact Dashboard: What We Measure and Why
+    - ID: "288c11f5-7457-4e7f-880a-a76a98a0e296"
+      Hint: taxAuthor
+      Value: {090627DB-7C87-497A-AF32-CB57A4A9FFC7}
+    - ID: "2fcae033-cf44-4b77-b8ad-91f41b56cb1c"
+      Hint: pageDisplayDate
+      Value: "2026-04-02"
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: Evidence-powered optimism starts with auditable numbers.
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: Impact Dashboard: What We Measure and Why
+    - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
+      Hint: taxContentType
+      Value: {3F70107B-6D59-4953-9EEF-F614856D3CC9}
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: |
+        <p>Our public dashboard includes avoided emissions, outage minutes reduced, and school-hours continuity. Each metric has a baseline, methodology note, and caveat to keep communication transparent.</p><p>Generated test content aligned to Solterra and Co brand context: clarity, confidence, and community-centric communication.</p>
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Tessa Brooks
+    - ID: "a586cc74-9fee-4a68-8df5-c7c285cd71aa"
+      Hint: taxTopic
+      Value: {4450A8CB-D0F0-4B2D-99CF-856306944A40}|{2E24C682-07DB-421A-8558-F6843AE453C3}|{C4C99874-7F38-48C3-B81F-395A14F67461}
+    - ID: "afd3e865-f6ac-4485-95f2-cae591dd8f0a"
+      Hint: pageReadTime
+      Value: 4 min
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: The Metrics Behind Solterra Reporting
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: Impact Dashboard: What We Measure and Why
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: Impact Dashboard: What We Measure and Why
