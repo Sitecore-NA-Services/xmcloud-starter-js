@@ -100,9 +100,15 @@ export const generateMetadata = async ({ params }: PageProps) => {
   const canonicalUrl = `${url}${pagePath}`;
   const metadata = resolvePageMetadata(fields, canonicalUrl);
 
-  // Emit article taxonomy as meta tags so the Sitecore Search crawler can extract
-  // author / content type / topics into facetable attributes. Only article pages
-  // carry these fields; other pages simply omit them.
+  // Emit article taxonomy as Open Graph *article* meta so the Sitecore Search
+  // crawler can extract author / content type / topics into facetable attributes.
+  //
+  // Important: the crawler's document extractor reads `property=`-based meta
+  // (e.g. `<meta property="article:author">`), NOT custom `name=` meta tags.
+  // Next renders openGraph.authors -> article:author, openGraph.tags ->
+  // article:tag (one per value), and openGraph.section -> article:section.
+  // Only article pages carry these fields; other pages fall back to a neutral
+  // section so the required `type` attribute is always populated.
   const tax = fields as unknown as {
     ArticleAuthor?: { value?: string };
     taxAuthor?: { name?: string };
@@ -114,17 +120,11 @@ export const generateMetadata = async ({ params }: PageProps) => {
   const topics = Array.isArray(tax?.taxTopic)
     ? tax.taxTopic.map((t) => t?.name).filter((n): n is string => !!n)
     : [];
-  const other: Record<string, string | string[]> = {};
-  if (author) other['sc-author'] = author;
-  if (contentType) other['sc-content-type'] = contentType;
-  // Emit one tag per topic so each becomes a distinct facet value.
-  if (topics.length) other['sc-topics'] = topics;
 
   return {
     title: metadata.title,
     description: metadata.description || 'Sitecore Next.js App Router Example',
     alternates: { canonical: canonicalUrl },
-    ...(Object.keys(other).length ? { other } : {}),
     openGraph: {
       type: 'article',
       title: metadata.ogTitle,
@@ -132,7 +132,13 @@ export const generateMetadata = async ({ params }: PageProps) => {
         metadata.ogDescription || 'Sitecore Next.js App Router Example',
       url: canonicalUrl,
       images: metadata.ogImage ? [metadata.ogImage] : undefined,
-      section: 'content',
+      // -> <meta property="article:author" content="...">
+      ...(author ? { authors: [author] } : {}),
+      // -> one <meta property="article:tag" content="..."> per topic
+      ...(topics.length ? { tags: topics } : {}),
+      // -> <meta property="article:section" content="..."> (the content type;
+      //    neutral "content" on non-article pages keeps `type` populated)
+      section: contentType || 'content',
     },
   };
 };
