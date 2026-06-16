@@ -1,25 +1,83 @@
 # Sitecore Search Setup (Article Starter)
 
-This starter now includes:
-- A server-side search proxy at `src/app/api/search/articles/route.ts`
-- A header search box at `src/components/sitecore-search/ArticleSearchBox.tsx`
+The front end is built on the **Sitecore Search JS SDK for React**
+(`@sitecore-search/react` + `@sitecore-search/ui`), which is Sitecore's
+recommended integration method for React/Next.js apps. The SDK handles
+authentication, queries, and — importantly — the visitor event tracking that
+powers Search analytics and personalization (something a hand-rolled REST proxy
+does not do).
+
+This starter includes:
+- A root provider: `src/components/sitecore-search/SearchProvider.tsx`
+  (wraps the app in the SDK `WidgetsProvider`; mounted in `src/app/layout.tsx`).
+- A header typeahead: `src/components/sitecore-search/PreviewSearchBox.tsx`
+  (`usePreviewSearch`) — submits to `/search` on Enter.
+- A full results page: `src/components/sitecore-search/SearchResults.tsx`
+  (`useSearchResults` with facets, sort, and pagination), rendered at the
+  standalone route `src/app/search/page.tsx` (`/search?q=...`).
+
+> The previous server-side REST proxy (`/api/search/articles`) and fetch-based
+> `ArticleSearchBox` have been removed in favor of the SDK.
 
 ## 1) Configure environment variables
 
-Copy `.env.remote.example` to `.env.local` and set:
-- `SITECORE_SEARCH_API_URL`
-- `SITECORE_SEARCH_DOMAIN_ID`
-- `SITECORE_SEARCH_WIDGET_ID`
-- `SITECORE_SEARCH_ENTITY`
+Sitecore Search is called from the browser with a domain-scoped key, so the SDK
+config uses public (`NEXT_PUBLIC_*`) variables. Copy `.env.remote.example` to
+`.env.local` and set:
 
-Optional authentication settings:
-- `SITECORE_SEARCH_API_KEY`
-- `SITECORE_SEARCH_API_KEY_HEADER` (default `Authorization`)
-- `SITECORE_SEARCH_API_KEY_PREFIX` (default `Bearer `)
+- `NEXT_PUBLIC_SEARCH_ENV` — `prod` | `prodEu` | `apse2`
+- `NEXT_PUBLIC_SEARCH_CUSTOMER_KEY` — from CEC → **Developer Resources**
+- `NEXT_PUBLIC_SEARCH_API_KEY` — from CEC → **Developer Resources**
+- `NEXT_PUBLIC_SEARCH_RESULTS_RFKID` — rfkId of your **Search Results** widget
+- `NEXT_PUBLIC_SEARCH_PREVIEW_RFKID` — rfkId of your **Preview Search** widget
+- `NEXT_PUBLIC_SEARCH_LANGUAGE` / `NEXT_PUBLIC_SEARCH_COUNTRY` — optional locale
+  override (defaults to `en` / `us`)
 
-Optional filtering and locale:
-- `SITECORE_SEARCH_SOURCE_IDS` (comma-separated)
-- `SITECORE_SEARCH_DEFAULT_LOCALE`
+If these are not set, the header renders a plain input that routes to `/search`,
+and `/search` shows a "not configured" notice — so the app still builds and runs.
+
+### Locale is required
+
+If your domain has locale settings enabled, every request must include
+`context.locale` or the API returns `400 — required context.locale missing`.
+`SearchProvider` sets it once at the page level via the SDK's `PageController`:
+
+```ts
+PageController.getContext().setLocaleLanguage('en');
+PageController.getContext().setLocaleCountry('us');
+```
+
+### Multi-site: scoping results to one site
+
+A Search **domain has a single shared index** that every **source** feeds — you do
+not create per-site indexes. Sitecore's recommended multi-site pattern is:
+
+> **One source per site**, all in one domain, and **filter results by source**.
+
+So this starter scopes its widgets to its own source via
+`NEXT_PUBLIC_SEARCH_SOURCE_IDS` (comma-separated source IDs from **Sources** in the
+console). The query hooks apply it with the SDK's `setSources`:
+
+```ts
+query.getRequest().setSources(['1260103']); // this site's source only
+```
+
+Without it, the widgets return content from *every* source sharing the domain.
+You can instead scope a widget in the console with a variation rule (no redeploy).
+Use a **separate domain** per site only when sites are truly independent (different
+data models, isolation, or no cross-site search) — it's heavier and loses cross-site
+search and shared analytics.
+
+### Widgets and facets
+
+In the Sitecore Search console, create (or confirm) two widgets for the
+`content` entity and copy their `rfkId`s into the env vars above:
+- a **Search Results** widget (for `/search`), and
+- a **Preview Search** widget (for the header typeahead).
+
+Facets on `/search` are driven by the **facet attributes enabled on the Search
+Results widget** in the console — the UI renders whatever facets the API returns,
+so enabling a facet (e.g. content type, topics, author) needs no code change.
 
 ## 2) Create your Search source and crawler
 

@@ -99,10 +99,32 @@ export const generateMetadata = async ({ params }: PageProps) => {
   const pagePath = path?.length ? `/${path.join('/')}` : '/';
   const canonicalUrl = `${url}${pagePath}`;
   const metadata = resolvePageMetadata(fields, canonicalUrl);
+
+  // Emit article taxonomy as meta tags so the Sitecore Search crawler can extract
+  // author / content type / topics into facetable attributes. Only article pages
+  // carry these fields; other pages simply omit them.
+  const tax = fields as unknown as {
+    ArticleAuthor?: { value?: string };
+    taxAuthor?: { name?: string };
+    taxContentType?: { name?: string };
+    taxTopic?: Array<{ name?: string }>;
+  };
+  const author = tax?.ArticleAuthor?.value || tax?.taxAuthor?.name || '';
+  const contentType = tax?.taxContentType?.name || '';
+  const topics = Array.isArray(tax?.taxTopic)
+    ? tax.taxTopic.map((t) => t?.name).filter((n): n is string => !!n)
+    : [];
+  const other: Record<string, string | string[]> = {};
+  if (author) other['sc-author'] = author;
+  if (contentType) other['sc-content-type'] = contentType;
+  // Emit one tag per topic so each becomes a distinct facet value.
+  if (topics.length) other['sc-topics'] = topics;
+
   return {
     title: metadata.title,
     description: metadata.description || 'Sitecore Next.js App Router Example',
     alternates: { canonical: canonicalUrl },
+    ...(Object.keys(other).length ? { other } : {}),
     openGraph: {
       type: 'article',
       title: metadata.ogTitle,

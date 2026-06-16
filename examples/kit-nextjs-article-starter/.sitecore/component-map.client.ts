@@ -15,6 +15,9 @@ import * as PageContent from 'src/components/sxa/PageContent';
 import * as Navigation from 'src/components/sxa/Navigation';
 import * as Image from 'src/components/sxa/Image';
 import * as SubscriptionBanner from 'src/components/subscription-banner/SubscriptionBanner';
+import * as SearchResults from 'src/components/sitecore-search/SearchResults';
+import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
+import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
@@ -59,6 +62,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Navigation', { ...Navigation }],
   ['Image', { ...Image }],
   ['SubscriptionBanner', { ...SubscriptionBanner }],
+  ['SearchResults', { ...SearchResults }],
+  ['SearchProvider', { ...SearchProvider }],
+  ['PreviewSearchBox', { ...PreviewSearchBox }],
   ['SecondaryNavigation', { ...SecondaryNavigation }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],

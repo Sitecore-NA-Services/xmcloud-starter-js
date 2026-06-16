@@ -20,7 +20,7 @@ import { Default as Logo } from '@/components/logo/Logo.dev';
 import { GlobalHeaderProps } from './global-header.props';
 import { Button } from '@/components/ui/button';
 import { Url } from 'next/dist/shared/lib/router/router';
-import { ArticleSearchBox } from '@/components/sitecore-search/ArticleSearchBox';
+import { PreviewSearchBox } from '@/components/sitecore-search/PreviewSearchBox';
 
 export const Default: React.FC<GlobalHeaderProps> = (props) => {
   const { fields, page } = props ?? {};
@@ -144,7 +144,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
           </div>
           {/* Desktop CTA */}
           <div className="@xl:flex hidden justify-end pr-4">
-            <ArticleSearchBox />
+            <PreviewSearchBox />
           </div>
           {pageEditing ? (
             <div className="@lg:flex @lg:items-center @lg:justify-end hidden">
@@ -175,7 +175,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
               <SheetContent side="right" className="[&>button_svg]:size-8">
                 <nav className="mt-[70px] flex flex-col space-y-4">
                   <div className="px-2">
-                    <ArticleSearchBox />
+                    <PreviewSearchBox />
                   </div>
                   {links &&
                     links.length > 0 &&

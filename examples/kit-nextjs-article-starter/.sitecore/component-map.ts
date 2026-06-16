@@ -40,6 +40,9 @@ import * as ColumnSplitter from 'src/components/sxa/ColumnSplitter';
 import * as SubscriptionBanner from 'src/components/subscription-banner/SubscriptionBanner';
 import * as subscriptionbannerprops from 'src/components/subscription-banner/subscription-banner.props';
 import * as subscriptionbannerdictionary from 'src/components/subscription-banner/subscription-banner.dictionary';
+import * as SearchResults from 'src/components/sitecore-search/SearchResults';
+import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
+import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
 import * as SiteMetadata from 'src/components/site-metadata/SiteMetadata';
 import * as sitemetadataprops from 'src/components/site-metadata/site-metadata.props';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
@@ -172,6 +175,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ColumnSplitter', { ...ColumnSplitter }],
   ['SubscriptionBanner', { ...SubscriptionBanner, componentType: 'client' }],
   ['subscription-banner', { ...subscriptionbannerprops, ...subscriptionbannerdictionary }],
+  ['SearchResults', { ...SearchResults, componentType: 'client' }],
+  ['SearchProvider', { ...SearchProvider, componentType: 'client' }],
+  ['PreviewSearchBox', { ...PreviewSearchBox, componentType: 'client' }],
   ['SiteMetadata', { ...SiteMetadata }],
   ['site-metadata', { ...sitemetadataprops }],
   ['SecondaryNavigation', { ...SecondaryNavigation, componentType: 'client' }],
