@@ -1,7 +1,3 @@
-import { createRobotsRouteHandler } from '@sitecore-content-sdk/nextjs/route-handler';
-import sites from '.sitecore/sites.json';
-import client from 'lib/sitecore-client';
-
 export const dynamic = 'force-dynamic';
 
 /**
@@ -12,7 +8,19 @@ export const dynamic = 'force-dynamic';
  * used by search engine crawlers to determine crawl and indexing rules.
  */
 
-export const { GET } = createRobotsRouteHandler({
-  client,
-  sites,
-});
+export async function GET(request: Request) {
+  const host =
+    request.headers.get('x-forwarded-host') || request.headers.get('host')?.split(':')[0] || 'article-starter.vercel.app';
+  const protocol = request.headers.get('x-forwarded-proto') || 'https';
+  const baseUrl = `${protocol}://${host}`;
+
+  const robots = `User-agent: *\nAllow: /\nSitemap: ${baseUrl}/sitemap.xml`;
+
+  return new Response(robots, {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, max-age=300',
+    },
+  });
+}

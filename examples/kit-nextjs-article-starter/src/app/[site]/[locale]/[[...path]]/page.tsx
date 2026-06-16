@@ -96,17 +96,21 @@ export const generateMetadata = async ({ params }: PageProps) => {
   // The same call as for rendering the page. Should be cached by default react behavior
   const page = await client.getPage(path ?? [], { site, locale });
   const fields = page?.layout.sitecore.route?.fields as RouteFields;
-  const metadata = resolvePageMetadata(fields, url);
+  const pagePath = path?.length ? `/${path.join('/')}` : '/';
+  const canonicalUrl = `${url}${pagePath}`;
+  const metadata = resolvePageMetadata(fields, canonicalUrl);
   return {
     title: metadata.title,
     description: metadata.description || 'Sitecore Next.js App Router Example',
-    alternates: metadata.canonicalUrl ? { canonical: metadata.canonicalUrl } : undefined,
+    alternates: { canonical: canonicalUrl },
     openGraph: {
+      type: 'article',
       title: metadata.ogTitle,
       description:
         metadata.ogDescription || 'Sitecore Next.js App Router Example',
-      url,
+      url: canonicalUrl,
       images: metadata.ogImage ? [metadata.ogImage] : undefined,
+      section: 'content',
     },
   };
 };
