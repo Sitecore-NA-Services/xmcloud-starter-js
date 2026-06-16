@@ -52,6 +52,19 @@ type InitialState = SearchResultsInitialState<'itemsPerPage' | 'keyphrase' | 'pa
 
 const titleOf = (a: ArticleModel) => a.name || a.title || 'Untitled';
 
+/** Friendly labels for the raw sort option names returned by the widget. */
+const SORT_LABELS: Record<string, string> = {
+  featured_desc: 'Relevance',
+  featured_asc: 'Relevance (ascending)',
+  name_asc: 'Title (A–Z)',
+  name_desc: 'Title (Z–A)',
+  date_desc: 'Newest first',
+  date_asc: 'Oldest first',
+};
+const sortLabelOf = (c: SortChoice) =>
+  SORT_LABELS[c.name] ||
+  (c.label && c.label !== c.name ? c.label : c.name.replace(/_/g, ' '));
+
 const ResultsSkeleton = () => (
   <div className="grid gap-4">
     {Array.from({ length: 6 }).map((_, i) => (
@@ -192,7 +205,7 @@ const SearchResultsComponent = ({
                 >
                   {sortChoices.map((choice) => (
                     <option key={choice.name} value={choice.name}>
-                      {choice.label || choice.name}
+                      {sortLabelOf(choice)}
                     </option>
                   ))}
                 </select>
