@@ -65,6 +65,14 @@ const sortLabelOf = (c: SortChoice) =>
   SORT_LABELS[c.name] ||
   (c.label && c.label !== c.name ? c.label : c.name.replace(/_/g, ' '));
 
+/** Friendly headings for the facet attribute names returned by the widget. */
+const FACET_LABELS: Record<string, string> = {
+  type: 'Content Type',
+  tags: 'Topics',
+  author: 'Author',
+};
+const facetLabelOf = (f: Facet) => FACET_LABELS[f.name] || f.label || f.name;
+
 const ResultsSkeleton = () => (
   <div className="grid gap-4">
     {Array.from({ length: 6 }).map((_, i) => (
@@ -97,9 +105,20 @@ const SearchResultsComponent = ({
     },
   } = useSearchResults<ArticleModel, InitialState>({
     query: (query) => {
+      const request = query.getRequest();
       // Scope results to this site's source(s). The domain index is shared across
       // sites, so without this the widget would return every site's content.
-      if (SEARCH_SOURCE_IDS.length) query.getRequest().setSources(SEARCH_SOURCE_IDS);
+      if (SEARCH_SOURCE_IDS.length) request.setSources(SEARCH_SOURCE_IDS);
+      // Request the facets this experience exposes. The widget's default facet set
+      // (content type + topics) does not include author, so request an explicit list
+      // instead of "all" — this renders the Author filter without a console change.
+      // Each name must be a facet-enabled attribute on the `content` entity in Search.
+      request.setSearchFacetAll(false);
+      request.setSearchFacetTypes([
+        { name: 'type', max: 20 },
+        { name: 'author', max: 20 },
+        { name: 'tags', max: 20 },
+      ]);
       return query;
     },
     state: {
@@ -145,7 +164,7 @@ const SearchResultsComponent = ({
           ) : (
             facets.map((facet, facetIndex) => (
               <div key={facet.name} className="space-y-3 border-b border-neutral-200 pb-5">
-                <h3 className="text-sm font-medium">{facet.label || facet.name}</h3>
+                <h3 className="text-sm font-medium">{facetLabelOf(facet)}</h3>
                 <ul className="space-y-2">
                   {facet.value.map((value, facetValueIndex) => {
                     const checked = selectedSet.has(`${facet.name}:${value.id}`);
