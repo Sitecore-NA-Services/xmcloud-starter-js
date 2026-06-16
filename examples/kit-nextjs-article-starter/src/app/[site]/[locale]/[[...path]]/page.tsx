@@ -6,11 +6,12 @@ import sites from '.sitecore/sites.json';
 import { routing } from 'src/i18n/routing';
 import scConfig from 'sitecore.config';
 import client from 'src/lib/sitecore-client';
-import Layout, { RouteFields } from 'src/Layout';
+import Layout from 'src/Layout';
 import components from '.sitecore/component-map';
 import Providers from 'src/Providers';
 import { NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
+import { resolvePageMetadata, type RouteFields } from '@/lib/page-metadata';
 
 type PageProps = {
   params: Promise<{
@@ -94,32 +95,18 @@ export const generateMetadata = async ({ params }: PageProps) => {
 
   // The same call as for rendering the page. Should be cached by default react behavior
   const page = await client.getPage(path ?? [], { site, locale });
+  const fields = page?.layout.sitecore.route?.fields as RouteFields;
+  const metadata = resolvePageMetadata(fields, url);
   return {
-    title:
-      (
-        page?.layout.sitecore.route?.fields as RouteFields
-      )?.Title?.value?.toString() || 'Page',
-    description:
-      (
-        page?.layout.sitecore.route?.fields as RouteFields
-      )?.ogDescription?.value?.toString() ||
-      'Sitecore Next.js App Router Example',
+    title: metadata.title,
+    description: metadata.description || 'Sitecore Next.js App Router Example',
+    alternates: metadata.canonicalUrl ? { canonical: metadata.canonicalUrl } : undefined,
     openGraph: {
-      title:
-        (
-          page?.layout.sitecore.route?.fields as RouteFields
-        )?.ogTitle?.value?.toString() || 'Page',
+      title: metadata.ogTitle,
       description:
-        (
-          page?.layout.sitecore.route?.fields as RouteFields
-        )?.ogDescription?.value?.toString() ||
-        'Sitecore Next.js App Router Example',
-      url: url,
-      images:
-        (page?.layout.sitecore.route?.fields as RouteFields)?.ogImage?.value
-          ?.src ||
-        (page?.layout.sitecore.route?.fields as RouteFields)?.thumbnailImage
-          ?.value?.src,
+        metadata.ogDescription || 'Sitecore Next.js App Router Example',
+      url,
+      images: metadata.ogImage ? [metadata.ogImage] : undefined,
     },
   };
 };

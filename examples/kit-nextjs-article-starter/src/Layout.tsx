@@ -17,6 +17,7 @@ import DictionaryTest from 'components/content-sdk/DictionaryTest';
 import { Figtree } from 'next/font/google';
 import componentMap from '.sitecore/component-map';
 import Providers from './Providers';
+import { resolvePageMetadata, type RouteFields } from '@/lib/page-metadata';
 
 const heading = Figtree({
   weight: ['400', '500'],
@@ -35,65 +36,33 @@ interface LayoutProps {
   page: Page;
 }
 
-export interface RouteFields {
-  [key: string]: unknown;
-  Title?: Field;
-  metadataTitle?: Field;
-  metadataKeywords?: Field;
-  pageTitle?: Field;
-  metadataDescription?: Field;
-  pageSummary?: Field;
-  ogTitle?: Field;
-  ogDescription?: Field;
-  ogImage?: ImageField;
-  thumbnailImage?: ImageField;
-}
-
 const Layout = ({ page }: LayoutProps): JSX.Element => {
   const { layout, mode } = page;
   const { route } = layout.sitecore;
   const fields = route?.fields as RouteFields;
   const mainClassPageEditing = mode.isEditing ? 'editing-mode' : 'prod-mode';
   const classNamesMain = `${mainClassPageEditing} ${body.variable} ${heading.variable} main-layout`;
-
-  const metaTitle =
-    fields?.metadataTitle?.value?.toString() ||
-    fields?.pageTitle?.value?.toString() ||
-    'Page';
-  const metaDescription =
-    fields?.metadataDescription?.value?.toString() ||
-    fields?.pageSummary?.value?.toString() ||
-    '';
-  const metaKeywords = fields?.metadataKeywords?.value?.toString() || '';
-  const ogTitle =
-    fields?.ogTitle?.value?.toString() ||
-    fields?.metadataTitle?.value?.toString() ||
-    fields?.pageTitle?.value?.toString() ||
-    'Page';
-  const ogImage =
-    fields?.ogImage?.value?.src || fields?.thumbnailImage?.value?.src;
-  const ogDescription =
-    fields?.ogDescription?.value?.toString() ||
-    fields?.metadataDescription?.value?.toString() ||
-    fields?.pageSummary?.value?.toString() ||
-    '';
+  const metadata = resolvePageMetadata(fields);
   return (
     <>
       <Scripts />
       <SitecoreStyles layoutData={layout} />
       <Head>
         <link rel="preconnect" href="https://edge-platform.sitecorecloud.io" />
-        <title>{metaTitle}</title>
-        {metaDescription && (
-          <meta name="description" content={metaDescription} />
+        <title>{metadata.title}</title>
+        {metadata.description && (
+          <meta name="description" content={metadata.description} />
         )}
-        {metaKeywords && <meta name="keywords" content={metaKeywords} />}
+        {metadata.keywords && <meta name="keywords" content={metadata.keywords} />}
+        {metadata.canonicalUrl && (
+          <link rel="canonical" href={metadata.canonicalUrl} />
+        )}
         <link rel="icon" href="/favicon.ico" />
-        {ogTitle && <meta property="og:title" content={ogTitle} />}
-        {ogDescription && (
-          <meta property="og:description " content={ogDescription} />
+        {metadata.ogTitle && <meta property="og:title" content={metadata.ogTitle} />}
+        {metadata.ogDescription && (
+          <meta property="og:description" content={metadata.ogDescription} />
         )}
-        {ogImage && <meta property="og:image " content={ogImage} />}
+        {metadata.ogImage && <meta property="og:image" content={metadata.ogImage} />}
       </Head>
       <Providers page={page}>
         {/* Capture query string parameters for CDP personalization */}
