@@ -28,7 +28,6 @@ import {
 } from '@sitecore-search/react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import {
   Select,
@@ -90,13 +89,11 @@ const facetLabelOf = (f: Facet) => FACET_LABELS[f.name] || f.label || f.name;
 const ResultsSkeleton = () => (
   <div className="grid gap-4">
     {Array.from({ length: 6 }).map((_, i) => (
-      <Card key={i}>
-        <CardContent className="p-5">
-          <div className="bg-muted h-5 w-2/3 animate-pulse rounded" />
-          <div className="bg-muted/60 mt-3 h-4 w-full animate-pulse rounded" />
-          <div className="bg-muted/60 mt-2 h-4 w-4/5 animate-pulse rounded" />
-        </CardContent>
-      </Card>
+      <div key={i} className="rounded-xl border border-zinc-200 bg-white p-5">
+        <div className="h-5 w-2/3 animate-pulse rounded bg-zinc-200" />
+        <div className="mt-3 h-4 w-full animate-pulse rounded bg-zinc-100" />
+        <div className="mt-2 h-4 w-4/5 animate-pulse rounded bg-zinc-100" />
+      </div>
     ))}
   </div>
 );
@@ -165,13 +162,13 @@ const SearchResultsComponent = ({
         {/* ----------------------------- Facets ----------------------------- */}
         <aside className="space-y-6">
           <div className="flex items-center justify-between">
-            <h2 className="font-heading text-lg font-semibold">Filters</h2>
+            <h2 className="text-base font-semibold text-zinc-900">Filters</h2>
             {hasSelectedFacets && (
               <Button
                 type="button"
                 variant="link"
                 size="sm"
-                className="text-muted-foreground h-auto p-0"
+                className="h-auto p-0 text-xs font-medium text-zinc-500 hover:text-accent"
                 onClick={() => onClearFilters()}
               >
                 Clear all
@@ -180,19 +177,19 @@ const SearchResultsComponent = ({
           </div>
 
           {facets.length === 0 ? (
-            <p className="text-muted-foreground text-sm">
-              No filters are configured for this widget yet.
-            </p>
+            <p className="text-sm text-zinc-500">No filters are available for this search.</p>
           ) : (
             facets.map((facet, facetIndex) => (
-              <div key={facet.name} className="border-border space-y-3 border-b pb-5">
-                <h3 className="text-sm font-medium">{facetLabelOf(facet)}</h3>
-                <ul className="space-y-2">
+              <div key={facet.name} className="space-y-3 border-b border-zinc-200 pb-5">
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                  {facetLabelOf(facet)}
+                </h3>
+                <ul className="space-y-2.5">
                   {facet.value.map((value, facetValueIndex) => {
                     const checked = selectedSet.has(`${facet.name}:${value.id}`);
                     const inputId = `facet-${facet.name}-${value.id}`;
                     return (
-                      <li key={value.id} className="flex items-center gap-2">
+                      <li key={value.id} className="flex items-center gap-2.5">
                         <Checkbox
                           id={inputId}
                           checked={checked}
@@ -209,10 +206,10 @@ const SearchResultsComponent = ({
                         />
                         <label
                           htmlFor={inputId}
-                          className="flex flex-1 cursor-pointer items-center justify-between gap-2 text-sm"
+                          className="flex flex-1 cursor-pointer items-center justify-between gap-2 text-sm text-zinc-700"
                         >
                           <span className="truncate">{value.text}</span>
-                          <span className="text-muted-foreground text-xs">{value.count}</span>
+                          <span className="text-xs text-zinc-400">{value.count}</span>
                         </label>
                       </li>
                     );
@@ -225,18 +222,27 @@ const SearchResultsComponent = ({
 
         {/* ----------------------------- Results ---------------------------- */}
         <section>
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <p className="text-muted-foreground text-sm" aria-live="polite">
-              {loading
-                ? 'Searching…'
-                : `${totalItems} result${totalItems === 1 ? '' : 's'}${
-                    defaultKeyphrase ? ` for “${defaultKeyphrase}”` : ''
-                  }`}
+          <div className="mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-zinc-200 pb-4">
+            <p className="text-sm text-zinc-600" aria-live="polite">
+              {loading ? (
+                'Searching…'
+              ) : (
+                <>
+                  <span className="font-semibold text-zinc-900">{totalItems}</span>{' '}
+                  {totalItems === 1 ? 'result' : 'results'}
+                  {defaultKeyphrase ? (
+                    <>
+                      {' '}
+                      for <span className="font-medium text-zinc-900">“{defaultKeyphrase}”</span>
+                    </>
+                  ) : null}
+                </>
+              )}
             </p>
 
             {sortChoices.length > 0 && (
               <div className="flex items-center gap-2">
-                <span className="text-muted-foreground text-sm">Sort</span>
+                <span className="text-sm text-zinc-500">Sort</span>
                 <Select
                   value={sortType || sortChoices[0]?.name}
                   onValueChange={(name) => onSortChange({ name })}
@@ -259,46 +265,42 @@ const SearchResultsComponent = ({
           {loading ? (
             <ResultsSkeleton />
           ) : articles.length === 0 ? (
-            <Card>
-              <CardContent className="p-8 text-center">
-                <p className="font-medium">No articles found</p>
-                <p className="text-muted-foreground mt-1 text-sm">
-                  Try a different keyword{hasSelectedFacets ? ' or clear your filters' : ''}.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="rounded-xl border border-zinc-200 bg-white p-10 text-center">
+              <p className="font-semibold text-zinc-900">No articles found</p>
+              <p className="mt-1 text-sm text-zinc-500">
+                Try a different keyword{hasSelectedFacets ? ' or clear your filters' : ''}.
+              </p>
+            </div>
           ) : (
             <ul className="grid gap-4">
               {articles.map((article, index) => (
                 <li key={article.id}>
                   <a
                     href={article.url}
-                    className="group block"
+                    className="group block rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     onClick={() =>
                       // Tracks a result-click event for Search analytics/personalization.
                       onItemClick({ id: article.id, index, sourceId: article.source_id })
                     }
                   >
-                    <Card className="group-hover:border-primary transition-colors">
-                      <CardContent className="p-5">
-                        <div className="flex items-start justify-between gap-4">
-                          <h3 className="font-heading text-lg font-semibold">{titleOf(article)}</h3>
-                          {article.type && (
-                            <span className="bg-secondary text-secondary-foreground shrink-0 rounded-full px-2 py-0.5 text-xs">
-                              {article.type}
-                            </span>
-                          )}
-                        </div>
-                        {article.description && (
-                          <p className="text-muted-foreground mt-2 line-clamp-2 text-sm">
-                            {article.description}
-                          </p>
-                        )}
-                        {article.author && (
-                          <p className="text-muted-foreground mt-3 text-xs">By {article.author}</p>
-                        )}
-                      </CardContent>
-                    </Card>
+                    <div className="flex items-start justify-between gap-4">
+                      <h3 className="text-lg font-semibold leading-snug text-zinc-900 transition-colors group-hover:text-accent">
+                        {titleOf(article)}
+                      </h3>
+                      {article.type && (
+                        <span className="shrink-0 rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-600">
+                          {article.type}
+                        </span>
+                      )}
+                    </div>
+                    {article.description && (
+                      <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-zinc-600">
+                        {article.description}
+                      </p>
+                    )}
+                    {article.author && (
+                      <p className="mt-3 text-xs font-medium text-zinc-400">By {article.author}</p>
+                    )}
                   </a>
                 </li>
               ))}
@@ -320,7 +322,7 @@ const SearchResultsComponent = ({
               >
                 Previous
               </Button>
-              <span className="text-muted-foreground px-2 text-sm">
+              <span className="px-2 text-sm text-zinc-500">
                 Page {page} of {totalPages}
               </span>
               <Button
@@ -355,11 +357,13 @@ const SearchResultsWidget = widget(SearchResultsComponent, WidgetDataType.SEARCH
 export const searchResultsVariants = cva('search-results @container w-full py-12', {
   variants: {
     colorScheme: {
+      // Default: a clean, readable light surface (white cards on a subtle gray page).
+      light: 'bg-zinc-50 text-zinc-900',
+      // Brand options remain available to authors via the colorScheme rendering parameter.
       primary: 'bg-primary text-primary-foreground',
-      secondary: 'bg-secondary text-primary',
+      secondary: 'bg-secondary text-secondary-foreground',
       tertiary: 'bg-tertiary text-primary',
       dark: 'bg-dark text-primary',
-      light: 'bg-light text-primary',
     },
   },
   defaultVariants: {
@@ -392,16 +396,14 @@ export const Default = ({ params }: ComponentProps) => {
         {configured && rfkId ? (
           <SearchResultsWidget rfkId={rfkId} defaultKeyphrase={q} />
         ) : (
-          <Card>
-            <CardContent className="p-8">
-              <p className="font-medium">Search is not configured yet.</p>
-              <p className="text-muted-foreground mt-1 text-sm">
-                Set <code>NEXT_PUBLIC_SEARCH_ENV</code>, <code>NEXT_PUBLIC_SEARCH_CUSTOMER_KEY</code>
-                , <code>NEXT_PUBLIC_SEARCH_API_KEY</code>, and{' '}
-                <code>NEXT_PUBLIC_SEARCH_RESULTS_RFKID</code> in your environment, then redeploy.
-              </p>
-            </CardContent>
-          </Card>
+          <div className="rounded-xl border border-zinc-200 bg-white p-8">
+            <p className="font-semibold text-zinc-900">Search is not configured yet.</p>
+            <p className="mt-1 text-sm text-zinc-500">
+              Set <code>NEXT_PUBLIC_SEARCH_ENV</code>, <code>NEXT_PUBLIC_SEARCH_CUSTOMER_KEY</code>,{' '}
+              <code>NEXT_PUBLIC_SEARCH_API_KEY</code>, and{' '}
+              <code>NEXT_PUBLIC_SEARCH_RESULTS_RFKID</code> in your environment, then redeploy.
+            </p>
+          </div>
         )}
       </div>
     </section>
