@@ -129,11 +129,13 @@ const SearchResultsComponent = ({
   });
 
   // Build a lookup of currently-selected facet values so we can mark checkboxes.
+  // Selected values are keyed by `facetValueId` (the `facetid_…` token), which matches
+  // the `id` on each facet value returned in the results — NOT a plain `id` field.
   const selectedFacets = useSearchResultsSelectedFacets();
   const selectedSet = new Set<string>();
   selectedFacets.forEach((f) =>
-    (f.values as Array<{ id?: string }>)?.forEach((v) => {
-      if (v?.id) selectedSet.add(`${f.id}:${v.id}`);
+    (f.values as Array<{ facetValueId?: string }>)?.forEach((v) => {
+      if (v?.facetValueId) selectedSet.add(`${f.id}:${v.facetValueId}`);
     }),
   );
   const hasSelectedFacets = selectedSet.size > 0;
