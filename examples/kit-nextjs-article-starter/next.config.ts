@@ -44,12 +44,12 @@ const nextConfig: NextConfig = {
           {
             source: '/-/media/:path*',
             destination: `${sitecoreApiHost}/-/media/:path*`,
-            locale: false,
+            locale: false as const,
           },
           {
             source: '/-/jssmedia/:path*',
             destination: `${sitecoreApiHost}/-/jssmedia/:path*`,
-            locale: false,
+            locale: false as const,
           },
         ]
       : [];
