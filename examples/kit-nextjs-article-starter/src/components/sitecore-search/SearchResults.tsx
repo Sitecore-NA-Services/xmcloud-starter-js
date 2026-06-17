@@ -344,10 +344,12 @@ const SearchResultsComponent = ({
  * Register the UI component as a Search Results widget. The `rfkId` must match a
  * Search Results widget configured in the Sitecore Search console. This is the
  * internal SDK widget; the Sitecore rendering entry is the `Default` export below.
+ *
+ * NOTE: intentionally NOT a default export — the Sitecore Content SDK resolves the
+ * named `Default` export as the rendering. A competing `default` export would be
+ * picked up instead and rendered without its required props.
  */
 const SearchResultsWidget = widget(SearchResultsComponent, WidgetDataType.SEARCH_RESULTS, 'content');
-
-export default SearchResultsWidget;
 
 /** Section wrapper styling — mirrors the Hero `colorScheme` rendering parameter. */
 export const searchResultsVariants = cva('search-results @container w-full py-12', {
