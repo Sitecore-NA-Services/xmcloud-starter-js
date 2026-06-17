@@ -31,9 +31,32 @@ const nextConfig: NextConfig = {
     unoptimized: process.env.NODE_ENV === 'development',
   },
   
-  // use this configuration to serve the sitemap.xml and robots.txt files from the API route handlers
   rewrites: async () => {
+    // Sitecore media URLs come back from the layout service as relative paths
+    // (/-/media/... and /-/jssmedia/...). They are NOT prefixed with a host by the
+    // Content SDK, so on a headless rendering host they resolve to the app origin —
+    // which serves no media (404). Proxy them to the Sitecore media host instead.
+    // Set NEXT_PUBLIC_SITECORE_API_HOST to your CM/media host (e.g. the XM Cloud
+    // environment host). If unset, no media rewrite is added.
+    const sitecoreApiHost = process.env.NEXT_PUBLIC_SITECORE_API_HOST?.replace(/\/$/, '');
+    const mediaRewrites = sitecoreApiHost
+      ? [
+          {
+            source: '/-/media/:path*',
+            destination: `${sitecoreApiHost}/-/media/:path*`,
+            locale: false,
+          },
+          {
+            source: '/-/jssmedia/:path*',
+            destination: `${sitecoreApiHost}/-/jssmedia/:path*`,
+            locale: false,
+          },
+        ]
+      : [];
+
     return [
+      ...mediaRewrites,
+      // serve the sitemap.xml and robots.txt files from the API route handlers
       {
         source: '/sitemap:id([\\w-]{0,}).xml',
         destination: '/api/sitemap',
