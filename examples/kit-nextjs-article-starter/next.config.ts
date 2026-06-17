@@ -26,6 +26,14 @@ const nextConfig: NextConfig = {
         hostname: 'xmc-*.**',
         port: '',
       },
+      {
+        // The rendering host serves Sitecore media via the /-/media rewrite (above),
+        // so allow next/image to optimize media referenced by the deployment's own
+        // (absolute) URL. Covers the production alias and Vercel preview deployments.
+        protocol: 'https',
+        hostname: '*.vercel.app',
+        port: '',
+      },
     ],
     // Disable image optimization in development to avoid upstream timeouts
     unoptimized: process.env.NODE_ENV === 'development',
