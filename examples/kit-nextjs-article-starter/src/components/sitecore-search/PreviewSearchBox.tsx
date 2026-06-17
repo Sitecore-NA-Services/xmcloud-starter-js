@@ -20,6 +20,7 @@ import {
   widget,
   type PreviewSearchInitialState,
 } from '@sitecore-search/react';
+import { Input } from '@/components/ui/input';
 import { SEARCH_SOURCE_IDS } from './search-config';
 
 type ArticleModel = {
@@ -33,8 +34,7 @@ type ArticleModel = {
 
 type InitialState = PreviewSearchInitialState<'itemsPerPage'>;
 
-const inputClass =
-  'h-10 w-full rounded-full border border-neutral-300 bg-white py-2 pr-4 pl-9 text-sm text-neutral-900';
+const inputClass = 'rounded-full pl-9';
 
 function goToSearch(router: ReturnType<typeof useRouter>, query: string) {
   const q = query.trim();
@@ -84,8 +84,8 @@ const PreviewSearchComponent = ({ defaultItemsPerPage = 6 }: { defaultItemsPerPa
   return (
     <form onSubmit={onSubmit} className="relative w-full max-w-sm">
       <div className="relative">
-        <Search className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-neutral-400" />
-        <input
+        <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
+        <Input
           value={value}
           onChange={onChange}
           autoComplete="off"
@@ -98,17 +98,17 @@ const PreviewSearchComponent = ({ defaultItemsPerPage = 6 }: { defaultItemsPerPa
       {showDropdown && (
         <div
           ref={widgetRef}
-          className="absolute top-12 right-0 left-0 z-50 overflow-hidden rounded-xl border border-neutral-200 bg-white text-neutral-900 shadow-lg"
+          className="border-border bg-popover text-popover-foreground absolute top-12 right-0 left-0 z-50 overflow-hidden rounded-xl border shadow-lg"
         >
           {loading ? (
-            <div className="px-4 py-3 text-sm text-neutral-500">Searching…</div>
+            <div className="text-muted-foreground px-4 py-3 text-sm">Searching…</div>
           ) : articles.length > 0 ? (
             <ul className="max-h-96 overflow-auto">
               {articles.map((article, index) => (
                 <li key={article.id}>
                   <a
                     href={article.url}
-                    className="block px-4 py-3 transition-colors hover:bg-neutral-100"
+                    className="hover:bg-accent hover:text-accent-foreground block px-4 py-3 transition-colors"
                     onClick={(e) => {
                       e.preventDefault();
                       onItemClick({ id: article.id, index, sourceId: article.source_id });
@@ -122,7 +122,7 @@ const PreviewSearchComponent = ({ defaultItemsPerPage = 6 }: { defaultItemsPerPa
               <li>
                 <button
                   type="button"
-                  className="block w-full px-4 py-3 text-left text-sm font-medium text-neutral-900 hover:bg-neutral-100"
+                  className="hover:bg-accent hover:text-accent-foreground block w-full px-4 py-3 text-left text-sm font-medium"
                   onClick={() => goToSearch(router, value)}
                 >
                   View all results →
@@ -130,7 +130,9 @@ const PreviewSearchComponent = ({ defaultItemsPerPage = 6 }: { defaultItemsPerPa
               </li>
             </ul>
           ) : (
-            <div className="px-4 py-3 text-sm text-neutral-500">No matching articles found.</div>
+            <div className="text-muted-foreground px-4 py-3 text-sm">
+              No matching articles found.
+            </div>
           )}
         </div>
       )}
@@ -153,7 +155,7 @@ function PlainSearchInput() {
       className="relative w-full max-w-sm"
     >
       <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
-      <input
+      <Input
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Search articles"

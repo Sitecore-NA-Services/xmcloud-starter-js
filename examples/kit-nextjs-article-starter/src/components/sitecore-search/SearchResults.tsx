@@ -1,22 +1,24 @@
 'use client';
 
 /**
- * Full search-results experience built on the Sitecore Search JS SDK for React.
+ * Full search-results experience built on the Sitecore Search JS SDK for React,
+ * packaged as a Sitecore rendering (`Default` export) so it can be placed on a
+ * Sitecore page and inherits the site layout + design system.
  *
  * Best-practice notes (this file is a teaching reference):
  *  - Data + analytics come from the SDK query hook `useSearchResults`. The hook
  *    manages keyphrase, paging, sorting and facet selection state for you and —
  *    crucially — emits the visitor events (via the WidgetsProvider) that power
- *    Search analytics and personalization. That event tracking is the main reason
- *    to use the SDK over calling the REST API by hand.
- *  - The UI uses theme-independent (neutral) styling with native form controls so
- *    it renders correctly on the standalone /search route, which is outside the
- *    Sitecore-injected brand theme.
- *  - Facets only appear if your administrator has enabled facet attributes on the
- *    widget (rfkId) in the Sitecore Search console. The component renders whatever
- *    facets the API returns, so no code change is needed when facets are added.
+ *    Search analytics and personalization.
+ *  - The UI uses the site design system (shadcn primitives in `@/components/ui`
+ *    and brand tokens) and a `colorScheme` rendering parameter, mirroring the
+ *    pattern used by the Hero rendering.
+ *  - The keyphrase comes from the `?q=` query string; facets are requested
+ *    explicitly in code (content type / author / topics).
  */
 
+import { useSearchParams } from 'next/navigation';
+import { cva } from 'class-variance-authority';
 import {
   WidgetDataType,
   useSearchResults,
@@ -24,6 +26,18 @@ import {
   widget,
   type SearchResultsInitialState,
 } from '@sitecore-search/react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import type { ComponentProps } from '@/lib/component-props';
 import { SEARCH_SOURCE_IDS } from './search-config';
 
 /** Index document shape (attributes configured on the `content` entity). */
@@ -76,11 +90,13 @@ const facetLabelOf = (f: Facet) => FACET_LABELS[f.name] || f.label || f.name;
 const ResultsSkeleton = () => (
   <div className="grid gap-4">
     {Array.from({ length: 6 }).map((_, i) => (
-      <div key={i} className="rounded-lg border border-neutral-200 bg-white p-5">
-        <div className="h-5 w-2/3 animate-pulse rounded bg-neutral-200" />
-        <div className="mt-3 h-4 w-full animate-pulse rounded bg-neutral-100" />
-        <div className="mt-2 h-4 w-4/5 animate-pulse rounded bg-neutral-100" />
-      </div>
+      <Card key={i}>
+        <CardContent className="p-5">
+          <div className="bg-muted h-5 w-2/3 animate-pulse rounded" />
+          <div className="bg-muted/60 mt-3 h-4 w-full animate-pulse rounded" />
+          <div className="bg-muted/60 mt-2 h-4 w-4/5 animate-pulse rounded" />
+        </CardContent>
+      </Card>
     ))}
   </div>
 );
@@ -144,28 +160,32 @@ const SearchResultsComponent = ({
   const loading = isLoading || isFetching;
 
   return (
-    <div ref={widgetRef} className="text-neutral-900">
+    <div ref={widgetRef}>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-[260px_1fr]">
         {/* ----------------------------- Facets ----------------------------- */}
         <aside className="space-y-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-semibold">Filters</h2>
+            <h2 className="font-heading text-lg font-semibold">Filters</h2>
             {hasSelectedFacets && (
-              <button
+              <Button
                 type="button"
-                className="rounded px-2 py-1 text-xs text-neutral-600 hover:bg-neutral-100"
+                variant="link"
+                size="sm"
+                className="text-muted-foreground h-auto p-0"
                 onClick={() => onClearFilters()}
               >
                 Clear all
-              </button>
+              </Button>
             )}
           </div>
 
           {facets.length === 0 ? (
-            <p className="text-sm text-neutral-500">No filters are configured for this widget yet.</p>
+            <p className="text-muted-foreground text-sm">
+              No filters are configured for this widget yet.
+            </p>
           ) : (
             facets.map((facet, facetIndex) => (
-              <div key={facet.name} className="space-y-3 border-b border-neutral-200 pb-5">
+              <div key={facet.name} className="border-border space-y-3 border-b pb-5">
                 <h3 className="text-sm font-medium">{facetLabelOf(facet)}</h3>
                 <ul className="space-y-2">
                   {facet.value.map((value, facetValueIndex) => {
@@ -173,28 +193,26 @@ const SearchResultsComponent = ({
                     const inputId = `facet-${facet.name}-${value.id}`;
                     return (
                       <li key={value.id} className="flex items-center gap-2">
-                        <input
-                          type="checkbox"
+                        <Checkbox
                           id={inputId}
                           checked={checked}
-                          onChange={(e) =>
+                          onCheckedChange={(next) =>
                             onFacetClick({
                               facetId: facet.name,
                               facetIndex,
                               facetValueId: value.id,
                               facetValueIndex,
-                              checked: e.target.checked,
+                              checked: next === true,
                               type: 'valueId',
                             })
                           }
-                          className="h-4 w-4 rounded border-neutral-300 accent-neutral-900"
                         />
                         <label
                           htmlFor={inputId}
-                          className="flex flex-1 items-center justify-between gap-2 text-sm"
+                          className="flex flex-1 cursor-pointer items-center justify-between gap-2 text-sm"
                         >
                           <span className="truncate">{value.text}</span>
-                          <span className="text-xs text-neutral-500">{value.count}</span>
+                          <span className="text-muted-foreground text-xs">{value.count}</span>
                         </label>
                       </li>
                     );
@@ -208,7 +226,7 @@ const SearchResultsComponent = ({
         {/* ----------------------------- Results ---------------------------- */}
         <section>
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <p className="text-sm text-neutral-600" aria-live="polite">
+            <p className="text-muted-foreground text-sm" aria-live="polite">
               {loading
                 ? 'Searching…'
                 : `${totalItems} result${totalItems === 1 ? '' : 's'}${
@@ -217,58 +235,70 @@ const SearchResultsComponent = ({
             </p>
 
             {sortChoices.length > 0 && (
-              <label className="flex items-center gap-2 text-sm text-neutral-600">
-                Sort
-                <select
+              <div className="flex items-center gap-2">
+                <span className="text-muted-foreground text-sm">Sort</span>
+                <Select
                   value={sortType || sortChoices[0]?.name}
-                  onChange={(e) => onSortChange({ name: e.target.value })}
-                  className="h-9 rounded-md border border-neutral-300 bg-white px-2 text-sm text-neutral-900"
+                  onValueChange={(name) => onSortChange({ name })}
                 >
-                  {sortChoices.map((choice) => (
-                    <option key={choice.name} value={choice.name}>
-                      {sortLabelOf(choice)}
-                    </option>
-                  ))}
-                </select>
-              </label>
+                  <SelectTrigger className="h-9 w-[180px]">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {sortChoices.map((choice) => (
+                      <SelectItem key={choice.name} value={choice.name}>
+                        {sortLabelOf(choice)}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
             )}
           </div>
 
           {loading ? (
             <ResultsSkeleton />
           ) : articles.length === 0 ? (
-            <div className="rounded-lg border border-neutral-200 bg-white p-8 text-center">
-              <p className="font-medium">No articles found</p>
-              <p className="mt-1 text-sm text-neutral-500">
-                Try a different keyword{hasSelectedFacets ? ' or clear your filters' : ''}.
-              </p>
-            </div>
+            <Card>
+              <CardContent className="p-8 text-center">
+                <p className="font-medium">No articles found</p>
+                <p className="text-muted-foreground mt-1 text-sm">
+                  Try a different keyword{hasSelectedFacets ? ' or clear your filters' : ''}.
+                </p>
+              </CardContent>
+            </Card>
           ) : (
             <ul className="grid gap-4">
               {articles.map((article, index) => (
                 <li key={article.id}>
                   <a
                     href={article.url}
-                    className="block rounded-lg border border-neutral-200 bg-white p-5 transition-colors hover:border-neutral-400"
+                    className="group block"
                     onClick={() =>
                       // Tracks a result-click event for Search analytics/personalization.
                       onItemClick({ id: article.id, index, sourceId: article.source_id })
                     }
                   >
-                    <div className="flex items-start justify-between gap-4">
-                      <h3 className="text-lg font-semibold">{titleOf(article)}</h3>
-                      {article.type && (
-                        <span className="shrink-0 rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600">
-                          {article.type}
-                        </span>
-                      )}
-                    </div>
-                    {article.description && (
-                      <p className="mt-2 line-clamp-2 text-sm text-neutral-600">{article.description}</p>
-                    )}
-                    {article.author && (
-                      <p className="mt-3 text-xs text-neutral-500">By {article.author}</p>
-                    )}
+                    <Card className="group-hover:border-primary transition-colors">
+                      <CardContent className="p-5">
+                        <div className="flex items-start justify-between gap-4">
+                          <h3 className="font-heading text-lg font-semibold">{titleOf(article)}</h3>
+                          {article.type && (
+                            <span className="bg-secondary text-secondary-foreground shrink-0 rounded-full px-2 py-0.5 text-xs">
+                              {article.type}
+                            </span>
+                          )}
+                        </div>
+                        {article.description && (
+                          <p className="text-muted-foreground mt-2 line-clamp-2 text-sm">
+                            {article.description}
+                          </p>
+                        )}
+                        {article.author && (
+                          <p className="text-muted-foreground mt-3 text-xs">By {article.author}</p>
+                        )}
+                      </CardContent>
+                    </Card>
                   </a>
                 </li>
               ))}
@@ -281,25 +311,27 @@ const SearchResultsComponent = ({
               className="mt-8 flex items-center justify-center gap-2"
               aria-label="Search results pages"
             >
-              <button
+              <Button
                 type="button"
-                className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm disabled:opacity-40"
+                variant="outline"
+                size="sm"
                 disabled={page <= 1}
                 onClick={() => onPageNumberChange({ page: page - 1 })}
               >
                 Previous
-              </button>
-              <span className="px-2 text-sm text-neutral-600">
+              </Button>
+              <span className="text-muted-foreground px-2 text-sm">
                 Page {page} of {totalPages}
               </span>
-              <button
+              <Button
                 type="button"
-                className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm disabled:opacity-40"
+                variant="outline"
+                size="sm"
                 disabled={page >= totalPages}
                 onClick={() => onPageNumberChange({ page: page + 1 })}
               >
                 Next
-              </button>
+              </Button>
             </nav>
           )}
         </section>
@@ -309,10 +341,67 @@ const SearchResultsComponent = ({
 };
 
 /**
- * Register the UI component as a Search Results widget. The `rfkId` is supplied
- * where the widget is rendered (see /search) and must match a Search Results
- * widget configured in the Sitecore Search console.
+ * Register the UI component as a Search Results widget. The `rfkId` must match a
+ * Search Results widget configured in the Sitecore Search console. This is the
+ * internal SDK widget; the Sitecore rendering entry is the `Default` export below.
  */
 const SearchResultsWidget = widget(SearchResultsComponent, WidgetDataType.SEARCH_RESULTS, 'content');
 
 export default SearchResultsWidget;
+
+/** Section wrapper styling — mirrors the Hero `colorScheme` rendering parameter. */
+export const searchResultsVariants = cva('search-results @container w-full py-12', {
+  variants: {
+    colorScheme: {
+      primary: 'bg-primary text-primary-foreground',
+      secondary: 'bg-secondary text-primary',
+      tertiary: 'bg-tertiary text-primary',
+      dark: 'bg-dark text-primary',
+      light: 'bg-light text-primary',
+    },
+  },
+  defaultVariants: {
+    colorScheme: 'light',
+  },
+});
+
+type ColorScheme = 'primary' | 'secondary' | 'tertiary' | 'dark' | 'light';
+
+/**
+ * Sitecore rendering entry. Placed on a Sitecore page (the `/search` page); reads
+ * the `colorScheme` rendering parameter and the `?q=` query string, then renders
+ * the Search SDK widget inside a brand-styled section. `rfkId` and credentials
+ * come from public env vars; if unset, a styled "not configured" notice renders so
+ * the page still builds.
+ */
+export const Default = ({ params }: ComponentProps) => {
+  const colorScheme = ((params?.colorScheme as ColorScheme) || 'light') as ColorScheme;
+  const q = useSearchParams()?.get('q') ?? '';
+
+  const rfkId = process.env.NEXT_PUBLIC_SEARCH_RESULTS_RFKID;
+  const configured =
+    !!process.env.NEXT_PUBLIC_SEARCH_ENV &&
+    !!process.env.NEXT_PUBLIC_SEARCH_CUSTOMER_KEY &&
+    !!process.env.NEXT_PUBLIC_SEARCH_API_KEY;
+
+  return (
+    <section className={cn(searchResultsVariants({ colorScheme }), params?.styles)}>
+      <div className="mx-auto w-full max-w-screen-xl px-4 xl:px-8">
+        {configured && rfkId ? (
+          <SearchResultsWidget rfkId={rfkId} defaultKeyphrase={q} />
+        ) : (
+          <Card>
+            <CardContent className="p-8">
+              <p className="font-medium">Search is not configured yet.</p>
+              <p className="text-muted-foreground mt-1 text-sm">
+                Set <code>NEXT_PUBLIC_SEARCH_ENV</code>, <code>NEXT_PUBLIC_SEARCH_CUSTOMER_KEY</code>
+                , <code>NEXT_PUBLIC_SEARCH_API_KEY</code>, and{' '}
+                <code>NEXT_PUBLIC_SEARCH_RESULTS_RFKID</code> in your environment, then redeploy.
+              </p>
+            </CardContent>
+          </Card>
+        )}
+      </div>
+    </section>
+  );
+};
