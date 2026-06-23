@@ -1,0 +1,23 @@
+# Local VS Code settings
+.vscode/mcp.json
+.vscode/settings.json
+
+# Sitecore Search debug logs
+SITECORE_SEARCH_DEBUG_LOG_*.md
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+
+# Temporary files
+tmp/
+
+# Node modules and dependencies
+node_modules/
+.next/
+dist/
+build/
+*.log
+
+# Environment files
+.env.local
+.env.*.local
