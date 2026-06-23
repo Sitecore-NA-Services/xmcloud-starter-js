@@ -1,8 +1,0 @@
-{
-  "servers": {
-    "sitecore-marketer": {
-      "type": "sse",
-      "url": "https://edge-platform.sitecorecloud.io/mcp/marketer-mcp-prod"
-    }
-  }
-}
