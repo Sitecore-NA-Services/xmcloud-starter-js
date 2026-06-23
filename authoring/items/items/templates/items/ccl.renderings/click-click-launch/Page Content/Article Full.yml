@@ -12,16 +12,19 @@ SharedFields:
   Value: Applications/32x32/text_rich_colored.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: "/sitecore/templates/Project/nextjs-article_starter/ArticleData/Article-Data"
+  Value: "/sitecore/templates/Project/nextjs-article_starter/ArticleData"
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 0
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{DBD95461-22D0-413D-9087-41D4F8E515BA}"
+- ID: "a3411ff6-c978-40aa-b059-a49b9ca2209b"
+  Hint: Can select Page as a data source
+  Value: 1
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Data']/*[@@templatename='Article Data Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Article Data Folder']"
+  Value: "query:$site/*[@@name='Data']/*[@@name='Articles']|query:$sharedSites/*[@@name='Data']/*[@@name='Articles']"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
   Value: "538a19b9-c955-4d89-8e6e-ecf0a8fa9cc8"

@@ -26,9 +26,9 @@ export const Default: React.FC<ArticleFullProps> = (props) => {
   // Prefer datasource values when set; otherwise fall back to route-level article fields.
   const datasourceFields = fields?.data?.datasource;
   const contextFields = page?.layout?.sitecore?.route?.fields as RouteFields;
-  const articleTitle = datasourceFields?.Title?.jsonValue ?? contextFields?.ArticleTitle;
-  const articleAuthor = datasourceFields?.Author?.jsonValue ?? contextFields?.ArticleAuthor;
-  const articleContent = datasourceFields?.Body?.jsonValue ?? contextFields?.ArticleContent;
+  const articleTitle = datasourceFields?.ArticleTitle?.jsonValue ?? contextFields?.ArticleTitle;
+  const articleAuthor = datasourceFields?.ArticleAuthor?.jsonValue ?? contextFields?.ArticleAuthor;
+  const articleContent = datasourceFields?.ArticleContent?.jsonValue ?? contextFields?.ArticleContent;
 
   // Only show fallback if no fields are available at all
   if (!articleTitle && !articleAuthor && !articleContent && !page.mode.isEditing) {
