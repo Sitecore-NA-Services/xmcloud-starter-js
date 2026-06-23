@@ -12,24 +12,31 @@ SharedFields:
   Value: Applications/32x32/text_rich_colored.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: "{7D55AFDB-8BA4-4A89-94B3-5F0FB602A2C0}"
+  Value: "/sitecore/templates/Project/nextjs-article_starter/ArticleData"
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 0
-- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
-  Hint: Parameters Template
-  Value: 
 - ID: "a3411ff6-c978-40aa-b059-a49b9ca2209b"
   Hint: Can select Page as a data source
   Value: 1
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{EF87E73B-C7FF-49A2-AC59-9B0BE83755C3}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Data']//*[@@templatename='ArticleData']|query:$sharedSites/*[@@name='Data']//*[@@templatename='ArticleData']"
+  Value: "query:$site/*[@@name='Data']//*[@@templatename='ArticleData']|query:$sharedSites/*[@@name='Data']//*[@@templatename='ArticleData'] "
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "538a19b9-c955-4d89-8e6e-ecf0a8fa9cc8"
+  Value: "c19aba90-1abd-40be-9a7c-c6566853fa88"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true
 Languages:
 - Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "1555e058-71f0-4e68-ab16-079983cf306b"
   Versions:
   - Version: 1
     Fields:
@@ -46,11 +53,11 @@ Languages:
         sitecore\kevin.buckley@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a4d91f45-3a1b-42b5-a889-0e86d8f12d07"
+      Value: "31c34ffc-a6f9-46d5-a190-38f2991d4655"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kevin.buckley@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20251024T143419Z
+      Value: 20260623T202608Z
