@@ -19,15 +19,16 @@ interface RouteFields {
 }
 
 export const Default: React.FC<ArticleFullProps> = (props) => {
-  const { params } = props;
+  const { params, fields } = props;
   const { page } = useSitecore();
   const id = params?.RenderingIdentifier;
 
-  // Get fields from the current page/route context
+  // Prefer datasource values when set; otherwise fall back to route-level article fields.
+  const datasourceFields = fields?.data?.datasource;
   const contextFields = page?.layout?.sitecore?.route?.fields as RouteFields;
-  const articleTitle = contextFields?.ArticleTitle;
-  const articleAuthor = contextFields?.ArticleAuthor;
-  const articleContent = contextFields?.ArticleContent;
+  const articleTitle = datasourceFields?.Title?.jsonValue ?? contextFields?.ArticleTitle;
+  const articleAuthor = datasourceFields?.Author?.jsonValue ?? contextFields?.ArticleAuthor;
+  const articleContent = datasourceFields?.Body?.jsonValue ?? contextFields?.ArticleContent;
 
   // Only show fallback if no fields are available at all
   if (!articleTitle && !articleAuthor && !articleContent && !page.mode.isEditing) {

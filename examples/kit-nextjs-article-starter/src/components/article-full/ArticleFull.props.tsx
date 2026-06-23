@@ -1,7 +1,17 @@
 import { ComponentProps } from '@/lib/component-props';
+import { Field, RichTextField } from '@sitecore-content-sdk/nextjs';
 
 /**
- * ArticleFull component - reads fields from the current page/route context
- * Uses: pageHeaderTitle, pageAuthor (reference), Content (rich text)
+ * ArticleFull component can read from datasource fields or page/route context fields.
  */
-export type ArticleFullProps = ComponentProps;
+export type ArticleFullProps = ComponentProps & {
+	fields?: {
+		data?: {
+			datasource?: {
+				Title?: { jsonValue?: Field<string> };
+				Author?: { jsonValue?: Field<string> };
+				Body?: { jsonValue?: RichTextField };
+			};
+		};
+	};
+};
