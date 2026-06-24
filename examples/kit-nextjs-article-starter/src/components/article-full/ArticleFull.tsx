@@ -1,34 +1,27 @@
 'use client';
 
 import type React from 'react';
-import {
-  Text,
-  RichText as ContentSdkRichText,
-  useSitecore,
-  Field,
-  RichTextField,
-} from '@sitecore-content-sdk/nextjs';
+import { Text, RichText as ContentSdkRichText, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { ArticleFullProps } from './ArticleFull.props';
 import { cn } from '@/lib/utils';
 import { NoDataFallback } from '@/utils/NoDataFallback';
-
-interface RouteFields {
-  ArticleTitle?: Field<string>;
-  ArticleAuthor?: Field<string>;
-  ArticleContent?: RichTextField;
-}
 
 export const Default: React.FC<ArticleFullProps> = (props) => {
   const { params, fields } = props;
   const { page } = useSitecore();
   const id = params?.RenderingIdentifier;
 
-  // Prefer datasource values when set; otherwise fall back to route-level article fields.
+  // Prefer the assigned datasource; otherwise fall back to the page's own article fields.
+  // Both arrive through the rendering's integrated GraphQL query (datasource / externalFields),
+  // so Page Builder can edit the fields inline and assign a content item to the component.
   const datasourceFields = fields?.data?.datasource;
-  const contextFields = page?.layout?.sitecore?.route?.fields as RouteFields;
-  const articleTitle = datasourceFields?.ArticleTitle?.jsonValue ?? contextFields?.ArticleTitle;
-  const articleAuthor = datasourceFields?.ArticleAuthor?.jsonValue ?? contextFields?.ArticleAuthor;
-  const articleContent = datasourceFields?.ArticleContent?.jsonValue ?? contextFields?.ArticleContent;
+  const externalFields = fields?.data?.externalFields;
+  const articleTitle =
+    datasourceFields?.ArticleTitle?.jsonValue ?? externalFields?.ArticleTitle?.jsonValue;
+  const articleAuthor =
+    datasourceFields?.ArticleAuthor?.jsonValue ?? externalFields?.ArticleAuthor?.jsonValue;
+  const articleContent =
+    datasourceFields?.ArticleContent?.jsonValue ?? externalFields?.ArticleContent?.jsonValue;
 
   // Only show fallback if no fields are available at all
   if (!articleTitle && !articleAuthor && !articleContent && !page.mode.isEditing) {

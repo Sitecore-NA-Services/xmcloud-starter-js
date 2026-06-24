@@ -1,0 +1,33 @@
+---
+ID: "a2c26d3e-1234-4f5a-8b9c-2d5e6f7a8b9d"
+Parent: "7d6ee22e-1234-4a8e-9f5d-2e8b9c3d4e1f"
+Template: "7d6ee22e-1234-4a8e-9f5d-2e8b9c3d4e1f"
+Path: "/sitecore/templates/Project/nextjs-article_starter/Article Data Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {7D55AFDB-8BA4-4A89-94B3-5F0FB602A2C0}
+    {7D6EE22E-1234-4A8E-9F5D-2E8B9C3D4E1F}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260623T000000Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260623T000000Z

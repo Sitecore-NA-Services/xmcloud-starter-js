@@ -2,16 +2,25 @@ import { ComponentProps } from '@/lib/component-props';
 import { Field, RichTextField } from '@sitecore-content-sdk/nextjs';
 
 /**
- * ArticleFull component can read from datasource fields or page/route context fields.
+ * Shape of the Article fields, shared by the assigned datasource item and the
+ * page-level (external) fields. Populated by the rendering's integrated GraphQL query.
+ */
+export interface ArticleFullFields {
+	ArticleTitle?: { jsonValue?: Field<string> };
+	ArticleAuthor?: { jsonValue?: Field<string> };
+	ArticleContent?: { jsonValue?: RichTextField };
+}
+
+/**
+ * ArticleFull renders an assigned ArticleData datasource when present, and otherwise
+ * falls back to the current Article Page's own fields (externalFields). Both come through
+ * the datasource pipeline so Page Builder can edit fields and assign a content item.
  */
 export type ArticleFullProps = ComponentProps & {
 	fields?: {
 		data?: {
-			datasource?: {
-				Title?: { jsonValue?: Field<string> };
-				Author?: { jsonValue?: Field<string> };
-				Body?: { jsonValue?: RichTextField };
-			};
+			datasource?: ArticleFullFields;
+			externalFields?: ArticleFullFields;
 		};
 	};
 };

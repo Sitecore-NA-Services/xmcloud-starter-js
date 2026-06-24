@@ -10,9 +10,40 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Applications/32x32/text_rich_colored.png
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query ArticleFull($datasource: String!, $contextItem: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+        ... on ArticleData {
+          ArticleTitle {
+            jsonValue
+          }
+          ArticleAuthor {
+            jsonValue
+          }
+          ArticleContent {
+            jsonValue
+          }
+        }
+      }
+      externalFields: item(path: $contextItem, language: $language) {
+        ... on ArticlePage {
+          ArticleTitle {
+            jsonValue
+          }
+          ArticleAuthor {
+            jsonValue
+          }
+          ArticleContent {
+            jsonValue
+          }
+        }
+      }
+    }
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: "/sitecore/templates/Project/nextjs-article_starter/ArticleData"
+  Value: "{7D55AFDB-8BA4-4A89-94B3-5F0FB602A2C0}"
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 0
@@ -24,10 +55,10 @@ SharedFields:
   Value: "{EF87E73B-C7FF-49A2-AC59-9B0BE83755C3}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Data']//*[@@templatename='ArticleData']|query:$sharedSites/*[@@name='Data']//*[@@templatename='ArticleData'] "
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Article Data Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Article Data Folder']"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "c19aba90-1abd-40be-9a7c-c6566853fa88"
+  Value: "c19aba90-1abd-40be-9a7c-c6566853fb01"
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
   Value: IsRenderingsWithDynamicPlaceholders=true
