@@ -16,26 +16,26 @@ SharedFields:
     query ArticleFull($datasource: String!, $contextItem: String!, $language: String!) {
       datasource: item(path: $datasource, language: $language) {
         ... on ArticleData {
-          ArticleTitle {
+          articleTitle {
             jsonValue
           }
-          ArticleAuthor {
+          articleAuthor {
             jsonValue
           }
-          ArticleContent {
+          articleContent {
             jsonValue
           }
         }
       }
       externalFields: item(path: $contextItem, language: $language) {
         ... on ArticlePage {
-          ArticleTitle {
+          articleTitle {
             jsonValue
           }
-          ArticleAuthor {
+          articleAuthor {
             jsonValue
           }
-          ArticleContent {
+          articleContent {
             jsonValue
           }
         }
@@ -58,7 +58,7 @@ SharedFields:
   Value: "query:$site/*[@@name='Data']/*[@@templatename='Article Data Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Article Data Folder']"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "c19aba90-1abd-40be-9a7c-c6566853fb01"
+  Value: "c19aba90-1abd-40be-9a7c-c6566853fb02"
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
   Value: IsRenderingsWithDynamicPlaceholders=true

@@ -1,27 +1,50 @@
 'use client';
 
 import type React from 'react';
-import { Text, RichText as ContentSdkRichText, useSitecore } from '@sitecore-content-sdk/nextjs';
+import {
+  Text,
+  RichText as ContentSdkRichText,
+  useSitecore,
+  Field,
+  RichTextField,
+} from '@sitecore-content-sdk/nextjs';
 import { ArticleFullProps } from './ArticleFull.props';
 import { cn } from '@/lib/utils';
 import { NoDataFallback } from '@/utils/NoDataFallback';
+
+// Route-level (REST layout service) field keys use the exact Sitecore field names.
+interface RouteFields {
+  ArticleTitle?: Field<string>;
+  ArticleAuthor?: Field<string>;
+  ArticleContent?: RichTextField;
+}
 
 export const Default: React.FC<ArticleFullProps> = (props) => {
   const { params, fields } = props;
   const { page } = useSitecore();
   const id = params?.RenderingIdentifier;
 
-  // Prefer the assigned datasource; otherwise fall back to the page's own article fields.
-  // Both arrive through the rendering's integrated GraphQL query (datasource / externalFields),
-  // so Page Builder can edit the fields inline and assign a content item to the component.
+  // Resolve fields in priority order:
+  //   1. an assigned datasource (integrated GraphQL — camelCased field names),
+  //   2. the page's own fields returned by the same query (externalFields),
+  //   3. the route-level page fields as a guaranteed fallback.
+  // This keeps content rendering even if the integrated query is unavailable, while
+  // still letting Page Builder edit fields inline and assign a content item.
   const datasourceFields = fields?.data?.datasource;
   const externalFields = fields?.data?.externalFields;
+  const contextFields = page?.layout?.sitecore?.route?.fields as RouteFields;
   const articleTitle =
-    datasourceFields?.ArticleTitle?.jsonValue ?? externalFields?.ArticleTitle?.jsonValue;
+    datasourceFields?.articleTitle?.jsonValue ??
+    externalFields?.articleTitle?.jsonValue ??
+    contextFields?.ArticleTitle;
   const articleAuthor =
-    datasourceFields?.ArticleAuthor?.jsonValue ?? externalFields?.ArticleAuthor?.jsonValue;
+    datasourceFields?.articleAuthor?.jsonValue ??
+    externalFields?.articleAuthor?.jsonValue ??
+    contextFields?.ArticleAuthor;
   const articleContent =
-    datasourceFields?.ArticleContent?.jsonValue ?? externalFields?.ArticleContent?.jsonValue;
+    datasourceFields?.articleContent?.jsonValue ??
+    externalFields?.articleContent?.jsonValue ??
+    contextFields?.ArticleContent;
 
   // Only show fallback if no fields are available at all
   if (!articleTitle && !articleAuthor && !articleContent && !page.mode.isEditing) {

@@ -2,13 +2,14 @@ import { ComponentProps } from '@/lib/component-props';
 import { Field, RichTextField } from '@sitecore-content-sdk/nextjs';
 
 /**
- * Shape of the Article fields, shared by the assigned datasource item and the
- * page-level (external) fields. Populated by the rendering's integrated GraphQL query.
+ * Shape of the Article fields returned by the rendering's integrated GraphQL query,
+ * shared by the assigned datasource item and the page-level (external) fields.
+ * GraphQL field names are camelCased (Sitecore lowercases the first letter).
  */
 export interface ArticleFullFields {
-	ArticleTitle?: { jsonValue?: Field<string> };
-	ArticleAuthor?: { jsonValue?: Field<string> };
-	ArticleContent?: { jsonValue?: RichTextField };
+	articleTitle?: { jsonValue?: Field<string> };
+	articleAuthor?: { jsonValue?: Field<string> };
+	articleContent?: { jsonValue?: RichTextField };
 }
 
 /**
