@@ -16,9 +16,6 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 300
-- ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
-  Hint: Shared
-  Value: 1
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
   Value: "07e1b885-c7e7-4f85-9035-115ef1b9b44a"
