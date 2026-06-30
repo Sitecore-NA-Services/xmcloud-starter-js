@@ -1,4 +1,4 @@
-import { type NextRequest, type NextFetchEvent } from 'next/server';
+import { type NextRequest, type NextFetchEvent, type NextResponse } from 'next/server';
 import {
   defineMiddleware,
   AppRouterMultisiteMiddleware,
@@ -11,7 +11,54 @@ import sites from '.sitecore/sites.json';
 import scConfig from 'sitecore.config';
 import { routing } from './i18n/routing';
 
-const locale = new LocaleMiddleware({
+/**
+ * Map a request hostname to the locale that domain should serve, so the site
+ * language can be selected by domain (e.g. an es-MX domain vs the default en
+ * domain) without duplicating the content tree.
+ *
+ * Driven entirely by the LOCALE_DOMAIN_MAP env var so deployment-specific hosts
+ * never get baked into source. Format: a comma-separated list of host=locale
+ * pairs, for example:
+ *   LOCALE_DOMAIN_MAP="es.example.com=es-MX,fr.example.com=fr-FR"
+ *
+ * Each locale must also be declared in src/i18n/routing.ts and enabled (with
+ * content versions) in XM Cloud. The Content SDK's LocaleMiddleware runs first
+ * and resolves the locale before any site is known, so hostname-based language
+ * selection belongs here rather than in site/multisite config.
+ * See: https://doc.sitecore.com/sai/en/developers/content-sdk/internationalization-using-next-intl.html
+ */
+function parseDomainLocaleMap(raw: string | undefined): Record<string, string> {
+  const map: Record<string, string> = {};
+  if (!raw) return map;
+  for (const pair of raw.split(',')) {
+    const [host, loc] = pair.split('=').map((s) => s.trim());
+    // Lower-case host keys for case-insensitive matching against the request host.
+    if (host && loc) map[host.toLowerCase()] = loc;
+  }
+  return map;
+}
+
+const domainLocaleMap = parseDomainLocaleMap(process.env.LOCALE_DOMAIN_MAP);
+const supportedLocales = routing.locales.slice();
+
+/**
+ * LocaleMiddleware that selects the language from the request hostname when the
+ * URL has no explicit locale prefix. An explicit locale in the path always wins,
+ * so /es-MX/... still works on any domain. Falls back to the default resolution
+ * (header / Next locale / configured default) when the host has no mapping.
+ */
+class DomainLocaleMiddleware extends LocaleMiddleware {
+  protected getLanguage(req: NextRequest, res?: NextResponse): string {
+    const host = this.getHostHeader(req)?.toLowerCase();
+    const mapped = host ? domainLocaleMap[host] : undefined;
+    if (mapped && supportedLocales.includes(mapped)) {
+      return mapped;
+    }
+    return super.getLanguage(req, res);
+  }
+}
+
+const locale = new DomainLocaleMiddleware({
   /**
    * List of sites for site resolver to work with
    */
