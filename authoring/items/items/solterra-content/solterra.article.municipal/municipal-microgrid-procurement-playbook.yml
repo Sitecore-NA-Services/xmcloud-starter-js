@@ -1,0 +1,159 @@
+﻿---
+ID: "5d935d63-5d4c-4c56-9208-86a192a34c06"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/municipal-microgrid-procurement-playbook"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{F57CBFFB-5A02-4101-9E9B-C0847876ACC6}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0adb2ac6-6ce2-481f-9200-9ee99045154a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: How procurement teams can evaluate vendors without overpromising sustainability claims.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T173925Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: Municipal Microgrid Procurement Playbook
+    - ID: "288c11f5-7457-4e7f-880a-a76a98a0e296"
+      Hint: taxAuthor
+      Value: "{D9129891-4821-4A9B-B93F-473960F03F46}"
+    - ID: "2fcae033-cf44-4b77-b8ad-91f41b56cb1c"
+      Hint: pageDisplayDate
+      Value: "2026-03-12"
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: Clear criteria for reliability, compliance, and lifecycle value.
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: Municipal Microgrid Procurement Playbook
+    - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
+      Hint: taxContentType
+      Value: "{FA2B17D0-471B-4B5F-814B-B9B09844AFBF}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: "<p>This article outlines procurement checkpoints for municipalities: baseline load analysis, interconnection planning, and independent verification of performance claims. It emphasizes plain-language contracts and transparent trade-offs.</p><p>Generated test content aligned to Solterra and Co brand context: clarity, confidence, and community-centric communication.</p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "243fe113-2e3d-4064-8fe4-b4f74b32665a"
+    - ID: "a586cc74-9fee-4a68-8df5-c7c285cd71aa"
+      Hint: taxTopic
+      Value: |
+        {05DA17C7-43EC-4423-97B1-CF0B062CA079}
+        {0BB4068F-7C47-4BA6-B8FE-C3DB91CA809D}
+        {C4C99874-7F38-48C3-B81F-395A14F67461}
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Jordan Alvarez
+    - ID: "afd3e865-f6ac-4485-95f2-cae591dd8f0a"
+      Hint: pageReadTime
+      Value: 7 min
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: A Practical Guide for City Teams Buying Resilient Power
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260608T174002Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: Municipal Microgrid Procurement Playbook
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: Municipal Microgrid Procurement Playbook
+- Language: "es-MX"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: guia-de-adquisicion-de-microrredes-municipales
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: C�mo los equipos de adquisici�n pueden evaluar proveedores sin prometer en exceso afirmaciones de sostenibilidad.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T173925Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: Manual de Adquisici�n de Microredes Municipales
+    - ID: "288c11f5-7457-4e7f-880a-a76a98a0e296"
+      Hint: taxAuthor
+      Value: "{D9129891-4821-4A9B-B93F-473960F03F46}"
+    - ID: "2fcae033-cf44-4b77-b8ad-91f41b56cb1c"
+      Hint: pageDisplayDate
+      Value: "2026-03-12"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: Criterios claros para confiabilidad, cumplimiento y valor del ciclo de vida.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: Manual de Adquisici�n de Microredes Municipales
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
+      Hint: taxContentType
+      Value: "{FA2B17D0-471B-4B5F-814B-B9B09844AFBF}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: "<p>Este art�culo describe los puntos de control de adquisici�n para municipios: an�lisis de carga base, planificaci�n de interconexi�n y verificaci�n independiente de las afirmaciones de rendimiento. Hace hincapi� en contratos en lenguaje sencillo y compensaciones transparentes.</p><p>Contenido de prueba generado alineado con el contexto de la marca Solterra y Co: claridad, confianza y comunicaci�n centrada en la comunidad.</p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "45226e8b-daef-4086-bcaa-cb356fc5cd1f"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a586cc74-9fee-4a68-8df5-c7c285cd71aa"
+      Hint: taxTopic
+      Value: |
+        {05DA17C7-43EC-4423-97B1-CF0B062CA079}
+        {0BB4068F-7C47-4BA6-B8FE-C3DB91CA809D}
+        {C4C99874-7F38-48C3-B81F-395A14F67461}
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Jordan Alvarez
+    - ID: "afd3e865-f6ac-4485-95f2-cae591dd8f0a"
+      Hint: pageReadTime
+      Value: 7 min
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: Una gu�a pr�ctica para equipos municipales que compran energ�a resiliente
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260629T183650Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: Manual de Adquisici�n de Microredes Municipales
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: Manual de Adquisici�n de Microredes Municipales

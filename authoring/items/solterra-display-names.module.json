@@ -1,0 +1,81 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.solterra-display-names",
+    "items": {
+        "path": "items/solterra-content",
+        "includes": [
+            {
+                "name": "solterra.articles-folder",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.about-folder",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/About",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.battery",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/battery-storage-lessons-from-heat-week",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.closing",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/closing-the-loop-on-circular-materials",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.pilot",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/from-pilot-to-program-scaling-resilient-power",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.grant",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/grant-strategies-for-mid-market-clean-energy",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.impact",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/impact-dashboard-what-we-measure-and-why",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.microgrids",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/microgrids-and-community-cooling-centers",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.municipal",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/municipal-microgrid-procurement-playbook",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.safety",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/safety-first-field-operations-standard",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.school",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/school-campus-energy-resilience-checklist",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.article.waste",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/waste-to-watts-in-three-school-districts",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            }
+        ]
+    }
+}

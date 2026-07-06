@@ -1,0 +1,159 @@
+﻿---
+ID: "fc7572cc-6f38-42aa-bd91-1fc2e3d3c3f8"
+Parent: "7880ef4a-bef4-491c-9759-f273d6ef9c93"
+Template: "0bfa1991-cb14-42fb-beef-5700f0c79394"
+Path: "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/waste-to-watts-in-three-school-districts"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{3F55DE38-09C7-4F37-B31A-00B09198C9FF}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "54181dd7-cd9a-44c4-97db-fee594969b30"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: "A test dataset article on converting waste streams into resilient energy systems for K-12 campuses."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T173925Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: Waste to Watts in Three School Districts
+    - ID: "288c11f5-7457-4e7f-880a-a76a98a0e296"
+      Hint: taxAuthor
+      Value: "{17EC4216-589B-496E-9EE7-4FD6A0A2FBB0}"
+    - ID: "2fcae033-cf44-4b77-b8ad-91f41b56cb1c"
+      Hint: pageDisplayDate
+      Value: "2026-03-05"
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: District pilots, baselines, and measurable outcomes.
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: Waste to Watts in Three School Districts
+    - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
+      Hint: taxContentType
+      Value: "{0A4F76D7-D7B6-42E5-9371-A5485F08F824}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: "<p>Solterra partnered with three districts to convert local plastic waste into reliable backup energy. The rollout prioritized safety training, transparent baselines, and measured uptime improvements during peak demand windows.</p><p>Generated test content aligned to Solterra and Co brand context: clarity, confidence, and community-centric communication.</p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f205faa2-9d9b-4326-a0d8-11a46eaa9867"
+    - ID: "a586cc74-9fee-4a68-8df5-c7c285cd71aa"
+      Hint: taxTopic
+      Value: |
+        {0CF7DF58-27BD-4163-AA71-2728D257BFDA}
+        {75327B53-4611-4F61-8125-F124F71EE906}
+        {2E24C682-07DB-421A-8558-F6843AE453C3}
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Maya Chen
+    - ID: "afd3e865-f6ac-4485-95f2-cae591dd8f0a"
+      Hint: pageReadTime
+      Value: 6 min
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: "How Solterra Turned Plastic Waste into School-Ready Power"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260608T174002Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: Waste to Watts in Three School Districts
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: Waste to Watts in Three School Districts
+- Language: "es-MX"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: residuos-a-vatios-en-tres-distritos-escolares
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: "Un art�culo de conjunto de datos de prueba sobre la conversi�n de flujos de desechos en sistemas de energ�a resilientes para campus de K-12."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260608T173925Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: De desechos a vatios en tres distritos escolares
+    - ID: "288c11f5-7457-4e7f-880a-a76a98a0e296"
+      Hint: taxAuthor
+      Value: "{17EC4216-589B-496E-9EE7-4FD6A0A2FBB0}"
+    - ID: "2fcae033-cf44-4b77-b8ad-91f41b56cb1c"
+      Hint: pageDisplayDate
+      Value: "2026-03-05"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: 
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: Pilotos distritales, l�neas base y resultados medibles.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: De desechos a vatios en tres distritos escolares
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "69c33f09-f870-4d18-86c6-c34d9f3ac290"
+      Hint: taxContentType
+      Value: "{0A4F76D7-D7B6-42E5-9371-A5485F08F824}"
+    - ID: "8be8f50d-730f-484c-80be-3dbdb0cb6e58"
+      Hint: ArticleContent
+      Value: "<p>Solterra se asoci� con tres distritos para convertir los desechos pl�sticos locales en energ�a de respaldo confiable. El despliegue prioriz� la capacitaci�n en seguridad, las l�neas base transparentes y las mejoras medidas en el tiempo de actividad durante las ventanas de m�xima demanda.</p><p>Contenido de prueba generado alineado con el contexto de la marca Solterra y Co: claridad, confianza y comunicaci�n centrada en la comunidad.</p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2ac6846e-a418-4f63-b10f-cb25c8d57ea2"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a586cc74-9fee-4a68-8df5-c7c285cd71aa"
+      Hint: taxTopic
+      Value: |
+        {0CF7DF58-27BD-4163-AA71-2728D257BFDA}
+        {75327B53-4611-4F61-8125-F124F71EE906}
+        {2E24C682-07DB-421A-8558-F6843AE453C3}
+    - ID: "a869a0c2-af1f-4c06-ab72-b7b153553847"
+      Hint: ArticleAuthor
+      Value: Maya Chen
+    - ID: "afd3e865-f6ac-4485-95f2-cae591dd8f0a"
+      Hint: pageReadTime
+      Value: 6 min
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: C�mo Solterra convirti� desechos pl�sticos en energ�a lista para las escuelas
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260629T183705Z
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: De desechos a vatios en tres distritos escolares
+    - ID: "fdc567f0-c6af-467e-9ef2-bb72dea31bb6"
+      Hint: ArticleTitle
+      Value: De desechos a vatios en tres distritos escolares
