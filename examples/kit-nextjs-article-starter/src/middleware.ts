@@ -44,16 +44,38 @@ const supportedLocales = routing.locales.slice();
 /**
  * LocaleMiddleware that selects the language from the request hostname when the
  * URL has no explicit locale prefix. An explicit locale in the path always wins,
- * so /es-MX/... still works on any domain. Falls back to the default resolution
- * (header / Next locale / configured default) when the host has no mapping.
+ * so /es-MX/... still works on any domain.
+ *
+ * Resolution order:
+ * 1. LOCALE_DOMAIN_MAP env var (explicit override, useful before Site Grouping is deployed)
+ * 2. site.language from sites.json — populated automatically by sitecore-tools:generate-map
+ *    once a Site Grouping item with the correct HostName/POS is pushed to XM Cloud
+ * 3. Base middleware resolution (locale header → defaultLanguage → 'en')
  */
 class DomainLocaleMiddleware extends LocaleMiddleware {
   protected getLanguage(req: NextRequest, res?: NextResponse): string {
     const host = this.getHostHeader(req)?.toLowerCase();
+
+    // 1. Explicit LOCALE_DOMAIN_MAP override
     const mapped = host ? domainLocaleMap[host] : undefined;
     if (mapped && supportedLocales.includes(mapped)) {
       return mapped;
     }
+
+    // 2. Language from Site Grouping (via sites.json) — driven by the POS field on the
+    //    Site Grouping item (e.g. "es-MX=solterra"). This removes the need for
+    //    LOCALE_DOMAIN_MAP once the Spanish Site Grouping is deployed to XM Cloud.
+    if (host) {
+      try {
+        const siteLanguage = this.getSite(req, res)?.language;
+        if (siteLanguage && supportedLocales.includes(siteLanguage)) {
+          return siteLanguage;
+        }
+      } catch {
+        // SiteResolver throws if the host doesn't match — fall through to default
+      }
+    }
+
     return super.getLanguage(req, res);
   }
 }
