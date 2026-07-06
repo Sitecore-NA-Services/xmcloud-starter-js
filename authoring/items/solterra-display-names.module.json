@@ -75,6 +75,18 @@
                 "path": "/sitecore/content/nextjs-article_starter/solterra/Home/Articles/waste-to-watts-in-three-school-districts",
                 "scope": "singleItem",
                 "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.settings.sitemap",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Settings/Sitemap",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "solterra.site-grouping",
+                "path": "/sitecore/content/nextjs-article_starter/solterra/Settings/Site Grouping/solterra",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
             }
         ]
     }
