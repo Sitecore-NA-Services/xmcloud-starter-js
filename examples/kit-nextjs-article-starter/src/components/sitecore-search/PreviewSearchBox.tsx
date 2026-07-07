@@ -20,8 +20,10 @@ import {
   widget,
   type PreviewSearchInitialState,
 } from '@sitecore-search/react';
+import { useTranslations } from 'next-intl';
 import { Input } from '@/components/ui/input';
 import { SEARCH_SOURCE_IDS } from './search-config';
+import { dictionaryKeys } from '@/variables/dictionary';
 
 type ArticleModel = {
   id: string;
@@ -44,6 +46,7 @@ function goToSearch(router: ReturnType<typeof useRouter>, query: string) {
 /** SDK-powered typeahead, rendered only when Search credentials are present. */
 const PreviewSearchComponent = ({ defaultItemsPerPage = 6 }: { defaultItemsPerPage?: number }) => {
   const router = useRouter();
+  const t = useTranslations();
   const [value, setValue] = useState('');
 
   const {
@@ -89,8 +92,8 @@ const PreviewSearchComponent = ({ defaultItemsPerPage = 6 }: { defaultItemsPerPa
           value={value}
           onChange={onChange}
           autoComplete="off"
-          placeholder="Search articles"
-          aria-label="Search articles"
+          placeholder={t(dictionaryKeys.PREVIEW_SEARCH_PLACEHOLDER)}
+          aria-label={t(dictionaryKeys.PREVIEW_SEARCH_PLACEHOLDER)}
           className={inputClass}
         />
       </div>
@@ -145,6 +148,7 @@ const PreviewSearchWidget = widget(PreviewSearchComponent, WidgetDataType.PREVIE
 /** Fallback used when Search is not configured: routes to /search on submit. */
 function PlainSearchInput() {
   const router = useRouter();
+  const t = useTranslations();
   const [value, setValue] = useState('');
   return (
     <form
@@ -158,8 +162,8 @@ function PlainSearchInput() {
       <Input
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        placeholder="Search articles"
-        aria-label="Search articles"
+        placeholder={t(dictionaryKeys.PREVIEW_SEARCH_PLACEHOLDER)}
+        aria-label={t(dictionaryKeys.PREVIEW_SEARCH_PLACEHOLDER)}
         className={inputClass}
       />
     </form>

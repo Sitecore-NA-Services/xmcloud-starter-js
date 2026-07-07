@@ -21,11 +21,13 @@ import { GlobalHeaderProps } from './global-header.props';
 import { Button } from '@/components/ui/button';
 import { Url } from 'next/dist/shared/lib/router/router';
 import { PreviewSearchBox } from '@/components/sitecore-search/PreviewSearchBox';
+import { useLocalizeHref } from '@/lib/localize-href';
 
 export const Default: React.FC<GlobalHeaderProps> = (props) => {
   const { fields, page } = props ?? {};
   const { logo, headerContact } = fields?.data?.item ?? {};
   const links = fields?.data?.item?.children?.results ?? [];
+  const localizeHref = useLocalizeHref();
   const [isOpen, setIsOpen] = useState(false);
   const pageEditing = page.mode.isEditing;
 
@@ -108,7 +110,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                                       <li key={`submenu-${i}-${j}`}>
                                         <NavigationMenuLink asChild>
                                           <Link
-                                            href={child.link?.jsonValue?.value?.href as string}
+                                            href={localizeHref(child.link?.jsonValue?.value?.href as string) || ''}
                                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                                           >
                                             <div className="text-sm font-medium leading-none">
@@ -128,7 +130,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                                   asChild
                                   className="font-body text-base font-medium"
                                 >
-                                  <Link href={item.link.jsonValue.value.href as string}>
+                                  <Link href={localizeHref(item.link.jsonValue.value.href as string) || ''}>
                                     {item.link.jsonValue.value.text}
                                   </Link>
                                 </Button>
@@ -156,7 +158,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
             headerContact?.jsonValue?.value?.href && (
               <div className="@lg:flex @lg:items-center @lg:justify-end hidden">
                 <Button variant="outline" asChild className="font-heading text-medium rounded-full">
-                  <Link href={headerContact.jsonValue.value.href as Url}>
+                  <Link href={(localizeHref(headerContact.jsonValue.value.href as string) || '') as Url}>
                     {headerContact.jsonValue.value.text}
                   </Link>
                 </Button>
@@ -198,7 +200,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                                   onClick={() => setIsOpen(false)}
                                   className="justify-start"
                                 >
-                                  <Link href={child.link?.jsonValue?.value?.href as string}>
+                                  <Link href={localizeHref(child.link?.jsonValue?.value?.href as string) || ''}>
                                     {child.link?.jsonValue?.value?.text}
                                   </Link>
                                 </Button>
@@ -216,7 +218,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                             asChild
                             onClick={() => setIsOpen(false)}
                           >
-                            <Link href={item.link.jsonValue.value.href as string}>
+                            <Link href={localizeHref(item.link.jsonValue.value.href as string) || ''}>
                               {item.link.jsonValue.value.text}
                             </Link>
                           </Button>
@@ -230,7 +232,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                       className="rounded-full"
                       onClick={() => setIsOpen(false)}
                     >
-                      <Link href={headerContact.jsonValue.value.href as Url}>
+                      <Link href={(localizeHref(headerContact.jsonValue.value.href as string) || '') as Url}>
                         {headerContact.jsonValue.value.text}
                       </Link>
                     </Button>

@@ -11,6 +11,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import { cn } from '@/lib/utils';
 import { NoDataFallback } from '@/utils/NoDataFallback';
+import { useLocalizeHref } from '@/lib/localize-href';
 import { type JSX } from 'react';
 
 export const Default: React.FC<SecondaryNavigationProps> = (props) => {
@@ -18,6 +19,7 @@ export const Default: React.FC<SecondaryNavigationProps> = (props) => {
   const { datasource } = fields?.data ?? {};
   const { parent, children } = datasource ?? {};
 
+  const localizeHref = useLocalizeHref();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const renderChildren = (childItems: SecondaryNavigationPage[]) => {
@@ -33,7 +35,7 @@ export const Default: React.FC<SecondaryNavigationProps> = (props) => {
           return (
             <NavigationMenu.Item key={index}>
               <Button asChild variant="link" className="font-bold">
-                <NextLink href={child.url?.href || ''} className=" p-2">
+                <NextLink href={localizeHref(child.url?.href) || ''} className=" p-2">
                   {title}
                 </NextLink>
               </Button>
@@ -65,7 +67,7 @@ export const Default: React.FC<SecondaryNavigationProps> = (props) => {
               <NavigationMenu.Item key={index}>
                 <Button asChild variant="link" className="justify-start">
                   <NextLink
-                    href={item.url?.href || ''}
+                    href={localizeHref(item.url?.href) || ''}
                     className="hover:bg-accent-6 box-border inline-block w-full  p-2 px-4 font-bold"
                   >
                     {title}

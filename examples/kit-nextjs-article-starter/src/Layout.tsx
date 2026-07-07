@@ -17,6 +17,8 @@ import { Figtree } from 'next/font/google';
 import componentMap from '.sitecore/component-map';
 import Providers from './Providers';
 import { resolvePageMetadata, type RouteFields } from '@/lib/page-metadata';
+import type { PrefixMap } from '@/lib/localize-href';
+import HtmlLang from '@/components/util/HtmlLang';
 
 const heading = Figtree({
   weight: ['400', '500'],
@@ -33,9 +35,10 @@ const body = Figtree({
 });
 interface LayoutProps {
   page: Page;
+  localizedPaths?: PrefixMap;
 }
 
-const Layout = ({ page }: LayoutProps): JSX.Element => {
+const Layout = ({ page, localizedPaths = {} }: LayoutProps): JSX.Element => {
   const { layout, mode } = page;
   const { route } = layout.sitecore;
   const fields = route?.fields as RouteFields;
@@ -44,6 +47,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
   const metadata = resolvePageMetadata(fields);
   return (
     <>
+      <HtmlLang lang={layout.sitecore.context?.language} />
       <Scripts />
       <SitecoreStyles layoutData={layout} />
       <Head>
@@ -63,7 +67,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
         )}
         {metadata.ogImage && <meta property="og:image" content={metadata.ogImage} />}
       </Head>
-      <Providers page={page}>
+      <Providers page={page} localizedPaths={localizedPaths}>
         {/* Capture query string parameters for CDP personalization */}
         <Suspense fallback={null}>
           <GuestDataCapture />
