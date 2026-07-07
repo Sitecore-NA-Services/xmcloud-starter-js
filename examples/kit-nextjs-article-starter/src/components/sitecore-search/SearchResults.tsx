@@ -26,7 +26,9 @@ import {
   widget,
   type SearchResultsInitialState,
 } from '@sitecore-search/react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
+import { dictionaryKeys } from '@/variables/dictionary';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import {
@@ -65,26 +67,32 @@ type InitialState = SearchResultsInitialState<'itemsPerPage' | 'keyphrase' | 'pa
 
 const titleOf = (a: ArticleModel) => a.name || a.title || 'Untitled';
 
-/** Friendly labels for the raw sort option names returned by the widget. */
-const SORT_LABELS: Record<string, string> = {
-  featured_desc: 'Relevance',
-  featured_asc: 'Relevance (ascending)',
-  name_asc: 'Title (A–Z)',
-  name_desc: 'Title (Z–A)',
-  date_desc: 'Newest first',
-  date_asc: 'Oldest first',
-};
-const sortLabelOf = (c: SortChoice) =>
-  SORT_LABELS[c.name] ||
-  (c.label && c.label !== c.name ? c.label : c.name.replace(/_/g, ' '));
+type Translator = ReturnType<typeof useTranslations>;
 
-/** Friendly headings for the facet attribute names returned by the widget. */
-const FACET_LABELS: Record<string, string> = {
-  type: 'Content Type',
-  tags: 'Topics',
-  author: 'Author',
+/** Maps the raw sort option names returned by the widget to dictionary keys. */
+const SORT_KEYS: Record<string, string> = {
+  featured_desc: dictionaryKeys.SEARCH_SORT_RELEVANCE,
+  featured_asc: dictionaryKeys.SEARCH_SORT_RELEVANCE_ASC,
+  name_asc: dictionaryKeys.SEARCH_SORT_TITLE_AZ,
+  name_desc: dictionaryKeys.SEARCH_SORT_TITLE_ZA,
+  date_desc: dictionaryKeys.SEARCH_SORT_NEWEST,
+  date_asc: dictionaryKeys.SEARCH_SORT_OLDEST,
 };
-const facetLabelOf = (f: Facet) => FACET_LABELS[f.name] || f.label || f.name;
+const sortLabelOf = (c: SortChoice, t: Translator) =>
+  SORT_KEYS[c.name]
+    ? t(SORT_KEYS[c.name])
+    : c.label && c.label !== c.name
+      ? c.label
+      : c.name.replace(/_/g, ' ');
+
+/** Maps the raw facet attribute names returned by the widget to dictionary keys. */
+const FACET_KEYS: Record<string, string> = {
+  type: dictionaryKeys.SEARCH_FACET_CONTENT_TYPE,
+  tags: dictionaryKeys.SEARCH_FACET_TOPICS,
+  author: dictionaryKeys.SEARCH_FACET_AUTHOR,
+};
+const facetLabelOf = (f: Facet, t: Translator) =>
+  FACET_KEYS[f.name] ? t(FACET_KEYS[f.name]) : f.label || f.name;
 
 const ResultsSkeleton = () => (
   <div className="grid gap-4">
@@ -102,6 +110,7 @@ const SearchResultsComponent = ({
   defaultKeyphrase = '',
   defaultItemsPerPage = 10,
 }: SearchResultsProps) => {
+  const t = useTranslations();
   const {
     widgetRef,
     actions: { onPageNumberChange, onItemClick, onSortChange, onFacetClick, onClearFilters },
@@ -182,7 +191,7 @@ const SearchResultsComponent = ({
             facets.map((facet, facetIndex) => (
               <div key={facet.name} className="space-y-3 border-b border-zinc-200 pb-5">
                 <h3 className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
-                  {facetLabelOf(facet)}
+                  {facetLabelOf(facet, t)}
                 </h3>
                 <ul className="space-y-2.5">
                   {facet.value.map((value, facetValueIndex) => {
@@ -253,7 +262,7 @@ const SearchResultsComponent = ({
                   <SelectContent>
                     {sortChoices.map((choice) => (
                       <SelectItem key={choice.name} value={choice.name}>
-                        {sortLabelOf(choice)}
+                        {sortLabelOf(choice, t)}
                       </SelectItem>
                     ))}
                   </SelectContent>

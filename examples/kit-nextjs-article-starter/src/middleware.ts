@@ -41,34 +41,12 @@ function parseDomainLocaleMap(raw: string | undefined): Record<string, string> {
 const domainLocaleMap = parseDomainLocaleMap(process.env.LOCALE_DOMAIN_MAP);
 const supportedLocales = routing.locales.slice();
 
-/**
- * Map of English item-name URL paths to their Spanish (es-MX) display-name equivalents.
- *
- * XM Cloud Edge delivers link field `url` values as English item-name paths even when
- * `useDisplayName=true` is active on the CM link provider, because Edge pre-computes
- * and caches URLs using the item name rather than the display name. We issue a 301
- * redirect so that when a user on the Spanish domain clicks a link such as
- * /Articles/battery-storage-lessons-from-heat-week, they land on the canonical
- * Spanish display-name URL /articulos/almacenamiento-de-baterias-lecciones-de-la-semana-de-calor.
- *
- * Only translated articles (those with an es-MX __Display name set in XM Cloud)
- * are listed here. Untranslated articles will continue to work as-is on the Spanish
- * domain, showing English content with the es-MX locale context.
- */
-const SPANISH_PATH_MAP: Record<string, string> = {
-  '/About': '/nosotros',
-  '/Articles': '/articulos',
-  '/Articles/battery-storage-lessons-from-heat-week': '/articulos/almacenamiento-de-baterias-lecciones-de-la-semana-de-calor',
-  '/Articles/closing-the-loop-on-circular-materials': '/articulos/cerrando-el-ciclo-en-materiales-circulares',
-  '/Articles/from-pilot-to-program-scaling-resilient-power': '/articulos/del-piloto-al-programa-energia-resiliente-a-escala',
-  '/Articles/grant-strategies-for-mid-market-clean-energy': '/articulos/estrategias-de-subvenciones-para-energia-limpia',
-  '/Articles/impact-dashboard-what-we-measure-and-why': '/articulos/panel-de-impacto-que-medimos-y-por-que',
-  '/Articles/microgrids-and-community-cooling-centers': '/articulos/microrredes-y-centros-de-enfriamiento-comunitario',
-  '/Articles/municipal-microgrid-procurement-playbook': '/articulos/guia-de-adquisicion-de-microrredes-municipales',
-  '/Articles/safety-first-field-operations-standard': '/articulos/estandar-de-operaciones-de-campo-seguridad-primero',
-  '/Articles/school-campus-energy-resilience-checklist': '/articulos/lista-de-verificacion-resiliencia-energetica-en-campus',
-  '/Articles/waste-to-watts-in-three-school-districts': '/articulos/residuos-a-vatios-en-tres-distritos-escolares',
-};
+// Note: Spanish (es-MX) link URLs are rendered directly by the app via the
+// `localizeHref` helper (src/lib/localize-href), which builds an item-name ->
+// display-name path map from live Edge content. The previous hardcoded
+// English->Spanish redirect map was removed: its per-article slug targets went
+// stale when the es-MX article versions were re-translated, and both URL forms
+// resolve via display-name routing regardless.
 
 /**
  * LocaleMiddleware that selects the language from the request hostname when the
@@ -189,30 +167,6 @@ const personalize = new SampleParamPersonalizeMiddleware({
 });
 
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
-  // --- Spanish domain: redirect English-slug paths to Spanish display-name paths ---
-  // Check if this request is for the Spanish (es-MX) domain, either via
-  // LOCALE_DOMAIN_MAP env var or via the hostName entry injected into sites.json
-  // by the patch-sites.mjs script.
-  const host = (req.headers.get('host') ?? '').toLowerCase();
-  const isSpanishDomain =
-    domainLocaleMap[host] === 'es-MX' ||
-    sites.some(
-      (s: { hostName?: string; language?: string }) =>
-        s.hostName?.toLowerCase() === host && s.language === 'es-MX'
-    );
-
-  if (isSpanishDomain) {
-    const pathname = req.nextUrl.pathname;
-    const translated = SPANISH_PATH_MAP[pathname];
-    if (translated) {
-      const redirectUrl = new URL(translated, req.url);
-      redirectUrl.search = req.nextUrl.search; // preserve query params
-      return NextResponse.redirect(redirectUrl, { status: 301 });
-    }
-  }
-  // --- End Spanish domain URL translation ---
-
-  console.log('[Middleware] Processing request:', req.nextUrl.pathname);
   return defineMiddleware(locale, multisite, redirects, personalize).exec(req, ev);
 }
 

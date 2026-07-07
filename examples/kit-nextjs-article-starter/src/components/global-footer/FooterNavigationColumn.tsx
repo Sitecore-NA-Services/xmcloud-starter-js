@@ -16,6 +16,7 @@ import { Button } from '@/components/ui/button';
 import { Link, Text } from '@sitecore-content-sdk/nextjs';
 import { NoDataFallback } from '@/utils/NoDataFallback';
 import { useMatchMedia } from '@/hooks/use-match-media';
+import { useLocalizeLinkField } from '@/lib/localize-href';
 /**
  * FooterNavigationColumn component renders a navigation column in the footer.
  * It displays a header and a list of navigation links.
@@ -24,6 +25,7 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
   const { fields, page } = props;
   const { items, header } = fields.data?.datasource ?? {};
   const isPageEditing = page.mode.isEditing;
+  const localizeLink = useLocalizeLinkField();
 
   const accordionId = useId();
   const isMobile = useMatchMedia('(max-width: 767px)');
@@ -46,7 +48,7 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
                         asChild
                         className="h-auto text-pretty p-0 text-base font-normal text-white"
                       >
-                        <Link field={item.link?.jsonValue} />
+                        <Link field={localizeLink(item.link?.jsonValue)} />
                       </Button>
                     </li>
                   ))}
@@ -68,7 +70,7 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
                   asChild
                   className="h-auto text-pretty p-0 text-base font-normal text-white"
                 >
-                  <Link field={item.link?.jsonValue} />
+                  <Link field={localizeLink(item.link?.jsonValue)} />
                 </Button>
               </li>
             ))}

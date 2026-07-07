@@ -22,13 +22,14 @@ SharedFields:
         children(hasLayout:true) {
           results {
             id
-            title: field(name: "title") {
+            title: field(name: "pageShortTitle") {
               jsonValue
             }
             navigationTitle: field(name:"navigationTitle") {
               jsonValue
             }
             name
+            displayName
             url {
               href: path
             }
@@ -38,13 +39,14 @@ SharedFields:
           children(hasLayout: true) {
             results {
               id
-              title: field(name: "title") {
+              title: field(name: "pageShortTitle") {
                 jsonValue
               }
               navigationTitle: field(name:"navigationTitle") {
                 jsonValue
               }
               name
+              displayName
               url {
                 href: path
               }

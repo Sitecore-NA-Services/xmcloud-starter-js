@@ -12,6 +12,7 @@ import Providers from 'src/Providers';
 import { NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { resolvePageMetadata, type RouteFields } from '@/lib/page-metadata';
+import { getLocalizedPathPrefixes } from '@/lib/localized-paths';
 
 type PageProps = {
   params: Promise<{
@@ -49,16 +50,24 @@ export default async function Page({ params, searchParams }: PageProps) {
   }
 
   // Fetch the component data from Sitecore (Likely will be deprecated)
+  // Pass the resolved locale so component-level GraphQL queries (e.g. the
+  // SecondaryNavigation tree query) run in the correct language. Without it the
+  // context defaults to the default language and nav labels render in English
+  // even on es-MX pages.
   const componentProps = await client.getComponentData(
     page.layout,
-    {},
+    { locale },
     components,
   );
 
+  // Map of item-name URL paths -> localized display-name paths for this locale,
+  // used to render Spanish link hrefs (Edge serves item-name url.path).
+  const localizedPaths = await getLocalizedPathPrefixes(locale);
+
   return (
     <NextIntlClientProvider>
-      <Providers page={page} componentProps={componentProps}>
-        <Layout page={page} />
+      <Providers page={page} componentProps={componentProps} localizedPaths={localizedPaths}>
+        <Layout page={page} localizedPaths={localizedPaths} />
       </Providers>
     </NextIntlClientProvider>
   );
