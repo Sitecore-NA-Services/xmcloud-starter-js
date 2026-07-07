@@ -14,47 +14,71 @@ const sitemapHandler = createSitemapRouteHandler({ client, sites, revalidate: 30
  */
 const CANONICAL_HOST = process.env.NEXT_PUBLIC_CANONICAL_SITE_HOST || 'article-starter.vercel.app';
 
+/** Strip scheme + host from a URL, leaving the path (works on relative input too). */
+function pathOf(u?: string | null): string | null {
+  if (!u) return null;
+  return u.replace(/^https?:\/\/[^/]+/, '');
+}
+
 /**
- * XM Cloud's native sitemap includes ALL language variants for every page:
- *   - Locale-free paths (e.g. /Articles/...) — English canonical
- *   - Locale-prefixed paths (e.g. /es-MX/Articles/...) — explicit locale variant
+ * XM Cloud's native sitemap lists every item once per language variant — English
+ * item-name paths (e.g. /Articles/x) AND Spanish display-name paths (e.g.
+ * /articulos/x) — with each <url> carrying hreflang alternates for both languages.
  *
- * The Spanish domain uses "domain-as-locale" routing: the middleware detects the
- * domain and sets es-MX locale, so locale-free paths on the Spanish domain serve
- * Spanish content. The /es-MX/ prefix is redundant and not what users navigate to.
- *
- * For a non-canonical hostname, strip <url> entries whose path has an explicit
- * locale prefix — keeping only locale-free paths (which are the canonical URLs
- * for that domain).
+ * Each host serves exactly ONE language ("domain-as-locale" routing), so a host's
+ * sitemap should only list that language's variant. Keep a <url> block only when
+ * its <loc> equals this language's hreflang alternate. This removes cross-language
+ * entries that would 404 on the wrong host (e.g. /articulos/* on the English host)
+ * and de-duplicates the crawl — derived entirely from the sitemap's own hreflang
+ * data, with no hard-coded path map.
  */
-function filterLocalePrefixedPaths(xml: string): string {
-  // Matches locale segments like /es-MX/, /en/, /fr-CA/, etc.
-  const localePrefixRe = /^\/[a-z]{2}(-[A-Z]{2})?\//;
+function filterToSiteLanguage(xml: string, lang: string): string {
   return xml.replace(/<url>[\s\S]*?<\/url>/g, (block) => {
-    const match = block.match(/<loc>[^<]*?\/\/[^/]+(\/[^<]*)<\/loc>/);
-    if (!match) return block;
-    const path = match[1];
-    if (localePrefixRe.test(path)) return '';
-    return block;
+    const loc = pathOf(block.match(/<loc>([^<]*)<\/loc>/)?.[1]);
+    const wanted = pathOf(block.match(new RegExp(`hreflang="${lang}"\\s+href="([^"]*)"`))?.[1]);
+    // If the block can't be classified (no matching alternate), keep it.
+    if (!loc || !wanted) return block;
+    return loc === wanted ? block : '';
   });
+}
+
+/**
+ * XM Cloud Edge emits relative <loc>/…</loc> (and relative hreflang hrefs) in this
+ * environment, which is invalid per the sitemap spec — search crawlers can't resolve
+ * a host and drop every entry. Make them absolute against the request's own host so
+ * the sitemap is crawlable on whichever domain served it.
+ */
+function absolutizeUrls(xml: string, base: string): string {
+  return xml
+    .replace(/(<loc>)(\/[^<]*)(<\/loc>)/g, `$1${base}$2$3`)
+    .replace(/(hreflang="[^"]*"\s+href=")(\/[^"]*)(")/g, `$1${base}$2$3`);
 }
 
 export async function GET(request: NextRequest) {
   const response = await sitemapHandler.GET(request);
+  if (!response.ok) return response;
 
-  const reqHost = request.headers.get('x-forwarded-host') || request.headers.get('host') || '';
-  if (reqHost && reqHost !== CANONICAL_HOST && response.ok) {
-    const xml = await response.text();
-    const rewritten = xml.split(CANONICAL_HOST).join(reqHost);
+  const reqHost =
+    request.headers.get('x-forwarded-host') || request.headers.get('host') || CANONICAL_HOST;
+  const base = `https://${reqHost}`;
 
-    // Filter to only the locale assigned to this hostname in sites.json
-    const siteEntry = (sites as Array<{ name: string; hostName: string; language: string }>).find(
-      (s) => s.hostName === reqHost
-    );
-    const filtered = siteEntry?.language ? filterLocalePrefixedPaths(rewritten) : rewritten;
+  let xml = await response.text();
 
-    return new Response(filtered, { headers: response.headers });
+  // Keep only this host's language variant (uses the sitemap's own hreflang data).
+  const siteEntry = (sites as Array<{ name: string; hostName: string; language: string }>).find(
+    (s) => s.hostName === reqHost
+  );
+  if (siteEntry?.language) {
+    xml = filterToSiteLanguage(xml, siteEntry.language);
   }
 
-  return response;
+  // If Edge baked in the canonical host (absolute URLs), swap it for the request host.
+  if (reqHost !== CANONICAL_HOST) {
+    xml = xml.split(CANONICAL_HOST).join(reqHost);
+  }
+
+  // Make any remaining relative <loc>/hreflang URLs absolute against this host.
+  xml = absolutizeUrls(xml, base);
+
+  return new Response(xml, { headers: response.headers });
 }
