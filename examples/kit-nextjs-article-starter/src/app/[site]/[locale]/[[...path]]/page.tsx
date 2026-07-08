@@ -12,6 +12,7 @@ import Providers from 'src/Providers';
 import { NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { resolvePageMetadata, type RouteFields } from '@/lib/page-metadata';
+import { extractMainText } from '@/lib/search-body';
 import { getLocalizedPathPrefixes } from '@/lib/localized-paths';
 
 type PageProps = {
@@ -109,6 +110,21 @@ export const generateMetadata = async ({ params }: PageProps) => {
   const canonicalUrl = `${url}${pagePath}`;
   const metadata = resolvePageMetadata(fields, canonicalUrl);
 
+  // The Sitecore Search crawler reads head `property=` meta (og:*) but not the page
+  // <body>. Fold the article's full rendered body text into og:description so the
+  // crawler can index the complete article content in whatever language this page
+  // renders (equal en/es search coverage). The short name="description" tag below is
+  // left untouched for SEO.
+  const PLACEHOLDER_DESC = 'Sitecore Next.js App Router Example';
+  const articleBody = extractMainText(page?.layout.sitecore.route);
+  const ogSummary =
+    metadata.ogDescription && metadata.ogDescription !== PLACEHOLDER_DESC
+      ? metadata.ogDescription
+      : '';
+  const ogDescription =
+    [ogSummary, articleBody].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim() ||
+    PLACEHOLDER_DESC;
+
   // Emit article taxonomy as Open Graph *article* meta so the Sitecore Search
   // crawler can extract author / content type / topics into facetable attributes.
   //
@@ -137,9 +153,11 @@ export const generateMetadata = async ({ params }: PageProps) => {
     openGraph: {
       type: 'article',
       title: metadata.ogTitle,
-      description:
-        metadata.ogDescription || 'Sitecore Next.js App Router Example',
+      description: ogDescription,
       url: canonicalUrl,
+      // -> <meta property="og:locale" content="es_MX"> (server-rendered so the
+      //    Search crawler can tag each document's locale; renderJavaScript is off).
+      locale: locale === 'en' ? 'en_US' : locale.replace('-', '_'),
       images: metadata.ogImage ? [metadata.ogImage] : undefined,
       // -> <meta property="article:author" content="...">
       ...(author ? { authors: [author] } : {}),

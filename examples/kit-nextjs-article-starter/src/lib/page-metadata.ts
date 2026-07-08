@@ -48,11 +48,17 @@ export const resolvePageMetadata = (
 
   const keywords = getFieldValue(fields?.metadataKeywords);
 
+  // The ogTitle field is often populated with the item's slug (kebab-case) rather
+  // than a human title. Prefer an ogTitle only when it reads like a real title
+  // (contains a space); otherwise fall back to the resolved human title.
+  const ogTitleField = getFieldValue(fields?.ogTitle);
+  const ogTitle = ogTitleField.includes(' ') ? ogTitleField : title;
+
   return {
     title,
     description,
     keywords,
-    ogTitle: getFieldValue(fields?.ogTitle) || title,
+    ogTitle,
     ogDescription: getFieldValue(fields?.ogDescription) || description,
     ogImage:
       fields?.ogImage?.value?.src || fields?.thumbnailImage?.value?.src || '',
