@@ -13,6 +13,7 @@ import * as Video from 'src/components/video/Video';
 import * as videoprops from 'src/components/video/video-props';
 import * as VerticalImageAccordion from 'src/components/vertical-image-accordion/VerticalImageAccordion';
 import * as verticalimageaccordionprops from 'src/components/vertical-image-accordion/vertical-image-accordion.props';
+import * as HtmlLang from 'src/components/util/HtmlLang';
 import * as TopicListing from 'src/components/topic-listing/TopicListing';
 import * as TopicItemdev from 'src/components/topic-listing/TopicItem.dev';
 import * as topiclistingprops from 'src/components/topic-listing/topic-listing.props';
@@ -42,7 +43,11 @@ import * as subscriptionbannerprops from 'src/components/subscription-banner/sub
 import * as subscriptionbannerdictionary from 'src/components/subscription-banner/subscription-banner.dictionary';
 import * as SearchResults from 'src/components/sitecore-search/SearchResults';
 import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
+import * as SearchLocale from 'src/components/sitecore-search/SearchLocale';
+import * as searchresultsdictionary from 'src/components/sitecore-search/search-results.dictionary';
+import * as searchconfig from 'src/components/sitecore-search/search-config';
 import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
+import * as previewsearchdictionary from 'src/components/sitecore-search/preview-search.dictionary';
 import * as SiteMetadata from 'src/components/site-metadata/SiteMetadata';
 import * as sitemetadataprops from 'src/components/site-metadata/site-metadata.props';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
@@ -149,6 +154,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['video-props', { ...videoprops }],
   ['VerticalImageAccordion', { ...VerticalImageAccordion, componentType: 'client' }],
   ['vertical-image-accordion', { ...verticalimageaccordionprops }],
+  ['HtmlLang', { ...HtmlLang, componentType: 'client' }],
   ['TopicListing', { ...TopicListing }],
   ['TopicItem', { ...TopicItemdev }],
   ['topic-listing', { ...topiclistingprops }],
@@ -177,7 +183,11 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['subscription-banner', { ...subscriptionbannerprops, ...subscriptionbannerdictionary }],
   ['SearchResults', { ...SearchResults, componentType: 'client' }],
   ['SearchProvider', { ...SearchProvider, componentType: 'client' }],
+  ['SearchLocale', { ...SearchLocale, componentType: 'client' }],
+  ['search-results', { ...searchresultsdictionary }],
+  ['search-config', { ...searchconfig }],
   ['PreviewSearchBox', { ...PreviewSearchBox, componentType: 'client' }],
+  ['preview-search', { ...previewsearchdictionary }],
   ['SiteMetadata', { ...SiteMetadata }],
   ['site-metadata', { ...sitemetadataprops }],
   ['SecondaryNavigation', { ...SecondaryNavigation, componentType: 'client' }],

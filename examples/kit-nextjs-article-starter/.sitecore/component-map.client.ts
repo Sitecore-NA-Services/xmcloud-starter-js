@@ -7,6 +7,7 @@ import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
 import * as Video from 'src/components/video/Video';
 import * as VerticalImageAccordion from 'src/components/vertical-image-accordion/VerticalImageAccordion';
+import * as HtmlLang from 'src/components/util/HtmlLang';
 import * as TopicItemdev from 'src/components/topic-listing/TopicItem.dev';
 import * as themeproviderdev from 'src/components/theme-provider/theme-provider.dev';
 import * as TestimonialCarousel from 'src/components/testimonial-carousel/TestimonialCarousel';
@@ -17,6 +18,7 @@ import * as Image from 'src/components/sxa/Image';
 import * as SubscriptionBanner from 'src/components/subscription-banner/SubscriptionBanner';
 import * as SearchResults from 'src/components/sitecore-search/SearchResults';
 import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
+import * as SearchLocale from 'src/components/sitecore-search/SearchLocale';
 import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
@@ -54,6 +56,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['VideoModal', { ...VideoModaldev }],
   ['Video', { ...Video }],
   ['VerticalImageAccordion', { ...VerticalImageAccordion }],
+  ['HtmlLang', { ...HtmlLang }],
   ['TopicItem', { ...TopicItemdev }],
   ['theme-provider', { ...themeproviderdev }],
   ['TestimonialCarousel', { ...TestimonialCarousel }],
@@ -64,6 +67,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SubscriptionBanner', { ...SubscriptionBanner }],
   ['SearchResults', { ...SearchResults }],
   ['SearchProvider', { ...SearchProvider }],
+  ['SearchLocale', { ...SearchLocale }],
   ['PreviewSearchBox', { ...PreviewSearchBox }],
   ['SecondaryNavigation', { ...SecondaryNavigation }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
