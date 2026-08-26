@@ -24,10 +24,13 @@ export async function POST(req: Request) {
       'topics, or facts that may be covered by the site. If the user wants to narrow ' +
       'results by content type, author, or topic, call listArticleFacets first to see the ' +
       'exact values available, then pass matching contentType/author/tags arguments to ' +
-      'searchArticles. Cite article titles and URLs in your answer. If the tool returns no ' +
-      'results, say so honestly instead of guessing. Each result includes a relevanceScore ' +
-      '(0-1, cosine similarity to the query); if the best results score below roughly 0.75, ' +
-      'tell the user the match is weak rather than presenting it as a confident answer.',
+      'searchArticles. The query keyphrase is matched against article text semantically, so ' +
+      'when filtering by author or content type, do NOT put the author name or content type ' +
+      'in the query - use a topical keyword instead, or omit query entirely if the user just ' +
+      "wants everything by that author/type. Cite article titles and URLs in your answer. If " +
+      'the tool returns no results, say so honestly instead of guessing. Each result includes ' +
+      'a relevanceScore (0-1, cosine similarity to the query); if the best results score below ' +
+      'roughly 0.75, tell the user the match is weak rather than presenting it as a confident answer.',
     messages,
     tools: {
       listArticleFacets: tool({
@@ -40,18 +43,20 @@ export async function POST(req: Request) {
       searchArticles: tool({
         description:
           'Search the Solterra article index for relevant content. Optionally narrow by ' +
-          'content type, author, and/or topic tags (get exact values from listArticleFacets first).',
+          'content type, author, and/or topic tags (get exact values from listArticleFacets first). ' +
+          'query is optional - omit it (or use a topical keyword, not the filter value itself) ' +
+          'when browsing by author/content type/tags alone.',
         parameters: z.object({
-          query: z.string().describe('Search keyphrase'),
+          query: z.string().optional().describe('Search keyphrase (omit to just browse by filters)'),
           contentType: z.string().optional().describe('Filter to this exact content type value'),
           author: z.string().optional().describe('Filter to this exact author value'),
           tags: z.array(z.string()).optional().describe('Filter to articles tagged with any of these topics'),
         }),
         execute: async ({ query, contentType, author, tags }) => {
-          const docs = await querySitecoreSearch(query, 5, { contentType, author, tags });
+          const docs = await querySitecoreSearch(query ?? '', 5, { contentType, author, tags });
           // Rerank by embedding cosine similarity so the model (and the UI) sees a
           // relevanceScore per result.
-          return rerankByRelevance(query, docs);
+          return rerankByRelevance(query ?? '', docs);
         },
       }),
     },

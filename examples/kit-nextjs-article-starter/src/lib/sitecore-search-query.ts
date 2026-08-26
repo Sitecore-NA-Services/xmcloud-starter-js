@@ -52,13 +52,26 @@ type FacetTypeRequest = {
   filter: { type: 'or'; values: string[] };
 };
 
+// The Search API's `eq` facet filters take an opaque "facetid_<base64>" token,
+// not the raw facet value, even though facet listings expose the raw text.
+// The token is just base64(JSON.stringify({ type: 'eq', name, value })) -
+// reverse-engineered by comparing listSearchFacetValues() output to what the
+// filter API accepts, so we build it ourselves instead of round-tripping.
+function buildFacetId(name: string, value: string): string {
+  const payload = JSON.stringify({ type: 'eq', name, value });
+  return `facetid_${Buffer.from(payload, 'utf-8').toString('base64')}`;
+}
+
 /** Builds the `search.facet.types[]` entries for whichever facets were provided. */
 function buildFacetTypes(facets?: SearchFacets): FacetTypeRequest[] | undefined {
   if (!facets) return undefined;
   const types: FacetTypeRequest[] = [];
-  if (facets.contentType) types.push({ name: 'type', filter: { type: 'or', values: [facets.contentType] } });
-  if (facets.author) types.push({ name: 'author', filter: { type: 'or', values: [facets.author] } });
-  if (facets.tags?.length) types.push({ name: 'tags', filter: { type: 'or', values: facets.tags } });
+  if (facets.contentType)
+    types.push({ name: 'type', filter: { type: 'or', values: [buildFacetId('type', facets.contentType)] } });
+  if (facets.author)
+    types.push({ name: 'author', filter: { type: 'or', values: [buildFacetId('author', facets.author)] } });
+  if (facets.tags?.length)
+    types.push({ name: 'tags', filter: { type: 'or', values: facets.tags.map((t) => buildFacetId('tags', t)) } });
   return types.length ? types : undefined;
 }
 

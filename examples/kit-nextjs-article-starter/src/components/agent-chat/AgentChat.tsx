@@ -71,7 +71,7 @@ export const Default: React.FC = () => {
                 return (
                   <div key={ti.toolCallId} className="mb-1 rounded bg-black/10 px-2 py-1 text-xs italic">
                     <div>
-                      🔎 searched articles for “{args?.query}”
+                      {args?.query ? <>🔎 searched articles for “{args.query}”</> : '🔎 browsed articles'}
                       {filterBits.length ? ` (${filterBits.join('; ')})` : ''}
                     </div>
                     {results?.length ? (
