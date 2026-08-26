@@ -1,6 +1,7 @@
-import { streamText, type Message } from 'ai';
+import { streamText, StreamData, type Message } from 'ai';
 import { chatModel } from '@/lib/azure-openai';
 import { querySitecoreSearch } from '@/lib/sitecore-search-query';
+import { rerankByRelevance, filterByRelevance } from '@/lib/rerank';
 
 export const maxDuration = 30;
 
@@ -8,19 +9,40 @@ export const maxDuration = 30;
  * RAG chat: every request retrieves top-k documents from the Sitecore Search
  * index for the latest user message and grounds the model's answer in that
  * context, rather than letting the model decide whether to search
- * (compare with /api/chat/agent).
+ * (compare with /api/chat/agent). Results are reranked by embedding cosine
+ * similarity and filtered by RAG_RELEVANCE_THRESHOLD before being used as
+ * context, since Sitecore Search doesn't expose its own relevance score.
  */
 export async function POST(req: Request) {
   const { messages }: { messages: Message[] } = await req.json();
   const lastUserMessage = [...messages].reverse().find((m) => m.role === 'user');
   const keyphrase = lastUserMessage?.content ?? '';
 
-  const docs = await querySitecoreSearch(keyphrase, 5);
+  const rawDocs = await querySitecoreSearch(keyphrase, 5);
+  const rankedDocs = await rerankByRelevance(keyphrase, rawDocs);
+  const docs = filterByRelevance(rankedDocs);
+
   const context = docs.length
     ? docs
-        .map((d, i) => `[${i + 1}] ${d.title}\n${d.description ?? ''}\nURL: ${d.url ?? ''}`)
+        .map((d, i) => {
+          const score = d.relevanceScore !== undefined ? ` (relevance: ${(d.relevanceScore * 100).toFixed(0)}%)` : '';
+          return `[${i + 1}]${score} ${d.title}\n${d.description ?? ''}\nURL: ${d.url ?? ''}`;
+        })
         .join('\n\n')
     : 'No matching articles were found in the index.';
+
+  // Stream the reranked sources to the client alongside the answer so the UI can
+  // show what was actually retrieved and how relevant each source scored.
+  // StreamData requires plain JSON (no `undefined`), so normalize missing fields to null.
+  const data = new StreamData();
+  data.append({
+    sources: docs.map(({ id, title, url, relevanceScore }) => ({
+      id,
+      title,
+      url: url ?? null,
+      relevanceScore: relevanceScore ?? null,
+    })),
+  });
 
   const result = streamText({
     model: chatModel,
@@ -30,7 +52,10 @@ export async function POST(req: Request) {
       'the answer, say you do not have that information. Cite sources by title and URL.\n\n' +
       `Retrieved context:\n${context}`,
     messages,
+    onFinish: () => {
+      data.close();
+    },
   });
 
-  return result.toDataStreamResponse();
+  return result.toDataStreamResponse({ data });
 }

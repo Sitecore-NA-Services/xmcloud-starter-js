@@ -11,6 +11,11 @@ import { useChat } from '@ai-sdk/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
+type ToolSearchResult = { id: string; title: string; url?: string; relevanceScore?: number };
+
+const relevanceLabel = (score?: number) =>
+  score === undefined ? null : `${Math.round(score * 100)}% match`;
+
 export const Default: React.FC = () => {
   const { messages, input, handleInputChange, handleSubmit, status } = useChat({
     api: '/api/chat/agent',
@@ -41,9 +46,22 @@ export const Default: React.FC = () => {
             >
               {m.toolInvocations?.map((ti) => {
                 const args = ti.args as { query?: string } | undefined;
+                const results = ti.state === 'result' ? (ti.result as ToolSearchResult[] | undefined) : undefined;
                 return (
                   <div key={ti.toolCallId} className="mb-1 rounded bg-black/10 px-2 py-1 text-xs italic">
-                    🔎 searched articles for “{args?.query}”
+                    <div>🔎 searched articles for “{args?.query}”</div>
+                    {results?.length ? (
+                      <ul className="mt-1 space-y-0.5 not-italic">
+                        {results.map((r) => (
+                          <li key={r.id} className="flex items-center gap-2">
+                            <span className="rounded bg-black/20 px-1.5 py-0.5 font-mono">
+                              {relevanceLabel(r.relevanceScore)}
+                            </span>
+                            <span>{r.title}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
                   </div>
                 );
               })}
@@ -81,6 +99,12 @@ export const Default: React.FC = () => {
             Each tool call and its results are visible in the chat above (the “🔎 searched
             articles for…” badges), so you can see exactly when and why the model reached for
             the index.
+          </li>
+          <li>
+            Each result shows a <strong>relevance score</strong> (0-100%) computed by embedding the
+            query and each result, then measuring cosine similarity between them. Sitecore Search
+            doesn&apos;t expose its own relevance score, so this fills that gap and lets the model
+            (and you) judge match quality rather than trusting result order alone.
           </li>
           <li>
             This pattern (&quot;agentic search&quot;/&quot;function calling&quot;) is best when the assistant

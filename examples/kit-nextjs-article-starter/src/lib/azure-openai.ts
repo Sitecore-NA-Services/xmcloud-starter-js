@@ -12,3 +12,8 @@ const azure = createAzure({
 });
 
 export const chatModel = azure(process.env.AZURE_OPENAI_DEPLOYMENT || 'gpt-4o-mini');
+
+/** Used to rerank Sitecore Search results by embedding cosine similarity (see src/lib/rerank.ts). */
+export const embeddingModel = azure.textEmbeddingModel(
+  process.env.AZURE_OPENAI_EMBEDDING_DEPLOYMENT || 'text-embedding-3-small',
+);

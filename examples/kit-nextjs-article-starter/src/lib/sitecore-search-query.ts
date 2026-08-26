@@ -33,6 +33,8 @@ export type SearchDoc = {
   title: string;
   description?: string;
   url?: string;
+  /** Cosine similarity (0-1) vs the query, added by rerankByRelevance(). Absent until reranked. */
+  relevanceScore?: number;
 };
 
 /** Query the Sitecore Search index and return a small set of article documents. */

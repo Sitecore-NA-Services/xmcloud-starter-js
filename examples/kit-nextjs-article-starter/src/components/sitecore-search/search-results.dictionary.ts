@@ -15,6 +15,7 @@ export const SearchResultsDictionaryKeys = {
   SEARCH_SORT_LABEL: 'Demo1_Search_Sort_Label',
   SEARCH_FILTERS_NONE: 'Demo1_Search_Filters_None',
   SEARCH_FILTERS_CLEAR: 'Demo1_Search_Filters_Clear',
+  SEARCH_FILTERS_LABEL: 'Demo1_Search_Filters_Label',
   SEARCH_EMPTY_TITLE: 'Demo1_Search_Empty_Title',
   SEARCH_EMPTY_BODY: 'Demo1_Search_Empty_Body',
   SEARCH_EMPTY_BODY_WITH_FILTERS: 'Demo1_Search_Empty_Body_With_Filters',
