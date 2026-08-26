@@ -67,6 +67,35 @@ export const Default: React.FC = () => {
           Send
         </Button>
       </form>
+
+      <div className="mt-6 rounded-xl border border-dashed p-4 text-sm text-muted-foreground">
+        <h2 className="mb-2 font-semibold text-foreground">How this demo works</h2>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            The LLM (Azure OpenAI) is given one <strong>tool</strong>: <code>searchArticles</code>,
+            which queries the Sitecore Search index for this site.
+          </li>
+          <li>
+            The model decides <strong>for itself</strong>, turn by turn, whether a question needs a
+            search. Simple chit-chat gets answered directly; a question about article content
+            triggers a tool call first.
+          </li>
+          <li>
+            Each tool call and its results are visible in the chat above (the “🔎 searched
+            articles for…” badges), so you can see exactly when and why the model reached for
+            the index.
+          </li>
+          <li>
+            This pattern (&quot;agentic search&quot;/&quot;function calling&quot;) is best when the assistant
+            has several possible tools/actions and needs judgment about which to use, or none at
+            all.
+          </li>
+          <li>
+            Compare with the <strong>RAG Chat</strong> page, where retrieval always runs
+            automatically before every answer instead of being a model decision.
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };

@@ -57,6 +57,33 @@ export const Default: React.FC = () => {
           Send
         </Button>
       </form>
+
+      <div className="mt-6 rounded-xl border border-dashed p-4 text-sm text-muted-foreground">
+        <h2 className="mb-2 font-semibold text-foreground">How this demo works</h2>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            <strong>Retrieval-Augmented Generation (RAG)</strong>: before the LLM ever sees your
+            question, the server queries the Sitecore Search index for the top matching articles.
+          </li>
+          <li>
+            Those results are inserted into the model&apos;s system prompt as retrieved context, and
+            the model is instructed to answer <strong>only</strong> from that context — reducing
+            hallucination and keeping answers grounded in real site content.
+          </li>
+          <li>
+            Retrieval always happens, on every message — there is no decision step. This makes
+            RAG predictable and easy to reason about (and to add citations/guardrails to).
+          </li>
+          <li>
+            If the index has no relevant articles, the model is told so explicitly and will say it
+            doesn&apos;t have that information rather than guessing.
+          </li>
+          <li>
+            Compare with the <strong>Agent Chat</strong> page, where the model itself decides
+            whether to call a search tool at all.
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };
