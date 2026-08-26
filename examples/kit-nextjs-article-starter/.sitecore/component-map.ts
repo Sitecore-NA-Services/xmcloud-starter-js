@@ -6,6 +6,8 @@ import { Form } from '@sitecore-content-sdk/nextjs';
 // end of built-in components
 import * as Widget from 'src/components/widget/Widget';
 import * as widgetprops from 'src/components/widget/widget.props';
+import * as AgentChat from 'src/components/agent-chat/AgentChat';
+import * as RagChat from 'src/components/rag-chat/RagChat';
 import * as Whatsit from 'src/components/whatsit/Whatsit';
 import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
@@ -54,6 +56,7 @@ import * as SecondaryNavigation from 'src/components/secondary-navigation/Second
 import * as secondarynavigationprops from 'src/components/secondary-navigation/secondary-navigation.props';
 import * as RichTextBlock from 'src/components/rich-text-block/RichTextBlock';
 import * as richtextblockprops from 'src/components/rich-text-block/rich-text-block.props';
+import * as RagChat from 'src/components/rag-chat/RagChat';
 import * as PromoBlock from 'src/components/promo-block/PromoBlock';
 import * as promoblockprops from 'src/components/promo-block/promo-block.props';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
@@ -136,6 +139,7 @@ import * as ArticleFullprops from 'src/components/article-full/ArticleFull.props
 import * as ArticleFull from 'src/components/article-full/ArticleFull';
 import * as AnimatedSectiondev from 'src/components/animated-section/AnimatedSection.dev';
 import * as AlertBannerdev from 'src/components/alert-banner/AlertBanner.dev';
+import * as AgentChat from 'src/components/agent-chat/AgentChat';
 import * as AccordionBlockItemdev from 'src/components/accordion-block/AccordionBlockItem.dev';
 import * as AccordionBlockDefaultdev from 'src/components/accordion-block/AccordionBlockDefault.dev';
 import * as AccordionBlock from 'src/components/accordion-block/AccordionBlock';
@@ -183,6 +187,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['subscription-banner', { ...subscriptionbannerprops, ...subscriptionbannerdictionary }],
   ['SearchResults', { ...SearchResults, componentType: 'client' }],
   ['SearchProvider', { ...SearchProvider, componentType: 'client' }],
+  ['AgentChat', { ...AgentChat, componentType: 'client' }],
+  ['RagChat', { ...RagChat, componentType: 'client' }],
   ['SearchLocale', { ...SearchLocale, componentType: 'client' }],
   ['search-results', { ...searchresultsdictionary }],
   ['search-config', { ...searchconfig }],
@@ -194,6 +200,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['secondary-navigation', { ...secondarynavigationprops }],
   ['RichTextBlock', { ...RichTextBlock }],
   ['rich-text-block', { ...richtextblockprops }],
+  ['RagChat', { ...RagChat, componentType: 'client' }],
   ['PromoBlock', { ...PromoBlock }],
   ['promo-block', { ...promoblockprops }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
@@ -274,6 +281,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ArticleFull', { ...ArticleFullprops, ...ArticleFull, componentType: 'client' }],
   ['AnimatedSection', { ...AnimatedSectiondev }],
   ['AlertBanner', { ...AlertBannerdev }],
+  ['AgentChat', { ...AgentChat, componentType: 'client' }],
   ['AccordionBlockItem', { ...AccordionBlockItemdev }],
   ['AccordionBlockDefault', { ...AccordionBlockDefaultdev }],
   ['AccordionBlock', { ...AccordionBlock, componentType: 'client' }],
