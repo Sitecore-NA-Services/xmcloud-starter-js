@@ -180,13 +180,13 @@ const SearchResultsComponent = ({
                 className="h-auto p-0 text-xs font-medium text-zinc-500 hover:text-accent"
                 onClick={() => onClearFilters()}
               >
-                Clear all
+                {t(dictionaryKeys.SEARCH_FILTERS_CLEAR)}
               </Button>
             )}
           </div>
 
           {facets.length === 0 ? (
-            <p className="text-sm text-zinc-500">No filters are available for this search.</p>
+            <p className="text-sm text-zinc-500">{t(dictionaryKeys.SEARCH_FILTERS_NONE)}</p>
           ) : (
             facets.map((facet, facetIndex) => (
               <div key={facet.name} className="space-y-3 border-b border-zinc-200 pb-5">
@@ -234,15 +234,16 @@ const SearchResultsComponent = ({
           <div className="mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-zinc-200 pb-4">
             <p className="text-sm text-zinc-600" aria-live="polite">
               {loading ? (
-                'Searching…'
+                t(dictionaryKeys.SEARCH_LOADING)
               ) : (
                 <>
                   <span className="font-semibold text-zinc-900">{totalItems}</span>{' '}
-                  {totalItems === 1 ? 'result' : 'results'}
+                  {totalItems === 1 ? t(dictionaryKeys.SEARCH_RESULT) : t(dictionaryKeys.SEARCH_RESULTS)}
                   {defaultKeyphrase ? (
                     <>
                       {' '}
-                      for <span className="font-medium text-zinc-900">“{defaultKeyphrase}”</span>
+                      {t(dictionaryKeys.SEARCH_RESULTS_FOR)}{' '}
+                      <span className="font-medium text-zinc-900">&quot;{defaultKeyphrase}&quot;</span>
                     </>
                   ) : null}
                 </>
@@ -251,7 +252,7 @@ const SearchResultsComponent = ({
 
             {sortChoices.length > 0 && (
               <div className="flex items-center gap-2">
-                <span className="text-sm text-zinc-500">Sort</span>
+                <span className="text-sm text-zinc-500">{t(dictionaryKeys.SEARCH_SORT_LABEL)}</span>
                 <Select
                   value={sortType || sortChoices[0]?.name}
                   onValueChange={(name) => onSortChange({ name })}
@@ -275,9 +276,11 @@ const SearchResultsComponent = ({
             <ResultsSkeleton />
           ) : articles.length === 0 ? (
             <div className="rounded-xl border border-zinc-200 bg-white p-10 text-center">
-              <p className="font-semibold text-zinc-900">No articles found</p>
+              <p className="font-semibold text-zinc-900">{t(dictionaryKeys.SEARCH_EMPTY_TITLE)}</p>
               <p className="mt-1 text-sm text-zinc-500">
-                Try a different keyword{hasSelectedFacets ? ' or clear your filters' : ''}.
+                {hasSelectedFacets
+                  ? t(dictionaryKeys.SEARCH_EMPTY_BODY_WITH_FILTERS)
+                  : t(dictionaryKeys.SEARCH_EMPTY_BODY)}
               </p>
             </div>
           ) : (

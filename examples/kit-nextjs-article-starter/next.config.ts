@@ -1,9 +1,16 @@
 import type { NextConfig } from 'next';
+import path from 'path';
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
+
+  // Pin Turbopack's root to this starter's directory so the font resolver
+  // doesn't pick up an outer lockfile in a monorepo.
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
   
   // Enable React Strict Mode
   reactStrictMode: true,
