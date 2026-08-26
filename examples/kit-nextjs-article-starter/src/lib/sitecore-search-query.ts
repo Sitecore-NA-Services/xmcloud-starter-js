@@ -152,7 +152,9 @@ export async function listSearchFacetValues(keyphrase = 'the'): Promise<FacetVal
                 { name: 'tags', max: 30 },
               ],
             },
-            limit: 0,
+            // The API rejects limit: 0 ("under minimum allowed value"); 1 is the
+            // smallest valid value and we only care about the `facet` block here.
+            limit: 1,
             offset: 0,
           },
         },
