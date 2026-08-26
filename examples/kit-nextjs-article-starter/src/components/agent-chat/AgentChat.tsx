@@ -39,18 +39,15 @@ export const Default: React.FC = () => {
                 (m.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted')
               }
             >
-              {m.parts?.map((part, i) => {
-                if (part.type === 'text') return <span key={i}>{part.text}</span>;
-                if (part.type === 'tool-invocation') {
-                  const args = part.toolInvocation.args as { query?: string } | undefined;
-                  return (
-                    <div key={i} className="mt-1 rounded bg-black/10 px-2 py-1 text-xs italic">
-                      🔎 searched articles for “{args?.query}”
-                    </div>
-                  );
-                }
-                return null;
+              {m.toolInvocations?.map((ti) => {
+                const args = ti.args as { query?: string } | undefined;
+                return (
+                  <div key={ti.toolCallId} className="mb-1 rounded bg-black/10 px-2 py-1 text-xs italic">
+                    🔎 searched articles for “{args?.query}”
+                  </div>
+                );
               })}
+              {m.content}
             </div>
           </div>
         ))}
