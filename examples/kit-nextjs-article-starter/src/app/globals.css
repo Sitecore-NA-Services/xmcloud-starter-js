@@ -2,6 +2,7 @@
 @import '../assets/styles/tailwind-bootstrap-grid.css';
 @import '../assets/styles/column-splitter.css';
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 /* bootstrap grid to tailwind plugin */
 @plugin 'tailwind-bootstrap-grid' {
