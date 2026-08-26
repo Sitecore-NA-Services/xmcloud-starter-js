@@ -7,6 +7,7 @@ export interface RouteFields {
   pageTitle?: Field;
   pageShortTitle?: Field;
   pageHeaderTitle?: Field;
+  ArticleTitle?: Field;
   metadataDescription?: Field;
   pageSummary?: Field;
   pageSubtitle?: Field;
@@ -38,6 +39,7 @@ export const resolvePageMetadata = (
     getFieldValue(fields?.pageShortTitle) ||
     getFieldValue(fields?.pageHeaderTitle) ||
     getFieldValue(fields?.Title) ||
+    getFieldValue(fields?.ArticleTitle) ||
     'Page';
 
   const description =

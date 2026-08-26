@@ -167,6 +167,12 @@ const personalize = new SampleParamPersonalizeMiddleware({
 });
 
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
+  // The Articles listing page was removed from navigation in favor of the search
+  // page; redirect anyone who still lands on it directly to /search.
+  if (req.nextUrl.pathname === '/Articles') {
+    return NextResponse.redirect(new URL('/search', req.url), { status: 301 });
+  }
+
   return defineMiddleware(locale, multisite, redirects, personalize).exec(req, ev);
 }
 
