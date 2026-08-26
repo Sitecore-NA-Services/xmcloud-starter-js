@@ -103,8 +103,7 @@ export const Default: React.FC = () => {
           <li>
             Each retrieved source is scored by <strong>embedding cosine similarity</strong> against
             your question (shown as a % match badge below each answer) and filtered against a
-            relevance threshold before being used as context, since Sitecore Search doesn&apos;t
-            expose its own relevance score natively.
+            relevance threshold before being used as context.
           </li>
           <li>
             If the index has no relevant articles, the model is told so explicitly and will say it

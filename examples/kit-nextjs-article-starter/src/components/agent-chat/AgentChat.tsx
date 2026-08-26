@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
 type ToolSearchResult = { id: string; title: string; url?: string; relevanceScore?: number };
+type FacetValues = { contentTypes: string[]; authors: string[]; tags: string[] };
 
 const relevanceLabel = (score?: number) =>
   score === undefined ? null : `${Math.round(score * 100)}% match`;
@@ -45,11 +46,34 @@ export const Default: React.FC = () => {
               }
             >
               {m.toolInvocations?.map((ti) => {
-                const args = ti.args as { query?: string } | undefined;
+                if (ti.toolName === 'listArticleFacets') {
+                  const facets = ti.state === 'result' ? (ti.result as FacetValues | undefined) : undefined;
+                  return (
+                    <div key={ti.toolCallId} className="mb-1 rounded bg-black/10 px-2 py-1 text-xs italic">
+                      <div>📋 looked up available filters</div>
+                      {facets ? (
+                        <ul className="mt-1 space-y-0.5 not-italic">
+                          <li>Content types: {facets.contentTypes.join(', ') || '—'}</li>
+                          <li>Authors: {facets.authors.join(', ') || '—'}</li>
+                          <li>Tags: {facets.tags.join(', ') || '—'}</li>
+                        </ul>
+                      ) : null}
+                    </div>
+                  );
+                }
+                const args = ti.args as { query?: string; contentType?: string; author?: string; tags?: string[] } | undefined;
                 const results = ti.state === 'result' ? (ti.result as ToolSearchResult[] | undefined) : undefined;
+                const filterBits = [
+                  args?.contentType && `type: ${args.contentType}`,
+                  args?.author && `author: ${args.author}`,
+                  args?.tags?.length && `tags: ${args.tags.join(', ')}`,
+                ].filter(Boolean);
                 return (
                   <div key={ti.toolCallId} className="mb-1 rounded bg-black/10 px-2 py-1 text-xs italic">
-                    <div>🔎 searched articles for “{args?.query}”</div>
+                    <div>
+                      🔎 searched articles for “{args?.query}”
+                      {filterBits.length ? ` (${filterBits.join('; ')})` : ''}
+                    </div>
                     {results?.length ? (
                       <ul className="mt-1 space-y-0.5 not-italic">
                         {results.map((r) => (
@@ -87,24 +111,25 @@ export const Default: React.FC = () => {
         <h2 className="mb-2 font-semibold text-foreground">How this demo works</h2>
         <ul className="list-disc space-y-1 pl-5">
           <li>
-            The LLM (Azure OpenAI) is given one <strong>tool</strong>: <code>searchArticles</code>,
-            which queries the Sitecore Search index for this site.
+            The LLM (Azure OpenAI) is given two <strong>tools</strong>: <code>listArticleFacets</code>,
+            which discovers the exact content type, author, and topic values available in the
+            index, and <code>searchArticles</code>, which queries the index by keyphrase and can
+            optionally filter by any of those facets.
           </li>
           <li>
             The model decides <strong>for itself</strong>, turn by turn, whether a question needs a
-            search. Simple chit-chat gets answered directly; a question about article content
-            triggers a tool call first.
+            search, and whether it should look up filter values first (e.g. &quot;articles by
+            Jordan Alvarez about microgrids&quot; triggers a facet lookup, then a filtered search).
           </li>
           <li>
             Each tool call and its results are visible in the chat above (the “🔎 searched
-            articles for…” badges), so you can see exactly when and why the model reached for
-            the index.
+            articles for…” and “📋 looked up available filters” badges), so you can see exactly
+            when and why the model reached for the index.
           </li>
           <li>
             Each result shows a <strong>relevance score</strong> (0-100%) computed by embedding the
-            query and each result, then measuring cosine similarity between them. Sitecore Search
-            doesn&apos;t expose its own relevance score, so this fills that gap and lets the model
-            (and you) judge match quality rather than trusting result order alone.
+            query and each result, then measuring cosine similarity between them, giving the
+            model (and you) a clear signal of match quality rather than trusting result order alone.
           </li>
           <li>
             This pattern (&quot;agentic search&quot;/&quot;function calling&quot;) is best when the assistant

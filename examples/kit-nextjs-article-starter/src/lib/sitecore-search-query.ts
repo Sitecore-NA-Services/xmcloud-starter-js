@@ -37,9 +37,40 @@ export type SearchDoc = {
   relevanceScore?: number;
 };
 
-/** Query the Sitecore Search index and return a small set of article documents. */
-export async function querySitecoreSearch(keyphrase: string, limit = 5): Promise<SearchDoc[]> {
+/** Facet filters supported by the `content` entity's indexed attributes. */
+export type SearchFacets = {
+  /** Filters on the `type` facet (e.g. "Project Update", "Case Study"). */
+  contentType?: string;
+  /** Filters on the `author` facet. */
+  author?: string;
+  /** Filters on the `tags` facet (topics). Matches articles tagged with ANY of the given values. */
+  tags?: string[];
+};
+
+type FacetTypeRequest = {
+  name: string;
+  filter: { type: 'or'; values: string[] };
+};
+
+/** Builds the `search.facet.types[]` entries for whichever facets were provided. */
+function buildFacetTypes(facets?: SearchFacets): FacetTypeRequest[] | undefined {
+  if (!facets) return undefined;
+  const types: FacetTypeRequest[] = [];
+  if (facets.contentType) types.push({ name: 'type', filter: { type: 'or', values: [facets.contentType] } });
+  if (facets.author) types.push({ name: 'author', filter: { type: 'or', values: [facets.author] } });
+  if (facets.tags?.length) types.push({ name: 'tags', filter: { type: 'or', values: facets.tags } });
+  return types.length ? types : undefined;
+}
+
+/**
+ * Query the Sitecore Search index and return a small set of article documents.
+ * Optional `facets` narrow results by content type, author, and/or topic tags,
+ * in addition to the free-text keyphrase.
+ */
+export async function querySitecoreSearch(keyphrase: string, limit = 5, facets?: SearchFacets): Promise<SearchDoc[]> {
   if (!DOMAIN_ID || !API_KEY || !RFK_ID) return [];
+
+  const facetTypes = buildFacetTypes(facets);
 
   const body = {
     context: {
@@ -55,6 +86,7 @@ export async function querySitecoreSearch(keyphrase: string, limit = 5): Promise
           search: {
             content: {},
             query: { keyphrase: keyphrase?.trim() || 'the' },
+            ...(facetTypes ? { facet: { types: facetTypes } } : {}),
             limit,
             offset: 0,
           },
@@ -81,5 +113,69 @@ export async function querySitecoreSearch(keyphrase: string, limit = 5): Promise
     }));
   } catch {
     return [];
+  }
+}
+
+export type FacetValues = {
+  contentTypes: string[];
+  authors: string[];
+  tags: string[];
+};
+
+/**
+ * Lists the available values (with result counts) for the content type, author,
+ * and tags facets, so a caller can discover valid filter values for
+ * querySitecoreSearch's `facets` argument before filtering by them.
+ */
+export async function listSearchFacetValues(keyphrase = 'the'): Promise<FacetValues> {
+  const empty: FacetValues = { contentTypes: [], authors: [], tags: [] };
+  if (!DOMAIN_ID || !API_KEY || !RFK_ID) return empty;
+
+  const body = {
+    context: {
+      locale: { language: LOCALE, country: LOCALE === 'es' ? 'mx' : 'us' },
+      page: { uri: '/chat' },
+    },
+    widget: {
+      items: [
+        {
+          rfk_id: RFK_ID,
+          entity: ENTITY,
+          ...(SOURCE_IDS.length ? { sources: SOURCE_IDS } : {}),
+          search: {
+            content: {},
+            query: { keyphrase },
+            facet: {
+              types: [
+                { name: 'type', max: 20 },
+                { name: 'author', max: 20 },
+                { name: 'tags', max: 30 },
+              ],
+            },
+            limit: 0,
+            offset: 0,
+          },
+        },
+      ],
+    },
+  };
+
+  try {
+    const res = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: API_KEY },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) return empty;
+    const json = await res.json();
+    const facetList: Array<{ name: string; value?: Array<{ text: string }> }> = json?.widgets?.[0]?.facet ?? [];
+    const valuesOf = (name: string) => facetList.find((f) => f.name === name)?.value?.map((v) => v.text) ?? [];
+    return {
+      contentTypes: valuesOf('type'),
+      authors: valuesOf('author'),
+      tags: valuesOf('tags'),
+    };
+  } catch {
+    return empty;
   }
 }
