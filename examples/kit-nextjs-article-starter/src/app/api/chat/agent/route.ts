@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       "wants everything by that author/type. Cite article titles and URLs in your answer. If " +
       'the tool returns no results, say so honestly instead of guessing. Each result includes ' +
       'a relevanceScore (0-1, cosine similarity to the query); if the best results score below ' +
-      'roughly 0.75, tell the user the match is weak rather than presenting it as a confident answer.',
+      'roughly 0.45, tell the user the match is weak rather than presenting it as a confident answer.',
     messages,
     tools: {
       listArticleFacets: tool({

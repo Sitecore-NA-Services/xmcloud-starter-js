@@ -34,7 +34,10 @@ export async function rerankByRelevance(query: string, docs: SearchDoc[]): Promi
   }
 }
 
-const DEFAULT_THRESHOLD = Number(process.env.RAG_RELEVANCE_THRESHOLD) || 0.75;
+// Empirically, text-embedding-3-small scores relevant query/article pairs around
+// 0.6-0.75 and unrelated pairs around 0.15-0.4 for this corpus - 0.75 filtered out
+// every real match, so 0.45 sits in the gap between the two clusters.
+const DEFAULT_THRESHOLD = Number(process.env.RAG_RELEVANCE_THRESHOLD) || 0.45;
 
 /** Drops results below the configured relevance threshold (only applies once scored). */
 export function filterByRelevance(docs: SearchDoc[], threshold = DEFAULT_THRESHOLD): SearchDoc[] {
