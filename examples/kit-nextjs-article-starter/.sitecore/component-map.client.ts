@@ -18,8 +18,6 @@ import * as Image from 'src/components/sxa/Image';
 import * as SubscriptionBanner from 'src/components/subscription-banner/SubscriptionBanner';
 import * as SearchResults from 'src/components/sitecore-search/SearchResults';
 import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
-import * as AgentChat from 'src/components/agent-chat/AgentChat';
-import * as RagChat from 'src/components/rag-chat/RagChat';
 import * as SearchLocale from 'src/components/sitecore-search/SearchLocale';
 import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
@@ -71,8 +69,6 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SubscriptionBanner', { ...SubscriptionBanner }],
   ['SearchResults', { ...SearchResults }],
   ['SearchProvider', { ...SearchProvider }],
-  ['AgentChat', { ...AgentChat }],
-  ['RagChat', { ...RagChat }],
   ['SearchLocale', { ...SearchLocale }],
   ['PreviewSearchBox', { ...PreviewSearchBox }],
   ['SecondaryNavigation', { ...SecondaryNavigation }],

@@ -1,10 +1,8 @@
-import { streamText } from 'ai';
+import { streamText, type Message } from 'ai';
 import { chatModel } from '@/lib/azure-openai';
 import { querySitecoreSearch } from '@/lib/sitecore-search-query';
 
 export const maxDuration = 30;
-
-type ChatMessage = { role: string; content: string };
 
 /**
  * RAG chat: every request retrieves top-k documents from the Sitecore Search
@@ -13,7 +11,7 @@ type ChatMessage = { role: string; content: string };
  * (compare with /api/chat/agent).
  */
 export async function POST(req: Request) {
-  const { messages }: { messages: ChatMessage[] } = await req.json();
+  const { messages }: { messages: Message[] } = await req.json();
   const lastUserMessage = [...messages].reverse().find((m) => m.role === 'user');
   const keyphrase = lastUserMessage?.content ?? '';
 

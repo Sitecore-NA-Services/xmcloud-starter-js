@@ -6,8 +6,6 @@ import { Form } from '@sitecore-content-sdk/nextjs';
 // end of built-in components
 import * as Widget from 'src/components/widget/Widget';
 import * as widgetprops from 'src/components/widget/widget.props';
-import * as AgentChat from 'src/components/agent-chat/AgentChat';
-import * as RagChat from 'src/components/rag-chat/RagChat';
 import * as Whatsit from 'src/components/whatsit/Whatsit';
 import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
@@ -187,8 +185,6 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['subscription-banner', { ...subscriptionbannerprops, ...subscriptionbannerdictionary }],
   ['SearchResults', { ...SearchResults, componentType: 'client' }],
   ['SearchProvider', { ...SearchProvider, componentType: 'client' }],
-  ['AgentChat', { ...AgentChat, componentType: 'client' }],
-  ['RagChat', { ...RagChat, componentType: 'client' }],
   ['SearchLocale', { ...SearchLocale, componentType: 'client' }],
   ['search-results', { ...searchresultsdictionary }],
   ['search-config', { ...searchconfig }],
