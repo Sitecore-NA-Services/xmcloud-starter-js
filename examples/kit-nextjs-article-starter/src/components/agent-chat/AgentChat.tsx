@@ -10,6 +10,7 @@
 import { useChat } from '@ai-sdk/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { ChatMarkdown } from '@/components/util/ChatMarkdown';
 
 type ToolSearchResult = { id: string; title: string; url?: string; relevanceScore?: number };
 type FacetValues = { contentTypes: string[]; authors: string[]; tags: string[] };
@@ -41,7 +42,7 @@ export const Default: React.FC = () => {
           <div key={m.id} className={m.role === 'user' ? 'text-right' : 'text-left'}>
             <div
               className={
-                'inline-block max-w-[85%] rounded-lg px-3 py-2 text-sm ' +
+                'inline-block max-w-[90%] rounded-lg px-4 py-3 text-sm ' +
                 (m.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted')
               }
             >
@@ -89,7 +90,7 @@ export const Default: React.FC = () => {
                   </div>
                 );
               })}
-              {m.content}
+              {m.content && (m.role === 'assistant' ? <ChatMarkdown content={m.content} /> : m.content)}
             </div>
           </div>
         ))}

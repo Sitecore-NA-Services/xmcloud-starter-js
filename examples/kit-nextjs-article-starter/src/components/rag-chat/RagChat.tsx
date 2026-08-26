@@ -10,6 +10,7 @@
 import { useChat } from '@ai-sdk/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { ChatMarkdown } from '@/components/util/ChatMarkdown';
 
 type RagSource = { id: string; title: string; url?: string | null; relevanceScore?: number | null };
 
@@ -49,11 +50,11 @@ export const Default: React.FC = () => {
             <div key={m.id} className={m.role === 'user' ? 'text-right' : 'text-left'}>
               <div
                 className={
-                  'inline-block max-w-[85%] rounded-lg px-3 py-2 text-sm ' +
+                  'inline-block max-w-[90%] rounded-lg px-4 py-3 text-sm ' +
                   (m.role === 'user' ? 'bg-primary text-primary-foreground' : 'bg-muted')
                 }
               >
-                {m.content}
+                {m.content && (m.role === 'assistant' ? <ChatMarkdown content={m.content} /> : m.content)}
                 {sources?.length ? (
                   <ul className="mt-2 space-y-0.5 border-t border-black/10 pt-2 text-xs">
                     {sources.map((s) => (
