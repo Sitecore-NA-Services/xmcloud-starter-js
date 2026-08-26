@@ -8,6 +8,7 @@
  */
 
 import { useChat } from '@ai-sdk/react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ChatMarkdown } from '@/components/util/ChatMarkdown';
@@ -138,7 +139,11 @@ export const Default: React.FC = () => {
             all.
           </li>
           <li>
-            Compare with the <strong>RAG Chat</strong> page, where retrieval always runs
+            Compare with the{' '}
+            <Link href="/RAG-Chat" className="font-semibold text-foreground underline underline-offset-2">
+              RAG Chat
+            </Link>{' '}
+            page, where retrieval always runs
             automatically before every answer instead of being a model decision.
           </li>
         </ul>

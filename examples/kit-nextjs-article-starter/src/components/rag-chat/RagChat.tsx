@@ -8,6 +8,7 @@
  */
 
 import { useChat } from '@ai-sdk/react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ChatMarkdown } from '@/components/util/ChatMarkdown';
@@ -111,7 +112,11 @@ export const Default: React.FC = () => {
             doesn&apos;t have that information rather than guessing.
           </li>
           <li>
-            Compare with the <strong>Agent Chat</strong> page, where the model itself decides
+            Compare with the{' '}
+            <Link href="/Agent-Chat" className="font-semibold text-foreground underline underline-offset-2">
+              Agent Chat
+            </Link>{' '}
+            page, where the model itself decides
             whether to call a search tool at all.
           </li>
         </ul>
