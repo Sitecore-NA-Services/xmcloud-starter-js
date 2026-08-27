@@ -16,10 +16,22 @@ export const maxDuration = 30;
 export async function POST(req: Request) {
   const { messages, locale }: { messages: Message[]; locale?: string } = await req.json();
 
+  // The Search index is language-scoped (an English query won't match Spanish
+  // articles or vice versa), so the model needs to both answer and search in the
+  // visitor's site language, not just whatever language they happened to type in.
+  const languageNote =
+    locale && locale.toLowerCase().startsWith('es')
+      ? 'The visitor is on the Spanish (es-MX) site. Respond in Spanish, and phrase ' +
+        'searchArticles/listArticleFacets queries in Spanish too (translate the topic ' +
+        "first if the user asked in English), since the article index is Spanish-language."
+      : 'The visitor is on the English site. Respond in English, and phrase searchArticles ' +
+        'queries in English.';
+
   const result = streamText({
     model: chatModel,
     system:
       'You are a helpful assistant for the Solterra & Co. article site. ' +
+      `${languageNote} ` +
       'Use the searchArticles tool whenever the user asks about article content, ' +
       'topics, or facts that may be covered by the site. If the user wants to narrow ' +
       'results by content type, author, or topic, call listArticleFacets first to see the ' +

@@ -31,6 +31,13 @@ export async function POST(req: Request) {
         .join('\n\n')
     : 'No matching articles were found in the index.';
 
+  // The retrieved context is in whichever language the Search index returned it in
+  // (locale-scoped), so the answer should match that same site language.
+  const languageNote =
+    locale && locale.toLowerCase().startsWith('es')
+      ? 'The visitor is on the Spanish (es-MX) site; respond in Spanish.'
+      : 'The visitor is on the English site; respond in English.';
+
   // Stream the reranked sources to the client alongside the answer so the UI can
   // show what was actually retrieved and how relevant each source scored.
   // StreamData requires plain JSON (no `undefined`), so normalize missing fields to null.
@@ -48,6 +55,7 @@ export async function POST(req: Request) {
     model: chatModel,
     system:
       'You are a helpful assistant for the Solterra & Co. article site. ' +
+      `${languageNote} ` +
       'Answer ONLY using the retrieved context below. If the context does not contain ' +
       'the answer, say you do not have that information. Cite sources by title and URL.\n\n' +
       `Retrieved context:\n${context}`,
