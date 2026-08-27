@@ -9,9 +9,11 @@
 
 import { useChat } from '@ai-sdk/react';
 import Link from 'next/link';
+import { useSitecore } from '@sitecore-content-sdk/nextjs';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ChatMarkdown } from '@/components/util/ChatMarkdown';
+import { useLocalizeHref } from '@/lib/localize-href';
 
 type RagSource = { id: string; title: string; url?: string | null; relevanceScore?: number | null };
 
@@ -19,8 +21,12 @@ const relevanceLabel = (score?: number | null) =>
   score === undefined || score === null ? null : `${Math.round(score * 100)}% match`;
 
 export const Default: React.FC = () => {
+  const { page } = useSitecore();
+  const locale = page?.layout?.sitecore?.context?.language;
+  const localizeHref = useLocalizeHref();
   const { messages, input, handleInputChange, handleSubmit, status, data } = useChat({
     api: '/api/chat/rag',
+    body: { locale },
   });
 
   const busy = status === 'streaming' || status === 'submitted';
@@ -113,7 +119,7 @@ export const Default: React.FC = () => {
           </li>
           <li>
             Compare with the{' '}
-            <Link href="/Agent-Chat" className="font-semibold text-foreground underline underline-offset-2">
+            <Link href={localizeHref('/Agent-Chat') ?? '/Agent-Chat'} className="font-semibold text-foreground underline underline-offset-2">
               Agent Chat
             </Link>{' '}
             page, where the model itself decides

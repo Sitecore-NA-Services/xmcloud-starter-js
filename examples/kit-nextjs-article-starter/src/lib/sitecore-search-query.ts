@@ -8,6 +8,8 @@
  * dedicated server-only `SITECORE_SEARCH_*` vars when set.
  */
 
+import { toSearchLocale } from '@/lib/search-locale';
+
 const DOMAIN_ID =
   process.env.SITECORE_SEARCH_DOMAIN_ID ||
   process.env.NEXT_PUBLIC_SEARCH_CUSTOMER_KEY?.split('-')[1] ||
@@ -78,16 +80,24 @@ function buildFacetTypes(facets?: SearchFacets): FacetTypeRequest[] | undefined 
 /**
  * Query the Sitecore Search index and return a small set of article documents.
  * Optional `facets` narrow results by content type, author, and/or topic tags,
- * in addition to the free-text keyphrase.
+ * in addition to the free-text keyphrase. `locale` is the visitor's resolved
+ * Sitecore content language (e.g. "es-MX"); defaults to SITECORE_SEARCH_DEFAULT_LOCALE
+ * when the caller doesn't know the page locale.
  */
-export async function querySitecoreSearch(keyphrase: string, limit = 5, facets?: SearchFacets): Promise<SearchDoc[]> {
+export async function querySitecoreSearch(
+  keyphrase: string,
+  limit = 5,
+  facets?: SearchFacets,
+  locale?: string,
+): Promise<SearchDoc[]> {
   if (!DOMAIN_ID || !API_KEY || !RFK_ID) return [];
 
   const facetTypes = buildFacetTypes(facets);
+  const [language, country] = toSearchLocale(locale || LOCALE);
 
   const body = {
     context: {
-      locale: { language: LOCALE, country: LOCALE === 'es' ? 'mx' : 'us' },
+      locale: { language, country },
       page: { uri: '/chat' },
     },
     widget: {
@@ -140,13 +150,15 @@ export type FacetValues = {
  * and tags facets, so a caller can discover valid filter values for
  * querySitecoreSearch's `facets` argument before filtering by them.
  */
-export async function listSearchFacetValues(keyphrase = 'the'): Promise<FacetValues> {
+export async function listSearchFacetValues(keyphrase = 'the', locale?: string): Promise<FacetValues> {
   const empty: FacetValues = { contentTypes: [], authors: [], tags: [] };
   if (!DOMAIN_ID || !API_KEY || !RFK_ID) return empty;
 
+  const [language, country] = toSearchLocale(locale || LOCALE);
+
   const body = {
     context: {
-      locale: { language: LOCALE, country: LOCALE === 'es' ? 'mx' : 'us' },
+      locale: { language, country },
       page: { uri: '/chat' },
     },
     widget: {

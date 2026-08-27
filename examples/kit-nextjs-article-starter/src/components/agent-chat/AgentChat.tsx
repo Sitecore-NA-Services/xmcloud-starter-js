@@ -9,9 +9,11 @@
 
 import { useChat } from '@ai-sdk/react';
 import Link from 'next/link';
+import { useSitecore } from '@sitecore-content-sdk/nextjs';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ChatMarkdown } from '@/components/util/ChatMarkdown';
+import { useLocalizeHref } from '@/lib/localize-href';
 
 type ToolSearchResult = { id: string; title: string; url?: string; relevanceScore?: number };
 type FacetValues = { contentTypes: string[]; authors: string[]; tags: string[] };
@@ -20,8 +22,12 @@ const relevanceLabel = (score?: number) =>
   score === undefined ? null : `${Math.round(score * 100)}% match`;
 
 export const Default: React.FC = () => {
+  const { page } = useSitecore();
+  const locale = page?.layout?.sitecore?.context?.language;
+  const localizeHref = useLocalizeHref();
   const { messages, input, handleInputChange, handleSubmit, status } = useChat({
     api: '/api/chat/agent',
+    body: { locale },
   });
 
   const busy = status === 'streaming' || status === 'submitted';
@@ -140,7 +146,7 @@ export const Default: React.FC = () => {
           </li>
           <li>
             Compare with the{' '}
-            <Link href="/RAG-Chat" className="font-semibold text-foreground underline underline-offset-2">
+            <Link href={localizeHref('/RAG-Chat') ?? '/RAG-Chat'} className="font-semibold text-foreground underline underline-offset-2">
               RAG Chat
             </Link>{' '}
             page, where retrieval always runs

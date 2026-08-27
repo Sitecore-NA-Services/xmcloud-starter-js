@@ -1,4 +1,4 @@
-import { streamText, tool } from 'ai';
+import { streamText, tool, type Message } from 'ai';
 import { z } from 'zod';
 import { chatModel } from '@/lib/azure-openai';
 import { querySitecoreSearch, listSearchFacetValues } from '@/lib/sitecore-search-query';
@@ -14,7 +14,7 @@ export const maxDuration = 30;
  * filter values before narrowing a search with them.
  */
 export async function POST(req: Request) {
-  const { messages } = await req.json();
+  const { messages, locale }: { messages: Message[]; locale?: string } = await req.json();
 
   const result = streamText({
     model: chatModel,
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
           'List the available content type, author, and topic tag values in the Solterra ' +
           'article index, with result counts, so a search can be narrowed accurately.',
         parameters: z.object({}),
-        execute: async () => listSearchFacetValues(),
+        execute: async () => listSearchFacetValues('the', locale),
       }),
       searchArticles: tool({
         description:
@@ -53,7 +53,7 @@ export async function POST(req: Request) {
           tags: z.array(z.string()).optional().describe('Filter to articles tagged with any of these topics'),
         }),
         execute: async ({ query, contentType, author, tags }) => {
-          const docs = await querySitecoreSearch(query ?? '', 5, { contentType, author, tags });
+          const docs = await querySitecoreSearch(query ?? '', 5, { contentType, author, tags }, locale);
           // Rerank by embedding cosine similarity so the model (and the UI) sees a
           // relevanceScore per result.
           return rerankByRelevance(query ?? '', docs);

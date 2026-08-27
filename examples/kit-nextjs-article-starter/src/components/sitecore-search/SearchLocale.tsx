@@ -1,6 +1,7 @@
 'use client';
 
 import { PageController } from '@sitecore-search/react';
+import { toSearchLocale } from '@/lib/search-locale';
 
 /**
  * Sets the Sitecore Search request locale (`context.locale`) from the resolved
@@ -23,11 +24,3 @@ export default function SearchLocale({ locale }: { locale?: string }) {
   return null;
 }
 
-/** Map a Sitecore content language (e.g. "es-MX", "en") to Search language/country. */
-function toSearchLocale(locale?: string): [string, string] {
-  if (!locale) return ['en', 'us'];
-  const [lang, region] = locale.split('-');
-  const language = (lang || 'en').toLowerCase();
-  const country = (region || (language === 'es' ? 'mx' : 'us')).toLowerCase();
-  return [language, country];
-}

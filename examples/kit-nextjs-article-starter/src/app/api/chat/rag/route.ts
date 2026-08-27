@@ -14,11 +14,11 @@ export const maxDuration = 30;
  * context, since Sitecore Search doesn't expose its own relevance score.
  */
 export async function POST(req: Request) {
-  const { messages }: { messages: Message[] } = await req.json();
+  const { messages, locale }: { messages: Message[]; locale?: string } = await req.json();
   const lastUserMessage = [...messages].reverse().find((m) => m.role === 'user');
   const keyphrase = lastUserMessage?.content ?? '';
 
-  const rawDocs = await querySitecoreSearch(keyphrase, 5);
+  const rawDocs = await querySitecoreSearch(keyphrase, 5, undefined, locale);
   const rankedDocs = await rerankByRelevance(keyphrase, rawDocs);
   const docs = filterByRelevance(rankedDocs);
 
