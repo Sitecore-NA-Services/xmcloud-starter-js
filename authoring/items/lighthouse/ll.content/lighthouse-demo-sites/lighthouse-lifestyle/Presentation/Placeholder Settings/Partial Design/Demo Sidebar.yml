@@ -1,0 +1,45 @@
+﻿---
+ID: "d21e5288-5040-42a5-bc2b-54b6986f0002"
+Parent: "6018e3d8-0424-4d65-9f46-ab3588005446"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Presentation/Placeholder Settings/Partial Design/Demo Sidebar"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "sxa-sidebar"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "03acf84f-f538-4f5a-b01a-24a81904e491"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {79C6974F-04D4-4E03-A979-85733DAC7133}
+    {35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}
+    {48C46840-3FA6-48EC-83CB-AE83B790CB90}
+    {8CAE01BA-1570-4D7B-9982-E3DACDF0C285}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260512T184154Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d2efe15a-5361-4fb0-a6ab-288537bdf620"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260514T185203Z

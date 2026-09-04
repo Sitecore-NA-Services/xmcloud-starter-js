@@ -1,0 +1,39 @@
+﻿---
+ID: "bef08bdb-8a4d-4a6d-9766-f3d45ef96498"
+Parent: "0ffa1a88-1945-485c-8e4c-1cdd8ecc8e0b"
+Template: "0ffa1a88-1945-485c-8e4c-1cdd8ecc8e0b"
+Path: /sitecore/templates/Project/lighthouse/Site/JSS Settings/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "d03f2dc6-fa88-476f-9549-14ea3c153eeb"
+- ID: "f87f0d81-c32c-4c1d-8caf-67856c3ab06e"
+  Hint: ImportUser
+  Value: |
+    sitecore\Admin
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260406T153230Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5459c194-2ae7-4943-98ed-f848b18ea1e5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260424T203943Z

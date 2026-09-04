@@ -1,0 +1,110 @@
+﻿---
+ID: "40341c5e-4ace-4f3f-bf7c-397a3b8f5191"
+Parent: "25f3f98a-ee23-4ea1-a250-bbd27abb114c"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Products/NightVue Monocular"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/40341C5E4ACE4F3FBF7C397A3B8F5191.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "4f40fe1b-25f9-436a-9cd8-cf8bb8862bfe"
+  Value: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDAwIDMyMCIgY2xhc3M9InByb2R1Y3Qtc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwcm9kLW1vbm8tYmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWYyYTMyIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGExMjE4Ij48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMjAiIGZpbGw9InVybCgjcHJvZC1tb25vLWJnKSI+PC9yZWN0PjxlbGxpcHNlIGN4PSIyMDAiIGN5PSIyOTAiIHJ4PSIxNjAiIHJ5PSIxNCIgZmlsbD0icmdiYSgwLDAsMCwwLjE4KSI+PC9lbGxpcHNlPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE2MCIgcj0iMTIwIiBmaWxsPSIjMmQ2YTNlIiBvcGFjaXR5PSIwLjE4Ij48L2NpcmNsZT48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MCwgMTMwKSI+PHJlY3QgeD0iMCIgeT0iMjAiIHdpZHRoPSIxODAiIGhlaWdodD0iNjAiIHJ4PSIxNCIgZmlsbD0iIzFhMWExYSI+PC9yZWN0PjxyZWN0IHg9IjAiIHk9IjIwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjYwIiByeD0iMTQiIGZpbGw9InVybCgjcHJvZC1tb25vLXNoaW5lKSIgb3BhY2l0eT0iMC41Ij48L3JlY3Q+PHJlY3QgeD0iNjAiIHk9IjE0IiB3aWR0aD0iNjAiIGhlaWdodD0iNiIgcng9IjIiIGZpbGw9IiMzYTNhM2EiPjwvcmVjdD48cmVjdCB4PSItMjIiIHk9IjM0IiB3aWR0aD0iMjgiIGhlaWdodD0iMzIiIHJ4PSI2IiBmaWxsPSIjMGEwYTBhIj48L3JlY3Q+PGNpcmNsZSBjeD0iLTgiIGN5PSI1MCIgcj0iMTAiIGZpbGw9IiMxYTNhMjUiPjwvY2lyY2xlPjxjaXJjbGUgY3g9Ii04IiBjeT0iNTAiIHI9IjYiIGZpbGw9IiMzYThhNTUiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE5MCIgY3k9IjUwIiByPSIyMiIgZmlsbD0iIzBhMGEwYSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkwIiBjeT0iNTAiIHI9IjE4IiBmaWxsPSIjMWEzYTI1Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxOTAiIGN5PSI1MCIgcj0iMTQiIGZpbGw9IiMyZDZhM2UiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE4NCIgY3k9IjQ0IiByPSIzIiBmaWxsPSIjYThkOGI4IiBvcGFjaXR5PSIwLjciPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjQwIiBjeT0iNTAiIHI9IjkiIGZpbGw9IiMyMjBhMGEiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjQwIiBjeT0iNTAiIHI9IjUiIGZpbGw9IiM4ODIwMjAiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjkwIiBjeT0iNTAiIHI9IjgiIGZpbGw9IiMzYTNhM2EiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjUwIiByPSI4IiBmaWxsPSIjM2EzYTNhIj48L2NpcmNsZT48L2c+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwcm9kLW1vbm8tc2hpbmUiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAuMyI+PC9zdG9wPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1701
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "041d8012-159d-4f4c-bbdb-738b48dd622c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205617Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: NightVue Monocular
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8fdc787c-ea11-4289-aad7-f8ffc5f684ac"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205617Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205617Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: NightVue Monocular
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1d2d7af6-9147-44d8-806d-a0b6260fb1c3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205617Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205617Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: NightVue Monocular
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "06292f62-ea4f-4a3d-b35a-b26ec9819315"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205617Z

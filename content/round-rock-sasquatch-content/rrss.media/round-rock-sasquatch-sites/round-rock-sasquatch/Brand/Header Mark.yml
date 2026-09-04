@@ -1,0 +1,110 @@
+﻿---
+ID: "105ccfaa-0109-43d0-902e-98fd7dec9a20"
+Parent: "cba79632-e8b5-4581-8227-7066c21a6a0b"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Brand/Header Mark"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/105CCFAA010943D0902E98FD7DEC9A20.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "b292712a-1c0f-4b54-85f1-3554907a89c1"
+  Value: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iaGVhZGVyLW1hcmsiIHZpZXdCb3g9IjAgMCA2NCA2NCIgYXJpYS1oaWRkZW49InRydWUiPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0icnJzcy1tYXJrLWdsb3ciIGN4PSIwLjUiIGN5PSIwLjUiIHI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q0YTU3NCIgc3RvcC1vcGFjaXR5PSIwLjUiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNGE1NzQiIHN0b3Atb3BhY2l0eT0iMCI+PC9zdG9wPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjMwIiBmaWxsPSIjMWEyNjIwIj48L2NpcmNsZT48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMCIgZmlsbD0idXJsKCNycnNzLW1hcmstZ2xvdykiPjwvY2lyY2xlPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIyLjEsIDEwLjEwMDAwMDAwMDAwMDAwMSkgc2NhbGUoMC40NSkiIGZpbGw9IiNmNWVhZDgiPjxlbGxpcHNlIGN4PSIyMiIgY3k9IjE0IiByeD0iMTIiIHJ5PSIxMyI+PC9lbGxpcHNlPjxwYXRoIGQ9Ik0gOSAyNSBMIDM1IDI1IEwgMzggNzIgTCA2IDcyIFoiPjwvcGF0aD48cGF0aCBkPSJNIDUgMjggTCAwIDcyIEwgOCA3MiBMIDEyIDMwIFoiPjwvcGF0aD48cGF0aCBkPSJNIDM5IDI4IEwgNDQgNzIgTCAzNiA3MiBMIDMyIDMwIFoiPjwvcGF0aD48cmVjdCB4PSIxMSIgeT0iNzAiIHdpZHRoPSI5IiBoZWlnaHQ9IjMwIj48L3JlY3Q+PHJlY3QgeD0iMjQiIHk9IjcwIiB3aWR0aD0iOSIgaGVpZ2h0PSIzMCI+PC9yZWN0PjxlbGxpcHNlIGN4PSIxNCIgY3k9IjEwMiIgcng9IjkiIHJ5PSIzIj48L2VsbGlwc2U+PGVsbGlwc2UgY3g9IjI5IiBjeT0iMTAyIiByeD0iOSIgcnk9IjMiPjwvZWxsaXBzZT48ZyBvcGFjaXR5PSIwLjg1Ij48Y2lyY2xlIGN4PSIxMSIgY3k9IjIwIiByPSIyIj48L2NpcmNsZT48Y2lyY2xlIGN4PSIzMyIgY3k9IjIwIiByPSIyIj48L2NpcmNsZT48Y2lyY2xlIGN4PSI2IiBjeT0iNDQiIHI9IjIiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjM4IiBjeT0iNDQiIHI9IjIiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjQiIGN5PSI2MCIgcj0iMS44Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI0MCIgY3k9IjYwIiByPSIxLjgiPjwvY2lyY2xlPjwvZz48L2c+PC9zdmc+Cg==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1243
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c5a344b7-8609-4c08-b0dd-2dcebf92cf81"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205935Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Header Mark
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0f8312ab-3644-4d88-8e44-04a42fcf064d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205936Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205936Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Header Mark
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8fcc8abf-c74d-4ef3-aa23-82499fed6904"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205936Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205935Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Header Mark
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1cfc2cc2-a49b-4b82-a3c4-f97012785564"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205936Z

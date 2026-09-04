@@ -1,0 +1,38 @@
+﻿---
+ID: "492e06be-3b5e-4540-8853-913c54dd0775"
+Parent: "1d51c369-5897-4476-abc6-2c3499ea71b9"
+Template: "2aa9f46b-7572-4f5d-bbc0-d37a95ce2a52"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/content-finder/Data/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0beea591-fbbd-4671-9e16-f9bf2d6aa734"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{34510C0D-20F1-4BA1-B14E-D475292196A8}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260423T190408Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "554d9db9-c001-4b03-b328-3484edc0026a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "ca94006f-5874-4aa5-a473-b0d6eed97d2a"
+      Hint: HeroTitle
+      Value: Personalized Experiences Just For You
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260423T190817Z

@@ -1,0 +1,45 @@
+﻿---
+ID: "effb8468-befb-4441-8b06-83e311c07070"
+Parent: "13f9f9f8-5052-40c7-9b3b-af92e7a7ff61"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/on-the-go/Data/Promo - Healthy Eating"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>Eating healthy on the road doesn't have to be hard. Discover our on-the-go eating tips.</p>"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260416T174026Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Healthy Eating</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b92d43f0-eada-41b4-9627-e9f134926d0b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T174026Z
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link id="{763C1A49-FC41-4C8C-B53C-6F8AB8287CE2}" linktype="internal" text="Learn More" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{B7810CAE-B609-4EC9-9353-9CE53C275253}" />

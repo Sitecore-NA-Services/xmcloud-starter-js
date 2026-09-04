@@ -1,0 +1,58 @@
+﻿---
+ID: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {B4802BB9-0CD1-4255-AB26-37AA7F88EC08}
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{0840FA4A-4518-4260-A784-33D341D6D737}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "27a42d6e-1c7c-48d9-8f01-f55eb26391a2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{A4FBC2EA-A955-4F24-8B6A-26CDD2E4BDFC}"
+              s:ds="{14A8A41C-2ADD-4C42-873B-F82B1C316066}"
+              s:id="{513B85B7-B6C7-417A-A910-94CDBED56A97}"
+              s:par="CSSStyles"
+              s:ph="headless-main"
+              p:before="*" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184353Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: shop
+    - ID: "7e214a48-07de-4600-ad46-6006dafd0609"
+      Hint: Title
+      Value: shop
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bd940b5a-79ee-4837-ab58-232e6bc0db94"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260515T144708Z

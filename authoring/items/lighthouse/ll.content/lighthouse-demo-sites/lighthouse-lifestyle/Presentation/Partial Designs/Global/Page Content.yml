@@ -1,0 +1,62 @@
+﻿---
+ID: "2629c546-928b-4a74-b4d9-b13761d63f2c"
+Parent: "7519450b-60ae-4a38-9249-3f377ddedcef"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Presentation/Partial Designs/Global/Page Content"
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "page-content"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{D615BA6B-F123-46B1-B6BA-C08205D03A8E}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "74f80b18-d03a-4fda-b9c5-7af6d67d8e27"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F38C7AF5-DFA9-42CF-B5F4-DDE7CA5A4FCA}"
+              p:before="*"
+              s:id="{624E820C-A406-4F5A-8583-784167E367B4}"
+              s:ph="headless-main"
+              s:par="CSSStyles" />
+            <r
+              uid="{677378A4-68BC-4755-9850-9A3BEDED2A38}"
+              s:id="{2DD85EE1-B8F7-4338-9BB8-57DEE7964320}"
+              s:ph="headless-main"
+              s:par="CSSStyles" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260512T174306Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b2d70114-a947-442a-a3d4-5e2748112abe"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260512T184158Z

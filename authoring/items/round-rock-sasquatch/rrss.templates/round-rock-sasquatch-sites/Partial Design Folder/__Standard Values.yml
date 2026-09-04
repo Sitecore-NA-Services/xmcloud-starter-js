@@ -1,0 +1,40 @@
+﻿---
+ID: "9e79c77e-4884-43ca-9e09-a9e438770f35"
+Parent: "b9595780-92be-444e-ba7e-c3b5b27f9492"
+Template: "b9595780-92be-444e-ba7e-c3b5b27f9492"
+Path: "/sitecore/templates/Project/round-rock-sasquatch-sites/Partial Design Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {B9595780-92BE-444E-BA7E-C3B5B27F9492}
+    {FD2059FD-6043-4DFE-8C04-E2437CE87634}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "2da565bb-9e44-4467-a87b-22b89a9cda90"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184158Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7779154d-7d5d-4053-8664-6982cfc1e2d5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T184200Z

@@ -1,0 +1,45 @@
+﻿---
+ID: "b952e3ee-2132-4161-b5b2-31e0df6199ee"
+Parent: "5b25410a-3ca7-427e-ae9e-a24b21dfcc7e"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/services/Data/Promo - Home Installation"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>Are you ready to make your home more efficient and productive? Schedule an installation appointment with our smart home experts and rest assured your new technology is set up properly.</p>"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260416T174027Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Free Smart Home Consultation</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1e5e67d9-2a8e-4ce8-936b-b4190022cf02"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T195112Z
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link id="{E031C59F-A0BA-4EDD-BB58-E3F5BC2AE575}" linktype="internal" text="Learn More" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{E585AE54-7680-4D20-A2C6-B49F314C8F23}" />

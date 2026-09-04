@@ -1,0 +1,38 @@
+﻿---
+ID: "503c8ba4-ccde-45b8-8efc-b94123e677a6"
+Parent: "21342601-4e0e-42db-8b0f-e26d4088e4dd"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-global/Data/Dictionary/Accounts/Accounts Menu/Email"
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: Name
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "0a7d3ce1-bb5e-4e6d-ad41-d76989ab273e"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T184718Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "08eef94b-fcc3-44fa-a741-28e219a7f0d2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T184718Z

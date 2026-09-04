@@ -1,0 +1,42 @@
+﻿---
+ID: "2afdbbfc-a514-4834-b5a5-c6ff5e010a3f"
+Parent: "7743d824-0bea-45e5-8671-7ba51baea080"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Presentation/Available Renderings/Navigation"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {F442E72A-2C3A-4EB5-BADC-B23E544C57FE}
+    {624E820C-A406-4F5A-8583-784167E367B4}
+    {FF875DB4-B05F-4D6D-9A2C-9F5C866C4C47}
+    {66C49B6C-9B20-42A5-A59B-E9B9827243F8}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "fe393a47-a36b-4bdc-8a5e-13e7888c1d16"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T185324Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9f97b92a-9222-43b2-9681-65093fbb9a15"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260514T185324Z

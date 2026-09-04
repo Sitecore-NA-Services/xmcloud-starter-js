@@ -1,0 +1,42 @@
+﻿---
+ID: "a25c59ce-b49d-4825-8d3b-533301cd3a73"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/HeaderST"
+BranchID: "151cfb0e-7d2b-4c96-9c1f-1f5ad709e69b"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/window_dialog.png
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "27edf677-8baf-4af2-9e93-d0833e1d61aa"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2A7CB86F-2FBE-4DAC-B30D-5582876FEE05}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184246Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c5408d12-3d2b-4bdc-9b2a-82af08817f82"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T184246Z

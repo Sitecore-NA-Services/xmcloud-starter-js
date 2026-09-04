@@ -1,0 +1,33 @@
+﻿---
+ID: "b1103f79-31c0-4381-a3e9-e551c153b02f"
+Parent: "a8383324-895e-47bc-987e-f6e38a2f8274"
+Template: "f65ae79c-8622-47d6-9fb1-f5e444fe4eed"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/about/Data/About Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1ac73bbd-a67c-4343-84b3-97a7da37c648"
+      Hint: HeroSubtitle
+      Value: Quietly documenting Sasquatch in Williamson County since the early 2010s. Or possibly the late 90s. Records were sparse for a while.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T210305Z
+    - ID: "69beae31-0878-46a5-8c54-66199b94b38e"
+      Hint: HeroTitle
+      Value: About the Society.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "59473a56-a041-4ddd-a5d4-f570b032f9ec"
+    - ID: "9aeae896-5784-4b07-83af-44dad4155931"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{C40D15E2-DB76-4F22-B97E-AC20E54AA19B}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T210305Z

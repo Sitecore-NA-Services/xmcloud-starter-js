@@ -1,0 +1,31 @@
+﻿---
+ID: "0e3803f1-9c5c-46a9-a580-12f592e93be3"
+Parent: "678c7d98-03a7-4f06-9399-4112d54ff90e"
+Template: "0a70fa73-8923-4a6e-abf3-4134f25f3221"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Presentation"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260421T031213Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8aba4570-7d5b-46cc-a50e-e6adbe8bda89"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T031213Z

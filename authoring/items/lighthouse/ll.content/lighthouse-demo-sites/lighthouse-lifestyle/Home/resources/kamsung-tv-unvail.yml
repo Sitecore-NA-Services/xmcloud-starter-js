@@ -1,0 +1,104 @@
+﻿---
+ID: "602febb4-5172-406f-9758-653e7a4ecb15"
+Parent: "e46577a6-680e-4d68-9bbc-0d05b9d34700"
+Template: "b5d818a8-2769-4c7d-b9e9-a6932577ee0d"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/resources/kamsung-tv-unvail"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a57acb7e-400c-4e19-9337-a0874738f5c8"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Watch Kamsung unvail Their new TV with Lighthouse Workout App
+    - ID: "0415281e-d6f5-473c-aac7-7fcc9abed21d"
+      Hint: Media
+      Value: 
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{C01DE5DA-29CB-4D08-AD11-D7D5DAA933FA}"
+              p:after="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{FAC140D5-83F0-4719-AF74-10F2232C08DB}"
+              p:after="*"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{094734D2-49F6-4287-B05E-82D7DCC9560B}" />
+            <r
+              uid="{533A143E-9AA5-4609-B106-20E1EB2A593B}"
+              p:after="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{CB5C3526-0414-46DB-9B92-2917C3CC9C5B}" />
+          </d>
+        </r>
+    - ID: "1c3f5f9b-6700-47e2-9b66-b8c2be51fa0c"
+      Hint: ResourceType
+      Value: Video
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190322Z
+    - ID: "4c7a921b-9aa3-420c-8ce3-4afb64abe8de"
+      Hint: Industry
+      Value: |
+        {7CADD0C0-C674-482F-9213-B96D61B80466}
+        {7978B6C8-D55D-4456-B43E-D9A13CAB51C1}
+        {5E881A6E-EF45-4E0E-B1EF-D8EA93315FEC}
+        {090E7382-D38E-4D69-A8E0-85A894F36428}
+        {2C70685C-DD3C-4698-BD8C-32B406FA3379}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "55bddead-6cc8-4e02-b715-b813e1a2b16e"
+      Hint: MediaTitle
+      Value: Credit card goes Mobile
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "98c55baa-c30c-4e7f-acfb-c9f651eebecd"
+    - ID: "93025238-fce1-49a8-aee1-05c986e2fddb"
+      Hint: MediaCaption
+      Value: This is a video about credit card going mobile just like everything else.
+    - ID: "b8189edb-8fe2-49c5-af3b-aad2b672ac34"
+      Hint: Introduction
+      Value: "<p>This looks perfect. Just Photoshop out the dog, add a baby, and make the curtains blue im not sure, try something else. Use a kpop logo that's not a kpop logo! ugh can it handle a million in one go.</p>"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T205049Z
+    - ID: "dc21908d-83b5-49ba-993f-3985566711b6"
+      Hint: Region
+      Value: |
+        {B1EA70BB-4B21-473E-B5FA-A4BC8781F2BF}
+        {CC5CDB6F-C4B7-440D-865B-AD4A2725DCFD}
+        {49220CB2-6B13-4743-ACA1-543AD9A57466}
+        {09C18D8F-33B6-4000-BFC1-40871D5C8023}
+        {68470BCB-F80E-4C78-9CAF-D1B39338F223}

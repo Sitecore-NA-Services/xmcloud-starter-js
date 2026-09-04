@@ -1,0 +1,60 @@
+﻿---
+ID: "d3b4676f-5fbf-40f0-a695-3159485735bc"
+Parent: "6018e3d8-0424-4d65-9f46-ab3588005446"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Presentation/Placeholder Settings/Partial Design/Article Content Alternative"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "sxa-article-content-alternative"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "05a28d1d-4e70-48ce-ae94-fd02fcc86b3c"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {2E8B2DEA-2A32-4BAC-A91B-7178A5AC5873}
+    {09F4B16D-702A-4740-AD38-05409CB3CBD1}
+    {92046F51-A623-4456-A355-47475B89786A}
+    {35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}
+    {8CAE01BA-1570-4D7B-9982-E3DACDF0C285}
+    {F784C119-9675-44DA-B6AD-6504AF44D996}
+    {79C6974F-04D4-4E03-A979-85733DAC7133}
+    {4A79ED7A-1CAF-4C9B-88AB-395F430BEE22}
+    {A9CA1143-14A8-484D-9B14-1AC519787ADA}
+    {E49CB030-9A0F-4251-872D-D7DA404297DD}
+    {695679E2-7A0F-45F7-B7BB-983026310D57}
+    {5994537D-29C9-4094-B253-1F1FB021DDE4}
+    {80F5E48F-B429-4F96-A2F3-382A7C6F2928}
+    {C9C7667A-CC29-4F62-BAB2-496847AFE50C}
+    {6C7CE385-8B4F-471C-A5C4-BE8BD8AF7F2F}
+    {48682E4C-F06F-4D96-9C5B-86A21D70BFAF}
+    {018323CE-A1A2-4017-BD27-AD7988F57844}
+    {0819C90C-BB2E-4648-ABBD-DB478F1E89A8}
+    {6F8BA6F8-97A5-435A-BC6B-ACBEC2667009}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260512T184156Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5d534000-83fe-465a-8c66-610c899f486e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260514T185210Z

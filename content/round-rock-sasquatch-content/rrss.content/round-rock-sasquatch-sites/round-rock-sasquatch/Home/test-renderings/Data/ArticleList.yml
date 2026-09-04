@@ -1,0 +1,29 @@
+﻿---
+ID: "77a96602-3eb7-4954-9e1c-80bffd4ef04f"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "03cf440f-9b08-463d-8553-3f7386269c86"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/ArticleList"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T152739Z
+    - ID: "65d08fbd-11c9-473f-ada0-748a65e0dca3"
+      Hint: Heading
+      Value: Articles (live from the site)
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "028f683d-892e-479f-954b-d4023dd4cce6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "c93f2b09-37c0-4770-b6ca-c3bec7b57f6a"
+      Hint: Intro
+      Value: <p>Below is a real ArticleList rendering pulling content via GraphQL.</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T152739Z

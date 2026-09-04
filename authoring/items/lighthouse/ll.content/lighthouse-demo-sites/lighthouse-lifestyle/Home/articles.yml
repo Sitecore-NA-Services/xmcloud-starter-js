@@ -1,0 +1,148 @@
+﻿---
+ID: "64f922b1-d57d-4afa-ae26-9d59502f69a6"
+Parent: "62cc8d94-5703-46e5-8e0e-03c2d430a04f"
+Template: "169ab774-f2a0-4bb4-9177-afb6a0b31dae"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/articles"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "49a07bda-7168-4f3e-9b6c-d57432e897e3"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Articles
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{725D41CF-9A0A-418C-B7B5-C6ACD384B00A}"
+              p:before="*"
+              s:id="{A1FF6F5B-F46E-4180-B60D-A70CCDE1A1F2}"
+              s:ph="headless-main"
+              s:ds="{C22DC8D0-5517-4FAB-9BC9-FC5CD0DAD884}" />
+            <r
+              uid="{35B36252-46E3-4126-99C9-16265690424E}"
+              p:after="r[@uid='{725D41CF-9A0A-418C-B7B5-C6ACD384B00A}']"
+              s:id="{E906117E-B302-47FC-8698-B5D3FC3EFE8B}"
+              s:ph="headless-main"
+              s:ds="{E6079139-3A4B-46A6-B0E6-72241894D886}" />
+          </d>
+        </r>
+    - ID: "075b3090-7ce7-4806-a2da-d52e6c00d680"
+      Hint: OpenGraphTitle
+      Value: Lighthouse Lifestyle Articles
+    - ID: "0d8f4af7-065f-4eae-8dbf-393a7f343220"
+      Hint: MetaDescription
+      Value: "Cutting-edge lifestyle resource for design and product ideas. Whether you are looking for smart home technology or fitness gear, we have it all."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190320Z
+    - ID: "3660a219-5336-484a-869e-07f43ef18651"
+      Hint: TwitterDescription
+      Value: "Cutting-edge lifestyle resource for design and product ideas."
+    - ID: "49b3fb6e-b7b3-4147-bf53-035a18fad985"
+      Hint: OpenGraphDescription
+      Value: "Cutting-edge lifestyle resource for design and product ideas. Whether you are looking for smart home technology or fitness gear, we have it all."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5d0ee190-bbe1-42c8-b54c-0e013f0ef220"
+      Hint: TwitterTitle
+      Value: Lighthouse Lifestyle Articles
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Articles
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fcf80877-b354-4101-ba88-c5f118ee4ff9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "cda5edaa-1282-4f82-a976-61e78f8b2a73"
+      Hint: MetaKeywords
+      Value: smart home, fitness, 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260423T183628Z
+    - ID: "dc2d72db-1beb-4c7b-8971-e591848ac3d1"
+      Hint: NavigationImage
+      Value: |
+        <image mediaid="{62EE8A3C-59ED-4C9A-B7FD-F99B9BE543FD}" />
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Guides
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T201036Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0cb86262-6beb-4376-aa03-3cf7949ce6b6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T201036Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: ガイド
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T201036Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ae8e730a-ee82-4659-9010-9126ad19a45e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T201036Z

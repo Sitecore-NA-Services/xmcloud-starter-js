@@ -1,0 +1,31 @@
+﻿---
+ID: "0039daf7-4b5d-4577-83b8-4ee376e19bbc"
+Parent: "6e5fedcf-ecf7-49ea-8c3f-50a1692b3e15"
+Template: "6e5fedcf-ecf7-49ea-8c3f-50a1692b3e15"
+Path: "/sitecore/templates/Project/round-rock-sasquatch-sites/Headless Site/__Standard Values"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184159Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2682e14a-9341-4fab-b56c-fd0e73269945"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T184159Z

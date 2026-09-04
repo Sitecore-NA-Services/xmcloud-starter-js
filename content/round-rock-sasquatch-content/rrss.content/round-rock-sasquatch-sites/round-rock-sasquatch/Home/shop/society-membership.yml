@@ -1,0 +1,84 @@
+﻿---
+ID: "82a3bea4-429c-4e57-8094-602567a09b7a"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/society-membership"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{71A7BCD8-F0B8-45CA-9041-C6F3E27558E2}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5337cdde-45a3-49ec-898d-e678fb89bcb7"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" />
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184355Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "society-membership"
+    - ID: "723c3697-9244-4342-b426-f1cdc71784d4"
+      Hint: ProductImage
+      Value: |
+        <image mediaid="{61468ED5-3903-4AF7-8877-B5CF622F4990}" />
+    - ID: "7e214a48-07de-4600-ad46-6006dafd0609"
+      Hint: Title
+      Value: "society-membership"
+    - ID: "8a642b16-f5b6-402e-bdfc-61ec11ea8c40"
+      Hint: InStock
+      Value: 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8c0fa4d2-fd60-4728-9849-b0db83b9a237"
+    - ID: "9010a75c-695f-4632-bb5c-cba4c11f5c5d"
+      Hint: Price
+      Value: 99.99
+    - ID: "b0fc435e-fc4a-48f6-8222-797ed115c6ba"
+      Hint: Tagline
+      Value: Embossed, laminated, and frankly more substantial than your driver's license.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "c4980a30-4286-4818-97bc-1555d4bf33de"
+      Hint: ProductName
+      Value: Society Lifetime Membership Card
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T212411Z
+    - ID: "e5256078-194c-43f2-bc87-f446896c65ca"
+      Hint: Body
+      Value: |
+        
+        The **Round Rock Sasquatch Society Lifetime Membership** is the highest tier of involvement available to the public. Membership grants you voting rights at the (irregularly scheduled, sometimes cancelled) Annual General Meeting, access to the members-only section of the Society newsletter, and the satisfaction of knowing that your $99.99 has been routed primarily into trail camera batteries.
+        
+        Each card is individually numbered, hot-stamped with the Society seal, and laminated to a thickness that exceeds most state-issued ID. The card will outlive you. We are not exaggerating.
+        
+        ## Lifetime Member Benefits
+        
+        - A numbered Lifetime Member card (your number is yours forever)
+        - The Society newsletter (annual, sometimes printed, mailed when funds permit)
+        - Voting rights at the AGM (location: Bill's house; quorum: rarely achieved)
+        - A 10% discount on most Society merchandise (this product excluded)
+        - The right to refer to yourself as "a Society member" in public, which you may use freely
+        
+        ## A Note on the Word "Lifetime"
+        
+        The word "lifetime" refers to your lifetime, not the Society's. The Society does not commit to existing for any specific duration. Refunds are not available in the event of dissolution, which we do not anticipate but cannot rule out.
+        
+    - ID: "f14dd29e-6583-4dba-badf-652ba7bfc31a"
+      Hint: Category
+      Value: membership

@@ -1,0 +1,44 @@
+﻿---
+ID: "ffa4e8a1-4a60-4154-a280-174c64e594ef"
+Parent: "a04bf7b9-ca7a-4ef0-8ba8-b9659b4b186a"
+Template: "d467dff5-6a8b-4f89-9c54-3f1d255a2ee3"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/Data/Home Page Carousel/Slide3-On-the-Go"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "08ac33e0-44de-4909-aac1-f9b89497f697"
+      Hint: Title
+      Value: |
+        Take Care of Yourself
+        On the Go
+    - ID: "16bd67d6-6210-428e-8e0b-8ee2952ecb6f"
+      Hint: Image
+      Value: |
+        <image mediaid="{29168CAA-9EAB-4F6A-AF55-F3470585F780}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260415T200100Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8af3ea8f-55bf-4803-8c2c-857ce9ed8173"
+      Hint: Link
+      Value: |
+        <link url="/on-the-go" text="On the Go" linktype="external" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a6201755-e112-4fe0-af41-707b409da429"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260415T202423Z

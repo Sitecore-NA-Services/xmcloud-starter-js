@@ -1,0 +1,76 @@
+﻿---
+ID: "a51b2d25-c268-43d8-931a-30a6b448292d"
+Parent: "bdb1b27d-e7cd-45db-9612-96682bd123bd"
+Template: "c18f3ade-4dbc-47a5-9d55-09ea5a0b333f"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/at-work/work-from-home"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b8fb3ff0-9014-4ab3-8aec-57b53dbc47be"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Work From Home
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{157F0BF3-BEF3-4A2C-B635-08A52807B8AF}"
+              p:before="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{01BF3AC9-F337-437F-A9DC-568DB30AD3F4}" />
+            <r
+              uid="{3557EAB0-12A6-45CA-975D-FE9D39B64B52}"
+              p:after="r[@uid='{157F0BF3-BEF3-4A2C-B635-08A52807B8AF}']"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{D7E79C78-A77C-44A3-9B47-9470D6578C4E}" />
+            <r
+              uid="{3F880607-18D9-4916-BD3E-F89153498C81}"
+              p:after="r[@uid='{3557EAB0-12A6-45CA-975D-FE9D39B64B52}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{E4525E94-BDEB-40D1-BE27-F42FB978313A}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190320Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Work From Home
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "42144d4a-f606-4638-827a-4d9f251085a8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T173313Z

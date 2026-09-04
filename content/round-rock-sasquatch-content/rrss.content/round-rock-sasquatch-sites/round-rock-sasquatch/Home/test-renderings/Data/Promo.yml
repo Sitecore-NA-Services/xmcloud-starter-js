@@ -1,0 +1,40 @@
+﻿---
+ID: "22df2b3e-1e73-4de5-9622-5d95acf26de3"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/Promo"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: <p>Take a guided weekend tour with our resident cryptozoologist.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T150704Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Plan Your Sasquatch Expedition</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c2c21cee-bc75-43aa-beae-01f9a4e545ab"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: <p>Promo eyebrow</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T150704Z

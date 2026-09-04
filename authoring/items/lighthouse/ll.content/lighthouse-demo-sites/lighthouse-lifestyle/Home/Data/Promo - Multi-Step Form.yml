@@ -1,0 +1,48 @@
+﻿---
+ID: "75d56f9e-6902-4156-b737-c7374a918629"
+Parent: "848587bb-ce26-419a-86c0-5c94b8118d35"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/Data/Promo - Multi-Step Form"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>We know choices can be daunting. Whether you looking for smart home technology or the latest kitchen appliances, our quick three-question form will guide you to the best solution.</p>"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T200938Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Let Us Help You Get Started</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7f70164f-89ff-4639-ba04-f396faaf0773"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: "<p>Multi-Step Form</p>"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T200938Z
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link text="Start Here" linktype="external" url="/content-finder" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{D7FC1E3B-8702-4C7D-8373-CB1EC9F2E819}" />

@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "noEmit": false,
+    "incremental": false,
+    "plugins": []
+  },
+  "include": ["./**/*.tsx", "../src/**/*.tsx"]
+}

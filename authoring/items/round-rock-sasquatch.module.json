@@ -1,0 +1,22 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.round-rock-sasquatch",
+    "items": {
+        "path": "round-rock-sasquatch",
+        "defaultMaxRelativeItemPathLength": 120,
+        "includes": [
+            {
+                "name": "rrss.templates",
+                "path": "/sitecore/templates/Project/round-rock-sasquatch-sites",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "rrss.renderings",
+                "path": "/sitecore/layout/Renderings/Project/RoundRockSasquatch",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

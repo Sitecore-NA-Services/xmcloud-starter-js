@@ -1,0 +1,110 @@
+﻿---
+ID: "b3089303-b17c-4682-9018-62bf822e80d1"
+Parent: "25f3f98a-ee23-4ea1-a250-bbd27abb114c"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Products/Wood-Knock Branch"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/B3089303B17C4682901862BF822E80D1.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "d95cbe4c-dd3e-4869-995d-e441538916e1"
+  Value: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDAwIDMyMCIgY2xhc3M9InByb2R1Y3Qtc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwcm9kLWJyYW5jaC1iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkYWQyYmMiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4Yjc2NTYiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMyMCIgZmlsbD0idXJsKCNwcm9kLWJyYW5jaC1iZykiPjwvcmVjdD48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjkwIiByeD0iMTYwIiByeT0iMTQiIGZpbGw9InJnYmEoMCwwLDAsMC4xOCkiPjwvZWxsaXBzZT48ZyBmaWxsPSIjNWMzZDExIj48cGF0aCBkPSJNNjAgMjQwIFExNDAgMjIwIDIyMCAyMDAgUTI4MCAxODggMzQwIDE3MCBMMzQyIDE3OCBRMjgyIDE5NiAyMjIgMjA4IFExNDIgMjI4IDYyIDI0OCBaIj48L3BhdGg+PHBhdGggZD0iTTIyMCAyMDAgUTIzMCAxNzUgMjQ1IDE2MCBMMjQ5IDE2MiBRMjM2IDE3OCAyMjYgMjAyIFoiPjwvcGF0aD48ZWxsaXBzZSBjeD0iMTcwIiBjeT0iMjE4IiByeD0iNSIgcnk9IjQiIGZpbGw9IiMzYTI0MTAiPjwvZWxsaXBzZT48ZWxsaXBzZSBjeD0iMjcwIiBjeT0iMTkyIiByeD0iNCIgcnk9IjMiIGZpbGw9IiMzYTI0MTAiPjwvZWxsaXBzZT48L2c+PGcgc3Ryb2tlPSIjM2EyNDEwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC41IiBmaWxsPSJub25lIj48cGF0aCBkPSJNNzAgMjQwIFExNDAgMjI0IDIxMCAyMDgiPjwvcGF0aD48cGF0aCBkPSJNNzUgMjQ0IFExNDUgMjI4IDIxNSAyMTIiPjwvcGF0aD48cGF0aCBkPSJNODAgMjQ4IFExNTAgMjMyIDIyMCAyMTYiPjwvcGF0aD48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjgwLCAxNzUpIj48bGluZSB4MT0iMCIgeTE9IjAiIHgyPSIyMCIgeTI9IjQwIiBzdHJva2U9IiNjY2I4OGMiIHN0cm9rZS13aWR0aD0iMS41Ij48L2xpbmU+PHJlY3QgeD0iMTQiIHk9IjM2IiB3aWR0aD0iNDQiIGhlaWdodD0iMjgiIHJ4PSIyIiBmaWxsPSIjZjVlYWQ4IiB0cmFuc2Zvcm09InJvdGF0ZSg4IDE0IDM2KSI+PC9yZWN0PjxnIHRyYW5zZm9ybT0icm90YXRlKDggMTQgMzYpIj48dGV4dCB4PSIzNiIgeT0iNDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iNyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzVjM2QxMSI+UlItV0s8L3RleHQ+PHRleHQgeD0iMzYiIHk9IjU4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjkiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM1YzNkMTEiPiMwMDQyPC90ZXh0PjwvZz48L2c+PC9zdmc+Cg==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1471
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ef27e13a-ec15-4d5a-a7e4-94d5dc27a6d4"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205617Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Wood-Knock Branch"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "481204b3-4f97-4b02-ad4f-6343b07514b7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205617Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205617Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Wood-Knock Branch"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90b5c1e2-d1a5-4c57-bd62-7c13a5bff18e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205617Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205617Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Wood-Knock Branch"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f6a79af6-0e4b-4380-a3f6-0da841a2ec75"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205617Z

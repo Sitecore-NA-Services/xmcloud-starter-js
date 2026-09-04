@@ -1,0 +1,43 @@
+﻿---
+ID: "9a1c5284-d2a7-4c00-9a08-a7a3316f34a8"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/Commerce"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {513B85B7-B6C7-417A-A910-94CDBED56A97}
+    {68B0BDB0-81DD-4546-A81B-C36CCEDFF42D}
+    {A84CC016-E489-4864-9BC1-317EE8580D63}
+    {D74101B8-DCB3-4E7D-978D-522F1836290A}
+    {DED27874-1D99-4F8B-B943-585371E69CD4}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "4a0328a7-a73b-4307-ac5e-26b2f3f6461c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T151537Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0f21561d-a305-4e1d-9097-d275321fddd4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T151537Z

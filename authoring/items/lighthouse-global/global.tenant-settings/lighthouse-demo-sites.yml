@@ -1,0 +1,31 @@
+﻿---
+ID: "cd73b343-b1ec-44d0-b272-b9cc04d48b5f"
+Parent: "0af56f64-b5d7-473f-9497-1dc19265e494"
+Template: "b4d86f9b-e917-4d68-978e-741361332174"
+Path: "/sitecore/system/Settings/Project/lighthouse-demo-sites"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T155030Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0965b965-3be5-42de-a293-b88e13467cfa"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T155030Z

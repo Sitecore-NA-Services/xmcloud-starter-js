@@ -1,0 +1,69 @@
+﻿---
+ID: "c6cc758e-1683-43cd-85dd-4bd183593909"
+Parent: "f26eafad-83a8-45a7-8f05-ff35f7a70eee"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Sitemaps/round-rock-sasquatch/sitemap"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: People/32x32/cube_molecule.png
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "5e05b268-121a-45c4-a1cd-5385b48cf9fe"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 0
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: text/xml
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 1
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: xml
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "1feab625-34b7-4849-87aa-3272b751cd70"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "fa807e73-27dc-4a0d-a52e-b39039e9aaac"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184251Z
+    - ID: "2fafe7cb-2691-4800-8848-255efa1d31aa"
+      Hint: Keywords
+      Value: |
+        sd:{4C0123AF-7B4D-4DF2-A5D0-DEB5E44D5E2A}
+        site:{E14B4B8C-2989-4946-8878-1DB1071C5215}
+    - ID: "3f4b20e9-36e6-4d45-a423-c86567373f82"
+      Hint: Title
+      Value: sitemap
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Anonymous
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Anonymous
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "63c118c7-efb3-4ae8-8293-2dd3876550df"
+    - ID: "ba8341a1-ff30-47b8-ae6a-f4947e4113f0"
+      Hint: Description
+      Value: Sitecore Experience Accelelator sitemap file
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Anonymous
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T184252Z

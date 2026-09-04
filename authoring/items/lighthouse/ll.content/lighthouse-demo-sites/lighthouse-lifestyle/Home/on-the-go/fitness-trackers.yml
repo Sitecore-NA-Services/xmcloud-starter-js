@@ -1,0 +1,76 @@
+﻿---
+ID: "8c1d48b4-f3bd-41ee-acd4-200e423727cb"
+Parent: "dc2d421a-6ab9-4907-8e1e-8c4f36ba4259"
+Template: "c18f3ade-4dbc-47a5-9d55-09ea5a0b333f"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/on-the-go/fitness-trackers"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b1694a75-adff-4345-bd60-00b75576cf10"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Fitness Trackers
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{ABEDFCA3-B0C8-46E0-A10D-BFC2D5C3D21D}"
+              p:before="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{8B75410F-1FCF-4A98-AEB9-70D5A01C5B44}" />
+            <r
+              uid="{1FEA4E5C-B35F-4184-A900-C47F3AC18049}"
+              p:after="r[@uid='{ABEDFCA3-B0C8-46E0-A10D-BFC2D5C3D21D}']"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{E053AA56-24E9-4B4D-AE7C-545DA56A022D}" />
+            <r
+              uid="{D9358C55-F632-402B-9B9A-D5EC8BC77D72}"
+              p:after="r[@uid='{1FEA4E5C-B35F-4184-A900-C47F3AC18049}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{BA6B6BA0-F908-4AB6-96FB-D76EA2F7A341}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190320Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Fitness Trackers
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0e8ad6d1-66e9-4c36-b0b4-a54d53df3b00"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T173313Z

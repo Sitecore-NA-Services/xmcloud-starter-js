@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, RefObject } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export function useToggleWithClickOutside<T extends HTMLElement = HTMLElement>(
   initialVisible = false
@@ -13,7 +13,6 @@ export function useToggleWithClickOutside<T extends HTMLElement = HTMLElement>(
   const [isVisible, setIsVisible] = useState(initialVisible);
   const ref = useRef<T | null>(null);
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     if (!isVisible) return;
@@ -41,10 +40,10 @@ export function useToggleWithClickOutside<T extends HTMLElement = HTMLElement>(
     };
   }, [isVisible]);
 
-  // Close the menu when the route changes (pathname or search params)
+  // Close the menu when the route changes
   useEffect(() => {
     setIsVisible(false);
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   return { isVisible, setIsVisible, ref };
 }

@@ -1,0 +1,127 @@
+﻿---
+ID: "62cc8d94-5703-46e5-8e0e-03c2d430a04f"
+Parent: "678c7d98-03a7-4f06-9399-4112d54ff90e"
+Template: "b50f1cff-31ff-4bdc-8562-8b1b328c0da6"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ce5ed415-ce64-4d5d-a348-748b87e25b2c"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Home
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Lighthouse Lifestyle
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{AC0A6D97-20FC-47AB-9C99-ECCE099F99C0}"
+              p:before="*"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header" />
+            <r
+              uid="{891DBE8F-DEF3-443F-B40F-E632E61A4C34}"
+              p:after="r[@uid='{AC0A6D97-20FC-47AB-9C99-ECCE099F99C0}']"
+              s:ds="{A04BF7B9-CA7A-4EF0-8BA8-B9659B4B186A}"
+              s:id="{B9DC4F5B-6095-4AAF-9F39-4B62B51D04A6}"
+              s:ph="headless-main" />
+            <r
+              uid="{61DB7A79-9EEB-47B9-8E25-DD3251BCEA89}"
+              p:after="r[@uid='{891DBE8F-DEF3-443F-B40F-E632E61A4C34}']"
+              s:ds="{75D56F9E-6902-4156-B737-C7374A918629}"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main" />
+            <r
+              uid="{96F7FDBC-F565-4583-ACBF-CBF4FCAF1EB4}"
+              p:after="r[@uid='{61DB7A79-9EEB-47B9-8E25-DD3251BCEA89}']"
+              s:ds="{A249B35F-BEB0-43F2-8DF1-2DBFC5E8AC6F}"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main" />
+            <r
+              uid="{DA8ABAA3-669A-44F0-A315-0F1EF8001965}"
+              p:after="r[@uid='{96F7FDBC-F565-4583-ACBF-CBF4FCAF1EB4}']"
+              s:ds="{B1E46541-1FEE-4FF2-A711-CBE6846E4924}"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main" />
+            <r
+              uid="{31E6B57E-BD25-4E68-AF45-248F1A73E3E2}"
+              p:after="r[@uid='{DA8ABAA3-669A-44F0-A315-0F1EF8001965}']"
+              s:ds="{FFBD047D-2789-43A6-8275-F0E273365208}"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main" />
+            <r
+              uid="{2AB042D6-8368-4ED4-94CB-D9FA625B4763}"
+              p:after="r[@uid='{31E6B57E-BD25-4E68-AF45-248F1A73E3E2}']"
+              s:ds="{B8C6158E-5231-4D21-AFCA-46C863235FE8}"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main" />
+            <r
+              uid="{33054705-AA3F-4D30-8E31-85C52F257CE0}"
+              p:after="r[@uid='{2AB042D6-8368-4ED4-94CB-D9FA625B4763}']"
+              s:ds="{531707EC-34C1-45EF-9ADC-280A55E69492}"
+              s:id="{864F4492-3049-46DC-9D5B-B1E334C615C4}"
+              s:ph="headless-main" />
+            <r
+              uid="{579848C7-015C-46AC-BD5D-AC631F8003F5}"
+              p:after="r[@uid='{33054705-AA3F-4D30-8E31-85C52F257CE0}']"
+              s:ds="{CACE9363-17FA-426C-BC20-642E7A8FE3A4}"
+              s:id="{DF8F69B2-3354-4BD0-957A-CF2D7D5F4A22}"
+              s:ph="headless-footer" />
+          </d>
+        </r>
+    - ID: "075b3090-7ce7-4806-a2da-d52e6c00d680"
+      Hint: OpenGraphTitle
+      Value: Lighthouse Lifestyle
+    - ID: "0d8f4af7-065f-4eae-8dbf-393a7f343220"
+      Hint: MetaDescription
+      Value: Technology to help you live well
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260410T000000Z
+    - ID: "3660a219-5336-484a-869e-07f43ef18651"
+      Hint: TwitterDescription
+      Value: Technology to help you live well
+    - ID: "49b3fb6e-b7b3-4147-bf53-035a18fad985"
+      Hint: OpenGraphDescription
+      Value: Technology to help you live well
+    - ID: "5d0ee190-bbe1-42c8-b54c-0e013f0ef220"
+      Hint: TwitterTitle
+      Value: Lighthouse Lifestyle
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Lighthouse Lifestyle
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7fda2dbf-b3f6-4249-8602-71d146da006b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T190543Z

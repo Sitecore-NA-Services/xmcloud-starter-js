@@ -1,0 +1,45 @@
+﻿---
+ID: "6996165d-0cb8-4cbb-9262-62f529706a4d"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Order Number"
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: "Order Number:"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "4a99830b-af54-46b7-88fb-5d9b2f236c36"
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: "Order Number:"
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "8d3d6bf0-46ec-4e34-955e-e89ccc85d091"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184717Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "04fe9ebd-f8ff-41a9-af31-f935b06bef9f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T184717Z

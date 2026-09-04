@@ -1,0 +1,170 @@
+﻿---
+ID: "bdb1b27d-e7cd-45db-9612-96682bd123bd"
+Parent: "62cc8d94-5703-46e5-8e0e-03c2d430a04f"
+Template: "169ab774-f2a0-4bb4-9177-afb6a0b31dae"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/at-work"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0aebd2ac-2153-4f5a-bcf0-07acb6c9d14c"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: At Work
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{2797684C-AA5D-46EA-9ECF-6DACCA3B3ED4}"
+              p:after="r[@uid='{8E2A7EB3-2E27-4AE8-8CC6-57F4128EFAEC}']"
+              s:id="{A1FF6F5B-F46E-4180-B60D-A70CCDE1A1F2}"
+              s:ph="headless-main"
+              s:ds="{79EFF638-A7BB-4334-9D20-843361029C3D}" />
+            <r
+              uid="{991202A9-16F5-468E-A7CF-4F242AEBD8F5}"
+              p:after="r[@uid='{2797684C-AA5D-46EA-9ECF-6DACCA3B3ED4}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{06085527-5239-4902-A332-4D0CFC8407D2}"
+              s:par="styles=tile" />
+            <r
+              uid="{41914BE4-61BD-4C98-880C-88484FA516C1}"
+              p:after="r[@uid='{991202A9-16F5-468E-A7CF-4F242AEBD8F5}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{D850B9D4-0DF9-42E3-8E5E-BE8EF82A6FD2}"
+              s:par="styles=tile" />
+            <r
+              uid="{44444444-4444-4444-4444-444444444444}"
+              p:after="r[@uid='{41914BE4-61BD-4C98-880C-88484FA516C1}']"
+              s:id="{48C46840-3FA6-48EC-83CB-AE83B790CB90}"
+              s:ph="headless-main"
+              s:ds="{1E0DD5C8-6AC0-497C-9C94-3AC2A5328EC1}" />
+            <r
+              uid="{55555555-5555-5555-5555-555555555555}"
+              p:after="r[@uid='{44444444-4444-4444-4444-444444444444}']"
+              s:id="{48C46840-3FA6-48EC-83CB-AE83B790CB90}"
+              s:ph="headless-main"
+              s:ds="{79E4221A-D150-45D4-8DA0-C453C491F1B7}"
+              s:par="ImageAlignment=left" />
+            <r
+              uid="{66666666-6666-6666-6666-666666666666}"
+              p:after="r[@uid='{55555555-5555-5555-5555-555555555555}']"
+              s:id="{48C46840-3FA6-48EC-83CB-AE83B790CB90}"
+              s:ph="headless-main"
+              s:ds="{1E0DD5C8-6AC0-497C-9C94-3AC2A5328EC1}" />
+          </d>
+        </r>
+    - ID: "075b3090-7ce7-4806-a2da-d52e6c00d680"
+      Hint: OpenGraphTitle
+      Value: At Work
+    - ID: "14f92275-9d75-414a-8296-5e5fc8309d4f"
+      Hint: OpenGraphImageUrl
+      Value: |
+        <image mediaid="{38CE6C57-0F9E-4651-8F43-E2E2388FCA9E}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190320Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5d0ee190-bbe1-42c8-b54c-0e013f0ef220"
+      Hint: TwitterTitle
+      Value: At Work
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: At Work
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7054c036-acff-4f3f-9b96-7cdcdc58c27a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "cda5edaa-1282-4f82-a976-61e78f8b2a73"
+      Hint: MetaKeywords
+      Value: corporate wellness, work from home
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T170611Z
+    - ID: "dc2d72db-1beb-4c7b-8971-e591848ac3d1"
+      Hint: NavigationImage
+      Value: |
+        <image mediaid="{38CE6C57-0F9E-4651-8F43-E2E2388FCA9E}" />
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Au travail
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T201036Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e397b1af-36a7-43eb-b0e8-7b8fe213c94d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T201036Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: At Work
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T201036Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4379cae2-94f8-45d7-bbbe-2fcd778e8dae"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T201036Z

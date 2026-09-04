@@ -17,6 +17,8 @@ This is a **multi-starter monorepo** for Sitecore XM Cloud headless applications
 - `kit-nextjs-skate-park` - Component demo site
 - `basic-nextjs` - Minimal Next.js starter
 - `basic-spa` - Angular SPA with Node proxy
+- `lighthouse` - Lighthouse Lifestyle demo site (migrated from Sitecore-Lighthouse-2026)
+- `round-rock-sasquatch` - Second Lighthouse project site (migrated from Sitecore-Lighthouse-2026)
 
 ## Critical Development Workflows
 

@@ -1,0 +1,162 @@
+﻿---
+ID: "97bd687b-5109-4792-a0b7-fba590357f12"
+Parent: "98875bf8-3336-452b-92b4-6b12e35deb18"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/JSS SXA/Lighthouse Lifestyle/Functions/Add Lighthouse Lifestyle Presentation
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    function Invoke-ModuleScriptBody {
+        [CmdletBinding()]
+        param(
+            [Parameter(Mandatory = $true, Position = 0)]
+            [Item]$Site,
+            [Parameter(Mandatory = $true, Position = 1)]
+            [Item[]]$TenantTemplates
+        )
+        process {
+            $sitePath = $Site.Paths.Path
+            $pageDesignTemplateId          = "{1105B8F8-1E00-426B-BF1F-C840742D827B}"
+            $partialDesignFolderTemplateId = "{B2E06665-D190-4E1A-A1A0-2C5CFAB111B3}"
+            $partialDesignTemplateId       = "{FD2059FD-6043-4DFE-8C04-E2437CE87634}"
+            $dev    = "{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+            $layout = "{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}"
+            $renderingsShell = '<r xmlns:xsd="http://www.w3.org/2001/XMLSchema"><d id="' + $dev + '" l="' + $layout + '" /></r>'
+            # Shared headless renderings (/sitecore/layout/Renderings/Project/lighthouse)
+            $r = @{
+                Navigation     = "{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+                FooterCarousel = "{DF8F69B2-3354-4BD0-957A-CF2D7D5F4A22}"
+                ArticleDetail  = "{0819C90C-BB2E-4648-ABBD-DB478F1E89A8}"
+                PageList       = "{E906117E-B302-47FC-8698-B5D3FC3EFE8B}"
+                Pagination     = "{66C49B6C-9B20-42A5-A59B-E9B9827243F8}"
+                PageTeaserGrid = "{864F4492-3049-46DC-9D5B-B1E334C615C4}"
+                Container      = "{A9CA1143-14A8-484D-9B14-1AC519787ADA}"
+                Breadcrumb     = "{624E820C-A406-4F5A-8583-784167E367B4}"
+                GenericPage    = "{2DD85EE1-B8F7-4338-9BB8-57DEE7964320}"
+                Title          = "{92046F51-A623-4456-A355-47475B89786A}"
+                ResourceSearch = "{7D926A96-17D8-49B4-B29F-93CAD6E2AEAC}"
+                ResourceDetail = "{82FC764E-D7B6-4E33-B051-22D81EC98668}"
+                ExperienceData = "{03FCB80F-5F4F-4686-A296-4ED65F69E842}"
+            }
+            $phHeader = "headless-header"; $phMain = "headless-main"; $phFooter = "headless-footer"
+            function New-Uid { "{" + [guid]::NewGuid().ToString().ToUpper() + "}" }
+            function Build-FinalRenderings($rends) {
+                if (-not $rends -or $rends.Count -eq 0) { return '<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="' + $dev + '" /></r>' }
+                $sb = '<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="' + $dev + '">'
+                $first = $true
+                foreach ($x in $rends) {
+                    $attr = 'uid="' + (New-Uid) + '"'
+                    if ($first) { $attr += ' p:before="*"'; $first = $false }
+                    $attr += ' s:id="' + $x.id + '"'
+                    if ($x.ds)  { $attr += ' s:ds="' + $x.ds + '"' }
+                    $attr += ' s:ph="' + $x.ph + '"'
+                    if ($x.par) { $attr += ' s:par="' + $x.par + '"' }
+                    $sb += '<r ' + $attr + '/>'
+                }
+                $sb + '</d></r>'
+            }
+            # ----- Partial Designs (Presentation/Partial Designs/Global) -----
+            $partialDesignsPath = "$sitePath/Presentation/Partial Designs"
+            $globalPath = "$partialDesignsPath/Global"
+            if (-not (Test-Path $globalPath)) {
+                New-Item -Path $partialDesignsPath -Name "Global" -ItemType $partialDesignFolderTemplateId | Out-Null
+            }
+            $partials = @(
+                @{ name = "Empty";                       sig = "empty";                   r = @() }
+                @{ name = "Global Metadata";              sig = "metadata-partial-design"; r = @() }
+                @{ name = "Header";                       sig = "header";                  r = @( @{ id = $r.Navigation;     ph = $phHeader } ) }
+                @{ name = "Footer";                       sig = "footer";                  r = @( @{ id = $r.FooterCarousel; ph = $phFooter } ) }
+                @{ name = "Content Container";            sig = "content-container";       r = @( @{ id = $r.Container;      ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Demo Sidebar";                 sig = "sidebar";                 r = @( @{ id = $r.ExperienceData; ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Page Content";                 sig = "page-content";            r = @( @{ id = $r.Breadcrumb;     ph = $phMain; par = "CSSStyles" }, @{ id = $r.GenericPage; ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Article Hero";                 sig = "article-hero";            r = @() }
+                @{ name = "Article Content";              sig = "article-content";         r = @( @{ id = $r.ArticleDetail;  ph = $phMain } ) }
+                @{ name = "Article Content Alternative";  sig = "article-content";         r = @( @{ id = $r.ArticleDetail;  ph = $phMain; par = "styles=alternative" } ) }
+                @{ name = "Article Extra";                sig = "article-extra";           r = @() }
+                @{ name = "Article List";                 sig = "article-list";            r = @( @{ id = $r.PageList;       ph = $phMain; par = "CSSStyles" }, @{ id = $r.Pagination; ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Recommended Content";          sig = "recommended-content";     r = @( @{ id = $r.PageTeaserGrid; ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Resource Hero";                sig = "resource-hero-notext";    r = @( @{ id = $r.Title;          ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Resource List Hero";           sig = "resource-hero";           r = @( @{ id = $r.Title;          ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Resource Content";             sig = "resource-content";        r = @( @{ id = $r.ResourceDetail; ph = $phMain; par = "CSSStyles" } ) }
+                @{ name = "Resource List";                sig = "resource-list";           r = @( @{ id = $r.ResourceSearch; ph = $phMain; par = "CSSStyles" } ) }
+            )
+            $pdIds = @{}
+            foreach ($p in $partials) {
+                $path = "$globalPath/$($p.name)"
+                if (-not (Test-Path $path)) { New-Item -Path $globalPath -Name $p.name -ItemType $partialDesignTemplateId | Out-Null }
+                $it = Get-Item -Path $path
+                $it.Editing.BeginEdit()
+                $it["__Renderings"] = $renderingsShell
+                $it["__Final Renderings"] = (Build-FinalRenderings $p.r)
+                $it["Signature"] = $p.sig
+                $it.Editing.EndEdit() | Out-Null
+                $pdIds[$p.name] = $it.ID.ToString().ToUpper()
+            }
+            # ----- Page Designs -----
+            $pageDesignsPath = "$sitePath/Presentation/Page Designs"
+            $designs = @(
+                @{ name = "SitecoreDemo Default";             pd = @("Global Metadata","Header","Footer","Content Container","Demo Sidebar") }
+                @{ name = "SitecoreDemo Article";             pd = @("Global Metadata","Header","Article Hero","Article Content","Article Extra","Footer","Demo Sidebar","Recommended Content") }
+                @{ name = "SitecoreDemo Article Alternative"; pd = @("Global Metadata","Header","Article Hero","Article Content Alternative","Article Extra","Footer","Demo Sidebar","Recommended Content") }
+                @{ name = "SitecoreDemo Article List";        pd = @("Global Metadata","Header","Content Container","Article List","Empty","Footer","Demo Sidebar") }
+                @{ name = "SitecoreDemo Sub Page";            pd = @("Global Metadata","Header","Page Content","Footer","Content Container","Demo Sidebar") }
+                @{ name = "SitecoreDemo Account";             pd = @("Global Metadata","Header","Footer","Empty","Demo Sidebar") }
+                @{ name = "SitecoreDemo Resource List Page";  pd = @("Global Metadata","Header","Resource List Hero","Resource List","Empty","Footer","Demo Sidebar") }
+                @{ name = "SitecoreDemo Resource Page";       pd = @("Global Metadata","Header","Resource Hero","Resource Content","Footer","Demo Sidebar") }
+            )
+            $designIds = @{}
+            foreach ($d in $designs) {
+                $path = "$pageDesignsPath/$($d.name)"
+                if (-not (Test-Path $path)) { New-Item -Path $pageDesignsPath -Name $d.name -ItemType $pageDesignTemplateId | Out-Null }
+                $it = Get-Item -Path $path
+                $it.Editing.BeginEdit()
+                $it["PartialDesigns"] = (($d.pd | ForEach-Object { "{" + $pdIds[$_].Trim("{","}") + "}" }) -join "|")
+                $it.Editing.EndEdit() | Out-Null
+                $designIds[$d.name] = $it.ID.ToString().ToUpper()
+            }
+            # ----- Template -> Page Design mapping -----
+            $mapItem = Get-Item -Path $pageDesignsPath
+            $tmplMap = @(
+                @{ t = "31CDFB65-9F8D-42B9-A14F-588C80191F45"; d = "SitecoreDemo Default" }
+                @{ t = "CB8DE01D-C0C3-4C19-ADA6-6811FDA4EA8E"; d = "SitecoreDemo Article" }
+                @{ t = "1C6D7B02-8437-4991-809A-82752CE90350"; d = "SitecoreDemo Article" }
+                @{ t = "80AE3D21-FE94-4BFE-85A0-E752A67C35D4"; d = "SitecoreDemo Article List" }
+                @{ t = "6900DD4F-F601-4F0E-BC67-9B47BFBAA76A"; d = "SitecoreDemo Article List" }
+                @{ t = "C18F3ADE-4DBC-47A5-9D55-09EA5A0B333F"; d = "SitecoreDemo Sub Page" }
+                @{ t = "294A033A-A71B-4D58-8F97-331A5CE7C407"; d = "SitecoreDemo Resource List Page" }
+                @{ t = "CEDD445C-A0AD-4E48-9A90-182B98E5589F"; d = "SitecoreDemo Resource Page" }
+                @{ t = "E596AEFE-AA2C-4547-B5CD-83C44D84DDA1"; d = "SitecoreDemo Account" }
+            )
+            $pairs = $tmplMap | ForEach-Object { "%7b" + $_.t + "%7d%3d%257B" + ($designIds[$_.d].Trim("{","}")) + "%257D" }
+            $mapItem.Editing.BeginEdit()
+            $mapItem["TemplatesMapping"] = ($pairs -join "%26")
+            $mapItem.Editing.EndEdit() | Out-Null
+        }
+    }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260508T200739Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d8e9f0a-1b2c-4d3e-9f4a-5b6c7d8e9f0a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260508T200739Z

@@ -1,0 +1,34 @@
+﻿---
+ID: "4004e03f-6b78-4795-82fc-8b3432be458e"
+Parent: "836c454f-c71d-41bd-8bc8-0a52ddb8d14a"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/articles/Yoga Fundamentals/Data/Content"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T190658Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra justo nec ultrices dui sapien eget mi proin sed. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Gravida neque convallis a cras semper auctor neque vitae tempus.</p><p>Habitant morbi tristique senectus et. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Sagittis purus sit amet volutpat consequat mauris. Cursus eget nunc scelerisque viverra mauris in. Faucibus pulvinar elementum integer enim neque volutpat.</p><p>Elementum facilisis leo vel fringilla est ullamcorper eget. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Amet luctus venenatis lectus magna. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ee1b2d5-7f63-469b-8194-f8d9e240ec6c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T190658Z

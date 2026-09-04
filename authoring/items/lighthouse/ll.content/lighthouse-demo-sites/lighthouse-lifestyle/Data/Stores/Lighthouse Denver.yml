@@ -1,0 +1,46 @@
+﻿---
+ID: "b37d0ac9-a865-49fa-8d46-dd2abcf2a277"
+Parent: "3044802a-04b1-4be0-9488-78975c4abba4"
+Template: "1b62af62-0153-4b97-a342-df641d3973c9"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Data/Stores/Lighthouse Denver"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11e0de41-8d8c-4d72-bd3b-8393be47403c"
+      Hint: City
+      Value: Denver
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T190014Z
+    - ID: "2a5187b5-f2cf-4523-beb1-776479954b0e"
+      Hint: StoreName
+      Value: Lighthouse Denver
+    - ID: "398d997b-2b9b-48e7-858a-47feae6b3583"
+      Hint: State
+      Value: CO
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "21cb0503-eac8-4b0e-8c27-615e225c76ae"
+    - ID: "937d403d-779a-4e29-b643-59187c3119d1"
+      Hint: Latitude
+      Value: 39.7392
+    - ID: "b076bd50-424d-4507-963c-7dec53452237"
+      Hint: Longitude
+      Value: "-104.9903"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260514T190014Z

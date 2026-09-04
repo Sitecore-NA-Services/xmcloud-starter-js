@@ -1,0 +1,110 @@
+﻿---
+ID: "b27f778e-78c7-4c8d-8983-135b4333b6a4"
+Parent: "25f3f98a-ee23-4ea1-a250-bbd27abb114c"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Products/Sasq-O-Tron 3000"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/B27F778E78C74C8D8983135B4333B6A4.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "af4628d1-164e-4e45-8d24-4d0598c8189e"
+  Value: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDAwIDMyMCIgY2xhc3M9InByb2R1Y3Qtc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwcm9kLXNwcmF5LWJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlZTVkNCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzlhYWI4ZSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzIwIiBmaWxsPSJ1cmwoI3Byb2Qtc3ByYXktYmcpIj48L3JlY3Q+PGVsbGlwc2UgY3g9IjIwMCIgY3k9IjI5MCIgcng9IjE2MCIgcnk9IjE0IiBmaWxsPSJyZ2JhKDAsMCwwLDAuMTgpIj48L2VsbGlwc2U+PGcgZmlsbD0iI2Y1ZWFkOCIgb3BhY2l0eT0iMC43Ij48Y2lyY2xlIGN4PSIzMjAiIGN5PSIxMjAiIHI9IjYiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjM0MCIgY3k9IjEwMCIgcj0iNCI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMzUwIiBjeT0iMTMwIiByPSI1Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIzNjUiIGN5PSIxMTUiIHI9IjMiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjMzMCIgY3k9IjE0NSIgcj0iMyI+PC9jaXJjbGU+PC9nPjxnIGZpbGw9IiMzYTM1MjgiPjxyZWN0IHg9IjE3MCIgeT0iODAiIHdpZHRoPSI2MCIgaGVpZ2h0PSIzOCIgcng9IjYiPjwvcmVjdD48cGF0aCBkPSJNMTgwIDExOCBMMTgwIDE0NSBMMTU1IDE2MiBMMTUwIDE1OCBaIj48L3BhdGg+PHJlY3QgeD0iMjI1IiB5PSI5OCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjEwIiByeD0iMyI+PC9yZWN0PjxyZWN0IHg9IjI4NSIgeT0iMTAwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij48L3JlY3Q+PC9nPjxwYXRoIGQ9Ik0xNTAgMTMwIEwyNTAgMTMwIEwyNjAgMTYwIEwyNjAgMjcwIFEyNjAgMjkwIDI0MCAyOTAgTDE2MCAyOTAgUTE0MCAyOTAgMTQwIDI3MCBMMTQwIDE2MCBaIiBmaWxsPSIjN2E0YTFkIj48L3BhdGg+PHBhdGggZD0iTTE1MCAxMzAgTDI1MCAxMzAgTDI2MCAxNjAgTDI2MCAyNzAgUTI2MCAyOTAgMjQwIDI5MCBMMTYwIDI5MCBRMTQwIDI5MCAxNDAgMjcwIEwxNDAgMTYwIFoiIGZpbGw9InVybCgjcHJvZC1zcHJheS1zaGluZSkiIG9wYWNpdHk9IjAuNCI+PC9wYXRoPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icHJvZC1zcHJheS1zaGluZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjAiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMC40Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjE0MyIgeT0iMTc4IiB3aWR0aD0iMTE0IiBoZWlnaHQ9Ijg0IiByeD0iMyIgZmlsbD0iI2Y1ZWFkOCI+PC9yZWN0PjxyZWN0IHg9IjE0MyIgeT0iMTc4IiB3aWR0aD0iMTE0IiBoZWlnaHQ9IjE4IiBmaWxsPSIjNWMzZDExIj48L3JlY3Q+PHRleHQgeD0iMjAwIiB5PSIxOTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iOSIgZm9udC13ZWlnaHQ9IjcwMCIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNmNWVhZDgiPlBIRVJPTU9ORSBMVVJFPC90ZXh0Pjx0ZXh0IHg9IjIwMCIgeT0iMjIyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjNWMzZDExIj5TQVNRLU8tVFJPTjwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjIzOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSI5IiBmaWxsPSIjNWMzZDExIiBvcGFjaXR5PSIwLjc1Ij4zMDAw4oSiPC90ZXh0PjxsaW5lIHgxPSIxNjAiIHkxPSIyNDYiIHgyPSIyNDAiIHkyPSIyNDYiIHN0cm9rZT0iIzVjM2QxMSIgc3Ryb2tlLXdpZHRoPSIwLjUiIG9wYWNpdHk9IjAuNCI+PC9saW5lPjx0ZXh0IHg9IjIwMCIgeT0iMjU2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjYiIGZpbGw9IiM1YzNkMTEiIG9wYWNpdHk9IjAuNiI+NiBGTCBPWiDCtyBLRUVQIFVQV0lORDwvdGV4dD48L3N2Zz4K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 2166
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "8fe90744-f770-4f26-a970-c3f288a807d5"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205616Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Sasq-O-Tron 3000"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b726aab0-9662-4d37-867e-8f7eee9a1fb1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205616Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205616Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Sasq-O-Tron 3000"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4010b170-bea7-40d7-858d-59493cfe4c38"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205616Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205616Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Sasq-O-Tron 3000"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3ba316e0-b089-4bd1-a689-1aad7e08af64"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205616Z

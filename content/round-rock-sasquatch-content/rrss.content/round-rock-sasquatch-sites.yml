@@ -1,0 +1,84 @@
+﻿---
+ID: "3d04d4d1-5b52-4b50-bea9-a4be058a2b0c"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "72c4c585-066b-49ff-9a6e-dcef40b0f17b"
+Path: "/sitecore/content/round-rock-sasquatch-sites"
+BranchID: "2d3805b9-3089-44f3-b952-d45c44add7f8"
+SharedFields:
+- ID: "102b58da-2a86-4953-b3cd-c9f91256b657"
+  Hint: PlaceholderSettingsFolder
+  Value: "{51DA9B83-6DEC-4C0B-9527-E12CD09EEDBC}"
+- ID: "1230d2cb-4948-4d43-8a3b-b39978f6f1b3"
+  Hint: Modules
+  Value: |
+    {7BAAA4FC-3051-442D-9BD2-AD720B655E0B}
+    {1B0A98C0-1801-44A0-85F2-845694FEAFF3}
+    {02CD7086-1F87-41EC-B40F-B92C1226895B}
+    {7B81B847-1891-43B2-BC13-5047A62EC32A}
+    {D315A501-6503-4545-A5D8-B9FECBA1097D}
+    {0DC2E395-4A95-4773-88CA-75B22A130849}
+    {4346A98A-D6E9-491E-A0ED-CD12F524CF4E}
+    {4CBC64BF-8116-48A1-ABAC-DB19103897A6}
+    {7574F439-0B48-48BE-BA6B-94B1A3CE01A3}
+    {D912C30C-7A98-4A8D-A094-611D9AF9605D}
+    {6DE1F4E9-815D-491D-923D-D5038100DBEE}
+- ID: "800dc4ed-0846-45ba-b112-19902af240f6"
+  Hint: SharedMediaLibrary
+  Value: "{1A2D51B9-7704-426F-A9EC-DF5DDE243516}"
+- ID: "853b245f-53e4-4ebe-bab5-299f9de314b6"
+  Hint: RenderingsFolder
+  Value: "{5F3DBDD2-6C2D-4633-ACBB-3D00D93D6430}"
+- ID: "85a7501a-86d9-4243-9075-0b727c3a6db4"
+  Hint: Name
+  Value: Round Rock Sasquatch Society
+- ID: "9c596379-f8d4-45d1-a064-cdf1ede2e7c7"
+  Hint: Templates
+  Value: "{FA26AB67-BC15-4A89-826F-D796BA3756A1}"
+- ID: "b6953f8b-56d3-4c90-a6db-885786711e4a"
+  Hint: SettingsFolder
+  Value: "{C8C0BE03-4844-49C3-80AA-DF0F1F83980C}"
+- ID: "c5dbb136-3299-4835-a8ce-bca8b49ba3fa"
+  Hint: BranchesFolder
+  Value: "{E9BE14D6-A0A5-4C9E-9C85-B5F143F940A7}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ab540ca1-1483-4e41-aff6-266e59b6328b"
+- ID: "e90a4413-c111-4951-9b6a-00c4ce7fb289"
+  Hint: MediaLibrary
+  Value: "{AABF3816-50B1-4865-913F-47A48C692D8B}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{8453C078-6D17-4817-9230-91654AFE69C6}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "3337fefb-132b-4710-991d-781306cee161"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Round Rock Sasquatch Society
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184159Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1a3e7a23-f5bd-44c8-980d-5f004883d999"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T184228Z

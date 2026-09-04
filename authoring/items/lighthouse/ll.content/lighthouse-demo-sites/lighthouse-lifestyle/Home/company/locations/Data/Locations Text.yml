@@ -1,0 +1,41 @@
+﻿---
+ID: "0980f012-d75a-4fb6-8b07-599d210d7cd7"
+Parent: "9534aba3-488a-462b-a7c6-07beff6c33c2"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/company/locations/Data/Locations Text"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: <p>We have Lighthouse locations around the world. Stop by a Lighthouse near you to browse the latest lifestyle brands to enrich your life. Our sales team will help you find just what you need to cook smarter, work smarter, play harder. Shop online for the same superior selection and service.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260421T183456Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Visit a Lighthouse store near you</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ae74acbd-e65d-463f-a093-f7d9f265a8b6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T194252Z
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{B1147F2D-7D9B-4210-9864-7B1C16AB9EBF}" />

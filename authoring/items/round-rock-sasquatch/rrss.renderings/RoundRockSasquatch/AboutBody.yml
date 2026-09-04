@@ -1,0 +1,54 @@
+﻿---
+ID: "891046e5-7b0a-4d6e-a3a8-5db15e4d1539"
+Parent: "a221830c-9f68-4d68-a655-4e4608b24e1c"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/RoundRockSasquatch/AboutBody
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: AboutBody
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: "{D37638D2-64EB-41C4-BE99-7A0C1EB881C2}"
+- ID: "592a1ce7-abe0-4986-9783-0a34f3961dc0"
+  Hint: Placeholder
+  Value: "sxa-articlebody"
+- ID: "a3411ff6-c978-40aa-b059-a49b9ca2209b"
+  Hint: Can select Page as a data source
+  Value: 1
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: ./Page Components/$name
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "490dabab-e176-4518-94fd-451c4b3e5b0b"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "464204cc-2290-4a5c-bbb2-a7713318602e"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184336Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "93fc26ae-1576-44c1-aa10-3bb77fe54726"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260514T195348Z

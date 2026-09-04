@@ -1,0 +1,44 @@
+﻿---
+ID: "9b731406-7df9-4fb0-b350-9567bdd5e2b8"
+Parent: "cace9363-17fa-426c-bc20-642e7a8fe3a4"
+Template: "dbc0e125-257b-45bb-8ba9-782ab5b22e3a"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Data/Global Footer Carousel/Slide1-Your-Health"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260416T190429Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "40364b20-ff12-4e0f-98da-4eafb619d738"
+    - ID: "b802802a-a4fc-46ce-b56a-827e04f046d2"
+      Hint: Image
+      Value: |
+        <image mediaid="{916C1AA8-455D-4E2F-8E95-74BB016B79B7}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T190429Z
+    - ID: "dc2711b4-8b9a-40cb-949c-43f8d237c7b3"
+      Hint: Link
+      Value: |
+        <link linktype="external" url="/your-health" text="Your Health" />
+    - ID: "f22481f9-f763-4181-aa1d-a48f7b8325e9"
+      Hint: Title
+      Value: |
+        Your Health
+        Lighthouse Lifestyle

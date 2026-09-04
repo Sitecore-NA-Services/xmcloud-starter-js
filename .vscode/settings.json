@@ -1,0 +1,32 @@
+{
+  "window.titleBarStyle": "custom",
+  "files.associations": {
+    "*.sicpackage": "json"
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#6D28D9",
+    "titleBar.activeForeground": "#FFFFFF",
+    "titleBar.inactiveBackground": "#5B21B6",
+    "titleBar.inactiveForeground": "#EDE9FE",
+    "menubar.selectionBackground": "#7C3AED",
+    "menubar.selectionForeground": "#FFFFFF",
+    "statusBar.background": "#6D28D9",
+    "statusBar.foreground": "#FFFFFF",
+    "statusBar.noFolderBackground": "#6D28D9",
+    "statusBar.debuggingBackground": "#7C3AED"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["/sitecore.json"],
+      "url": "./.sitecore/schemas/RootConfigurationFile.schema.json"
+    },
+    {
+      "fileMatch": ["/.sitecore/user.json"],
+      "url": "./.sitecore/schemas/UserConfiguration.schema.json"
+    },
+    {
+      "fileMatch": ["*.module.json"],
+      "url": "./.sitecore/schemas/ModuleFile.schema.json"
+    }
+  ]
+}

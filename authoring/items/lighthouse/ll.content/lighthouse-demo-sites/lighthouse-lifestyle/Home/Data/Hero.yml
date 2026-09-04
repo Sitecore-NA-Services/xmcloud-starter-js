@@ -1,0 +1,37 @@
+﻿---
+ID: "66b6ebf7-6120-4c91-958a-8162e052ed5f"
+Parent: "848587bb-ce26-419a-86c0-5c94b8118d35"
+Template: "2aa9f46b-7572-4f5d-bbc0-d37a95ce2a52"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/Data/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T194603Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "689af491-a545-4acc-908b-e0f354c7c1ca"
+      Hint: HeroText
+      Value: Lighthouse Lifestyle
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "60ba556e-2abf-4ee6-be90-056fb9d4b590"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "ca94006f-5874-4aa5-a473-b0d6eed97d2a"
+      Hint: HeroTitle
+      Value: Live Well, Every Day
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T194603Z

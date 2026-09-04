@@ -1,0 +1,110 @@
+﻿---
+ID: "96576c6c-4f06-4fe2-930e-adc83985d680"
+Parent: "25f3f98a-ee23-4ea1-a250-bbd27abb114c"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Products/Brushy Creek Field Journal"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/96576C6C4F064FE2930EADC83985D680.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "4e6a71f5-8736-482d-974a-9fbde0444d4f"
+  Value: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDAwIDMyMCIgY2xhc3M9InByb2R1Y3Qtc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwcm9kLWpvdXJuYWwtYmciIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZThkZWM4Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYTg5MjcyIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMjAiIGZpbGw9InVybCgjcHJvZC1qb3VybmFsLWJnKSI+PC9yZWN0PjxlbGxpcHNlIGN4PSIyMDAiIGN5PSIyOTAiIHJ4PSIxNjAiIHJ5PSIxNCIgZmlsbD0icmdiYSgwLDAsMCwwLjE4KSI+PC9lbGxpcHNlPjxyZWN0IHg9IjExOCIgeT0iNjAiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjIwIiByeD0iNiIgZmlsbD0icmdiYSgwLDAsMCwwLjI1KSI+PC9yZWN0PjxyZWN0IHg9IjExMCIgeT0iNTAiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjIwIiByeD0iNiIgZmlsbD0iIzVjM2QxMSI+PC9yZWN0PjxyZWN0IHg9IjExMCIgeT0iNTAiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjIwIiByeD0iNiIgZmlsbD0idXJsKCNwcm9kLWJvb2stc2hpbmUpIiBvcGFjaXR5PSIwLjQiPjwvcmVjdD48cmVjdCB4PSIxMTAiIHk9IjUwIiB3aWR0aD0iMTQiIGhlaWdodD0iMjIwIiBmaWxsPSIjM2EyNDEwIj48L3JlY3Q+PHJlY3QgeD0iMTM4IiB5PSI3OCIgd2lkdGg9IjEzMCIgaGVpZ2h0PSIxNzAiIHJ4PSIyIiBmaWxsPSJub25lIiBzdHJva2U9IiNkNGE1NzQiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC43Ij48L3JlY3Q+PHRleHQgeD0iMjAzIiB5PSIxNDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNkNGE1NzQiIGxldHRlci1zcGFjaW5nPSIyIj5CUlVTSFkgQ1JFRUs8L3RleHQ+PHRleHQgeD0iMjAzIiB5PSIxNzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiNkNGE1NzQiIGxldHRlci1zcGFjaW5nPSIzIiBvcGFjaXR5PSIwLjg1Ij5GSUVMRCBKT1VSTkFMPC90ZXh0PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMywgMjAwKSBzY2FsZSgwLjYpIiBmaWxsPSIjZDRhNTc0IiBvcGFjaXR5PSIwLjciPjxlbGxpcHNlIGN4PSIwIiBjeT0iNiIgcng9IjExIiByeT0iMTgiPjwvZWxsaXBzZT48Y2lyY2xlIGN4PSItNyIgY3k9Ii0xNSIgcj0iMi40Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSItMyIgY3k9Ii0xOSIgcj0iMi44Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyIiBjeT0iLTIxIiByPSIzLjIiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjciIGN5PSItMTkiIHI9IjIuOCI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTEiIGN5PSItMTUiIHI9IjIuNCI+PC9jaXJjbGU+PC9nPjxyZWN0IHg9IjI0MCIgeT0iNTAiIHdpZHRoPSI2IiBoZWlnaHQ9IjI0MCIgZmlsbD0iIzJkNGEyYiI+PC9yZWN0Pjxwb2x5Z29uIHBvaW50cz0iMjM3LDI5MCAyNDYsMjkwIDI0MywzMDAiIGZpbGw9IiMyZDRhMmIiPjwvcG9seWdvbj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InByb2QtYm9vay1zaGluZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjAiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1890
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "81ec610d-6a61-41aa-91ff-93135437301a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205826Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Brushy Creek Field Journal
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2a2a8694-1d6e-48b9-a555-373c4099bd4a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205826Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205826Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Brushy Creek Field Journal
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8fd76ffb-e32f-4e79-afad-85d87e60cfa4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205826Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205826Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Brushy Creek Field Journal
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62115a87-f896-44c7-960d-d09343fd03ba"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205826Z

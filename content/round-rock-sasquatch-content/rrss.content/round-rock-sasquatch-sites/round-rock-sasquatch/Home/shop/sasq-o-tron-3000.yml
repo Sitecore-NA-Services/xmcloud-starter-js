@@ -1,0 +1,83 @@
+﻿---
+ID: "6f6a1307-6e13-4483-bb1a-aeda7a87d87e"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/sasq-o-tron-3000"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{41C11EBE-D252-4FDF-B84F-8A3A7E705828}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "83d84305-aa15-493e-937d-eda2d8b9a9dd"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" />
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184354Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "sasq-o-tron-3000"
+    - ID: "723c3697-9244-4342-b426-f1cdc71784d4"
+      Hint: ProductImage
+      Value: |
+        <image mediaid="{B27F778E-78C7-4C8D-8983-135B4333B6A4}" />
+    - ID: "7e214a48-07de-4600-ad46-6006dafd0609"
+      Hint: Title
+      Value: "sasq-o-tron-3000"
+    - ID: "8a642b16-f5b6-402e-bdfc-61ec11ea8c40"
+      Hint: InStock
+      Value: 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b52ce8f7-b020-4ae4-9a44-a594ebe3df9d"
+    - ID: "9010a75c-695f-4632-bb5c-cba4c11f5c5d"
+      Hint: Price
+      Value: 89.99
+    - ID: "b0fc435e-fc4a-48f6-8222-797ed115c6ba"
+      Hint: Tagline
+      Value: A spray bottle that releases scientifically calibrated Sasquatch pheromones. Or possibly just musk.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "c4980a30-4286-4818-97bc-1555d4bf33de"
+      Hint: ProductName
+      Value: "Sasq-O-Tron 3000™ Pheromone Atomizer"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T212411Z
+    - ID: "e5256078-194c-43f2-bc87-f446896c65ca"
+      Hint: Body
+      Value: |
+        
+        The **Sasq-O-Tron 3000™** is the result of seventeen weekends of suburban backyard chemistry and one (1) very confused organic chemist who agreed to consult after his second beer. Each bottle contains a proprietary blend of cedar oil, ammonia, deer urine concentrate, and what we are legally required to describe as "additional ingredients."
+        
+        Apply a single mist to the upwind side of your observation site. Field reports describe results ranging from "increased rustling in the cedar" to "a coyote came up and stared at me for 90 seconds." Both qualify as activity. Both go in the journal.
+        
+        ## What's in the Box
+        
+        - One (1) 6 oz amber atomizer bottle
+        - One (1) replacement nozzle (clogs are common)
+        - One (1) folded card explaining that this is not regulated by the FDA, the EPA, or any agency that would care
+        - Disposable gloves (please use them)
+        
+        ## A Note on Indoor Use
+        
+        Do not use this product indoors. Do not use this product in your car. We have learned these things the hard way.
+        
+    - ID: "f14dd29e-6583-4dba-badf-652ba7bfc31a"
+      Hint: Category
+      Value: lures

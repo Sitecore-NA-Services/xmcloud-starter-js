@@ -1,0 +1,78 @@
+﻿---
+ID: "2e593ee3-7ad2-425d-9fa3-12cf557e0776"
+Parent: "d4d61dd0-897d-4172-8a2d-a62f10c59ed1"
+Template: "e596aefe-aa2c-4547-b5cd-83c44d84dda1"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/Account/portal"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "81f9294b-b1bc-40ce-bc85-ddf2adee1a9a"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: My Account
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{A2CBB64F-6AE8-481A-B334-F6FF6056061F}"
+              p:before="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{A05EE48D-8FF6-445E-9B60-4B5FC379EE59}"
+              p:after="r[@uid='{A2CBB64F-6AE8-481A-B334-F6FF6056061F}']"
+              s:id="{A1FF6F5B-F46E-4180-B60D-A70CCDE1A1F2}"
+              s:ph="headless-main"
+              s:ds="{8584771D-19F2-4CDE-9F3E-05F6EACA884C}" />
+            <r
+              uid="{B771B986-1A76-40A7-9443-8933C5898AB6}"
+              p:after="r[@uid='{A05EE48D-8FF6-445E-9B60-4B5FC379EE59}']"
+              s:id="{A87350F2-F9C0-4DA4-98CA-288AF2309B5B}"
+              s:ph="headless-main" />
+            <r
+              uid="{76CC7A5E-C7B5-4ADA-9E55-44C5A74A8E2B}"
+              p:after="*"
+              s:id="{DF8F69B2-3354-4BD0-957A-CF2D7D5F4A22}"
+              s:ph="headless-footer"
+              s:ds="{CACE9363-17FA-426C-BC20-642E7A8FE3A4}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260423T190528Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "00c94275-acd7-429c-b101-809b4ea870c2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260512T202237Z

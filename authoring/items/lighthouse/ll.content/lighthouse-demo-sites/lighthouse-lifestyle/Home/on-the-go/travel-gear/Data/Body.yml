@@ -1,0 +1,34 @@
+﻿---
+ID: "e5f97059-a563-4fc3-9abb-2d1c016feed3"
+Parent: "d6bf51ae-f355-4578-8470-1c2a4597c2b3"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/on-the-go/travel-gear/Data/Body"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260421T173314Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id sapien volutpat felis ornare imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p><p>Donec euismod, nisl eget consectetur sagittis, nisl nunc ultrices ex, non eleifend turpis nulla sed neque. Praesent tristique volutpat elit, in rutrum metus porttitor sed.</p><p>Nulla facilisi. Aliquam erat volutpat. Vivamus vulputate, enim eget rutrum pulvinar, massa mauris cursus arcu, in iaculis magna nibh sit amet libero.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "33b49da4-9dfe-403f-bf02-c49c841afc36"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T173314Z

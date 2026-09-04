@@ -1,0 +1,36 @@
+﻿---
+ID: "595903de-4021-467e-9bc0-f8a58e04757e"
+Parent: "ae0df8a6-f68e-486d-83f1-de3a32f0d838"
+Template: "433e2cfe-d982-4f42-af4f-b5b4332d4715"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/your-health/Data/Your Health Article Teasers"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260416T175137Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "32ff9343-18ba-46d3-8382-f2f0ec3db756"
+    - ID: "8d0c4687-2d6c-4213-a7d2-6fbb3b08d7c5"
+      Hint: items
+      Value: |
+        {3CA00841-680D-4DD0-A115-4F9B49BB7B77}
+        {072B6719-27CC-4580-BD26-8584DE9F51BD}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T175137Z

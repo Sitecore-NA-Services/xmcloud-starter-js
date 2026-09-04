@@ -1,0 +1,66 @@
+﻿---
+ID: "1e0dd5c8-6ac0-497c-9c94-3ac2a5328ec1"
+Parent: "64f922b1-d57d-4afa-ae26-9d59502f69a6"
+Template: "1c6d7b02-8437-4991-809a-82752ce90350"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/articles/make-business-travel-more-enjoyable"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "3b730af1-28d6-45db-8f78-2796148cd7c5"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Make Business Travel More Enjoyable
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: 
+    - ID: "0608c2d6-5e63-442f-8851-9a05a9c8ccda"
+      Hint: Link
+      Value: |
+        <link text="Read More" linktype="external" url="/articles/make-business-travel-more-enjoyable" />
+    - ID: "13db2ee0-3052-4809-86f4-d594c55d5442"
+      Hint: Image
+      Value: |
+        <image mediaid="{5C8D3AB2-774D-4FDC-AC9F-E1B56BFEC6F0}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260416T183333Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "7dd4db9d-99f6-426b-8c1e-00f8beb7db9d"
+      Hint: Introduction
+      Value: When you're traveling for business, you need to stay connected and productive at all times. To maintain peak performance on the road, bring the right gear.
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Make Business Travel More Enjoyable
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62616500-456b-4a8a-8c00-5e007f43b6ae"
+    - ID: "a7836ea2-ba85-4ed3-bd40-3a4a7f70c8d4"
+      Hint: PublishDate
+      Value: 20200501T125600Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T031318Z

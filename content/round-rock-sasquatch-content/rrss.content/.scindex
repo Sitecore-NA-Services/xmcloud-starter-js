@@ -1,0 +1,1819 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites.yml
+ID: "3d04d4d1-5b52-4b50-bea9-a4be058a2b0c"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "72c4c585-066b-49ff-9a6e-dcef40b0f17b"
+Path: "/sitecore/content/round-rock-sasquatch-sites"
+Signature: xoNPXWUrB86w18g1vpvhqpZRYDIUDXo/nUMvBndrclw=
+Modified: 639142186958618251
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch.yml
+ID: "e14b4b8c-2989-4946-8878-1db1071c5215"
+Parent: "3d04d4d1-5b52-4b50-bea9-a4be058a2b0c"
+Template: "6e5fedcf-ecf7-49ea-8c3f-50a1692b3e15"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch"
+Signature: CJqoEAmkpUFKL2i5CnxCAPW7Bxr6hThgtjXe9jrrJ2A=
+Modified: 639142186958639775
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Data.yml
+ID: "a7be79c8-a8f8-427b-b2b4-3eb37380e41f"
+Parent: "e14b4b8c-2989-4946-8878-1db1071c5215"
+Template: "a29d272e-9d48-453c-9e9d-b47585fa7f20"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Data"
+Signature: /+4HSnrm5g2o+yApcB5rs572v5OpyUso3SfAHKd+vr4=
+Modified: 639142186958649780
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary.yml
+ID: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Parent: "e14b4b8c-2989-4946-8878-1db1071c5215"
+Template: "0a2847e6-9885-450b-b61e-f9e6528480ef"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary"
+Signature: aySV6Tv/RUixRR9r8QUHYht2CTveM3uw8Io1HA2XLOQ=
+Modified: 639142186958771837
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home.yml
+ID: "51028805-6cbb-44fc-bbba-838a8151a419"
+Parent: "e14b4b8c-2989-4946-8878-1db1071c5215"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home"
+Signature: 83KVSMf7NpZoU9g5NO4mPn0DcD1Ohmde2J2HcpwIvuQ=
+Modified: 639147293743482793
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Media.yml
+ID: "8dcd27db-cb1b-4564-a96d-94c2a4ef878b"
+Parent: "e14b4b8c-2989-4946-8878-1db1071c5215"
+Template: "e8e8c94f-4248-43c3-a79f-99fbb49d78e6"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Media"
+Signature: wcXYrzm6kwLiYf6PsYilox8k0IdVrhaLkZOZyghPAms=
+Modified: 639142186959377772
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation.yml
+ID: "92bc31d2-a119-45e4-9932-ee518679d612"
+Parent: "e14b4b8c-2989-4946-8878-1db1071c5215"
+Template: "0a70fa73-8923-4a6e-abf3-4134f25f3221"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation"
+Signature: rF+bdDzgT5pNIIT1ODrxO0879TFgyNF2WHwvHoNTw6A=
+Modified: 639142186959387751
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Settings.yml
+ID: "d58f7b40-1eaa-4be6-b72b-fcb4f872eed4"
+Parent: "e14b4b8c-2989-4946-8878-1db1071c5215"
+Template: "95c5325b-77c4-46c7-9871-5a48a429285d"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Settings"
+Signature: Z4m8pq2anR/uI+kPIzQQYPiR+QRT9ek2pt4ZTG479rY=
+Modified: 639142186960388447
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\About.yml
+ID: "8902ae49-78a5-4039-8fc9-b1cc062c1fad"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/About"
+Signature: RxniDnBdv07nF57hX9d6K2nmUVkhpr6dsDyS6mORv6U=
+Modified: 639142186958786344
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Add to Cart.yml
+ID: "da4bfeb2-52a2-467b-940d-daa7ac28d520"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Add to Cart"
+Signature: I3X9lISFfBvtVlcsGtitnSpEGkAX3AzjBZ19iwpV3jQ=
+Modified: 639142186958791852
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Back to home.yml
+ID: "90576c21-e3f0-4860-af58-c015164294f5"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Back to home"
+Signature: kKqlH0L5BzEc7RswvC59n+a58tVG5JvDBY/pbwonA94=
+Modified: 639142186958791852
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Backordered (Doug is on it).yml
+ID: "f4358115-8cb9-49e0-ae56-4e3506fa18f7"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Backordered (Doug is on it)"
+Signature: 6uxEW2VgUU+ModbQ5oerJYeIX8Dj8pbg14xi8Ni4CY8=
+Modified: 639142186958806899
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Cart.yml
+ID: "3c15b2f2-6c50-47ad-a364-dcae9f2ad87d"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Cart"
+Signature: AQ6jz96lW8Q8xaCU7O2PqEK3i/tHdwhJxLP5S86s+6Y=
+Modified: 639142186958816973
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\CartEmptyText.yml
+ID: "554b3df4-e4b0-488b-839f-f80123f2e6b8"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/CartEmptyText"
+Signature: 89ZeEaaJ1jmlGpkmRjDcsBpnVZ6xCDwoFEV9XFfi5rw=
+Modified: 639142186958816973
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\CartSummaryNote.yml
+ID: "2df42c1c-8388-4f49-a38b-1c7fc48de9e1"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/CartSummaryNote"
+Signature: sVRGgoftogWIh2Yq4S25hssqjUg7KY48Qly20NFm7l4=
+Modified: 639142186958831482
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Checkout.yml
+ID: "525a5942-08eb-4f8f-bd3c-37a000a84ce3"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Checkout"
+Signature: EZ79Jyy48FjeJbFRQymrQ6eQ00fssaOIViZpDp2UO/g=
+Modified: 639142186958843799
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\CheckoutDisclaimer.yml
+ID: "307e34ed-8d93-4b4b-abf7-c22db0fea495"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/CheckoutDisclaimer"
+Signature: alUrtdwTAmAkYOQnGOBgl4Aufxu0n3Wp7ufTKRf/iKQ=
+Modified: 639142186958853822
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\CheckoutPaymentNote.yml
+ID: "d523eae1-fd98-413c-876c-7c0a2ef4b152"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/CheckoutPaymentNote"
+Signature: 7hRCoUbnwOu0G76+w4hDCuymcTur8LkD5PiygiZBGWk=
+Modified: 639142186958853822
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\CheckoutSubtitle.yml
+ID: "d8d32750-4528-4d25-bc2b-d270dce7d355"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/CheckoutSubtitle"
+Signature: wAvJXpsseKPzlM0Fd/B+R6qL4MfKvWEaBOQCQp3BKl8=
+Modified: 639142186958863799
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Clear cart.yml
+ID: "cff95bdf-e3f2-461f-92b4-f0862f2e6664"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Clear cart"
+Signature: vPtNRKS3pLmN5unlrWcUsGvVMBRLtSGUXJ6T30ZoF4o=
+Modified: 639142186958873795
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Continue shopping.yml
+ID: "d85f24a7-28ae-42e6-9fd4-b51f8adc3f95"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Continue shopping"
+Signature: dVHenbzH1pNfsfP0+6xaZHhgO31fYJDVSNXR+g9lPbU=
+Modified: 639142186958873795
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\FooterCopyright.yml
+ID: "b335ed78-97cb-4b10-afde-4475ed6f117d"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/FooterCopyright"
+Signature: L14+qaY/G54Z51A06kV5ztCBbplLDnBAUYxiYwjG9k0=
+Modified: 639142186958883804
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Free.yml
+ID: "ec130694-819a-49e1-98f5-8c93d7c1c429"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Free"
+Signature: 484tbv37nO4it7IHEac0DKeESe9Z8wD3qgCqq8HBjv0=
+Modified: 639142186958893808
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Home.yml
+ID: "e3f6ea3a-39e4-4b9f-9c90-99160894037b"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Home"
+Signature: VvpOKjSabbw6H0NQGP3UN87q2reUO2yiUvRuwAWCStg=
+Modified: 639142186958903816
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\In stock.yml
+ID: "45bc63af-efcd-499b-bd7f-48a875660b24"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/In stock"
+Signature: dNIWtK7XipR5dkuDHWc4+So/vfkCxnsXYGaDw+9iZh4=
+Modified: 639142186958913816
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Latest Field Reports.yml
+ID: "c29634c7-f859-4d7a-8424-f9908027da0e"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Latest Field Reports"
+Signature: BB35uQLxuoUaeKeo1hZEea/2isUrvRTfBdCguOc5Tu4=
+Modified: 639142186958923802
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Order Number.yml
+ID: "6996165d-0cb8-4cbb-9262-62f529706a4d"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Order Number"
+Signature: gc8iX3naUM3hqb1WGCy5zrlFTNCHuR3o+4lLL7iMn2M=
+Modified: 639142186958923802
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Place Order.yml
+ID: "c55f36f9-417f-4466-a2d0-561f56aaec62"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Place Order"
+Signature: CLyEwfncgsKa5Per3pLDLTP1FoifeEXVDKdP/CCmDao=
+Modified: 639142186958953808
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Proceed to Checkout →.yml
+ID: "cab5b55f-ff86-4302-a735-3f9385965fa1"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Proceed to Checkout →"
+Signature: 5D6n7u5ObotWna9NUJ2ymQwmLOtg/s4KwqYe8IFT74M=
+Modified: 639142186958963814
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Quantity.yml
+ID: "2cadd7e0-aec2-437d-a9db-08d442972d63"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Quantity"
+Signature: WyTNNrJPQkCKhZZcZlPE2dNQXPJOZLIuxVsoyswsX4s=
+Modified: 639142186958963814
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Read the report →.yml
+ID: "ad2eaa53-2037-49cf-9afc-6408e138ca4d"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Read the report →"
+Signature: d9GPJkc3k/jhSLDPcUf1MrtJ2aqjKLVO0BZjOUWmHZo=
+Modified: 639142186958973797
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\SuccessSubtitle.yml
+ID: "43af802a-5f5d-4368-96df-81e04d37d3f8"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/SuccessSubtitle"
+Signature: 0gYMqSGuCfViHBXgfW42AXF19ag/+AXIYtUDSOYbGe4=
+Modified: 639142186959013799
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\SuccessThankYou.yml
+ID: "4cd9b560-6d17-4c7f-8c09-ffea50cef7ad"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/SuccessThankYou"
+Signature: ZFqjoOX8I5zhPslo9o29+jz3hJi9XH87TNCSLgENAXY=
+Modified: 639142186959028881
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Tax (Williamson Co. 8.25%).yml
+ID: "aeb66f6e-b858-47dd-9ba2-24ebba16b428"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Tax (Williamson Co. 8.25%)"
+Signature: H1Z5yfK3mEaen2Iyph6lKwN7w43AO5rtHTQJZivJ+4A=
+Modified: 639142186959039054
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\The Society Shop.yml
+ID: "d0971101-a15d-48bc-9901-5c81b1b1a8e9"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/The Society Shop"
+Signature: x1XKcwtxRj1Q3ymeFzTgLlgC7j9CQEEcsG4tjcWYdG0=
+Modified: 639142186959039054
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\← Back to cart.yml
+ID: "17dd1d12-4f40-48b2-bbc3-7c8d177b38c0"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/← Back to cart"
+Signature: hfoTRzKdNAv7PflNfJQxA0lWSFDmNSx53V+VooMWUss=
+Modified: 639142186959099233
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\← Back to shop.yml
+ID: "1accfe2f-4d11-484c-92f3-5976bf48994a"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/← Back to shop"
+Signature: MVgmrCumGvFlU4JmI0FwYZJZNKPA0/Oi7jBtnLtbXC0=
+Modified: 639142186959109338
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\about.yml
+ID: "872e0894-47aa-4651-a78f-3b2ac306ddc4"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/about"
+Signature: DN7PGmFDgPRcuOetNuB2dHLwbcvwMzW76Ux4QdyXQZk=
+Modified: 639142186959149323
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\articles.yml
+ID: "1d7c3e85-fb5a-4779-87b9-21fb100cd523"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/articles"
+Signature: X3acovtfpdBwC0g7MhzoFCloS/Kie4sPgkIcB1M6BYY=
+Modified: 639144541588652121
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\Data.yml
+ID: "2fade3fd-1a9a-42b4-af10-91334de427dd"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/Data"
+Signature: /9ap2UnPFbjYq+6sYBMD9+6r1UHSIKkzMWsHq5H4beI=
+Modified: 639144541588657831
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop.yml
+ID: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop"
+Signature: 1GLLBJNcjYhzlSVsnGxf+D7721ULLuZ+EfHzRAHhXkA=
+Modified: 639144541588657831
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings.yml
+ID: "cb1f580f-0671-45c9-92e1-db627d8b0ca1"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings"
+Signature: aO9jv1ZXicH72YaQJFuFpCG0WVCdFgcgL9848xKejqk=
+Modified: 639148022088160539
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings.yml
+ID: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "26ec1d18-11b2-4dd9-8326-f6115f4fd7eb"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings"
+Signature: eEPKmx55gKE1O7pb91E0B61uaFikNNi9N8fyrPe9X3A=
+Modified: 639142186959392808
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants.yml
+ID: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "da26c636-96e1-45e4-88d6-3fcec70d5699"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants"
+Signature: QXt7TuMydjcuwMkRxY1Rmyqf61aAn66pikahvLNOsLE=
+Modified: 639142186959453124
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Page Branches.yml
+ID: "2a0e039f-6b3b-40b6-8051-10a1395413ce"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Page Branches"
+Signature: G8LRA6z64cZ8HZWYgyHVQKYv9ynlxWMYryiIwPwKGFs=
+Modified: 639142186959783460
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Page Designs.yml
+ID: "10ab4757-eef4-44d3-8e63-acaf52c97bae"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "b47077a4-8506-4414-827f-57257d5ec535"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Page Designs"
+Signature: OtWd1NVYHqKrR7ZjuBfT0K7u/Dbsr5OcA6pDM5fCY68=
+Modified: 639142186959804531
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Partial Designs.yml
+ID: "9e115583-d2be-4ddc-b439-5e28488d288c"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "cb0d46a0-47a5-4001-a555-b59400ea5387"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Partial Designs"
+Signature: CNPJi5CEDqIX/uh85GljU2E7jRl1sdm+Wh/DC2TufHc=
+Modified: 639142186959841080
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Settings\Redirects.yml
+ID: "12d2c6e3-1c21-479b-9f3a-4c2f9946bb45"
+Parent: "d58f7b40-1eaa-4be6-b72b-fcb4f872eed4"
+Template: "c2dc4690-af44-48c7-bb21-90d1ad246732"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Settings/Redirects"
+Signature: Ut21Cf2a8W/C1HUJh51TJvyHv72vESDGYLm55Jl8cC4=
+Modified: 639142186960398439
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Settings\Shared Sites Settings.yml
+ID: "e6bfea42-5bd4-40c0-abb7-140cd9284fd8"
+Parent: "d58f7b40-1eaa-4be6-b72b-fcb4f872eed4"
+Template: "c14bf746-030f-4e59-8594-395f6d299e61"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Settings/Shared Sites Settings"
+Signature: AcneYaPwyAbqT0DXdRQu60nQGO8ysKAYUKocTDwNQzc=
+Modified: 639142186960408420
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Settings\Site Grouping.yml
+ID: "cfaa49d6-3445-47fd-a0e3-624be9aa48ce"
+Parent: "d58f7b40-1eaa-4be6-b72b-fcb4f872eed4"
+Template: "8357f958-9aaa-46db-8898-36448a96356f"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Settings/Site Grouping"
+Signature: aF5p5AvIGIb98FKLTIQhEeU5u8TLMq2smBKSfHTvo5A=
+Modified: 639142186960408420
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Settings\Sitemap.yml
+ID: "6a83c199-5fdc-4fc8-b3a7-89bcd2daf227"
+Parent: "d58f7b40-1eaa-4be6-b72b-fcb4f872eed4"
+Template: "c71d8566-35c8-49b7-a84d-9d176e9cbd05"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Settings/Sitemap"
+Signature: OnBoSwAS6HCQnV0cr66NumD6RIx5M3rLRzQN3xibib0=
+Modified: 639142186960433532
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\articles\brushy-creek-tracking-guide.yml
+ID: "faece769-fc3c-46e0-b4ef-cd68d6d0fb55"
+Parent: "1d7c3e85-fb5a-4779-87b9-21fb100cd523"
+Template: "0927b48a-e28d-4ca4-aa7e-736849983dd1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/articles/brushy-creek-tracking-guide"
+Signature: IqZYgdqQfdIhGCNHK0wwgGB5DZY+RsqD1+LAtecaPkg=
+Modified: 639142186959219321
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\articles\local-legends.yml
+ID: "3d5eed9d-3a01-4afc-b986-f00cd6987822"
+Parent: "1d7c3e85-fb5a-4779-87b9-21fb100cd523"
+Template: "0927b48a-e28d-4ca4-aa7e-736849983dd1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/articles/local-legends"
+Signature: YIzrjnCrTUl5wjGbHo+MQ095nPKb2Uuer1bTEm1jkYo=
+Modified: 639142186959224429
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\articles\top-5-sighting-spots.yml
+ID: "df2139e4-8706-4b48-b7c3-c49a4b0b5588"
+Parent: "1d7c3e85-fb5a-4779-87b9-21fb100cd523"
+Template: "0927b48a-e28d-4ca4-aa7e-736849983dd1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/articles/top-5-sighting-spots"
+Signature: /JT/TgGmBbSQy9tXUPdrpytONEzYDVsIoWSpbUMoCh4=
+Modified: 639142186959234485
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\articles\what-to-pack.yml
+ID: "b2413db5-de24-4207-af26-f7c5a2250060"
+Parent: "1d7c3e85-fb5a-4779-87b9-21fb100cd523"
+Template: "0927b48a-e28d-4ca4-aa7e-736849983dd1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/articles/what-to-pack"
+Signature: dTLqppei5o4M+IX7H01gAHtU/qg6EBzQwEOB9nKZbKQ=
+Modified: 639142186959246906
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\Data\Home Hero.yml
+ID: "3580210d-b491-4e37-ade5-d31867b06147"
+Parent: "2fade3fd-1a9a-42b4-af10-91334de427dd"
+Template: "f65ae79c-8622-47d6-9fb1-f5e444fe4eed"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/Data/Home Hero"
+Signature: IdJv6wF+wOvdHJkq4I+YslQ5saLNlQzbLcx/QMxbC3A=
+Modified: 639142186959138340
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\cedar-stalker-ghillie.yml
+ID: "2d5aab3f-1318-4228-a29b-dc0aef200d6e"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/cedar-stalker-ghillie"
+Signature: iMkqgwyp37NWvDgJduQQ91CYWWPgNmMpOlTQbDcedpE=
+Modified: 639148022088393058
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\Data.yml
+ID: "2fb36ece-ea8c-4643-8832-4c8ba795d36e"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/Data"
+Signature: /+TtwxlHlOWxdUFY6V3ldx/KnSnBUBm4bPinLVjPKFY=
+Modified: 639144541588677971
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\field-journal.yml
+ID: "7a7e9d23-d5f2-4f6f-bdda-14ffd8274e5a"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/field-journal"
+Signature: +Hpk4p7gstFIokHo3x3Iz5no71CeIzPsavdRqwpXWP4=
+Modified: 639142186959328026
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\nightvue-monocular.yml
+ID: "cba6307a-6d0b-4a68-a0e0-0ae29995a30a"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/nightvue-monocular"
+Signature: EPp4nQH6m+eOg4TM9H1NMwmCXOUE21zZqFwCr+sRIEw=
+Modified: 639142186959328026
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\plaster-casting-kit.yml
+ID: "598ff493-aa4f-426c-924e-f60cbbe1b079"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/plaster-casting-kit"
+Signature: hhFlWiIqlkcVbL6g8ymp/PzPd20iBiuwx5tPO79mCOI=
+Modified: 639142186959338014
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\sasq-o-tron-3000.yml
+ID: "6f6a1307-6e13-4483-bb1a-aeda7a87d87e"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/sasq-o-tron-3000"
+Signature: WUL9otJ737XpJHK7oEcSz2M+4n45e4B828ZCMZuvYKI=
+Modified: 639142186959347713
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\society-membership.yml
+ID: "82a3bea4-429c-4e57-8094-602567a09b7a"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/society-membership"
+Signature: +aXE1HAX12Dt9AVXdOhr6d5FCSBi4+MqSJn/8/jkpZo=
+Modified: 639142186959357768
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Promo.yml
+ID: "8a4db482-d677-43aa-a8d0-41423b655477"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Promo"
+Signature: FhVFDYMm/2T7i6rNStbuPTeIXAx35JGjaTv9eKdEgLU=
+Modified: 639142186959670710
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Common\Button link style.yml
+ID: "4eb2b1d4-109b-450e-b29c-3d63511993f3"
+Parent: "2e0766a0-ce69-420a-a78e-019636791c5d"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Common/Button link style"
+Signature: Pc+w1HFc8MXyMoNFWGmfE6X24aI+BLDoTOpiR9vagZM=
+Modified: 639142186960130750
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\HeaderTagline.yml
+ID: "5dafe035-afba-441a-aaec-40d20187f447"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/HeaderTagline"
+Signature: KwEYnT5WLDDJMZjQEvsmv38/o52ZrJ+e57wyPcy73Bk=
+Modified: 639142186958893808
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\trail-camera-pack.yml
+ID: "abad81e2-2a39-461a-9220-86ba8b97b8ee"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/trail-camera-pack"
+Signature: KHtIGhAXSzdUfFlXLVjc75MWd9DgcBIFV3RQXvdyXt8=
+Modified: 639142186959357768
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\ProductComparison.yml
+ID: "4d33edac-c610-4134-bc7d-c1f756d5f68d"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/ProductComparison"
+Signature: Iad2it0seRWxE+YMhefp+kTi1ZWpc7KpQOBLmyMFabo=
+Modified: 639142186959640746
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\TextSlider.yml
+ID: "feb3b45d-e0ba-4b1f-9209-66bc330cda6c"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/TextSlider"
+Signature: dMS6tEVROm5ioIt8izXxtbevriJWjIr46TdD3RXspX8=
+Modified: 639142186959731355
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Container\Bordered.yml
+ID: "62f1d13b-5f98-4458-90df-aa06f89fe6b5"
+Parent: "f4e7f14b-5bac-469b-aca3-03ec67c82f53"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Container/Bordered"
+Signature: NPUNvYektdL8ayjAQGbBY4X8tbLtmzXXdHTDraS4EgI=
+Modified: 639142186960160741
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Order Summary.yml
+ID: "cbbca686-3f42-4ca8-9b51-3e38ad88a5d8"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Order Summary"
+Signature: 0r4DUneuCql+3rpbroWjrSxLwtWX0bglVVEnLuSmONA=
+Modified: 639142186958933793
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings\Commerce.yml
+ID: "9a1c5284-d2a7-4c00-9a08-a7a3316f34a8"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/Commerce"
+Signature: HB4CntFQdbWvRuJlPHXuT+cCjNEnTZQfMlwpYSZlreY=
+Modified: 639148022088204093
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\ProductPageHeading.yml
+ID: "e1a55b03-3dc1-42a0-95c3-f009cec90a7d"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/ProductPageHeading"
+Signature: eqOd7H2SaYmJcYm+cRc3HmVLVWCUp8XPuOfoXjA98LU=
+Modified: 639142186959660698
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\HeaderST\Default.yml
+ID: "867a7905-2420-4af0-82a7-ba85eae1d75c"
+Parent: "a25c59ce-b49d-4825-8d3b-533301cd3a73"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/HeaderST/Default"
+Signature: /nglUp6ww77wQ4mJpgCV1QvkoyL9jm5tKoYI5RNg8pU=
+Modified: 639142186959518364
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\LinkList\Articles.yml
+ID: "ce44e703-c8ae-4ea1-b504-2fe4cc128cce"
+Parent: "8820f636-f605-4ec8-9571-a6a311ecd397"
+Template: "6f108e3c-5d57-42f8-a910-c22920269b0a"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/LinkList/Articles"
+Signature: 0TpsKVaTudd7K8OiHBofX3sKD7b4LemGg7vXpGKTorw=
+Modified: 639148022088362059
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Order.yml
+ID: "44a4ea06-bc1a-44a4-9888-f54b273ab573"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Order"
+Signature: hqkjHde+Iv1BBviE4Yq0WSp2kWQC++OJ07J0FLP4rU0=
+Modified: 639142186958943815
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings\FEaaS.yml
+ID: "6a68c5f1-6907-4168-b609-63d91ed479ea"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/FEaaS"
+Signature: 1zoO/g0NXlF3lfq+TcF94kry+O7YU+sKsBiSmyqBFNA=
+Modified: 639142186959402872
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\RichText.yml
+ID: "e6f1e8fe-b386-4aa0-aa13-3ed0dcacdc27"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/RichText"
+Signature: w7Ghu9fqR14vv0Ks+i3nSbY9DF5LfB3ptqeN/PaSLdU=
+Modified: 639142186959696543
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\ImageBanner\Default.yml
+ID: "e3a340e3-5f8a-465f-853f-1703f588a523"
+Parent: "0be065c3-eb14-47e8-bde4-f6e6ded7bd75"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/ImageBanner/Default"
+Signature: PvN7Xan+v1aX8LMvXzoUra8p2ik4D4MAVN1ra18OYEw=
+Modified: 639142186959556448
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Remove.yml
+ID: "7fb3a381-585d-4f47-b208-e92426046208"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Remove"
+Signature: /7fZfYYSyUy0EO6mOxUIOliX1RpqP/ennIm5eCvz4L0=
+Modified: 639142186958983805
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings\Page Structure.yml
+ID: "2478572d-a1eb-4ded-a54b-3198e65f2732"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/Page Structure"
+Signature: DZSP5caREZVczU3Qdl6E6+sSkYu9BBciyRlXzQMSE7w=
+Modified: 639148022088433050
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Title.yml
+ID: "280a9474-f3ff-40b6-90b4-0c178dea1608"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Title"
+Signature: HLSf8WA6WehFETCn8XDYATy3ZGzkM395ERRvrgmjbFw=
+Modified: 639142186959753458
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Add highlight\Highlighted bottom.yml
+ID: "6dacfd38-540e-41dd-80d8-dc247ec57d9f"
+Parent: "347644b2-d6ba-4419-831d-0abe2b3d2ea5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Add highlight/Highlighted bottom"
+Signature: uGDK9pNrMLVlF9WaXA4jdYWXCjut5RKM0s4YhOkrUOc=
+Modified: 639142186960004433
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Shipping.yml
+ID: "6a2c118f-89aa-4334-9089-ab10c0c13db3"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Shipping"
+Signature: NCYnk2PQ61ETvBpq/sO/P+QKi3wYtSZXb9P2v9aR/Qc=
+Modified: 639142186958993797
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Accordion.yml
+ID: "03e4ae87-3e1d-45df-8798-854214fce2df"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Accordion"
+Signature: 8N1Q1qVDVGXomapZSBsZCHEufijcGaW1TO3eBHYG+co=
+Modified: 639142186959463132
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Image\Default.yml
+ID: "d505fe6a-5fb6-4f60-9512-78ed65caedfa"
+Parent: "cb784cb0-f4c7-4ebe-a0c7-524895e3fab5"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Image/Default"
+Signature: fs9tXvIpmFCzqpdZXbmS9IYo1R4y73Sjwc/bTYw3+Rs=
+Modified: 639142186959540091
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Common\No borders.yml
+ID: "6d2d824d-347e-496e-a2dd-cdde1ead31ae"
+Parent: "2e0766a0-ce69-420a-a78e-019636791c5d"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Common/No borders"
+Signature: OzFv5EmZsoPJFfzl6Et4OeJt8FUGiCy1swNVC2qfF9s=
+Modified: 639142186960140758
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Shop.yml
+ID: "6245ec33-d2f5-4326-9aeb-4e3698f2af8b"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Shop"
+Signature: iDKwmx48llBeCEWyPbuZj2Q7/sHh1x62Lkr2KUAAdKw=
+Modified: 639142186958993797
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Partial Designs\Global\Footer.yml
+ID: "3ad9f623-49a8-46bc-ba18-48b759f69d7d"
+Parent: "308eeb8e-86fc-43a4-a765-ead1638a5d68"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Partial Designs/Global/Footer"
+Signature: MF8X5epWB2S5upug/0n0pmoiguU+Em3TcyelGnvC1Yc=
+Modified: 639142186959881299
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Placeholder Settings\Partial Design\Header.yml
+ID: "34bc3ee9-fa80-40e0-a756-cbef497fa359"
+Parent: "facd02eb-1b78-47c4-abc1-595c30467110"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design/Header"
+Signature: 4gu2TjNP8fOgjY494axLpTAZfuDvcv0el5QqKvMH1YY=
+Modified: 639144541588715345
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Navigation\navigation-main-horizontal.yml
+ID: "4e84850f-0754-4d9d-ae57-bfe26ba94dc5"
+Parent: "77ca07d5-da45-46b7-8956-b964729af941"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Navigation/navigation-main-horizontal"
+Signature: YHIToIfLUAREUCuwbKMQ8Sc6NMyQQ8RVIfCOwcqaXwk=
+Modified: 639142186960273237
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Society Provisions.yml
+ID: "fb38a78a-fbfb-4d0a-ba6f-de1fd540024b"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Society Provisions"
+Signature: R8o84U7ljQmwZUaAvylaMX59iHLQ0OxfSEWuXXMqOmE=
+Modified: 639142186959003803
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Partial Designs\Global\Header.yml
+ID: "7b652403-340f-4eed-917b-6362131b89ed"
+Parent: "308eeb8e-86fc-43a4-a765-ead1638a5d68"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Partial Designs/Global/Header"
+Signature: yqpwhbte0vcpnm/ETuv5WcYTH/mrgLFnE1OLCx5mTgw=
+Modified: 639142186959896493
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Add highlight\Highlighted top.yml
+ID: "d02ec2d7-c8b2-4f24-af12-b757de3876cb"
+Parent: "347644b2-d6ba-4419-831d-0abe2b3d2ea5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Add highlight/Highlighted top"
+Signature: 5vhxV42/j0BJbWhiMtBMpk0dByNsKKvNNii9OIgPmqA=
+Modified: 639142186960034458
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\LinkList\Shop.yml
+ID: "401df1ea-d5a8-4b2d-9339-77c35a5a9e02"
+Parent: "8820f636-f605-4ec8-9571-a6a311ecd397"
+Template: "6f108e3c-5d57-42f8-a910-c22920269b0a"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/LinkList/Shop"
+Signature: LgkW1ztV2eYPzCJqpa3OkXVIzlaA8jeKxa+EAiFMDU4=
+Modified: 639148022088382949
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Subtotal.yml
+ID: "d3a6934b-234c-4ff9-bc3c-99ca4613ec17"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Subtotal"
+Signature: 8d0v/fMWZZuS+eKIFBMOmBpj9gefpK08O35i53ybI7w=
+Modified: 639142186959013799
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Placeholder Settings\Partial Design\ProductBody.yml
+ID: "4f016d99-62fb-45c5-ac8f-a5f1eddb0187"
+Parent: "facd02eb-1b78-47c4-abc1-595c30467110"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design/ProductBody"
+Signature: GXOlR+kesfEacFwmDMsYEVMKFFFM8sek/a1/v7dhNdE=
+Modified: 639144541588740869
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Container\Centered.yml
+ID: "76a967fd-abb6-4d37-8470-cae41481645c"
+Parent: "f4e7f14b-5bac-469b-aca3-03ec67c82f53"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Container/Centered"
+Signature: P3kWF5Y1wiotqK54qJFvEHNDwLDaY0fDlmXdowZUNEE=
+Modified: 639142186960160741
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Total.yml
+ID: "34e0363b-180f-4c7f-b07e-712f989c7c64"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Total"
+Signature: +8eXq5yjKKMLY0tQxV30+t6Gm5cCcu1m8rQG+nMaBCc=
+Modified: 639142186959049072
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Add highlight\Highlighted left.yml
+ID: "9ebc51f2-0353-4638-b7cb-27488ac99057"
+Parent: "347644b2-d6ba-4419-831d-0abe2b3d2ea5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Add highlight/Highlighted left"
+Signature: T3ywmpNA7DHe+LX+nSkm6AaE+vSjymvJywxXfxCKsI8=
+Modified: 639142186960014522
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\View →.yml
+ID: "03b779d5-bcf3-4f23-8a26-19ce1ae6fdb8"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/View →"
+Signature: lmBE6AtApc15a4YUmCj9sGf/0S4+B59reON87yI7aR8=
+Modified: 639142186959059148
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Add highlight\Highlighted right.yml
+ID: "c027b20d-3d07-451a-ae54-d747fdcb4ee0"
+Parent: "347644b2-d6ba-4419-831d-0abe2b3d2ea5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Add highlight/Highlighted right"
+Signature: xjKoZDuo2khRFNjFVIe66eXCrrfSVby/UVm73G1/QhA=
+Modified: 639142186960024429
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\What Happens Next.yml
+ID: "8e92af2b-65e3-4a58-97eb-b4898a833cb4"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/What Happens Next"
+Signature: vxS3lkKf7eK9mt+brB2LNC5qqe5YU50idGSBkL26Jb0=
+Modified: 639142186959069080
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Content alignment\Align content center.yml
+ID: "caeabdb7-e4b5-4723-81f4-ce17c64308a0"
+Parent: "f96178de-729a-47ab-acdf-d5a1d9bc46fc"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Content alignment/Align content center"
+Signature: 4AA6nYkNGsH7AsHESXOgC3G4m7eZyqSL/Xi8kfGi2Ec=
+Modified: 639142186960180801
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Your cart is empty..yml
+ID: "e2d22c28-2d24-4d5a-b400-05ca36c43eff"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Your cart is empty."
+Signature: BQMq569n0z6B/iQyFUyEBcRRsDr8W8bYGjm/N91/sA8=
+Modified: 639142186959079075
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Content alignment\Align content left.yml
+ID: "93268501-2e40-4307-83b5-96cfb25895d4"
+Parent: "f96178de-729a-47ab-acdf-d5a1d9bc46fc"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Content alignment/Align content left"
+Signature: lzHr/vlxzcx0G4M0CapXS5bKl2NKXhoZKB4eJFXSBPo=
+Modified: 639142186960200761
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\Your Cart.yml
+ID: "5a0de574-c2ec-4bbf-9be9-324a05e97676"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/Your Cart"
+Signature: aB37kLmWoWFw3yIH+2RPkR6692ntuzObWpT1KynKgKM=
+Modified: 639142186959069080
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Navigation\navigation-main.yml
+ID: "d1e1ba28-f663-41fa-8dc2-47daa524b1c2"
+Parent: "77ca07d5-da45-46b7-8956-b964729af941"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Navigation/navigation-main"
+Signature: zx6hF3LcAnoJvh+WwzJ6yQx+BrEO7jwlOQXI7SWAW70=
+Modified: 639142186960273237
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Dictionary\← Back to all reports.yml
+ID: "35f9bd61-3311-420c-8360-9702647b5873"
+Parent: "03bae9d8-8469-4fb5-9ece-3e9cd0caa53a"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Dictionary/← Back to all reports"
+Signature: pTbuR9+0Y6rdYi7Oj4nciz8tSISeus5IUT8RXC6Owg0=
+Modified: 639142186959089034
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Navigation\navigation-mobile.yml
+ID: "10d84eee-239e-4e3e-874d-3a4cb4f10d7c"
+Parent: "77ca07d5-da45-46b7-8956-b964729af941"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Navigation/navigation-mobile"
+Signature: 6obNB1stvM6DO9H+R/QfJEh0ZOOQAOWB3kJwwZrtdds=
+Modified: 639142186960283250
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\cart.yml
+ID: "b51f02ec-9e1c-4e56-a2cc-32c257e62fec"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/cart"
+Signature: k25BtXZ+9iVbEKCcDyF8T4AMGGeY5Q3YJOTdfss7QWk=
+Modified: 639142186959257918
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Spacing\Indent top.yml
+ID: "0c11e2e9-95d6-4c2d-8c3b-b16d57dd6a8f"
+Parent: "879bc197-65cd-437d-8b26-cd5c7a540e81"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Spacing/Indent top"
+Signature: 2+tiFdZFRR+iH6EXU0tE1dWP8KFu3CXjrrcwkQPypyg=
+Modified: 639142186960378450
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\checkout.yml
+ID: "13574f0e-aeb8-487d-adfe-80c3eecb78ed"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/checkout"
+Signature: MOStUa3x1p7urcDUp5/I+d3NntwNniTW3i358LX86a8=
+Modified: 639142186959267984
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\LinkList\About.yml
+ID: "2ae0f5da-9d3f-4e2e-9fd9-a3187d4f696f"
+Parent: "8820f636-f605-4ec8-9571-a6a311ecd397"
+Template: "6f108e3c-5d57-42f8-a910-c22920269b0a"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/LinkList/About"
+Signature: U5rcFQoYolqsoaqUguzAwC5mj6m+nfiCLh/kTdTTjWE=
+Modified: 639148022088346989
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Placeholder Settings.yml
+ID: "40074ad6-6860-49b3-9daf-f535471e7519"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "52288e39-7830-4694-b62d-32a54c6ef7ba"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings"
+Signature: nt41AAKmpOpQyC6wnTTmDlA6pGkqxlnxt+vLk1OI4rY=
+Modified: 639142186959916145
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles.yml
+ID: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles"
+Signature: 2VbBN6q9r33QSwPmqGa/vOftidFSAQ0dMmyTETc4fNI=
+Modified: 639142186959979144
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\about\Data.yml
+ID: "a8383324-895e-47bc-987e-f6e38a2f8274"
+Parent: "872e0894-47aa-4651-a78f-3b2ac306ddc4"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/about/Data"
+Signature: oQQz0yllpBawPGlfiTvTUD/7JbTnsEJF8dAeBo+VFUw=
+Modified: 639144541588677971
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\articles\best-times-to-search.yml
+ID: "5599b53e-92ba-4d8b-81eb-4ead2ce2b3f1"
+Parent: "1d7c3e85-fb5a-4779-87b9-21fb100cd523"
+Template: "0927b48a-e28d-4ca4-aa7e-736849983dd1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/articles/best-times-to-search"
+Signature: 5+VKfCwjbf8LBswJ2khGDMGWqzvd2xG/YpOmDHF1f4o=
+Modified: 639142186959209321
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\checkout\success.yml
+ID: "02f05b89-7702-4356-b9f3-1138020bea47"
+Parent: "13574f0e-aeb8-487d-adfe-80c3eecb78ed"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/checkout/success"
+Signature: opzj+ZxhcuAsFcLlOwQ9gANJjE4B4gOmvBKt5KBji3Q=
+Modified: 639142186959277971
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\Data\Article List.yml
+ID: "5f9c8c83-10a9-421c-bec4-547be1e38b3d"
+Parent: "2fade3fd-1a9a-42b4-af10-91334de427dd"
+Template: "03cf440f-9b08-463d-8553-3f7386269c86"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/Data/Article List"
+Signature: p9Q0YW3NVcu/RRcYp7EXdWXK4hCPqfvwYnJvywVcYJk=
+Modified: 639142186959138340
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\wood-knock-branch.yml
+ID: "efd32a03-86ef-4a95-9b2f-ed444b405a16"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/wood-knock-branch"
+Signature: pf4wkLowdqsa0nV8LAb7W2a2wVY9IFrQfZQ/E4dJ1w8=
+Modified: 639142186959367752
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data.yml
+ID: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Parent: "cb1f580f-0671-45c9-92e1-db627d8b0ca1"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data"
+Signature: 6BhEtEeQf5DKkOvS3SF2uLFcSZhJCFIQP7mEQsR35K8=
+Modified: 639148022088191923
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings\Forms.yml
+ID: "810da99b-9504-4ecb-a4b6-2074e33c0894"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/Forms"
+Signature: y8UsuDn18E18VwKXttLTW6jJ005wnybRExwWp8Pq55U=
+Modified: 639142186959412891
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings\Media.yml
+ID: "05416242-59af-4961-813c-702de8243d65"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/Media"
+Signature: sc2agCXZafBNmm6Du9elYellaBXqPuksoto1UC6793w=
+Modified: 639142186959422880
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings\Navigation.yml
+ID: "39f396f7-060d-4ee7-89b3-18eda2a057c3"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/Navigation"
+Signature: M9PQozUm1dqM7xAljVrsakbkBr2tVVz6c0SacDTg8RI=
+Modified: 639148022088413048
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Available Renderings\Page Content.yml
+ID: "1ede2b64-2157-44ad-ad91-762ed3391150"
+Parent: "11ad4f18-b3a5-489e-bf96-1665aa5ba1b4"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Available Renderings/Page Content"
+Signature: vKL0vwvF7hPvARmJ4p8x2k+mFwaKLaTKjXfG+lx7Dkw=
+Modified: 639148022088423058
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\Image.yml
+ID: "bbf05a50-c08f-4ddd-959e-3ee0c574bacd"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "d885df8c-b2d6-4007-b34b-2bbafb527304"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/Image"
+Signature: IfA6FztQSXmytyHWEnVoVn1qlkQ7QIqvHvTodd9AwHE=
+Modified: 639148022088258203
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\LinkList.yml
+ID: "8820f636-f605-4ec8-9571-a6a311ecd397"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "c237d144-647a-4afe-aa7b-1570f3e3f139"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/LinkList"
+Signature: DW07z87kvgVtbShi8AKqjoaK4R84xL5Ljbqz65fxQkg=
+Modified: 639148022088268260
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\ProductGrid.yml
+ID: "29e8b0f1-cbf4-4c0d-97ed-5497f37307bb"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "f6715188-b4e9-408c-ad72-a0ae85e215ec"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/ProductGrid"
+Signature: 99MdpfGbbIp4nYsWT6jqDGk8IIIG1qtaKTSIujgiY0Y=
+Modified: 639148022088274561
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\Promo.yml
+ID: "22df2b3e-1e73-4de5-9622-5d95acf26de3"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/Promo"
+Signature: iLnG1v+VGxYtZwvtJGXDLffsdElfOrWVoSEep3Kccsw=
+Modified: 639148022088306903
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\RichText.yml
+ID: "bf555dda-2ae3-4297-8681-0b05377ee98e"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/RichText"
+Signature: gpIT9YhODPIb/KdEVTDAgzvxTYbulq3TE7LBY5kh40s=
+Modified: 639148022088316995
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\Title.yml
+ID: "c7ddb8a5-4c1e-46b2-9830-0f427aba0dd9"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/Title"
+Signature: 8tvCFWWgP4TWZfiSSrB1lyAcwBafoKaTRGjAZ5K0JPA=
+Modified: 639148022088336995
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Accordion\Default.yml
+ID: "5ac8720b-3867-47e9-b41a-13f7d392dc68"
+Parent: "03e4ae87-3e1d-45df-8798-854214fce2df"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Accordion/Default"
+Signature: +zm0p43HNfeCsDN/Z9vv7RwIbWQVNlmqGJKL8xOmV/I=
+Modified: 639142186959473101
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\FooterST\Default.yml
+ID: "5e28ca21-8eeb-4ff5-9d38-290d8bc471ea"
+Parent: "365f69a7-5167-4e69-ad18-07dc9b877e71"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/FooterST/Default"
+Signature: PrTy+AbzBwrarWJH3so5nDmk4u/PgdUO325e6iAmhp0=
+Modified: 639142186959497042
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\TextSlider\Default.yml
+ID: "aa95c5b0-d708-425b-b62b-2b251399dc29"
+Parent: "feb3b45d-e0ba-4b1f-9209-66bc330cda6c"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/TextSlider/Default"
+Signature: rBPQAdUqy3XyY7mXBGnFxWM2tSfqCLw2dnLMyooFLr0=
+Modified: 639142186959743327
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Title\Default.yml
+ID: "cccd0aa2-571f-4239-a403-c5f8224324d0"
+Parent: "280a9474-f3ff-40b6-90b4-0c178dea1608"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Title/Default"
+Signature: RwfdgshlBryF1TiQ6nmYSotwzXGS/3xZRR/eaJJ6oEo=
+Modified: 639142186959773448
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Partial Designs\Global\ArticleBody.yml
+ID: "cb2791ec-6bbe-4cb2-8673-97bce5876755"
+Parent: "308eeb8e-86fc-43a4-a765-ead1638a5d68"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Partial Designs/Global/ArticleBody"
+Signature: +34Py03LgKVlrzf0mnp7f5OXwjRq1S6ycVING68725s=
+Modified: 639142186959866217
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Partial Designs\Global\DefaultBody.yml
+ID: "8180d45a-452e-47cf-b33e-51af367b16a7"
+Parent: "308eeb8e-86fc-43a4-a765-ead1638a5d68"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Partial Designs/Global/DefaultBody"
+Signature: byikGGB48Qy0VNeT09SdfNeAPC50fvGHXwQIp7ZplIA=
+Modified: 639144541588630877
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Partial Designs\Global\ProductBody.yml
+ID: "76b2e28c-a83d-4607-8b46-3870223750b4"
+Parent: "308eeb8e-86fc-43a4-a765-ead1638a5d68"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Partial Designs/Global/ProductBody"
+Signature: JrbVpWylZDbvAZfu8VYk6xFhF6MFk4kMfwdHfv7W0jQ=
+Modified: 639142186959906635
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Placeholder Settings\Partial Design\ArticleBody.yml
+ID: "fd042811-e2a2-4f23-8643-9fa503497926"
+Parent: "facd02eb-1b78-47c4-abc1-595c30467110"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design/ArticleBody"
+Signature: 5SBgeVahIGVPSp46wIoi+XMsVB0HZmN9JS/BJ6rOrUs=
+Modified: 639148022088443057
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Placeholder Settings\Partial Design\DefaultBody.yml
+ID: "8483f04f-7586-4c3e-b2fb-b8857a7060ef"
+Parent: "facd02eb-1b78-47c4-abc1-595c30467110"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design/DefaultBody"
+Signature: wxMpQzd7hiI3Oc8DLQJPZ8r6pLV/UyrBe8m+lc1+m/I=
+Modified: 639148022088453044
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Placeholder Settings\Partial Design\Footer.yml
+ID: "7a2a6de5-3364-441b-9dc6-196e5acde018"
+Parent: "facd02eb-1b78-47c4-abc1-595c30467110"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design/Footer"
+Signature: V06+ZeGfDKDQGhNy+ndGD+ZVHBw3k1pjVym5YNpbc8Y=
+Modified: 639144541588715345
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Content alignment\Align content right.yml
+ID: "81e3c5fd-7ea2-4691-aec6-739b202443a7"
+Parent: "f96178de-729a-47ab-acdf-d5a1d9bc46fc"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Content alignment/Align content right"
+Signature: wlFVWqXx186wtwxUDDkXctmG/e3kuXPgq1eXfBzwllg=
+Modified: 639142186960200761
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Image\Image default size.yml
+ID: "2a8679d2-d5fe-4abf-9e48-40ab640d456b"
+Parent: "93d619cd-11c3-466d-ad6a-0af40a1c494c"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Image/Image default size"
+Signature: PUCIk5lhalWA5AFFS/eqP2g0qPXorA2VGvlLbvTOqy0=
+Modified: 639142186960230839
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Link list\List vertical.yml
+ID: "21146bed-f070-4d66-a0f7-2b4d280ef5be"
+Parent: "b44f2c03-9e2f-4ed6-806e-eb4dee5dc1d7"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Link list/List vertical"
+Signature: 2Lmf3mdXPG8fXqwiV9sDIqBjKLVquf7um2+Z6Hgr/04=
+Modified: 639142186960245942
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Navigation\navigation-fat.yml
+ID: "211860bb-3abc-458e-a9c8-d30031f42c97"
+Parent: "77ca07d5-da45-46b7-8956-b964729af941"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Navigation/navigation-fat"
+Signature: uXJI6FWsYaTmnqJYh0IB+c6wcapbUKbgx4UGbaD2DHg=
+Modified: 639142186960263252
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\FooterST.yml
+ID: "365f69a7-5167-4e69-ad18-07dc9b877e71"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/FooterST"
+Signature: zZPp78aQj0ftC5odrTR7oje2Y+bCduBQXTm+z1tVoo4=
+Modified: 639142186959486239
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\HeaderST.yml
+ID: "a25c59ce-b49d-4825-8d3b-533301cd3a73"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/HeaderST"
+Signature: aHYsf9so46PPfiyZ5dO5nZaMHZqGXSDy0HF1L2ibeJM=
+Modified: 639142186959507617
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Image.yml
+ID: "cb784cb0-f4c7-4ebe-a0c7-524895e3fab5"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Image"
+Signature: kD9S7GT2lRLYDRJGxOref+3sX07reYzPYiL8CiV7aOY=
+Modified: 639142186959529164
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\ImageBanner.yml
+ID: "0be065c3-eb14-47e8-bde4-f6e6ded7bd75"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/ImageBanner"
+Signature: 2qtXSingUPhp7QglpoFZLQXP7WXSPe8A45sy/4kdVGc=
+Modified: 639142186959545606
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\LinkList.yml
+ID: "7758e852-8313-4e53-a84e-0b75c9b5c5f1"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/LinkList"
+Signature: RmMoQerzsJYEg3bNYy5upOl/Mrs165iJuwaqDoD1PBA=
+Modified: 639142186959563346
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\MegaMenuItem.yml
+ID: "4d077ec6-b0d7-4a14-93be-ea5ed5fae19a"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/MegaMenuItem"
+Signature: Wic3hKpgODPp7pTkm6sG+jlcCoZAx6j1MEMRDAMWCrU=
+Modified: 639142186959579736
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Navigation.yml
+ID: "31c6e82b-fe3e-4c63-9f0a-42fde0250338"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Navigation"
+Signature: TImz+v0WAm8R4UChLp0NX7NW+a0weUG5Js43vXELccI=
+Modified: 639142186959600720
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\PageContent.yml
+ID: "c058bc9c-a4c3-4fac-80d9-a10c0ac1dd53"
+Parent: "810a0b5b-ae01-4961-aa2b-e2a9d7dee82e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/PageContent"
+Signature: ndZXqSSfCc35bhCQyeCB4GJ1Yn4BKlPS46bpIzaaA/E=
+Modified: 639142186959620703
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Page Designs\Article.yml
+ID: "64b7a730-143e-482e-8246-aec7f5d7d339"
+Parent: "10ab4757-eef4-44d3-8e63-acaf52c97bae"
+Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Page Designs/Article"
+Signature: t3MOZZ2KVff7ecJCnx4buqppeOKdT6Q88s1/GpHJp4Y=
+Modified: 639142186959809581
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Page Designs\Default.yml
+ID: "6d61d341-9c05-4a15-b482-f7dcfa63cdef"
+Parent: "10ab4757-eef4-44d3-8e63-acaf52c97bae"
+Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Page Designs/Default"
+Signature: dgQQ++xnDkFRaaja3DVBRq3hJU4wSWidKAq28LjJ1Dk=
+Modified: 639144541588698064
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Page Designs\Product.yml
+ID: "4b175cfa-d291-46bf-86ca-86a8416ddf5c"
+Parent: "10ab4757-eef4-44d3-8e63-acaf52c97bae"
+Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Page Designs/Product"
+Signature: jU9XadBZnw+1wP1dvjzIzpt3mYIypNt6aMWdgtyZxZk=
+Modified: 639142186959831130
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Partial Designs\Global.yml
+ID: "308eeb8e-86fc-43a4-a765-ead1638a5d68"
+Parent: "9e115583-d2be-4ddc-b439-5e28488d288c"
+Template: "fcd9dd5e-ff94-47ab-8387-30d8084ef6bb"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Partial Designs/Global"
+Signature: ThksLWvhZkPOy2pUu8d1Ebr1Rpq4mSyDlLKg3z4FxmU=
+Modified: 639142186959856146
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Placeholder Settings\Partial Design.yml
+ID: "facd02eb-1b78-47c4-abc1-595c30467110"
+Parent: "40074ad6-6860-49b3-9daf-f535471e7519"
+Template: "52288e39-7830-4694-b62d-32a54c6ef7ba"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design"
+Signature: scBggKKPoSxLAOJqtzv1XwwFIM4m8HosMFCBSRxmkCU=
+Modified: 639142186959926268
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Add highlight.yml
+ID: "347644b2-d6ba-4419-831d-0abe2b3d2ea5"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Add highlight"
+Signature: KWZNXfCuPDRWpaywHZ4S28s6VQYFVYazysvhhMpPoN4=
+Modified: 639142186959994346
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background color.yml
+ID: "13c5fe1a-e4e7-4e90-9c4c-9f9e3fe547d5"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background color"
+Signature: CokWoUONRf90o7gd2BUuR784JwUnqQi8UrfUMCPFX7s=
+Modified: 639142186960044429
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background layout.yml
+ID: "d97ed973-81e2-4b0a-aeb5-4b512f6e551f"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background layout"
+Signature: J9bLehNosShkbMJBUmesyELd7GpFtEqhEmanBlW565g=
+Modified: 639142186960080744
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Common.yml
+ID: "2e0766a0-ce69-420a-a78e-019636791c5d"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Common"
+Signature: d6hfb3cpFiCVbKxLd4OerYPYf8TtpX3FfyKeT3gkhs0=
+Modified: 639142186960110768
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Container.yml
+ID: "f4e7f14b-5bac-469b-aca3-03ec67c82f53"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Container"
+Signature: 8y/bKclUAAeHhrqc0J9lC2YIKlxxxNUTxKxSfnhppSY=
+Modified: 639142186960150770
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Content alignment.yml
+ID: "f96178de-729a-47ab-acdf-d5a1d9bc46fc"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Content alignment"
+Signature: kfyd06MwuK08rOFZ3y0ZUejG9Rrk4fESEMnTLXDONPs=
+Modified: 639142186960170736
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Image.yml
+ID: "93d619cd-11c3-466d-ad6a-0af40a1c494c"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Image"
+Signature: gD2axp2fciQfp2v22yOlzNITB2E3tWSWrG2gXXsF1Bg=
+Modified: 639142186960210762
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Link list.yml
+ID: "b44f2c03-9e2f-4ed6-806e-eb4dee5dc1d7"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Link list"
+Signature: Iu/RGUWZSrLXkbzQ3xnoMAXi74I9w2b8fVG7GLkwBWY=
+Modified: 639142186960230839
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Navigation.yml
+ID: "77ca07d5-da45-46b7-8956-b964729af941"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Navigation"
+Signature: mVU20ARbtTf5zOelz4JtBIJddsFLaAz6YI1z3cjQMd0=
+Modified: 639142186960253128
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Promo.yml
+ID: "290fd25e-6a63-433d-9082-a28ee6f73795"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Promo"
+Signature: POswBF4p72OT0XwXNXhWZM2JNkJ/SWKVRsVREBjq8rs=
+Modified: 639142186960303248
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Rich text.yml
+ID: "1a229def-f256-476a-8e81-936ae18ce43b"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Rich text"
+Signature: jwzN+bhaI52y1+VAdLBkxqa8hEMImQvG7Jlx3GgK/VA=
+Modified: 639142186960333259
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Spacing.yml
+ID: "879bc197-65cd-437d-8b26-cd5c7a540e81"
+Parent: "e8583462-1f85-4505-89f1-75bc30cfb0ca"
+Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Spacing"
+Signature: JwVg8RO/a5FGIBsKV7T8ynUGc9RpHZDFWSlliJmMiTE=
+Modified: 639142186960348319
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Settings\Site Grouping\round-rock-sasquatch.yml
+ID: "4c0123af-7b4d-4df2-a5d0-deb5e44d5e2a"
+Parent: "cfaa49d6-3445-47fd-a0e3-624be9aa48ce"
+Template: "e46f3af2-39fa-4866-a157-7017c4b2a40c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Settings/Site Grouping/round-rock-sasquatch"
+Signature: 7t+AYD1J7akcSCtiRppjaN0L/an2jNuHvTpQffQ1qoM=
+Modified: 639142186960418443
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\about\Data\About Body.yml
+ID: "d023ecf6-db6b-439b-b397-e4c0aea03dd3"
+Parent: "a8383324-895e-47bc-987e-f6e38a2f8274"
+Template: "d37638d2-64eb-41c4-be99-7a0c1eb881c2"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/about/Data/About Body"
+Signature: 7LUnuBPzg4SyQ/71mGbthGQpwhCPUf5MJG9OAxlEQYA=
+Modified: 639142186959179351
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\about\Data\About Hero.yml
+ID: "b1103f79-31c0-4381-a3e9-e551c153b02f"
+Parent: "a8383324-895e-47bc-987e-f6e38a2f8274"
+Template: "f65ae79c-8622-47d6-9fb1-f5e444fe4eed"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/about/Data/About Hero"
+Signature: udgCZsSu7CGA7H4i2c1VXHryqSM+ujEd/6xtdJrEyzs=
+Modified: 639142186959189307
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\shop\Data\Product Grid.yml
+ID: "14a8a41c-2add-4c42-873b-f82b1c316066"
+Parent: "2fb36ece-ea8c-4643-8832-4c8ba795d36e"
+Template: "f6715188-b4e9-408c-ad72-a0ae85e215ec"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/Data/Product Grid"
+Signature: 9DDyKuuX/XNFt40rHJBnyqC//4wrCCPVxdZGyHZOLDk=
+Modified: 639142186959308046
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\AboutBody.yml
+ID: "3f272eb8-fb4e-4e50-bac1-94a12ffa5ed7"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "d37638d2-64eb-41c4-be99-7a0c1eb881c2"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/AboutBody"
+Signature: ac1SF1qOJoyWbKe0JPeCdufyV+Mvscgg3UI8ybfhqyg=
+Modified: 639148022088214171
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\ArticleList.yml
+ID: "77a96602-3eb7-4954-9e1c-80bffd4ef04f"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "03cf440f-9b08-463d-8553-3f7386269c86"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/ArticleList"
+Signature: 2m12EctY93a7iUnhmDNQGdL9FgAHLWLyorIWO5BI/Yg=
+Modified: 639148022088235782
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Home\test-renderings\Data\Hero.yml
+ID: "4941100d-ae84-46f2-96a8-d5fd04f21345"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "f65ae79c-8622-47d6-9fb1-f5e444fe4eed"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/Hero"
+Signature: 9sJ2lTKW4hZuNNoK2llgYvKRy44CHotax+69tBLWR5U=
+Modified: 639148022088248102
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\LinkList\Default.yml
+ID: "88f157f3-95a7-436b-88a6-b18edaab67d2"
+Parent: "7758e852-8313-4e53-a84e-0b75c9b5c5f1"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/LinkList/Default"
+Signature: S3gUjdtduOgnhMPYaTe1pfGgY0Nb4R/j6GXY8L66qeE=
+Modified: 639142186959574232
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\MegaMenuItem\Default.yml
+ID: "007d539e-5d87-44b8-af50-3dd90d929440"
+Parent: "4d077ec6-b0d7-4a14-93be-ea5ed5fae19a"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/MegaMenuItem/Default"
+Signature: X2pHG0lqWQyi+b9yFu4dXtzw+1JxfJ8olw5Ca+igu5g=
+Modified: 639142186959590620
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Navigation\Default.yml
+ID: "dbd59903-1802-4e15-b9b4-812f2fb7d4e4"
+Parent: "31c6e82b-fe3e-4c63-9f0a-42fde0250338"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Navigation/Default"
+Signature: S3gUjdtduOgnhMPYaTe1pfGgY0Nb4R/j6GXY8L66qeE=
+Modified: 639142186959610814
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\PageContent\Default.yml
+ID: "bc61bd3d-8777-4b2d-9142-29e25b06c971"
+Parent: "c058bc9c-a4c3-4fac-80d9-a10c0ac1dd53"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/PageContent/Default"
+Signature: wp+QNaWQOWCsnF0EMJYpVUnYM9ESX/FLi7CkvgYXVGs=
+Modified: 639142186959630778
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\ProductComparison\Default.yml
+ID: "7e7c0c2e-66c1-4036-8539-018946df17d8"
+Parent: "4d33edac-c610-4134-bc7d-c1f756d5f68d"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/ProductComparison/Default"
+Signature: 2n08ngrz387QT25v3fz+m7cwLxUaGUjPubaFzDTzvyE=
+Modified: 639142186959650722
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\ProductPageHeading\Default.yml
+ID: "5aedde71-445d-4a07-a50d-05985b31c44a"
+Parent: "e1a55b03-3dc1-42a0-95c3-f009cec90a7d"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/ProductPageHeading/Default"
+Signature: 8Mydd+oALZfxREFVhE8kMCZq6o4t1MfjWDz0gL+GbeY=
+Modified: 639142186959670710
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\Promo\Default.yml
+ID: "41ac8513-5bfa-4e29-881c-7d39ea5db613"
+Parent: "8a4db482-d677-43aa-a8d0-41423b655477"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/Promo/Default"
+Signature: JzKYPYqg3S69B3Xf7gW4NMULoiz+wAddMGcRrZtVpDA=
+Modified: 639142186959691205
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Headless Variants\RichText\Default.yml
+ID: "1931d70c-b187-4e74-9426-c353113e7083"
+Parent: "e6f1e8fe-b386-4aa0-aa13-3ed0dcacdc27"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Headless Variants/RichText/Default"
+Signature: 87sYdIlm+I04nh2bpAu8nOUAatvLflB6jVdf5ycBI34=
+Modified: 639142186959716613
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background color\Clean background.yml
+ID: "a6de6f66-2175-41fc-be4a-f4800d67578f"
+Parent: "13c5fe1a-e4e7-4e90-9c4c-9f9e3fe547d5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background color/Clean background"
+Signature: zGb9lHMGgA4O/9VvntbFe1sktD5DfoLCb6p08PFS3jw=
+Modified: 639142186960057051
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background color\Color background.yml
+ID: "0fe155c3-1e63-45fa-b189-05204625b8e8"
+Parent: "13c5fe1a-e4e7-4e90-9c4c-9f9e3fe547d5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background color/Color background"
+Signature: Xtj1RTJtxtVadNOyRHIc06qANL5MmGF9RZRoSJ47vfo=
+Modified: 639142186960057051
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background color\Dark background.yml
+ID: "bce4a9e1-28ee-4dd9-8c64-fbcc21b3deaf"
+Parent: "13c5fe1a-e4e7-4e90-9c4c-9f9e3fe547d5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background color/Dark background"
+Signature: +uqNLpF1KsiL2XHeDrbABWud8qLnieXV+LqnCkLxemI=
+Modified: 639142186960070681
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background color\Gray background.yml
+ID: "31241ef0-bb6d-4c56-949c-26d6abeb26ee"
+Parent: "13c5fe1a-e4e7-4e90-9c4c-9f9e3fe547d5"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background color/Gray background"
+Signature: pCgR1hBGuz3uNbOCCSVyFsm52iwWUPYRjCxSOyMuO9k=
+Modified: 639142186960070681
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background layout\cover-background.yml
+ID: "3628342d-5d44-4182-a6f8-f736c5f32977"
+Parent: "d97ed973-81e2-4b0a-aeb5-4b512f6e551f"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background layout/cover-background"
+Signature: iDxVGkEyl2KVeSSmtXGxSfzKGomePtyS5J+P3+DBLaA=
+Modified: 639142186960090878
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background layout\fix-background.yml
+ID: "6ec259e2-94ab-47dd-a7d6-fd0c9138fcaa"
+Parent: "d97ed973-81e2-4b0a-aeb5-4b512f6e551f"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background layout/fix-background"
+Signature: 5hztLww9RPU9+FaacLcn1wA4BafpoS2ehX/dOgCALG4=
+Modified: 639142186960100743
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Background layout\parallax-background.yml
+ID: "f3a97d20-d17a-410d-8f38-90cd2e9c5a4c"
+Parent: "d97ed973-81e2-4b0a-aeb5-4b512f6e551f"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Background layout/parallax-background"
+Signature: 5DFpZn+RdpAGmG5T374RQbEOiOyb0HE1GUOrOWzoTdo=
+Modified: 639142186960100743
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Common\Boxed.yml
+ID: "7fbd5e5e-bf7f-4e08-96fe-55e02aaac0e3"
+Parent: "2e0766a0-ce69-420a-a78e-019636791c5d"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Common/Boxed"
+Signature: 48GwQUkkoFED/lwcH3zy5Cdx4pnfQxoBl4YfSBwEFwU=
+Modified: 639142186960120757
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Navigation\navigation-sidebar.yml
+ID: "fc97efee-1625-4024-b6eb-27b0861b8a9a"
+Parent: "77ca07d5-da45-46b7-8956-b964729af941"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Navigation/navigation-sidebar"
+Signature: i3++pwh+3SEroLpxsQHlOhfq3OiF5Ol2dnJNpookGgM=
+Modified: 639142186960293268
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Navigation\Sitemap navigation.yml
+ID: "fc9af7a2-24cc-4c2c-9881-4fc143a6ced5"
+Parent: "77ca07d5-da45-46b7-8956-b964729af941"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Navigation/Sitemap navigation"
+Signature: XHadERv+eLmumP0n5Cdou0580K7rZpk3MUJDjLkm2Oc=
+Modified: 639142186960263252
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Promo\Promo hero.yml
+ID: "9d33b285-60ef-4cd1-a213-b73e0ba3d1fa"
+Parent: "290fd25e-6a63-433d-9082-a28ee6f73795"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Promo/Promo hero"
+Signature: GumKBSZyiJALfIqcEDZhQPcZzWLMalhB3SeLUbvFQTk=
+Modified: 639142186960313190
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Promo\Promo shadow.yml
+ID: "5295d9d5-66fb-4468-a054-a50458a4e62e"
+Parent: "290fd25e-6a63-433d-9082-a28ee6f73795"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Promo/Promo shadow"
+Signature: iCY0MkN7mRh18o+XTqk8zmwgygdZ/vys73ta6RFqaf4=
+Modified: 639142186960323254
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Promo\promo-bottom-link.yml
+ID: "9e2d31a6-fae4-49d5-80c1-d4640cdcc576"
+Parent: "290fd25e-6a63-433d-9082-a28ee6f73795"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Promo/promo-bottom-link"
+Signature: 4M/LlHDdRHsRUElCOZ9MjCsi1K4X8krLYC0qVLKaJ2o=
+Modified: 639142186960323254
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Rich text\Custom bullet points.yml
+ID: "bff5d33a-b5a2-467e-957b-9649277a6003"
+Parent: "1a229def-f256-476a-8e81-936ae18ce43b"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Rich text/Custom bullet points"
+Signature: lyT+aI+BwvHPwIddLciYQ/nu2Kakw+ImqmjxSshQk20=
+Modified: 639142186960343227
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Spacing\Indent bottom.yml
+ID: "51f87124-9f72-41f5-a65f-756556301cf7"
+Parent: "879bc197-65cd-437d-8b26-cd5c7a540e81"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Spacing/Indent bottom"
+Signature: tFYPuhOeEH4p6HlyooDLc5QUWmoZ2UOQ62+Nus4yjJI=
+Modified: 639142186960368460
+---
+File: |
+  C:\Repo\ps-shared\xmcloud-starter-js\content\round-rock-sasquatch-content\rrss.content\round-rock-sasquatch-sites\round-rock-sasquatch\Presentation\Styles\Spacing\Indent side.yml
+ID: "5bfcf742-161a-4eaf-b553-f8df050bad0a"
+Parent: "879bc197-65cd-437d-8b26-cd5c7a540e81"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Styles/Spacing/Indent side"
+Signature: EknCZLPh1emROf31kQ/RT/8fW0YIBQVDQSnUFSpuhcw=
+Modified: 639142186960368460

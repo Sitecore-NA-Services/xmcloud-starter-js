@@ -1,0 +1,147 @@
+---
+ID: "a11a0001-7e5e-4001-9000-000000000005"
+Parent: "a11a0001-7e5e-4001-9000-000000000004"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: "/sitecore/system/Modules/PowerShell/Script Library/Lighthouse/Content Editor/Context Menu/Site Tools/Delete Content Heavy Pages"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/delete.png
+- ID: "1c76313e-3c8c-4807-a826-135d10c39299"
+  Hint: ShowRule
+  Value: <ruleset />
+- ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+  Hint: __Short description
+  Value: 'Permanently delete content section folders under the selected SXA site''s Home (for migration testing).'
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    <#
+    .SYNOPSIS
+    Permanently delete content section folders under an SXA site's Home, for
+    migration-test purposes.
+    .DESCRIPTION
+    Lists direct children of the site's Home item (e.g. about, articles, shop,
+    services...) with descendant counts, pre-checks the ones whose names appear
+    in the $ContentHeavySectionNames config list, and permanently deletes the
+    checked sections recursively.
+    Intended use: trim down a site to a smaller test set before running the
+    Sitecore AI Pathway migration against it.
+    .NOTES
+    Run via Content Editor right-click on a site root, or paste into Sitecore
+    PowerShell ISE (it will prompt for the site path).
+    Created: 2026-05-14
+    #>
+    # Config: section names that get pre-checked when found under <site>/Home.
+    # Case-insensitive, name-only (no path). Edit to add/remove.
+    $ContentHeavySectionNames = @(
+        'about', 'articles', 'shop',
+        'at-home', 'at-work', 'campaign-pages', 'company',
+        'landing-pages', 'on-the-go', 'scenarios', 'services',
+        'your-health'
+    )
+    $siteItem = $SitecoreContextItem
+    if (-not $siteItem -or [string]::IsNullOrWhiteSpace($SitecoreCommandPath)) {
+        $promptedPath = Show-Input -Prompt 'SXA site item path (e.g. /sitecore/content/<tenant>/<site>):'
+        if ([string]::IsNullOrWhiteSpace($promptedPath)) { return }
+        $siteItem = Get-Item -Path "master:$promptedPath" -ErrorAction SilentlyContinue
+    }
+    if (-not $siteItem) {
+        Show-Alert 'Site item not found.'
+        return
+    }
+    $segments = @($siteItem.Paths.FullPath.Trim('/') -split '/')
+    if ($segments.Count -lt 3) {
+        Show-Alert "Refusing to run at '$($siteItem.Paths.FullPath)'. Pick a specific site root (not the content root or tenant)."
+        return
+    }
+    $siteHome = Get-Item -Path "master:$($siteItem.Paths.FullPath)/Home" -ErrorAction SilentlyContinue
+    if (-not $siteHome -or $siteHome.ID -eq $siteItem.ID) {
+        Show-Alert "No 'Home' child found under $($siteItem.Paths.FullPath). This script targets SXA site sections; pick a site root."
+        return
+    }
+    $sections = @(Get-ChildItem -Path "master:$($siteHome.Paths.FullPath)")
+    if ($sections.Count -eq 0) {
+        Show-Alert "No sections found under $($siteHome.Paths.FullPath)"
+        return
+    }
+    $nameSet = New-Object System.Collections.Generic.HashSet[string]
+    foreach ($n in $ContentHeavySectionNames) { [void]$nameSet.Add($n.ToLowerInvariant()) }
+    $optionsMap = [ordered]@{}
+    $defaultSelected = New-Object System.Collections.ArrayList
+    foreach ($s in $sections | Sort-Object Name) {
+        $count = 1 + @($s.Axes.GetDescendants()).Count
+        $label = "{0,5}  x  {1}" -f $count, $s.Name
+        $optionsMap[$label] = $s.ID.ToString()
+        if ($nameSet.Contains($s.Name.ToLowerInvariant())) {
+            [void]$defaultSelected.Add($s.ID.ToString())
+        }
+    }
+    $selectedSections = @($defaultSelected)
+    $dialogParams = @{
+        Title           = 'Delete content sections'
+        Description     = "Site: $($siteItem.Paths.FullPath)`n`nSelect section(s) under Home to PERMANENTLY delete (recursive). Pre-checked entries match the configured content-heavy name list."
+        Width           = 700
+        Height          = 500
+        OkButtonName    = 'Delete'
+        CancelButtonName = 'Cancel'
+        Parameters      = @(
+            @{
+                Name    = 'selectedSections'
+                Title   = 'Sections under Home'
+                Editor  = 'check'
+                Options = $optionsMap
+            }
+        )
+    }
+    $dialogResult = Read-Variable @dialogParams
+    if ($dialogResult -ne 'ok' -or $selectedSections.Count -eq 0) {
+        Write-Host 'Cancelled or no selection.'
+        return
+    }
+    $targets = @()
+    foreach ($id in $selectedSections) {
+        $i = Get-Item -Path "master:" -ID $id -ErrorAction SilentlyContinue
+        if ($i) { $targets += $i }
+    }
+    $breakdown = ($targets | Sort-Object -Property Name | ForEach-Object {
+        $count = 1 + @($_.Axes.GetDescendants()).Count
+        "  {0,5}  x  {1}" -f $count, $_.Name
+    }) -join "`n"
+    $totalItems = ($targets | ForEach-Object { 1 + @($_.Axes.GetDescendants()).Count } | Measure-Object -Sum).Sum
+    $confirmation = Show-Confirm "About to PERMANENTLY delete $($targets.Count) section(s), $totalItems item(s) total, under: $($siteHome.Paths.FullPath).`n`n$breakdown`n`nThis cannot be undone. Proceed?"
+    if ($confirmation -ne 'yes') {
+        Write-Host 'Cancelled.'
+        return
+    }
+    $deleted = 0
+    $failed  = 0
+    foreach ($it in $targets) {
+        try {
+            Remove-Item -Path $it.Paths.Path -Permanently -Recurse -ErrorAction Stop
+            $deleted++
+            Write-Host "[OK]   $($it.Paths.FullPath)"
+        } catch {
+            $failed++
+            Write-Host "[FAIL] $($it.Paths.FullPath) :: $($_.Exception.Message)"
+        }
+    }
+    Show-Alert "Done. Sections deleted: $deleted. Failed: $failed. See Output panel for per-item log."
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: '200'
+- ID: "f62c67b4-28b6-4a6f-91cb-db78cf054f4e"
+  Hint: EnableRule
+  Value: <ruleset />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T180000Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser

@@ -1,0 +1,47 @@
+﻿---
+ID: "f847cae7-a5bf-46de-90e9-66f6ccccc4f2"
+Parent: "9a8390af-4764-42b4-a566-e13e55ee83b1"
+Template: "0ffa1a88-1945-485c-8e4c-1cdd8ecc8e0b"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-global/Settings"
+SharedFields:
+- ID: "0129da3f-8c86-4591-ae32-6ec923413923"
+  Hint: DictionaryDomain
+  Value: Settings Dictionary
+- ID: "300fb7a0-b27f-44dd-9af0-b37a19723e0e"
+  Hint: RouteTemplateName
+  Value: Settings Route
+- ID: "3e4f559f-8e59-4405-b50d-619811371f6c"
+  Hint: Name
+  Value: Settings
+- ID: "72e83c8d-3578-4e50-b4c0-93a78a1729f2"
+  Hint: FilesystemPath
+  Value: /dist/Settings
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "83b29402-d058-4801-a346-23df11b13d33"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T182518Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e7d9f52e-38c4-4065-841a-caf54a0e785b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T182518Z

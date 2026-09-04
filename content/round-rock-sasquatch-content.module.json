@@ -1,0 +1,37 @@
+{
+    "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "RoundRockSasquatch.Content",
+    "items": {
+        "path": "round-rock-sasquatch-content",
+        "defaultMaxRelativeItemPathLength": 120,
+        "includes": [
+            {
+                "name": "rrss.content",
+                "path": "/sitecore/content/round-rock-sasquatch-sites",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete",
+                "rules": [
+                    { "path": "/round-rock-sasquatch/Data/FeatureBanner", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/ImageBanner", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/FooterST", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/HeaderST", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/MegaMenuItem", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/Tags", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/Texts", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/Images", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/Promos", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/Link Lists", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/Navigation Filters", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/ProductComparison", "scope": "Ignored" },
+                    { "path": "/round-rock-sasquatch/Data/TextSlider", "scope": "Ignored" }
+                ]
+            },
+            {
+                "name": "rrss.media",
+                "path": "/sitecore/media library/Project/round-rock-sasquatch-sites",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

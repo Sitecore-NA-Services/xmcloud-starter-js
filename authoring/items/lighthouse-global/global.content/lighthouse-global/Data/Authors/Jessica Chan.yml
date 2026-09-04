@@ -1,0 +1,41 @@
+﻿---
+ID: "9dff331c-3b0a-477f-8fed-b27e9664c13c"
+Parent: "c8df5c4d-0109-4532-8487-6f650b8c9725"
+Template: "3168fcb5-d277-4c9d-8c2e-920cc9651c63"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-global/Data/Authors/Jessica Chan"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T184041Z
+    - ID: "2837e247-f522-456e-af20-44c973699603"
+      Hint: Author Bio
+      Value: <p>Jessica covers apps and technology from her quiet abode in Cleveland.</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "755f400c-b6e9-45d1-a443-e440e59d3e94"
+      Hint: Author Name
+      Value: Jessica Chan
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f1acd2e1-26d4-472c-ad32-b482eba1f79e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "c685d5be-693c-42c4-88ce-c8256ba9eea5"
+      Hint: Author Image
+      Value: |
+        <image mediaid="{CEB5C092-CBD0-4D35-B87A-5F0EF5A9C76A}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T203328Z

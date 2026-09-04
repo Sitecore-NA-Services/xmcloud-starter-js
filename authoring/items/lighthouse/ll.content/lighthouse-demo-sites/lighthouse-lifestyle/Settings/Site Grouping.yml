@@ -1,0 +1,20 @@
+---
+ID: "53f5980e-be5f-4674-92bc-2881ad49d2f7"
+Parent: "5337eb06-5e38-4921-a955-ac2cb656b208"
+Template: "8357f958-9aaa-46db-8898-36448a96356f"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Settings/Site Grouping"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260410T000000Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53f5980e-be5f-4674-92bc-2881ad49d201"

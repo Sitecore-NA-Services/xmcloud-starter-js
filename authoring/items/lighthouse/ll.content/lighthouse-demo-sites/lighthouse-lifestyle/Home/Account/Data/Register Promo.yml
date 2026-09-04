@@ -1,0 +1,41 @@
+﻿---
+ID: "bda20962-95d7-4a43-9bc2-de538a070cdf"
+Parent: "ac770714-5d67-4445-acda-18e4827f1986"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/Account/Data/Register Promo"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>Having an account enables you to do a number of things, including:</p><p><strong>Benefits:</strong></p><ul><li>Save your account information for future visits</li><li>Check the status of your orders</li><li>Store products in your Wish List</li></ul>"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260421T184125Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: "<p>Don't have an account?</p>"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "51c0a6a2-5b58-40fe-81c0-f89e970951b7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T184125Z
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{349C542E-3393-4BF4-BC47-B912FBF33688}" />

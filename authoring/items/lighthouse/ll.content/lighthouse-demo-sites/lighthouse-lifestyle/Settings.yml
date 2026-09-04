@@ -1,0 +1,64 @@
+﻿---
+ID: "5337eb06-5e38-4921-a955-ac2cb656b208"
+Parent: "678c7d98-03a7-4f06-9399-4112d54ff90e"
+Template: "0ffa1a88-1945-485c-8e4c-1cdd8ecc8e0b"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Settings"
+SharedFields:
+- ID: "0129da3f-8c86-4591-ae32-6ec923413923"
+  Hint: DictionaryDomain
+  Value: "{C7434BB8-EE6B-44C2-B087-8EA585399CB1}"
+- ID: "300fb7a0-b27f-44dd-9af0-b37a19723e0e"
+  Hint: RouteTemplateName
+  Value: Settings Route
+- ID: "32ce6bbe-4217-46e5-9335-42793884cbe3"
+  Hint: AppTemplate
+  Value: "{30C8B70B-1686-47FA-8EDB-066EC50411FF}"
+- ID: "3e4f559f-8e59-4405-b50d-619811371f6c"
+  Hint: Name
+  Value: "lighthouse-lifestyle"
+- ID: "5764d2d4-724d-4313-a81b-9246c911faff"
+  Hint: AppDatasourcesPath
+  Value: "{84AB73BE-B91B-456A-9DF8-9083EC8A1226}"
+- ID: "72e83c8d-3578-4e50-b4c0-93a78a1729f2"
+  Hint: FilesystemPath
+  Value: "/dist/lighthouse-lifestyle"
+- ID: "9016141c-ff51-40f2-9135-40f5161b9784"
+  Hint: ServerSideRenderingEngine
+  Value: http
+- ID: "a7bbad73-b933-49ff-95c8-1c269cb35e7c"
+  Hint: DictionaryPath
+  Value: "{C7434BB8-EE6B-44C2-B087-8EA585399CB1}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 2000
+- ID: "d0ce707c-342f-4c02-ac0a-edb21346dde4"
+  Hint: SupportedLanguages
+  Value: "{AF584191-45C9-4201-8740-5409F4CF8BDD}|{E61E5DA8-8F22-4EAD-ACA6-9A612D9E3A40}|{D1515D03-4BF2-4AC3-BEC6-8AF9A4C45050}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5d84a00a-a323-4156-a3cf-d0773b11a770"
+- ID: "e8881464-38af-4655-be4a-ee10586578a2"
+  Hint: Templates
+  Value: "{A53F3071-9503-4435-9027-532773535DDA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260410T000000Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5337eb06-5e38-4921-a955-ac2cb656b201"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260410T182611Z

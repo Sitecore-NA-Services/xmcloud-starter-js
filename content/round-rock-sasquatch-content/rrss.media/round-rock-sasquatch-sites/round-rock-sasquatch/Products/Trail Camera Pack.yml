@@ -1,0 +1,110 @@
+﻿---
+ID: "8958a390-ab89-43c8-8886-7417e2899c30"
+Parent: "25f3f98a-ee23-4ea1-a250-bbd27abb114c"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Products/Trail Camera Pack"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/8958A390AB8943C888867417E2899C30.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "c4270c0f-9b83-4e68-ba37-9ac4b8efbd2e"
+  Value: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDAwIDMyMCIgY2xhc3M9InByb2R1Y3Qtc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwcm9kLWNhbS1iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzZDRhM2EiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTIyMTgiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMyMCIgZmlsbD0idXJsKCNwcm9kLWNhbS1iZykiPjwvcmVjdD48ZWxsaXBzZSBjeD0iMjAwIiBjeT0iMjkwIiByeD0iMTYwIiByeT0iMTQiIGZpbGw9InJnYmEoMCwwLDAsMC4xOCkiPjwvZWxsaXBzZT48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iODAiIGhlaWdodD0iMzIwIiBmaWxsPSIjMmExZjEyIiBvcGFjaXR5PSIwLjciPjwvcmVjdD48cmVjdCB4PSIwIiB5PSI0MCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjYiIGZpbGw9IiMzYTI4MTgiIG9wYWNpdHk9IjAuNSI+PC9yZWN0PjxyZWN0IHg9IjAiIHk9IjEyMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjYiIGZpbGw9IiMzYTI4MTgiIG9wYWNpdHk9IjAuNSI+PC9yZWN0PjxyZWN0IHg9IjAiIHk9IjIyMCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjYiIGZpbGw9IiMzYTI4MTgiIG9wYWNpdHk9IjAuNSI+PC9yZWN0PjxyZWN0IHg9IjYwIiB5PSIxNDAiIHdpZHRoPSIyMjAiIGhlaWdodD0iNiIgZmlsbD0iIzFhMWExYSI+PC9yZWN0PjxyZWN0IHg9IjYwIiB5PSIxODYiIHdpZHRoPSIyMjAiIGhlaWdodD0iNiIgZmlsbD0iIzFhMWExYSI+PC9yZWN0PjxyZWN0IHg9IjEyMCIgeT0iMTIwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjEyMCIgcng9IjEwIiBmaWxsPSIjM2E0YTJlIj48L3JlY3Q+PHJlY3QgeD0iMTIwIiB5PSIxMjAiIHdpZHRoPSIxODAiIGhlaWdodD0iMTIwIiByeD0iMTAiIGZpbGw9InVybCgjcHJvZC1jYW0tY2FtbykiIG9wYWNpdHk9IjAuNCI+PC9yZWN0PjxkZWZzPjxwYXR0ZXJuIGlkPSJwcm9kLWNhbS1jYW1vIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iIzNhNGEyZSI+PC9yZWN0PjxlbGxpcHNlIGN4PSI2IiBjeT0iNiIgcng9IjQiIHJ5PSIzIiBmaWxsPSIjNWE2YTQ4Ij48L2VsbGlwc2U+PGVsbGlwc2UgY3g9IjE0IiBjeT0iMTQiIHJ4PSIzIiByeT0iNCIgZmlsbD0iIzJhM2EyMiI+PC9lbGxpcHNlPjwvcGF0dGVybj48L2RlZnM+PGNpcmNsZSBjeD0iMTgwIiBjeT0iMTgwIiByPSIyOCIgZmlsbD0iIzBhMGEwYSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTgwIiBjeT0iMTgwIiByPSIyMiIgZmlsbD0iIzFhMWExYSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTgwIiBjeT0iMTgwIiByPSIxNiIgZmlsbD0iIzJhM2EzMiI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTc0IiBjeT0iMTc0IiByPSI0IiBmaWxsPSIjYThjNWI4IiBvcGFjaXR5PSIwLjciPjwvY2lyY2xlPjxnIGZpbGw9IiMyYTBhMGEiPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE1MiIgcj0iNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjQ4IiBjeT0iMTUyIiByPSI1Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyNjYiIGN5PSIxNTIiIHI9IjUiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE3MCIgcj0iNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjQ4IiBjeT0iMTcwIiByPSI1Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyNjYiIGN5PSIxNzAiIHI9IjUiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjIzMCIgY3k9IjE4OCIgcj0iNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjQ4IiBjeT0iMTg4IiByPSI1Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyNjYiIGN5PSIxODgiIHI9IjUiPjwvY2lyY2xlPjwvZz48cmVjdCB4PSIyMjAiIHk9IjIxOCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjEwIiByeD0iMiIgZmlsbD0iIzFhMWExYSI+PC9yZWN0PjxjaXJjbGUgY3g9IjI4MCIgY3k9IjEzOCIgcj0iMyIgZmlsbD0iIzg4ZGQ1NSI+PC9jaXJjbGU+PC9zdmc+Cg==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 2155
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "91518ea9-77b9-44d3-bf4d-801420474ba6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205826Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Trail Camera Pack
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "42f8b741-2b10-403c-a028-4e563032fc94"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205826Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205826Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Trail Camera Pack
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c1efd984-df7c-4fcd-9393-49234a47144a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205826Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205826Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Trail Camera Pack
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "def2acc1-2083-4d98-b3b2-0368cb5910c6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205826Z

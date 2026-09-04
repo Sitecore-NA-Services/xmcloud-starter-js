@@ -1,0 +1,94 @@
+﻿---
+ID: "df2139e4-8706-4b48-b7c3-c49a4b0b5588"
+Parent: "1d7c3e85-fb5a-4779-87b9-21fb100cd523"
+Template: "0927b48a-e28d-4ca4-aa7e-736849983dd1"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/articles/top-5-sighting-spots"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{C989B23E-8685-4962-B86F-937F41412241}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "53abf56d-0be9-45e3-9d63-c72e901bf723"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" />
+        </r>
+    - ID: "19dd82ee-d18c-4640-8dbb-2c7d455a576f"
+      Hint: Body
+      Value: |
+        
+        Round Rock may be famous for its namesake boulder and Krispy Kreme donuts, but locals know there's something far more mysterious lurking in the cedar breaks. After years of field research and a suspicious number of trail camera SD cards, we've compiled the definitive list of Sasquatch sighting locations in and around Round Rock.
+        
+        ## 1. Brushy Creek Regional Trail — The North Loop
+        
+        The Brushy Creek trail system stretches for miles through dense cedar and live oak, and the north loop near Hairy Man Road (yes, that's the real name) consistently produces the most reported sightings. Multiple witnesses describe a large bipedal figure crossing the creek near the low-water bridge at dawn. Best approached quietly, ideally not on Saturdays when it's packed with jogging moms with strollers.
+        
+        **Best time:** 5:30–6:30 AM, March through May
+        
+        ## 2. Old Settlers Park — The Back Pond
+        
+        The large sports complex is a known Bigfoot "urban edge" habitat. The creature reportedly uses sports fields to forage for discarded hot dogs during little league season. The back pond, bordered by thick brush, shows frequent large footprints in the mud following rain events. The park staff attributes these to "really big dogs."
+        
+        **Best time:** Weekday evenings after rain
+        
+        ## 3. Tejas Trail — Cedar Breaks Section
+        
+        This rugged limestone trail through the cedar breaks east of I-35 offers prime habitat. The dense cedar provides cover, the creek beds provide water, and the proximity to multiple Whataburger locations provides an irresistible fast-food corridor that cryptid researchers call the "Burger Belt." Several cast footprints measuring 17 inches have been recovered from this area.
+        
+        **Best time:** Full moon nights (bring a headlamp anyway)
+        
+        ## 4. Chisholm Trail Road Corridor
+        
+        The wooded greenbelt running parallel to Chisholm Trail has been a hotspot since 2019, when a Ring doorbell camera captured what appeared to be a large figure walking upright along the creek bank at 2:14 AM. The homeowner says it was "probably a neighbor," but the neighbor in question is 5'8" and this thing was clearing the fence line.
+        
+        **Best time:** Late night, any season
+        
+        ## 5. Hairy Man Road Itself
+        
+        We would be remiss not to include the road that started it all. Named in the 1800s for reported encounters with a large, hairy creature, Hairy Man Road in Cedar Park (just over the Round Rock border) is arguably the most historically significant Sasquatch site in Williamson County. The road is narrow, dark, and lined with old growth cedar. If you drive it slowly at night with your windows down, you may hear what locals describe as a low, resonant knock — or it might be your exhaust. Hard to say.
+        
+        **Best time:** After dark, bring a friend
+            
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184356Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "top-5-sighting-spots"
+    - ID: "5dae151b-182c-4887-97aa-dbeea450472a"
+      Hint: ArticleTitle
+      Value: Top 5 Sasquatch Sighting Spots in Round Rock, Texas
+    - ID: "7e214a48-07de-4600-ad46-6006dafd0609"
+      Hint: Title
+      Value: "top-5-sighting-spots"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a7db3e82-5bc4-431f-81a9-111d00664189"
+    - ID: "91190860-6d77-43dd-a902-77547b3410de"
+      Hint: Excerpt
+      Value: Round Rock may be famous for its namesake boulder and Krispy Kreme donuts, but locals know there's something far more mysterious lurking in the cedar breaks. Here are the five hottest spots to catch a glimpse of Central Texas's most elusive resident.
+    - ID: "9798b947-ec1d-4a75-a61a-b50601cfafe0"
+      Hint: ArticleDate
+      Value: March 12, 2025
+    - ID: "b4e7c591-5110-43f7-8899-2e787ab1d049"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{97F222B2-CA9A-4169-9D4F-2CE839561A32}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T210918Z

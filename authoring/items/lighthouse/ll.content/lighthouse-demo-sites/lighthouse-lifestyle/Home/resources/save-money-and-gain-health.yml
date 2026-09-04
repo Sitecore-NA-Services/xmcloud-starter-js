@@ -1,0 +1,101 @@
+﻿---
+ID: "97ee017b-763a-428a-89d1-66a19c2bfbba"
+Parent: "e46577a6-680e-4d68-9bbc-0d05b9d34700"
+Template: "2749f676-2530-4be2-995a-497db35d9665"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/resources/save-money-and-gain-health"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0c458ea0-9846-425a-a0b3-3e432bc97873"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Save Money and Gain Health
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{1508432B-A2B4-49B4-87BC-6E24EB08CBA7}"
+              p:after="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{12784D44-FEFC-41ED-A703-52EA85475B4F}"
+              p:after="*"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{3054DA44-CB9F-4469-8FC8-561A3003CAD5}" />
+            <r
+              uid="{9D3C3CB3-C735-467C-B8D2-E4335212B5FF}"
+              p:after="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{C89B276C-E989-4271-9243-13CB6D82F47B}" />
+          </d>
+        </r>
+    - ID: "1c3f5f9b-6700-47e2-9b66-b8c2be51fa0c"
+      Hint: ResourceType
+      Value: Whitepaper
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190322Z
+    - ID: "4c7a921b-9aa3-420c-8ce3-4afb64abe8de"
+      Hint: Industry
+      Value: |
+        {02576E04-1888-4ADF-A0DF-E2CDA203F78A}
+        {5E881A6E-EF45-4E0E-B1EF-D8EA93315FEC}
+        {6EB5F965-9A75-44F5-A551-7130164716B5}
+        {2C70685C-DD3C-4698-BD8C-32B406FA3379}
+        {DCF12C5B-5271-4110-B9F7-72C0145F170D}
+        {7CADD0C0-C674-482F-9213-B96D61B80466}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3de08d0d-e2e0-42e8-aaa6-3bf320626c37"
+    - ID: "b3e3ce74-7368-47ef-bb6f-53202c6f30f5"
+      Hint: Link
+      Value: |
+        <link text="Become a better saver and healthier" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{0B78BCC0-142A-4EFD-B997-4CD77D455E83}" />
+    - ID: "b8189edb-8fe2-49c5-af3b-aad2b672ac34"
+      Hint: Introduction
+      Value: "<p>If you&rsquo;re tired of hearing about the importance of health and wellness. It&rsquo;s no secret that we all should say no to those fries and yes to the treadmill. But even if the idea of physical well-being isn&rsquo;t enough to join the yoga-pants masses, what if we told you there are financial benefits as well?</p>"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T205049Z
+    - ID: "dc21908d-83b5-49ba-993f-3985566711b6"
+      Hint: Region
+      Value: |
+        {28E8E1CA-8D52-4915-B0F0-031B2D57D4F5}
+        {09C18D8F-33B6-4000-BFC1-40871D5C8023}
+        {68470BCB-F80E-4C78-9CAF-D1B39338F223}
+        {49220CB2-6B13-4743-ACA1-543AD9A57466}
+        {CC5CDB6F-C4B7-440D-865B-AD4A2725DCFD}
+        {CC02C81F-C592-4AF0-938E-8E09F9BB855D}

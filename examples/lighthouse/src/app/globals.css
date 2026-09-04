@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+/* LighthouseLifestyle brand theme — sampled from XP cd.lighthouse.localhost */
+:root {
+  --color-brand-primary: #828C7F;   /* sage olive — logo, buttons, nav accents */
+  --color-brand-dark:    #4E5E4A;   /* hover / emphasis */
+  --color-brand-light:   #E8EDE6;   /* subtle backgrounds */
+  --color-text-primary:  #272727;   /* body text — matches XP rgb(39,39,39) */
+  --color-text-secondary:#5A5A5A;
+}
+
+body {
+  color: var(--color-text-primary);
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+/* Editing mode helpers */
+.editing-mode [class*='placeholder-empty']::before {
+  content: 'Click to add components';
+  display: block;
+  padding: 1rem;
+  background: #fffbeb;
+  border: 2px dashed #fbbf24;
+  color: #92400e;
+  font-size: 0.75rem;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
+/* Center a row of promo tiles (promo-top) — inline-block siblings get auto-centered
+   when their wrapping placeholder gets text-align:center. Tiles remain left-aligned inside. */
+#content:has(> .promo.promo-top) { text-align: center; }
+.promo.promo-top { text-align: left; max-width: 640px; }
+/* When multiple tiles live at the top level, whitespace between inline-block tiles creates small gaps — acceptable. */
+
+/* Rich text styles */
+.rich-text h1 { @apply text-4xl font-bold mb-4 }
+.rich-text h2 { @apply text-3xl font-semibold mb-3 }
+.rich-text h3 { @apply text-2xl font-semibold mb-3 }
+.rich-text h4 { @apply text-xl font-semibold mb-2 }
+.rich-text p  { @apply mb-4 leading-relaxed }
+.rich-text a  { @apply text-[var(--color-brand-primary)] underline hover:text-[var(--color-brand-dark)] }
+.rich-text ul { @apply list-disc list-inside mb-4 space-y-1 }
+.rich-text ol { @apply list-decimal list-inside mb-4 space-y-1 }
+.rich-text blockquote { @apply border-l-4 border-[var(--color-brand-primary)] pl-4 italic my-4 text-gray-600 }
+.rich-text img { @apply max-w-full h-auto rounded }
+
+/* Social link icons via Font Awesome 4.x — hide text, show icon only */
+.social-links-facebook,
+.social-links-linkedin,
+.social-links-twitter,
+.social-links-youtube { font-size: 0; }
+.social-links-facebook::before { content: "\f09a"; font-family: FontAwesome; font-size: 18px; }
+.social-links-linkedin::before { content: "\f0e1"; font-family: FontAwesome; font-size: 18px; }
+.social-links-twitter::before  { content: "\f099"; font-family: FontAwesome; font-size: 18px; }
+.social-links-youtube::before  { content: "\f16a"; font-family: FontAwesome; font-size: 18px; }

@@ -1,0 +1,134 @@
+﻿---
+ID: "0e123bec-a931-4a71-a3a9-8bb69f9ce5af"
+Parent: "3b26dab2-cd1d-4e12-8ff8-fb8603213b8d"
+Template: "31cdfb65-9f8d-42b9-a14f-588c80191f45"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/your-health/trainer-finder/recommendations"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "9213d67c-1cee-4757-8789-c0942ce12fc0"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Recommendations
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{451CCBC9-60F1-4130-BF1A-372B5225A40F}"
+              p:before="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{F02F72DD-F51F-4C7B-9908-3422CFE96982}"
+              p:after="r[@uid='{451CCBC9-60F1-4130-BF1A-372B5225A40F}']"
+              s:id="{A1FF6F5B-F46E-4180-B60D-A70CCDE1A1F2}"
+              s:ph="headless-main"
+              s:ds="{B1193528-487F-4005-87E1-2F2F82C1A2C3}" />
+            <r
+              uid="{8C5130AD-BD38-4A0C-B1A8-E145E3A15CB1}"
+              p:after="r[@uid='{F02F72DD-F51F-4C7B-9908-3422CFE96982}']"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{340A2B15-361D-445D-B24C-8B0ECC087C1B}" />
+            <r
+              uid="{9316863A-29F7-4E71-95DD-0A5A3ACEACE1}"
+              p:after="r[@uid='{8C5130AD-BD38-4A0C-B1A8-E145E3A15CB1}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{28D94DB3-341D-43A9-A627-7228EF9BEDD0}" />
+            <r
+              uid="{F1FA59A1-D54B-4646-91E8-CB1CF53945FA}"
+              p:after="r[@uid='{9316863A-29F7-4E71-95DD-0A5A3ACEACE1}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{1DFBF245-C320-44B3-B81A-893DA3F8E051}" />
+            <r
+              uid="{0751ED00-8BB0-4853-A9E0-3A00FF6C2B78}"
+              p:after="r[@uid='{F1FA59A1-D54B-4646-91E8-CB1CF53945FA}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{CF840F9F-24E1-4768-93CF-E8206C6AE453}" />
+            <r
+              uid="{5016F885-6D97-40A6-AC4A-CDBD9623EB0D}"
+              p:after="r[@uid='{0751ED00-8BB0-4853-A9E0-3A00FF6C2B78}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{5D700625-8B85-412D-9FD6-7F217E9B045D}" />
+            <r
+              uid="{7CD0CA5F-F63D-4FD3-B4F6-C9F76620C117}"
+              p:after="*"
+              s:id="{DF8F69B2-3354-4BD0-957A-CF2D7D5F4A22}"
+              s:ph="headless-footer"
+              s:ds="{CACE9363-17FA-426C-BC20-642E7A8FE3A4}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190320Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Recommendations
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "81d8a42a-3193-41d4-831b-365507b5537d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260423T185919Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Recommendations
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T201035Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6b8e882e-14a7-43d2-bd69-c0ba5de0d847"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T201035Z

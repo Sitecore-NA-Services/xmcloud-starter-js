@@ -1,0 +1,92 @@
+﻿---
+ID: "2d5aab3f-1318-4228-a29b-dc0aef200d6e"
+Parent: "a24054b9-1127-48af-a58c-92dcfd4d40fc"
+Template: "b4802bb9-0cd1-4255-ab26-37aa7f88ec08"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/shop/cedar-stalker-ghillie"
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{4B175CFA-D291-46BF-86CA-86A8416DDF5C}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{D2C1F40D-DE46-4665-970C-F9DC679B2113}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "90683934-4f4c-4c71-be6a-94af1a72af8a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" />
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184353Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "cedar-stalker-ghillie"
+    - ID: "723c3697-9244-4342-b426-f1cdc71784d4"
+      Hint: ProductImage
+      Value: |
+        <image mediaid="{73392E0C-0AAB-41E3-A3C9-C0722F93310D}" />
+    - ID: "7e214a48-07de-4600-ad46-6006dafd0609"
+      Hint: Title
+      Value: "cedar-stalker-ghillie"
+    - ID: "8a642b16-f5b6-402e-bdfc-61ec11ea8c40"
+      Hint: InStock
+      Value: 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b33368c1-310b-4887-bc0d-fa7550917bc6"
+    - ID: "9010a75c-695f-4632-bb5c-cba4c11f5c5d"
+      Hint: Price
+      Value: 249.99
+    - ID: "b0fc435e-fc4a-48f6-8222-797ed115c6ba"
+      Hint: Tagline
+      Value: "Hand-tied burlap and synthetic cedar fronds. Indistinguishable from a really sad bush."
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "c4980a30-4286-4818-97bc-1555d4bf33de"
+      Hint: ProductName
+      Value: Cedar Stalker™ Ghillie Suit
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260518T202935Z
+    - ID: "e5256078-194c-43f2-bc87-f446896c65ca"
+      Hint: Body
+      Value: |
+        
+        The **Cedar Stalker™** is constructed from over 1,200 individual jute strands, each hand-tied by Janet (semi-retired, Cedar Park) while watching her programs. The base layer is breathable mesh. The outer layer is roughly 40% real cedar, 60% "you'll never know."
+        
+        Walk slowly. Move with the wind. Avoid Old Settlers Park during T-ball season — children find this suit deeply upsetting and we are not in the business of generating Williamson County dispatch calls.
+        
+        ## Sizing
+        
+        - **Adult M/L:** Fits most. Hot.
+        - **Adult XL:** Fits most. Hotter.
+        
+        This suit is hot. Plan accordingly.
+        
+        ## Care Instructions
+        
+        Spot clean only. Do not machine wash. Do not tumble dry. We don't actually know what happens if you do — Janet refuses to be in the same room as a clothes dryer running this product, which we take as advisory.
+        
+        ## Includes
+        
+        - The suit (one piece, hooded)
+        - One (1) brown M&M, included as a lucky charm by Janet, do not eat
+        - A laminated card you can hold up to confused law enforcement that says "I AM RESEARCHING WILDLIFE"
+        
+    - ID: "f14dd29e-6583-4dba-badf-652ba7bfc31a"
+      Hint: Category
+      Value: apparel

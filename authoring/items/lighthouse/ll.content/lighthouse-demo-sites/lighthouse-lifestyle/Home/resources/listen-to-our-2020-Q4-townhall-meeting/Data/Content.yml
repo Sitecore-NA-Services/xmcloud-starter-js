@@ -1,0 +1,34 @@
+﻿---
+ID: "e541779f-c27d-49e8-8623-b8ef494bda52"
+Parent: "b5ff92ec-5f7a-4a09-a629-d28c334e56af"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/resources/listen-to-our-2020-Q4-townhall-meeting/Data/Content"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T194811Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: "<p>Player-coach peel the onion nor that is a good problem to have for loop back, and quick win. Let's prioritize the low-hanging fruit at the end of the day ramp up, put in in a deck for our standup today target rich environment nor in an ideal world nor please advise soonest.</p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "be6c5bd8-8693-4611-97fb-c946dcc05064"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T194811Z

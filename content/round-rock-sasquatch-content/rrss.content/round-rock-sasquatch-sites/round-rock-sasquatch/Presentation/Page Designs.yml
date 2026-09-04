@@ -1,0 +1,42 @@
+﻿---
+ID: "10ab4757-eef4-44d3-8e63-acaf52c97bae"
+Parent: "92bc31d2-a119-45e4-9932-ee518679d612"
+Template: "b47077a4-8506-4414-827f-57257d5ec535"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Page Designs"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7B12E14B9B-54AD-40C5-974F-FCA2A90A3D7C%7D%3D%257B6D61D341-9C05-4A15-B482-F7DCFA63CDEF%257D%26%7B0927B48A-E28D-4CA4-AA7E-736849983DD1%7D%3D%257B64B7A730-143E-482E-8246-AEC7F5D7D339%257D%26%7BB4802BB9-0CD1-4255-AB26-37AA7F88EC08%7D%3D%257B4B175CFA-D291-46BF-86CA-86A8416DDF5C%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "513ce572-9829-43ff-a180-c0e0a4b2dd50"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184233Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4761bd9d-a06c-4b6a-bedf-955649f37f4b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T201257Z

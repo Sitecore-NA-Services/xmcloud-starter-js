@@ -1,0 +1,14 @@
+{
+    "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.lighthouse-global-content",
+    "items": {
+        "path": "../authoring/items/lighthouse-global",
+        "includes": [
+            {
+                "name": "global.media",
+                "path": "/sitecore/media library/Project/Demo Shared SXA Sites/Global",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

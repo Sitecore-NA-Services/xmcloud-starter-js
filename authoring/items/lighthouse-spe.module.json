@@ -1,0 +1,15 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.lighthouse-spe",
+    "items": {
+        "path": "lighthouse-spe",
+        "includes": [
+            {
+                "name": "ll.spe-tools",
+                "path": "/sitecore/system/Modules/PowerShell/Script Library/Lighthouse",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

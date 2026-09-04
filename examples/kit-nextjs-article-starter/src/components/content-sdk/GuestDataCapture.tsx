@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, JSX } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { identity } from '@sitecore-cloudsdk/events/browser';
+import { identity } from '@sitecore-content-sdk/events';
 
 /**
  * GuestDataCapture Component

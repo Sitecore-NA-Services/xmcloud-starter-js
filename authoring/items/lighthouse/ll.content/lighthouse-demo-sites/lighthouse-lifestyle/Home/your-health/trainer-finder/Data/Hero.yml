@@ -1,0 +1,38 @@
+﻿---
+ID: "0e906e60-b18f-4eab-87d8-d6d37dc215ca"
+Parent: "c6b06d93-ae19-4dc2-9380-d806c5b5bf7f"
+Template: "2aa9f46b-7572-4f5d-bbc0-d37a95ce2a52"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/your-health/trainer-finder/Data/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0beea591-fbbd-4671-9e16-f9bf2d6aa734"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{D590210C-4B80-4014-B82E-3DD16DB7331C}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260423T185918Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "20ec3f33-4578-4b9b-acea-b4283d0763ff"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "ca94006f-5874-4aa5-a473-b0d6eed97d2a"
+      Hint: HeroTitle
+      Value: Find A Virtual Trainer
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260423T190817Z

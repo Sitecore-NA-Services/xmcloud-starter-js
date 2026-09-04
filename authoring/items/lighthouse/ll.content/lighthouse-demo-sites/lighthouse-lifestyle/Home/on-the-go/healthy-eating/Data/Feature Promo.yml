@@ -1,0 +1,45 @@
+﻿---
+ID: "2bb3df88-1717-4959-b094-6d0f5821e81a"
+Parent: "f1fd8d06-d3e1-4f67-bbff-3e13fc481c53"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/on-the-go/healthy-eating/Data/Feature Promo"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>Travel-friendly snacks, smart water bottles, and restaurant-finding apps for eating well anywhere.</p>"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260421T173314Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Fuel Up On The Road</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "83070f92-371d-49f4-be3c-1b005b37875b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T173314Z
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link text="Read More" linktype="external" url="#" anchor="" title="Read More" class="" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{60A12889-6FFB-4F4C-84AC-194789D2D17B}" />

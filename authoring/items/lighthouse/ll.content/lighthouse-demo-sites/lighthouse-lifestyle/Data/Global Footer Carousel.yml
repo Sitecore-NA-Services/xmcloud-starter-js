@@ -1,0 +1,36 @@
+﻿---
+ID: "cace9363-17fa-426c-bc20-642e7a8fe3a4"
+Parent: "84ab73be-b91b-456a-9df8-9083ec8a1226"
+Template: "a5d24969-cdda-4a12-8efa-bd7bfc956d13"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Data/Global Footer Carousel"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260416T190429Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29339f79-e225-43fe-9521-46e0cf61cd17"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d719e9b6-d972-4f3e-8f6f-82f5578d8dc0"
+      Hint: items
+      Value: |
+        {9B731406-7DF9-4FB0-B350-9567BDD5E2B8}
+        {76B6265F-3823-4B16-A9E6-7AE77B365441}
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T190823Z

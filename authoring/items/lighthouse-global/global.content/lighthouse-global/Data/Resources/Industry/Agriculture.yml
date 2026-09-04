@@ -1,0 +1,38 @@
+﻿---
+ID: "24b31d57-cd16-4acc-a14c-4a718ee595b5"
+Parent: "13fbb993-00f9-4958-9f72-9b0596f02ba0"
+Template: "9a4ed660-7dc4-4873-a895-5021d025aa94"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-global/Data/Resources/Industry/Agriculture"
+SharedFields:
+- ID: "c087e7cb-ba5a-435d-83e4-ded614586a6f"
+  Hint: Title
+  Value: Agriculture
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5210a550-71ab-4e19-b095-ebe58d0b6f07"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T182952Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ecd9eb98-8153-4bf2-965e-fe4fa2369920"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T183419Z

@@ -1,0 +1,96 @@
+﻿---
+ID: "ca95b2b8-3123-4ef5-9707-8993f5d79882"
+Parent: "e46577a6-680e-4d68-9bbc-0d05b9d34700"
+Template: "df4cca3b-2ef8-4063-903c-c152a99bcd43"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/resources/this-smart-trainer-could-change-the-way-you-exercise-at-home"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "48a596dd-4553-4f9a-818a-1d5cc61f55e8"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: This Smart Trainer Could Change The Way You Exercise at Home
+    - ID: "0423af4e-2cf0-4bc7-b623-a10c30196ae7"
+      Hint: Link
+      Value: 
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{5BDEADA6-106D-4F51-A80F-8C7C42CA1B0B}"
+              p:after="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{2780FBEC-A732-4D15-B95D-909054272EB5}"
+              p:after="*"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{9346E84A-A7D4-4E3E-9D7C-50F93C2F31CD}" />
+            <r
+              uid="{C1CD22A3-0B7C-4DA6-9B68-8DF9B312F781}"
+              p:after="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{C7D34AF0-7EA8-455B-87DD-24A75EC3B937}" />
+          </d>
+        </r>
+    - ID: "1c3f5f9b-6700-47e2-9b66-b8c2be51fa0c"
+      Hint: ResourceType
+      Value: Document
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190322Z
+    - ID: "4c7a921b-9aa3-420c-8ce3-4afb64abe8de"
+      Hint: Industry
+      Value: |
+        {AE8D2B0E-35A7-444B-95F6-48BD6D5BA1DA}
+        {090E7382-D38E-4D69-A8E0-85A894F36428}
+        {6EB5F965-9A75-44F5-A551-7130164716B5}
+        {DCF12C5B-5271-4110-B9F7-72C0145F170D}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "339b7964-cabf-4be9-9898-b7e8c501c87f"
+    - ID: "b8189edb-8fe2-49c5-af3b-aad2b672ac34"
+      Hint: Introduction
+      Value: "<p><span style='background-color: #ffffff; color: #777777;'>The Smart Trainer is a new feature of the Samsung Health app that features third-party workout apps like Ob&eacute;, Echelon, and Jillian Michaels. (It also has access to one of our favorite meditation apps, Calm.)</span></p>"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T205049Z
+    - ID: "dc21908d-83b5-49ba-993f-3985566711b6"
+      Hint: Region
+      Value: |
+        {09C18D8F-33B6-4000-BFC1-40871D5C8023}
+        {CC02C81F-C592-4AF0-938E-8E09F9BB855D}
+        {CC5CDB6F-C4B7-440D-865B-AD4A2725DCFD}
+        {B1EA70BB-4B21-473E-B5FA-A4BC8781F2BF}

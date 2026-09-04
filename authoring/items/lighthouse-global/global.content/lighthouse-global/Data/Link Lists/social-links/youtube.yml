@@ -1,0 +1,35 @@
+﻿---
+ID: "5b48cd76-87b7-4d44-b3d4-b771f5082ef2"
+Parent: "1040568a-efb4-42ba-8ec9-7b19a90174b1"
+Template: "6f108e3c-5d57-42f8-a910-c22920269b0a"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-global/Data/Link Lists/social-links/youtube"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T184832Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
+      Hint: Link
+      Value: |
+        <link text="Youtube" linktype="external" url="http://youtube.com" anchor="" class="social-links-youtube" target="_blank" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4bc42015-9b0f-4bf9-9fd1-28aec299f181"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T184832Z

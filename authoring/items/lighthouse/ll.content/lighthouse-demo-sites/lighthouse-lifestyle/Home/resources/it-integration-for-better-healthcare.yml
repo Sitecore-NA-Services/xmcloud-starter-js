@@ -1,0 +1,100 @@
+﻿---
+ID: "af4e6052-3c4f-44cb-8407-7c85451a0403"
+Parent: "e46577a6-680e-4d68-9bbc-0d05b9d34700"
+Template: "2749f676-2530-4be2-995a-497db35d9665"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/resources/it-integration-for-better-healthcare"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "57231662-d1d9-4e9e-b73e-965fb1c03b18"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: IT Integration for Better Healthcare
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{09DFB3AF-B14F-4E23-8206-218A233AAC45}"
+              p:after="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{2F717DC4-2FB3-468F-9C53-B7F8CB492A4E}"
+              p:after="*"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{FFCC80F0-757D-478E-BBBC-9275ED7CDB61}" />
+            <r
+              uid="{0EA097F0-5776-462D-BBAB-E3AEF2E15389}"
+              p:after="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{D5490E1C-4034-4614-ABCA-32B67387B6EF}" />
+          </d>
+        </r>
+    - ID: "1c3f5f9b-6700-47e2-9b66-b8c2be51fa0c"
+      Hint: ResourceType
+      Value: Whitepaper
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190322Z
+    - ID: "4c7a921b-9aa3-420c-8ce3-4afb64abe8de"
+      Hint: Industry
+      Value: |
+        {02576E04-1888-4ADF-A0DF-E2CDA203F78A}
+        {5E881A6E-EF45-4E0E-B1EF-D8EA93315FEC}
+        {6EB5F965-9A75-44F5-A551-7130164716B5}
+        {2C70685C-DD3C-4698-BD8C-32B406FA3379}
+        {DCF12C5B-5271-4110-B9F7-72C0145F170D}
+        {7CADD0C0-C674-482F-9213-B96D61B80466}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "08fa9abd-2618-40b7-8bb2-d32949d7c063"
+    - ID: "b3e3ce74-7368-47ef-bb6f-53202c6f30f5"
+      Hint: Link
+      Value: "<link text='Email our IT Depertment' linktype='mailto' url='mailto:it@lighthouse.com' title='' />"
+    - ID: "b8189edb-8fe2-49c5-af3b-aad2b672ac34"
+      Hint: Introduction
+      Value: <p>Work flows today shall be a cloudy day, thanks to blue sky thinking, we can now deploy our new ui to the cloud so herding cats. A better understanding of usage can aid in prioritizing future efforts business impact strategic staircase, let's put a pin in that.</p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T205049Z
+    - ID: "dc21908d-83b5-49ba-993f-3985566711b6"
+      Hint: Region
+      Value: |
+        {28E8E1CA-8D52-4915-B0F0-031B2D57D4F5}
+        {09C18D8F-33B6-4000-BFC1-40871D5C8023}
+        {68470BCB-F80E-4C78-9CAF-D1B39338F223}
+        {49220CB2-6B13-4743-ACA1-543AD9A57466}
+        {CC5CDB6F-C4B7-440D-865B-AD4A2725DCFD}
+        {CC02C81F-C592-4AF0-938E-8E09F9BB855D}

@@ -1,0 +1,47 @@
+﻿---
+ID: "fd042811-e2a2-4f23-8643-9fa503497926"
+Parent: "facd02eb-1b78-47c4-abc1-595c30467110"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design/ArticleBody"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "sxa-articlebody"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "bdb81ca4-0ab8-4636-a98d-71c50fc326c6"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {2492BAC4-DA07-4C86-87F0-9873D40E2276}
+    {6C400FA9-2727-4FEE-A69B-62123965134B}
+    {891046E5-7B0A-4D6E-A3A8-5DB15E4D1539}
+    {9C6D53E3-FE57-4638-AF7B-6D68304C7A94}
+    {B2604959-57F3-4F7C-A7F3-AA09935BDA2B}
+    {D9EFFA75-59F0-4B90-8624-20E7100FB5B2}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T201234Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc1bf7f9-4320-498b-bcc6-9619b673c468"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T151618Z

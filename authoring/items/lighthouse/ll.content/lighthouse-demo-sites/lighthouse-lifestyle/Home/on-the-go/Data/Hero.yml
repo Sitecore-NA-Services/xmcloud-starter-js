@@ -1,0 +1,44 @@
+﻿---
+ID: "c4b2ba2e-9f42-46c2-a000-cf8df1e1d787"
+Parent: "13f9f9f8-5052-40c7-9b3b-af92e7a7ff61"
+Template: "2aa9f46b-7572-4f5d-bbc0-d37a95ce2a52"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/on-the-go/Data/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0beea591-fbbd-4671-9e16-f9bf2d6aa734"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{0D2C82AA-D878-457C-BC4E-3967BFE5F13F}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T190452Z
+    - ID: "3d9af8c0-a85b-46e4-93a0-2a0b9ef56c41"
+      Hint: HeroSupertitle
+      Value: Lighthouse On The Go
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "689af491-a545-4acc-908b-e0f354c7c1ca"
+      Hint: HeroText
+      Value: Lighthouse Lifestyle
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b51b83e6-db37-4050-bc0a-602534979c7e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "ca94006f-5874-4aa5-a473-b0d6eed97d2a"
+      Hint: HeroTitle
+      Value: Helping The Chaos Make Sense
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T173636Z

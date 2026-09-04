@@ -1,0 +1,27 @@
+---
+ID: "c7434bb8-ee6b-44c2-b087-8ea585399cb1"
+Parent: "678c7d98-03a7-4f06-9399-4112d54ff90e"
+Template: "0a2847e6-9885-450b-b61e-f9e6528480ef"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Dictionary"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/book2.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260410T000000Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c7434bb8-ee6b-44c2-b087-8ea585399c01"

@@ -1,11 +1,14 @@
 {
   "$schema": "./.sitecore/schemas/RootConfigurationFile.schema.json",
   "modules": [
-    "items/*.module.json"
+    "items/*.module.json",
+    "../content/*.module.json"
   ],
   "plugins": [
     "Sitecore.DevEx.Extensibility.XMCloud@1.1.122",
-    "Sitecore.DevEx.Extensibility.Serialization@6.0.31"
+    "Sitecore.DevEx.Extensibility.Serialization@6.0.31",
+    "Sitecore.DevEx.Extensibility.Publishing@6.0.23",
+    "Sitecore.DevEx.Extensibility.Indexing@6.0.23"
   ],
   "serialization": {
     "defaultMaxRelativeItemPathLength": 120,

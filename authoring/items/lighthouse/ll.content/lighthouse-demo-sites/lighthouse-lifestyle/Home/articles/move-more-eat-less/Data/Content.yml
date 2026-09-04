@@ -1,0 +1,34 @@
+﻿---
+ID: "34bc5e55-28bf-4337-a2d5-745a6fbced98"
+Parent: "e1ec153f-d7cf-4d79-94ae-811586002c80"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/articles/move-more-eat-less/Data/Content"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T190658Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: "<p>The most effective fitness strategy is often the one that feels almost ordinary. You do not need perfect workouts or a rigid menu to make progress. What matters most is creating a daily rhythm that burns a little more energy, reduces mindless overeating, and helps you recover well enough to repeat the process tomorrow.</p><h2>Move more in smaller bursts</h2><p>Dedicated exercise still matters, but the biggest opportunity for many people is everything that happens between workouts. Take walking meetings, park farther away, use the stairs, do ten minutes of strength work at home, or add a short walk after lunch and dinner. Those smaller decisions raise daily activity without demanding a complete schedule overhaul.</p><h2>Eat less without feeling restricted</h2><p>Eating less does not have to mean feeling hungry all day. Start by reducing portions slightly, especially foods that are easy to overeat. Build meals around lean protein, fruit, vegetables, and high-fiber carbohydrates so you stay satisfied longer. Slow down while eating, keep liquid calories in check, and give yourself a few minutes before going back for more.</p><h2>Pair movement with meals</h2><p>One of the simplest combinations is to eat a balanced meal and follow it with light movement. A brisk ten-minute walk after eating can help you feel better, support digestion, and turn meals into a cue for activity. That pattern is easier to repeat than relying on motivation for long workouts every day.</p><h2>Make the healthy choice the default</h2><p>Keep convenient foods that match your goals within reach and make movement hard to skip. Prep a few high-protein meals, keep healthy snacks visible, put workout shoes by the door, and schedule short movement breaks on purpose. When your environment does some of the work, consistency stops depending on willpower alone.</p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0bc96baf-f5e6-4817-a536-ad5270253eb1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T190658Z

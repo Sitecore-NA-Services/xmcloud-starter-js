@@ -17,6 +17,7 @@
  *    explicitly in code (content type / author / topics).
  */
 
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { cva } from 'class-variance-authority';
 import {
@@ -392,7 +393,7 @@ type ColorScheme = 'primary' | 'secondary' | 'tertiary' | 'dark' | 'light';
  * come from public env vars; if unset, a styled "not configured" notice renders so
  * the page still builds.
  */
-export const Default = ({ params }: ComponentProps) => {
+const SearchResultsContent = ({ params }: ComponentProps) => {
   const colorScheme = ((params?.colorScheme as ColorScheme) || 'light') as ColorScheme;
   const q = useSearchParams()?.get('q') ?? '';
 
@@ -421,3 +422,9 @@ export const Default = ({ params }: ComponentProps) => {
     </section>
   );
 };
+
+export const Default = (props: ComponentProps) => (
+  <Suspense fallback={null}>
+    <SearchResultsContent {...props} />
+  </Suspense>
+);

@@ -1,0 +1,66 @@
+﻿---
+ID: "a3d42606-c048-4efa-88e6-08eaeb646adf"
+Parent: "64f922b1-d57d-4afa-ae26-9d59502f69a6"
+Template: "1c6d7b02-8437-4991-809a-82752ce90350"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/articles/Yoga Fundamentals"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "995ecc67-d8f8-4aec-9f24-2c946a2734e9"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Yoga Fundamentals
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: 
+    - ID: "0608c2d6-5e63-442f-8851-9a05a9c8ccda"
+      Hint: Link
+      Value: |
+        <link text="Read More" linktype="external" url="/articles/yoga-fundamentals" />
+    - ID: "13db2ee0-3052-4809-86f4-d594c55d5442"
+      Hint: Image
+      Value: |
+        <image mediaid="{6AEC1BED-11C8-4C73-85EC-AD088AA5D254}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190321Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5a8c11b9-2dd8-4092-87ae-92f37a129b1f"
+      Hint: Content
+      Value: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra justo nec ultrices dui sapien eget mi proin sed. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Gravida neque convallis a cras semper auctor neque vitae tempus.</p><p>Habitant morbi tristique senectus et. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Sagittis purus sit amet volutpat consequat mauris. Cursus eget nunc scelerisque viverra mauris in. Faucibus pulvinar elementum integer enim neque volutpat.</p><p>Elementum facilisis leo vel fringilla est ullamcorper eget. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Amet luctus venenatis lectus magna. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "7dd4db9d-99f6-426b-8c1e-00f8beb7db9d"
+      Hint: Introduction
+      Value: Starting with yoga basics allows you to build the strength, flexibility and knowledge needed to move forward with your practice.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b078cc56-ce79-4e2d-8dea-f0840e5868c3"
+    - ID: "a7836ea2-ba85-4ed3-bd40-3a4a7f70c8d4"
+      Hint: PublishDate
+      Value: 20200601T202900Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T031318Z

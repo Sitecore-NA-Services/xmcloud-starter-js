@@ -1,0 +1,103 @@
+﻿---
+ID: "507286b3-e875-4a35-bfd9-4f24c26d654d"
+Parent: "e46577a6-680e-4d68-9bbc-0d05b9d34700"
+Template: "79dc8823-416e-4b04-98e4-921251a14f9d"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/resources/meditation-music"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "e9e48820-e104-4593-98ed-6a49875617a2"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Our Own Meditation Music For Your Use
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{699FB708-AD45-48EF-890E-3DC274863B94}"
+              p:after="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{7AAB407F-AD1A-40C1-96D5-5F161C0C9D3D}"
+              p:after="*"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{BE3519F3-B17C-45EC-A6AE-B4834E526219}" />
+            <r
+              uid="{C40FF49B-9BBF-413E-BB2C-000BEDDE1763}"
+              p:after="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{C4E566B9-1FFC-428F-9229-AB888592A29E}" />
+          </d>
+        </r>
+    - ID: "08b62a8e-16c2-4779-80a6-10457c88d156"
+      Hint: MediaTitle
+      Value: Right Click and download this exclusive music
+    - ID: "1c3f5f9b-6700-47e2-9b66-b8c2be51fa0c"
+      Hint: ResourceType
+      Value: Audio
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190322Z
+    - ID: "4c7a921b-9aa3-420c-8ce3-4afb64abe8de"
+      Hint: Industry
+      Value: |
+        {2C70685C-DD3C-4698-BD8C-32B406FA3379}
+        {7CADD0C0-C674-482F-9213-B96D61B80466}
+        {090E7382-D38E-4D69-A8E0-85A894F36428}
+        {7978B6C8-D55D-4456-B43E-D9A13CAB51C1}
+        {5E881A6E-EF45-4E0E-B1EF-D8EA93315FEC}
+        {24B31D57-CD16-4ACC-A14C-4A718EE595B5}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "60dbea7c-477b-4d88-bfaf-9e5f2e49087f"
+      Hint: Media
+      Value: |
+        <file mediaid="{4ED7EF09-B0CA-49ED-940E-CF671D32A806}" src="-/media/4ED7EF09B0CA49ED940ECF671D32A806.ashx" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "77cb1b12-e3b1-4687-94f8-0f8e685e459e"
+    - ID: "b8189edb-8fe2-49c5-af3b-aad2b672ac34"
+      Hint: Introduction
+      Value: |
+        <p>Most people know Sean "Diddy" Combs by his music, but the hip-hop mogul recently released a different kind of track: a guided meditation. The 25-minute recorded meditation is available to download for free on Audible courtesy of Lighthouse Lifestyle.</p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T205049Z
+    - ID: "dc21908d-83b5-49ba-993f-3985566711b6"
+      Hint: Region
+      Value: |
+        {28E8E1CA-8D52-4915-B0F0-031B2D57D4F5}
+        {68470BCB-F80E-4C78-9CAF-D1B39338F223}
+        {CC02C81F-C592-4AF0-938E-8E09F9BB855D}
+        {49220CB2-6B13-4743-ACA1-543AD9A57466}

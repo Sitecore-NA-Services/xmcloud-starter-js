@@ -1,0 +1,35 @@
+﻿---
+ID: "13677a97-633a-4964-9af5-750ab7b9429d"
+Parent: "9e6f202c-3bdc-4c19-a071-346f1645a440"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/Account/forgot-password/confirmation/Data/Body"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260423T190533Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h2>Check your email</h2><p>If an account with that email exists, we have sent a password reset link. It may take a few minutes to arrive.</p><p>Didn't receive it? <a href="/account/forgot-password">Try again</a> or <a href="/company/contact">contact support</a>.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "07bd9b38-a63f-4b1b-a7cc-be259db95f1f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260423T190533Z

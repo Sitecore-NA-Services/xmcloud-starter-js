@@ -1,0 +1,110 @@
+﻿---
+ID: "2d3b45fa-d158-4cbc-84d3-8839efa465dc"
+Parent: "5bf6bf2d-4eed-472a-bbad-99734aa007b8"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/round-rock-sasquatch-sites/round-rock-sasquatch/Heroes/Article Hero - Creek"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/2D3B45FAD1584CBC84D38839EFA465DC.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "3c02f406-f018-4fd1-a172-b285c4f8127b"
+  Value: PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iYXJ0aWNsZS1oZXJvLXN2ZyIgdmlld0JveD0iMCAwIDEyMDAgMjIwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSIgYXJpYS1oaWRkZW49InRydWUiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icnJzcy1jcmVlay1iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5ZWI1YjgiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2MxY2FiYiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzZiN2E3MiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjIyMCIgZmlsbD0idXJsKCNycnNzLWNyZWVrLWJnKSI+PC9yZWN0PjxnPjxwb2x5Z29uIHBvaW50cz0iLTEwLDEzMCA4LDk4IDI2LDEzMCIgZmlsbD0iIzI0M2EzMCI+PC9wb2x5Z29uPjxwb2x5Z29uIHBvaW50cz0iMzQsMTMwIDU1LDkxIDc2LDEzMCIgZmlsbD0iIzI0M2EzMCI+PC9wb2x5Z29uPjxwb2x5Z29uIHBvaW50cz0iNzgsMTMwIDk2LDg0IDExNCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjEyMiwxMzAgMTQzLDc3IDE2NCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjE2NiwxMzAgMTg0LDkyIDIwMiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjIxMCwxMzAgMjMxLDg1IDI1MiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjI1NCwxMzAgMjcyLDc4IDI5MCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjI5OCwxMzAgMzE5LDkzIDM0MCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjM0MiwxMzAgMzYwLDg2IDM3OCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjM4NiwxMzAgNDA3LDc5IDQyOCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjQzMCwxMzAgNDQ4LDk0IDQ2NiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjQ3NCwxMzAgNDk1LDg3IDUxNiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjUxOCwxMzAgNTM2LDgwIDU1NCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjU2MiwxMzAgNTgzLDk1IDYwNCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjYwNiwxMzAgNjI0LDg4IDY0MiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjY1MCwxMzAgNjcxLDgxIDY5MiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjY5NCwxMzAgNzEyLDk2IDczMCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjczOCwxMzAgNzU5LDg5IDc4MCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9Ijc4MiwxMzAgODAwLDgyIDgxOCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjgyNiwxMzAgODQ3LDk3IDg2OCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9Ijg3MCwxMzAgODg4LDkwIDkwNiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjkxNCwxMzAgOTM1LDgzIDk1NiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9Ijk1OCwxMzAgOTc2LDk4IDk5NCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjEwMDIsMTMwIDEwMjMsOTEgMTA0NCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjEwNDYsMTMwIDEwNjQsODQgMTA4MiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjEwOTAsMTMwIDExMTEsNzcgMTEzMiwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjExMzQsMTMwIDExNTIsOTIgMTE3MCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48cG9seWdvbiBwb2ludHM9IjExNzgsMTMwIDExOTksODUgMTIyMCwxMzAiIGZpbGw9IiMyNDNhMzAiPjwvcG9seWdvbj48L2c+PHBhdGggZD0iTTAsMTUwIFEzMDAsMTQyIDYwMCwxNDggVDEyMDAsMTQ2IEwxMjAwLDE3MCBMMCwxNzAgWiIgZmlsbD0iIzNhNGQzYSI+PC9wYXRoPjxwYXRoIGQ9Ik0wLDE3MCBRMzAwLDE1OCA2MDAsMTcwIFQxMjAwLDE2OCBMMTIwMCwyMjAgTDAsMjIwIFoiIGZpbGw9IiM1ZDdhOGMiPjwvcGF0aD48ZyBzdHJva2U9IiNjZmRkZTQiIHN0cm9rZS13aWR0aD0iMS40IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjUiPjxwYXRoIGQ9Ik00MCwxODggUTE2MCwxODIgMjgwLDE4OCI+PC9wYXRoPjxwYXRoIGQ9Ik0zODAsMTk4IFE1MDAsMTkyIDYyMCwxOTgiPjwvcGF0aD48cGF0aCBkPSJNNzgwLDE5MCBROTAwLDE4NCAxMDIwLDE5MCI+PC9wYXRoPjwvZz48ZWxsaXBzZSBjeD0iMTgwIiBjeT0iMTc4IiByeD0iMTQiIHJ5PSI1IiBmaWxsPSIjNTY0NjNhIj48L2VsbGlwc2U+PGVsbGlwc2UgY3g9IjQzMCIgY3k9IjE4NCIgcng9IjE4IiByeT0iNiIgZmlsbD0iIzNlMzEyOCI+PC9lbGxpcHNlPjxlbGxpcHNlIGN4PSI3MjAiIGN5PSIxODAiIHJ4PSIxMiIgcnk9IjQiIGZpbGw9IiM1NjQ2M2EiPjwvZWxsaXBzZT48ZWxsaXBzZSBjeD0iOTUwIiBjeT0iMTg2IiByeD0iMjAiIHJ5PSI2IiBmaWxsPSIjM2UzMTI4Ij48L2VsbGlwc2U+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwLCAxNzIpIHJvdGF0ZSgtMTUpIHNjYWxlKDAuNjUpIiBmaWxsPSIjMWExMDA2IiBvcGFjaXR5PSIwLjgiPjxlbGxpcHNlIGN4PSIwIiBjeT0iNiIgcng9IjExIiByeT0iMTgiPjwvZWxsaXBzZT48Y2lyY2xlIGN4PSItNyIgY3k9Ii0xNSIgcj0iMi40Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSItMyIgY3k9Ii0xOSIgcj0iMi44Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyIiBjeT0iLTIxIiByPSIzLjIiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjciIGN5PSItMTkiIHI9IjIuOCI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTEiIGN5PSItMTUiIHI9IjIuNCI+PC9jaXJjbGU+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2MCwgMTg2KSByb3RhdGUoMTApIHNjYWxlKDAuNjUpIiBmaWxsPSIjMWExMDA2IiBvcGFjaXR5PSIwLjciPjxlbGxpcHNlIGN4PSIwIiBjeT0iNiIgcng9IjExIiByeT0iMTgiPjwvZWxsaXBzZT48Y2lyY2xlIGN4PSItNyIgY3k9Ii0xNSIgcj0iMi40Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSItMyIgY3k9Ii0xOSIgcj0iMi44Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyIiBjeT0iLTIxIiByPSIzLjIiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjciIGN5PSItMTkiIHI9IjIuOCI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTEiIGN5PSItMTUiIHI9IjIuNCI+PC9jaXJjbGU+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgMTk2KSByb3RhdGUoLTEyKSBzY2FsZSgwLjY1KSIgZmlsbD0iIzFhMTAwNiIgb3BhY2l0eT0iMC42Ij48ZWxsaXBzZSBjeD0iMCIgY3k9IjYiIHJ4PSIxMSIgcnk9IjE4Ij48L2VsbGlwc2U+PGNpcmNsZSBjeD0iLTciIGN5PSItMTUiIHI9IjIuNCI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iLTMiIGN5PSItMTkiIHI9IjIuOCI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMiIgY3k9Ii0yMSIgcj0iMy4yIj48L2NpcmNsZT48Y2lyY2xlIGN4PSI3IiBjeT0iLTE5IiByPSIyLjgiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjExIiBjeT0iLTE1IiByPSIyLjQiPjwvY2lyY2xlPjwvZz48L3N2Zz4K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 4050
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "33b01e17-030c-4586-8331-6d57eaa01aeb"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205046Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Article Hero - Creek"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "04cca4a6-071b-49c4-82ef-e85de24ed2d2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205046Z
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205046Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Article Hero - Creek"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d837fdf0-64d1-47dc-b2a6-681e87dd7567"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205046Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T205046Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Article Hero - Creek"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54ac6d57-e877-41d9-8d7e-658226f439d0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T205046Z

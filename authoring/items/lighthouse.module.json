@@ -1,0 +1,47 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.lighthouse",
+    "items": {
+        "path": "lighthouse",
+        "includes": [
+            {
+                "name": "ll.templates",
+                "path": "/sitecore/templates/Project/lighthouse",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ll.renderings",
+                "path": "/sitecore/layout/Renderings/Project/lighthouse",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ll.branches",
+                "path": "/sitecore/templates/Branches/Project/lighthouse",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ll.layouts",
+                "path": "/sitecore/layout/Layouts/Project/lighthouse",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ll.media.parent",
+                "path": "/sitecore/media library/Project/Demo Shared SXA Sites",
+                "scope": "SingleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "ll.site-template",
+                "path": "/sitecore/system/Settings/Feature/JSS Experience Accelerator/Lighthouse Lifestyle",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ll.spe-scripts",
+                "path": "/sitecore/system/Modules/PowerShell/Script Library/JSS SXA/Lighthouse Lifestyle",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

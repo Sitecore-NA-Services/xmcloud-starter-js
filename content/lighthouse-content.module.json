@@ -1,0 +1,31 @@
+{
+    "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.lighthouse-content",
+    "items": {
+        "path": "../authoring/items/lighthouse",
+        "includes": [
+            {
+                "name": "ll.media",
+                "path": "/sitecore/media library/Project/Demo Shared SXA Sites/LighthouseLifestyle",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ll.media.xmc",
+                "path": "/sitecore/media library/Project/LighthouseLifestyle",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "ll.content",
+                "path": "/sitecore/content/lighthouse-demo-sites",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete",
+                "rules": [
+                    {
+                        "path": "/lighthouse-global",
+                        "scope": "Ignored"
+                    }
+                ]
+            }
+        ]
+    }
+}

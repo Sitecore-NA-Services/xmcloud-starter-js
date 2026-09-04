@@ -1,0 +1,36 @@
+﻿---
+ID: "531707ec-34c1-45ef-9adc-280a55e69492"
+Parent: "848587bb-ce26-419a-86c0-5c94b8118d35"
+Template: "433e2cfe-d982-4f42-af4f-b5b4332d4715"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/Data/Home Page Teasers"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260415T211839Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b347fb73-e8ff-4e4d-bf25-39e8817a886e"
+    - ID: "8d0c4687-2d6c-4213-a7d2-6fbb3b08d7c5"
+      Hint: items
+      Value: |
+        {10ED59E6-8BF7-4330-9095-BCE540FAC6A6}
+        {741F72E0-942A-4F7F-A0D3-018BA2F7EF73}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260415T211839Z

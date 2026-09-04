@@ -1,0 +1,41 @@
+﻿---
+ID: "59736235-b8a3-42ab-bab9-9e0c309dc279"
+Parent: "6736d31f-aaf2-4cef-a064-885fd56b16cf"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/company/contact/Data/Support Text"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>We care about your home as much as you do. That's why Lighthouse works extra hard to ensure you have a seamless experience in our stores and online. If you have any questions, you can contact our support team 24/7. If there's ever a problem, we'll make it right.</p><p>Contact Customer Support: 1-888-SCLIGHTHOUSE or help@sitecoredemo.com</p>"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260421T183337Z
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Our Commitment to You</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5229144b-da2a-470e-84ba-7e90bf8db29c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T183337Z
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{29168CAA-9EAB-4F6A-AF55-F3470585F780}" />

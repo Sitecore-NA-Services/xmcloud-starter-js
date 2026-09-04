@@ -1,0 +1,38 @@
+﻿---
+ID: "ba04c200-56a9-4caf-88cf-1f9d95fc276c"
+Parent: "546a3367-c5cf-45e7-a872-395c4e155fec"
+Template: "45d66be8-33f1-4b4f-b721-36c2ca871da8"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Data/Main Navigation/resources"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T191106Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "98ad5b73-d2ef-4cec-bdfd-52c8b6e9be8e"
+    - ID: "afa2f863-3244-484f-9fc8-d8170b388973"
+      Hint: Link
+      Value: |
+        <link text="Resources" linktype="internal" url="/resources" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "cdae7308-5c87-4b04-b6c1-0786b6a86852"
+      Hint: Title
+      Value: Resources
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T191106Z

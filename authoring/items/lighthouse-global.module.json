@@ -1,0 +1,32 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.lighthouse-global",
+    "items": {
+        "path": "lighthouse-global",
+        "includes": [
+            {
+                "name": "global.content",
+                "path": "/sitecore/content/lighthouse-demo-sites/lighthouse-global",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "global.templates",
+                "path": "/sitecore/templates/Project/lighthouse-global",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "global.tenant-template",
+                "path": "/sitecore/templates/Project/lighthouse-demo-sites",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "global.tenant-settings",
+                "path": "/sitecore/system/Settings/Project/lighthouse-demo-sites",
+                "scope": "ItemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

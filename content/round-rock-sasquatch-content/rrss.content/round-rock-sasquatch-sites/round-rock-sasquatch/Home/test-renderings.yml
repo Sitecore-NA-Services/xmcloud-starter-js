@@ -1,0 +1,157 @@
+﻿---
+ID: "cb1f580f-0671-45c9-92e1-db627d8b0ca1"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings"
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{6D61D341-9C05-4A15-B482-F7DCFA63CDEF}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{A066355C-88BC-49C0-A210-D0FEDAEF8368}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a8ffe0dc-0663-42ba-9bd2-3187629a8f66"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}">
+        <r
+          uid="{EB1E4598-E086-407E-ACFA-492E9BDE4883}"
+          s:id="{62DD1639-9F28-4040-8738-C886480B2127}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=1" />
+        <r
+          uid="{C24233DE-F0FC-49F3-8506-5FC1359058C9}"
+          s:id="{3836D951-BB14-43AC-9231-649B7F245DC5}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=2"
+          s:ds="local:/Data/Title" />
+        <r
+          uid="{7E94DA3B-1175-45E5-8B0F-11ABB9705A6D}"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=3"
+          s:ds="local:/Data/RichText" />
+        <r
+          uid="{17D5FE2F-8277-40AF-9D00-561769E1D225}"
+          s:id="{AB2EDBA0-3960-4F12-B765-579DC231894A}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=4"
+          s:ds="local:/Data/Image" />
+        <r
+          uid="{963D74B2-2F71-42CD-93F0-4AF9EF4E8FA2}"
+          s:id="{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=5" />
+        <r
+          uid="{5BDC8DE3-55BE-423B-BD0C-8A78ED55A670}"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=6"
+          s:ds="local:/Data/Promo" />
+        <r
+          uid="{F8980445-D186-4EA7-A885-DC083A2F8255}"
+          s:id="{1DEB067F-0BB1-405E-94F5-2ABB537A6160}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=7" />
+        <r
+          uid="{90ADA542-2426-4E7D-8F76-AAC45C584027}"
+          s:id="{4956263D-1195-4D6E-931B-800EA625FF6F}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=8"
+          s:ds="local:/Data/LinkList" />
+        <r
+          uid="{00B10D52-A92F-43C9-BA65-4764E43DE049}"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=9" />
+        <r
+          uid="{38F7C649-A867-46E4-9B0F-F10916E4F2C1}"
+          s:id="{15CABDFF-FFD9-48F4-826D-A4C3D7868D3A}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=10" />
+        <r
+          uid="{9B011399-2655-4120-A534-EDE33B5E0AE8}"
+          s:id="{5F6BF7C9-C80C-4BBD-AD78-8DA749B35206}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=11" />
+        <r
+          uid="{93301425-ECD9-467C-BA13-E9AE6709DED2}"
+          s:id="{6C400FA9-2727-4FEE-A69B-62123965134B}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=12"
+          s:ds="local:/Data/Hero" />
+        <r
+          uid="{62819A16-4340-4AE1-852B-9E47FCA3FDBB}"
+          s:id="{D9EFFA75-59F0-4B90-8624-20E7100FB5B2}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=13" />
+        <r
+          uid="{AA4AE6FF-A83D-42F3-A1F4-DC09AD4DEC79}"
+          s:id="{35446053-B2F4-420C-9490-14843DCBEA96}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=14"
+          s:ds="local:/Data/ArticleList" />
+        <r
+          uid="{430BD3CA-C958-4019-96C1-D32D5D88BFCD}"
+          s:id="{B2604959-57F3-4F7C-A7F3-AA09935BDA2B}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=15" />
+        <r
+          uid="{8C13FCC5-1D40-4772-A8B5-908859FC2283}"
+          s:id="{891046E5-7B0A-4D6E-A3A8-5DB15E4D1539}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=16"
+          s:ds="local:/Data/AboutBody" />
+        <r
+          uid="{35CF30F4-427E-4EFE-980B-C7B6FDA3D16B}"
+          s:id="{513B85B7-B6C7-417A-A910-94CDBED56A97}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=17"
+          s:ds="local:/Data/ProductGrid" />
+        <r
+          uid="{04625164-6841-4442-B2BC-B838DD677D87}"
+          s:id="{68B0BDB0-81DD-4546-A81B-C36CCEDFF42D}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=18" />
+        <r
+          uid="{5E110EF0-51DC-4F15-912C-10D8E95CD37E}"
+          s:id="{A84CC016-E489-4864-9BC1-317EE8580D63}"
+          s:ph="/headless-main"
+          s:par="DynamicPlaceholderId=19" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T144458Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "test-renderings"
+    - ID: "7e214a48-07de-4600-ad46-6006dafd0609"
+      Hint: Title
+      Value: "All Available Renderings - Test"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "09470680-5fbf-4451-9201-60155535955e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d6ca34f6-8cad-4869-8ebb-77fb0efa93c3"
+      Hint: Content
+      Value: "<p>This is rendered by the <strong>PageContent</strong> component, which reads the page's own <code>Content</code> rich-text field rather than a separate datasource.</p>"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T153653Z

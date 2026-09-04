@@ -1,0 +1,72 @@
+{
+	"servers": {
+		"sitecore-marketer": {
+			"type": "http",
+			"url": "https://edge-platform.sitecorecloud.io/mcp/marketer-mcp-prod"
+		},
+		"chrome-devtools": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"chrome-devtools-mcp@latest"
+			]
+		},
+		"sitecore-community-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@antonytm/mcp-sitecore-server@latest"
+			],
+			"env": {
+				"TRANSPORT": "stdio",
+				"GRAPHQL_ENDPOINT": "https://xmc-professionaad47-psshared23db-psshareddevad68.sitecorecloud.io/sitecore/api/graph/",
+				"GRAPHQL_SCHEMAS": "edge",
+				"GRAPHQL_API_KEY": "${input:sitecore-community-mcp-graphql-api-key}",
+				"ITEM_SERVICE_DOMAIN": "sitecore",
+				"ITEM_SERVICE_USERNAME": "powershell",
+				"ITEM_SERVICE_PASSWORD": "${input:sitecore-community-mcp-item-service-password}",
+				"ITEM_SERVICE_SERVER_URL": "https://xmc-professionaad47-psshared23db-psshareddevad68.sitecorecloud.io",
+				"POWERSHELL_DOMAIN": "sitecore",
+				"POWERSHELL_USERNAME": "powershell",
+				"POWERSHELL_PASSWORD": "${input:sitecore-community-mcp-powershell-password}",
+				"POWERSHELL_SERVER_URL": "https://xmc-professionaad47-psshared23db-psshareddevad68.sitecorecloud.io",
+				"AUTHORING_ENDPOINT": "https://xmc-professionaad47-psshared23db-psshareddevad68.sitecorecloud.io/sitecore/api/authoring/graphql/v1/",
+				"AUTHORING_CLIENT_ID": "${input:sitecore-community-mcp-client-id}",
+				"AUTHORING_CLIENT_SECRET": "${input:sitecore-community-mcp-client-secret}",
+				"TOOL_PROFILE": ""
+			}
+		}
+	},
+	"inputs": [
+		{
+			"id": "sitecore-community-mcp-client-id",
+			"type": "promptString",
+			"description": "ps-shared-dev automation client ID (xmcloud.cm:admin scope)"
+		},
+		{
+			"id": "sitecore-community-mcp-client-secret",
+			"type": "promptString",
+			"description": "ps-shared-dev automation client secret",
+			"password": true
+		},
+		{
+			"id": "sitecore-community-mcp-graphql-api-key",
+			"type": "promptString",
+			"description": "ps-shared-dev Edge GraphQL API key ID (include braces)",
+			"password": true
+		},
+		{
+			"id": "sitecore-community-mcp-item-service-password",
+			"type": "promptString",
+			"description": "ps-shared-dev Item Service password",
+			"password": true
+		},
+		{
+			"id": "sitecore-community-mcp-powershell-password",
+			"type": "promptString",
+			"description": "ps-shared-dev SPE Remoting password",
+			"password": true
+		}
+	]
+}

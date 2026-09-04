@@ -1,0 +1,60 @@
+﻿---
+ID: "872e0894-47aa-4651-a78f-3b2ac306ddc4"
+Parent: "51028805-6cbb-44fc-bbba-838a8151a419"
+Template: "12e14b9b-54ad-40c5-974f-fca2a90a3d7c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/about"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{BECA4E6D-6135-40D9-8AD2-2025A5C6B71E}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "4ed8420d-58eb-4436-988e-d9d5794cc55f"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F056C155-3AEB-447A-A2E6-4806F3D57458}"
+              s:ds="{B1103F79-31C0-4381-A3E9-E551C153B02F}"
+              s:id="{6C400FA9-2727-4FEE-A69B-62123965134B}"
+              s:par="heroTitle=About+the+Society.&amp;heroSubtitle=Quietly+documenting+Sasquatch+in+Williamson+County+since+the+early+2010s.+Or+possibly+the+late+90s.+Records+were+sparse+for+a+while."
+              s:ph="headless-main"
+              p:before="*" />
+            <r
+              uid="{6800FF4F-1A44-4633-BACD-4FDB2A726BDF}"
+              s:ds="{D023ECF6-DB6B-439B-B397-E4C0AEA03DD3}"
+              p:after="r[@uid='{F056C155-3AEB-447A-A2E6-4806F3D57458}']"
+              s:id="{891046E5-7B0A-4D6E-A3A8-5DB15E4D1539}"
+              s:par="CSSStyles"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T184353Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: about
+    - ID: "7e214a48-07de-4600-ad46-6006dafd0609"
+      Hint: Title
+      Value: about
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bac2f5de-76bb-422d-adc6-e33219655065"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T212440Z

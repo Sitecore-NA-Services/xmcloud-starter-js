@@ -1,0 +1,44 @@
+﻿---
+ID: "60b4c47c-2ac5-45a8-bf5d-c7cb925ea241"
+Parent: "ae0df8a6-f68e-486d-83f1-de3a32f0d838"
+Template: "2aa9f46b-7572-4f5d-bbc0-d37a95ce2a52"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/your-health/Data/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0beea591-fbbd-4671-9e16-f9bf2d6aa734"
+      Hint: HeroImage
+      Value: |
+        <image mediaid="{D3D2377F-3B87-4A7B-948C-A609B9D8A339}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T190452Z
+    - ID: "3d9af8c0-a85b-46e4-93a0-2a0b9ef56c41"
+      Hint: HeroSupertitle
+      Value: Lighthouse Health
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "689af491-a545-4acc-908b-e0f354c7c1ca"
+      Hint: HeroText
+      Value: Lighthouse Lifestyle
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bcc5982d-90b8-4d7f-b804-88dc5ce5bac1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "ca94006f-5874-4aa5-a473-b0d6eed97d2a"
+      Hint: HeroTitle
+      Value: Your Health. Your Way.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T173636Z

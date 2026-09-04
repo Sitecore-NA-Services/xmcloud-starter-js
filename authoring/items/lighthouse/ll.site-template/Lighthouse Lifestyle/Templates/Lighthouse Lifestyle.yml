@@ -1,0 +1,81 @@
+﻿---
+ID: "73a0de8b-bdaa-47be-b012-b45e61afb6cb"
+Parent: "62655605-d8e8-4dcc-a570-5811ff328d84"
+Template: "1b2dfd3b-f2f2-4f40-a75c-f6c2490919c4"
+Path: /sitecore/system/Settings/Feature/JSS Experience Accelerator/Lighthouse Lifestyle/Templates/Lighthouse Lifestyle
+SharedFields:
+- ID: "41ac536a-923a-43f9-ac87-f3993f638125"
+  Hint: Tenant Modules
+  Value: |
+    {7B81B847-1891-43B2-BC13-5047A62EC32A}
+    {7BAAA4FC-3051-442D-9BD2-AD720B655E0B}
+    {0DC2E395-4A95-4773-88CA-75B22A130849}
+    {4346A98A-D6E9-491E-A0ED-CD12F524CF4E}
+    {4CBC64BF-8116-48A1-ABAC-DB19103897A6}
+    {7574F439-0B48-48BE-BA6B-94B1A3CE01A3}
+    {D912C30C-7A98-4A8D-A094-611D9AF9605D}
+    {6DE1F4E9-815D-491D-923D-D5038100DBEE}
+    {02CD7086-1F87-41EC-B40F-B92C1226895B}
+    {1B0A98C0-1801-44A0-85F2-845694FEAFF3}
+    {D315A501-6503-4545-A5D8-B9FECBA1097D}
+- ID: "a13aae24-a295-4cc3-b188-dfa59e2172a9"
+  Hint: "Built-in template"
+  Value: 0
+- ID: "c262443b-653d-461d-96c8-7cfaa0ef2b2d"
+  Hint: Site Modules
+  Value: |
+    {1DB6FCB4-B564-430E-AE8C-9CBE84AF037F}
+    {5A2F6A6F-3028-4210-AAD3-82C1365C4802}
+    {9F10010E-49E2-4DCD-A5A1-4DA752ADED2A}
+    {4342A029-0186-4B0D-8959-FFEF4FD998C2}
+    {AE5D1384-BB75-4C6B-A8B5-4B008C2AC5DA}
+    {C4658673-5D70-44ED-9004-D66EAC1DC718}
+    {CA502DCF-20D2-4618-A735-E4FCB6D5E114}
+    {E2AF1A41-799E-481B-8FDC-B2D33FB729A1}
+    {66B9C663-2602-42B1-A5A2-3D04DB6C506A}
+    {1FD78E81-59A6-4513-90F1-165A95D4B16B}
+    {BEBF4026-24A3-4EA6-986A-518B76DBD71A}
+    {385F31BE-FF0C-4D84-A627-9ECD21295AFD}
+    {F0EA389E-F78D-440B-9429-F04FE735344A}
+    {AC1A27CA-6BF3-4D23-915E-668326D52CF1}
+    {D7EEAF4D-2B58-4029-B141-844221565EF0}
+    {1F35559F-2140-4774-8BC1-525BB722BAA2}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5308de3f-d3f7-48e7-a00a-6a56faabf8c8"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260508T181940Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
+      Hint: Name
+      Value: Lighthouse Lifestyle
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fb58ae70-c6d9-4234-a687-fa02db0596b4"
+    - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
+      Hint: Description
+      Value: "Lighthouse Lifestyle — Technology to help you live well. A fully built-out demo site with lifestyle content, navigation, hero components, and page designs."
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260508T182013Z
+    - ID: "da855368-e5f2-4932-ae55-7f8b08a5a205"
+      Hint: Content
+      Value: |
+        [{"name":"Pages","content":"Home, Articles, Products"},{"name":"Components","content":"Hero, Navigation, Footer, Page Designs"},{"name":"Integrations","content":"CDP Personalize and Analytics"}]

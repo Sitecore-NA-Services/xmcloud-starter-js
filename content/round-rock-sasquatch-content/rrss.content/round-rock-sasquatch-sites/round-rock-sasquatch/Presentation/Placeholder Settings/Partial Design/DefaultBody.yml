@@ -1,0 +1,62 @@
+﻿---
+ID: "8483f04f-7586-4c3e-b2fb-b8857a7060ef"
+Parent: "facd02eb-1b78-47c4-abc1-595c30467110"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Presentation/Placeholder Settings/Partial Design/DefaultBody"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "sxa-defaultbody"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a134c78b-550d-4c5d-846f-bf5e5cb03761"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {9C6D53E3-FE57-4638-AF7B-6D68304C7A94}
+    {AB2EDBA0-3960-4F12-B765-579DC231894A}
+    {3836D951-BB14-43AC-9231-649B7F245DC5}
+    {C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}
+    {2492BAC4-DA07-4C86-87F0-9873D40E2276}
+    {1DEB067F-0BB1-405E-94F5-2ABB537A6160}
+    {4956263D-1195-4D6E-931B-800EA625FF6F}
+    {7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}
+    {15CABDFF-FFD9-48F4-826D-A4C3D7868D3A}
+    {5F6BF7C9-C80C-4BBD-AD78-8DA749B35206}
+    {6C400FA9-2727-4FEE-A69B-62123965134B}
+    {D9EFFA75-59F0-4B90-8624-20E7100FB5B2}
+    {35446053-B2F4-420C-9490-14843DCBEA96}
+    {B2604959-57F3-4F7C-A7F3-AA09935BDA2B}
+    {891046E5-7B0A-4D6E-A3A8-5DB15E4D1539}
+    {A84CC016-E489-4864-9BC1-317EE8580D63}
+    {D74101B8-DCB3-4E7D-978D-522F1836290A}
+    {DED27874-1D99-4F8B-B943-585371E69CD4}
+    {513B85B7-B6C7-417A-A910-94CDBED56A97}
+    {68B0BDB0-81DD-4546-A81B-C36CCEDFF42D}
+    {62DD1639-9F28-4040-8738-C886480B2127}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260514T195231Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7fb320d0-0388-4196-ad39-ae498dac8ac7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T151618Z

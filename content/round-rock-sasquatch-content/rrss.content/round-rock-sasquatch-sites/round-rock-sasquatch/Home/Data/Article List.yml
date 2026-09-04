@@ -1,0 +1,32 @@
+﻿---
+ID: "5f9c8c83-10a9-421c-bec4-547be1e38b3d"
+Parent: "2fade3fd-1a9a-42b4-af10-91334de427dd"
+Template: "03cf440f-9b08-463d-8553-3f7386269c86"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/Data/Article List"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T210305Z
+    - ID: "65d08fbd-11c9-473f-ada0-748a65e0dca3"
+      Hint: Heading
+      Value: Latest Field Reports
+    - ID: "7b122742-33f2-4783-bff9-a46a491a114f"
+      Hint: PageRoot
+      Value: "{1D7C3E85-FB5A-4779-87B9-21FB100CD523}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "632a09e7-cb3d-4efe-a491-80f9020925d9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "c93f2b09-37c0-4770-b6ca-c3bec7b57f6a"
+      Hint: Intro
+      Value: <p>Williamson County&#39;s most unusual hobby — practiced quietly along the Brushy Creek corridor by people who own more trail cameras than is strictly normal.</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T210305Z

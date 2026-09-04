@@ -1,0 +1,42 @@
+﻿---
+ID: "b44feec4-bcce-4cd9-a969-456f60ab2ad8"
+Parent: "d64aa5e0-cc83-4fde-bfc6-6e5399cedf30"
+Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Presentation/Page Designs/SitecoreDemo Article"
+SharedFields:
+- ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
+  Hint: PartialDesigns
+  Value: "{FD3708F7-A455-4DEE-B1B7-826D511A439A}|{BEBBE9F5-0123-49BB-87B1-992E1B422758}|{568909CD-AE45-4669-9481-FDAF04279950}|{87A63479-74F6-433E-B2CE-4CE3ED47387B}|{CDB2F99D-A194-4709-8995-4C576B9DD62B}|{9BABDF80-438D-4430-8CD7-EBA07D105666}|{98C1BC0C-2384-47B7-AD47-B5B8BFDBF4C5}|{477275F0-7534-49CC-8F6D-4744AB200EBE}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{DAC80211-1D77-43BB-A39F-7BBA5C6B93B2}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "89dd01de-cc4c-4783-8135-c78caa853f57"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260512T174307Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "146c0fe9-856f-4acb-9fa9-481b2462f860"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260512T184226Z

@@ -1,0 +1,76 @@
+﻿---
+ID: "0c7183e9-fdeb-4063-b4f4-d79b6b587460"
+Parent: "ad4d460b-511b-48d4-9b8d-648c5caf59b1"
+Template: "c18f3ade-4dbc-47a5-9d55-09ea5a0b333f"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/at-home/sleep-technology"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "fe3d3052-aced-411d-906f-0db602f49861"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Sleep Technology
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{6B283E24-5249-4D5E-BA44-49552763C860}"
+              p:before="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{1B48A9C3-4722-49C3-BB76-1258A8EE428C}" />
+            <r
+              uid="{9ADA96FA-05FF-46DB-B076-C11DD5762160}"
+              p:after="r[@uid='{6B283E24-5249-4D5E-BA44-49552763C860}']"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{F7E7E945-AD19-4FAA-8AE3-A41B9D5793F1}" />
+            <r
+              uid="{A3B259A9-CD08-4792-A62C-0A502D863FD7}"
+              p:after="r[@uid='{9ADA96FA-05FF-46DB-B076-C11DD5762160}']"
+              s:id="{35D5EB28-4F0E-4B70-AB2C-576E8A4F533E}"
+              s:ph="headless-main"
+              s:ds="{D613C22C-E31F-47D6-953C-C242D7F09FC9}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190320Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Sleep Technology
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c8523e38-8c7a-40d7-9a50-23ada1967064"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T173312Z

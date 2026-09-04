@@ -1,0 +1,31 @@
+﻿---
+ID: "1ec055b4-a003-4955-bdad-ee1c8c119582"
+Parent: "9a8390af-4764-42b4-a566-e13e55ee83b1"
+Template: "a29d272e-9d48-453c-9e9d-b47585fa7f20"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-global/Data"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T182518Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4ebe92b0-68af-479f-9369-207b97bc2ec7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T182518Z

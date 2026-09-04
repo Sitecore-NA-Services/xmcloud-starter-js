@@ -1,0 +1,69 @@
+﻿---
+ID: "3fbd14e4-cd83-483f-9268-2eba44638452"
+Parent: "fb18abcb-15e7-4d9c-a9ce-3c404f32ed36"
+Template: "d4334357-6c34-440f-b91d-cd73c60521a6"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/campaign-pages/bing-smart-home-design"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a9ba3bbe-73ac-496f-974f-4ecff5adcd6d"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{FFFFFFFF-0001-0001-0001-000000000001}"
+              p:before="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{FFFFFFFF-0002-0002-0002-000000000002}"
+              p:after="r[@uid='{FFFFFFFF-0001-0001-0001-000000000001}']"
+              s:id="{2DD85EE1-B8F7-4338-9BB8-57DEE7964320}"
+              s:ph="headless-main" />
+            <r
+              uid="{FFFFFFFF-0003-0003-0003-000000000003}"
+              p:after="r[@uid='{FFFFFFFF-0002-0002-0002-000000000002}']"
+              s:id="{DF8F69B2-3354-4BD0-957A-CF2D7D5F4A22}"
+              s:ph="headless-footer"
+              s:ds="{CACE9363-17FA-426C-BC20-642E7A8FE3A4}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190323Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0db772af-11d8-4f20-bea7-f39b7ea73b0f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260421T211321Z

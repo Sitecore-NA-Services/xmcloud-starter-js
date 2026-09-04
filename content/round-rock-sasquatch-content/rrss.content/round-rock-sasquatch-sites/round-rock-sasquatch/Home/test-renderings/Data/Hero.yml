@@ -1,0 +1,29 @@
+﻿---
+ID: "4941100d-ae84-46f2-96a8-d5fd04f21345"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "f65ae79c-8622-47d6-9fb1-f5e444fe4eed"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/Hero"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1ac73bbd-a67c-4343-84b3-97a7da37c648"
+      Hint: HeroSubtitle
+      Value: This Hero is rendered on the test page from a local datasource.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T152752Z
+    - ID: "69beae31-0878-46a5-8c54-66199b94b38e"
+      Hint: HeroTitle
+      Value: Verify the Hero rendering
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "517bd9ba-3534-4488-bffc-6e064fdf1619"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T152752Z

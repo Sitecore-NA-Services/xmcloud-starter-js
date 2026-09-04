@@ -1,0 +1,52 @@
+﻿---
+ID: "d023ecf6-db6b-439b-b397-e4c0aea03dd3"
+Parent: "a8383324-895e-47bc-987e-f6e38a2f8274"
+Template: "d37638d2-64eb-41c4-be99-7a0c1eb881c2"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/about/Data/About Body"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T210348Z
+    - ID: "509fe356-145c-4ccc-879f-f73225c30e85"
+      Hint: Body
+      Value: |
+        <p>The <strong>Round Rock Sasquatch Society</strong> is an unincorporated association of researchers, hobbyists, and at least one retired Williamson County park ranger, dedicated to the systematic documentation of Sasquatch activity along the Brushy Creek watershed and the surrounding cedar breaks of Central Texas.</p>
+        <p>We were founded in Bill's garage in 2014, more or less, with funds raised by selling a folding table at a yard sale. We have grown modestly since. We have a P.O. box now.</p>
+        <div class="article-section-divider"><img src="-/media/99B8D9AD-CBA0-4031-B26B-5F311EFF7D54.ashx" alt="" /></div>
+        <h2>Our Mission</h2>
+        <p>To document — calmly, persistently, and with appropriate humility — the activity of a large, bipedal, hair-covered creature that has been reported in Williamson County since before the area was Williamson County. We do not seek to capture, harm, or significantly inconvenience the subject. We seek to know it is there.</p>
+        <p>We are not a wildlife agency. We are not affiliated with the Williamson County Parks Department, despite repeated suggestions in community Facebook groups that we should be. We are also not a cult. This question has come up enough times that we feel obligated to address it directly.</p>
+        <h2>The Founders</h2>
+        <p>The Society was founded by a small group of long-time Round Rock residents who, for personal and professional reasons, prefer to remain anonymous. Several of them work at Dell. One of them absolutely does not work at Dell and has clarified this several times. Bill, the retired park ranger, has agreed to be named because, in his words, "what are they gonna do, fire me again."</p>
+        <h2>What We Do</h2>
+        <ul>
+        <li><strong>Field research</strong> — trail cameras, audio recording, plaster casting, the occasional thermal sweep when Doug remembers to charge the batteries</li>
+        <li><strong>Eyewitness documentation</strong> — interviews with long-time residents, careful transcription, light fact-checking</li>
+        <li><strong>Public education</strong> — this website, the (annual, sometimes printed) newsletter, and the occasional appearance on a podcast nobody we know listens to</li>
+        <li><strong>Trail stewardship</strong> — picking up trash on the Brushy Creek trail, which we feel obligated to do given how much time we spend there at suspicious hours</li>
+        </ul>
+        <h2>Membership</h2>
+        <p>The Society offers Lifetime Membership at a one-time fee. Members receive a numbered card, voting rights at the (irregularly held) Annual General Meeting, and the spiritual satisfaction of having funded several rounds of trail camera batteries. Visit the <a href="/shop/society-membership">membership page</a> for details.</p>
+        <h2>Contact</h2>
+        <p>We are reachable, in descending order of reliability:</p>
+        <ul>
+        <li><strong>By mail</strong> — P.O. Box 4042, Round Rock, TX 78680. We check it monthly when somebody is going past the post office anyway.</li>
+        <li><strong>By email</strong> — bigfoot@roundrocksasquatch.example (this is a fake site for satirical purposes, please do not email)</li>
+        <li><strong>In person</strong> — most second Tuesdays, in the back corner booth of a Whataburger we will not name publicly because they have asked us not to</li>
+        </ul>
+        <h2>A Final Note</h2>
+        <p>Everything on this site is offered in the spirit of curiosity, humor, and a deep affection for the cedar breaks of Williamson County. We do not claim to have proof. We claim, modestly, to have been paying attention. The creek has been here a long time. We think something else has too.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8f373466-cce1-45f3-b5b0-9214128ba16f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T210348Z

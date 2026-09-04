@@ -1,0 +1,38 @@
+﻿---
+ID: "d97ee431-312a-4e6f-891b-fefd6cac5de6"
+Parent: "a36816d1-49b9-4f7f-a0c6-2f0dd3a96413"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-global/Data/Dictionary/Demo/Personal Info/Title"
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: Personal Information
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "20ad7604-cc09-42bc-a34d-7634c21a831b"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T184742Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2c972a12-eee5-41b8-9cc3-b16b46716f69"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T184742Z

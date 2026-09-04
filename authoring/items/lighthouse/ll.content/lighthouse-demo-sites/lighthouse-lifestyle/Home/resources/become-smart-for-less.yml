@@ -1,0 +1,105 @@
+﻿---
+ID: "7954ba9b-cd3c-4627-bb5f-dec5fd5b5d1f"
+Parent: "e46577a6-680e-4d68-9bbc-0d05b9d34700"
+Template: "b5d818a8-2769-4c7d-b9e9-a6932577ee0d"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/resources/become-smart-for-less"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "492c9e54-7d0e-41aa-b7e2-6915fbfa4fd5"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Become Smart and Sustainable For Less
+    - ID: "0415281e-d6f5-473c-aac7-7fcc9abed21d"
+      Hint: Media
+      Value: |
+        <link mediaid="{8C50FD05-ABA5-433C-A3ED-20F22FFE7A8A}" src="-/media/8C50FD05ABA5433CA3ED20F22FFE7A8A.ashx" />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{1D1809FF-E541-48E7-A155-20B03DCE0305}"
+              p:after="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{81356254-78AA-450D-9419-81FD54C32B22}"
+              p:after="*"
+              s:id="{09F4B16D-702A-4740-AD38-05409CB3CBD1}"
+              s:ph="headless-main"
+              s:ds="{C0C73C10-F834-4815-8EDD-2CEBA3BD63FE}" />
+            <r
+              uid="{3FB1376D-B9F4-447F-B076-0C946DCE83C6}"
+              p:after="*"
+              s:id="{92046F51-A623-4456-A355-47475B89786A}"
+              s:ph="headless-main"
+              s:ds="{69FCB0C7-2698-4B67-BFE7-71A7DB03EE2C}" />
+          </d>
+        </r>
+    - ID: "1c3f5f9b-6700-47e2-9b66-b8c2be51fa0c"
+      Hint: ResourceType
+      Value: Video
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190321Z
+    - ID: "4c7a921b-9aa3-420c-8ce3-4afb64abe8de"
+      Hint: Industry
+      Value: |
+        {7CADD0C0-C674-482F-9213-B96D61B80466}
+        {7978B6C8-D55D-4456-B43E-D9A13CAB51C1}
+        {5E881A6E-EF45-4E0E-B1EF-D8EA93315FEC}
+        {090E7382-D38E-4D69-A8E0-85A894F36428}
+        {2C70685C-DD3C-4698-BD8C-32B406FA3379}
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "55bddead-6cc8-4e02-b715-b813e1a2b16e"
+      Hint: MediaTitle
+      Value: Save money while being smart
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0e8605ca-29a9-4f3b-97fa-e64fcf831803"
+    - ID: "93025238-fce1-49a8-aee1-05c986e2fddb"
+      Hint: MediaCaption
+      Value: Watch this video and get in touch with us to find out more.
+    - ID: "b8189edb-8fe2-49c5-af3b-aad2b672ac34"
+      Hint: Introduction
+      Value: "<p>Gen-z supply chain buzz crowdfunding leverage responsive web design termsheet stock direct mailing ecosystem buyer assets social proof bandwidth. Strategy hackathon customer technology holy grail success assets.</p>"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T205049Z
+    - ID: "dc21908d-83b5-49ba-993f-3985566711b6"
+      Hint: Region
+      Value: |
+        {B1EA70BB-4B21-473E-B5FA-A4BC8781F2BF}
+        {CC5CDB6F-C4B7-440D-865B-AD4A2725DCFD}
+        {49220CB2-6B13-4743-ACA1-543AD9A57466}
+        {09C18D8F-33B6-4000-BFC1-40871D5C8023}
+        {68470BCB-F80E-4C78-9CAF-D1B39338F223}

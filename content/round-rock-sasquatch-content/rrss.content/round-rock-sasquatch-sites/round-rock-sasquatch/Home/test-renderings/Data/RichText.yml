@@ -1,0 +1,34 @@
+﻿---
+ID: "bf555dda-2ae3-4297-8681-0b05377ee98e"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/RichText"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T150704Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: <p>This is a <strong>RichText</strong> rendering using a local datasource. It supports <em>emphasis</em>, <a href='#'>links</a>, and other inline HTML.</p><h2>Subheading</h2><p>Multiple paragraphs, lists, and headings are styled by the site theme.</p><ul><li>One</li><li>Two</li><li>Three</li></ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "745feff3-936e-43c3-bcc2-ded71c44fce3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T150704Z

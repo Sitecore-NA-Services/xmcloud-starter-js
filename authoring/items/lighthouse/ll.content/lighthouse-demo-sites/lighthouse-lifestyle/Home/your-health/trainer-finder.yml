@@ -1,0 +1,113 @@
+﻿---
+ID: "3b26dab2-cd1d-4e12-8ff8-fb8603213b8d"
+Parent: "055766be-d42e-4e94-b53b-3f6d223ec3d5"
+Template: "31cdfb65-9f8d-42b9-a14f-588c80191f45"
+Path: "/sitecore/content/lighthouse-demo-sites/lighthouse-lifestyle/Home/your-health/trainer-finder"
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "aa75f830-54ab-40fc-bb7f-544a3bc7fcb1"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Trainer Finder
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{86933101-24AA-4AF8-AE7F-FB1EF4A89DC0}"
+              p:before="*"
+              s:id="{F442E72A-2C3A-4EB5-BADC-B23E544C57FE}"
+              s:ph="headless-header"
+              s:ds="{546A3367-C5CF-45E7-A872-395C4E155FEC}" />
+            <r
+              uid="{E3BA2E47-91B4-4EE5-9E40-83B705E626EB}"
+              p:after="r[@uid='{86933101-24AA-4AF8-AE7F-FB1EF4A89DC0}']"
+              s:id="{A1FF6F5B-F46E-4180-B60D-A70CCDE1A1F2}"
+              s:ph="headless-main"
+              s:ds="{0E906E60-B18F-4EAB-87D8-D6D37DC215CA}" />
+            <r
+              uid="{C342FF51-9FE1-42D3-B5C3-1A32B2D9D6CA}"
+              p:after="r[@uid='{E3BA2E47-91B4-4EE5-9E40-83B705E626EB}']"
+              s:id="{04B10A0F-06A6-4B53-8980-4453D237F786}"
+              s:ph="headless-main" />
+            <r
+              uid="{0A0E5D65-DEDD-42FB-A893-E0A5DA73FA63}"
+              p:after="*"
+              s:id="{DF8F69B2-3354-4BD0-957A-CF2D7D5F4A22}"
+              s:ph="headless-footer"
+              s:ds="{CACE9363-17FA-426C-BC20-642E7A8FE3A4}" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T190319Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "835b1869-efcf-47f7-9825-375fc0765cfc"
+      Hint: NavigationTitle
+      Value: Trainer Finder
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "afd3bbc8-3d21-4b4f-a6f8-b53d9c6f744f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260423T185918Z
+    - ID: "dc2d72db-1beb-4c7b-8971-e591848ac3d1"
+      Hint: NavigationImage
+      Value: |
+        <image mediaid="{D590210C-4B80-4014-B82E-3DD16DB7331C}" />
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02da8502-f702-45bc-94fa-30097dfd07a6"
+      Hint: Title
+      Value: Trainer Finder
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260413T201035Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7a6d7655-25fd-46c0-8597-7fb1182bbd19"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T201035Z

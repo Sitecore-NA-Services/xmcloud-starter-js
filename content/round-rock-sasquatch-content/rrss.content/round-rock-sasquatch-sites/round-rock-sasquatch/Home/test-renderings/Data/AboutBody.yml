@@ -1,0 +1,26 @@
+﻿---
+ID: "3f272eb8-fb4e-4e50-bac1-94a12ffa5ed7"
+Parent: "1940e1b0-7a3f-44cb-b155-65b9c8dab00b"
+Template: "d37638d2-64eb-41c4-be99-7a0c1eb881c2"
+Path: "/sitecore/content/round-rock-sasquatch-sites/round-rock-sasquatch/Home/test-renderings/Data/AboutBody"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260519T152739Z
+    - ID: "509fe356-145c-4ccc-879f-f73225c30e85"
+      Hint: Body
+      Value: "<p>This is an AboutBody rendering on the test page, demonstrating it renders rich-text content from a datasource.</p>"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d9b82071-4c07-4550-91cd-d12d10ab9b0c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\superuser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T152739Z
