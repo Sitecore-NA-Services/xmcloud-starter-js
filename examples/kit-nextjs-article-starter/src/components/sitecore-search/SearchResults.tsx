@@ -17,7 +17,7 @@
  *    explicitly in code (content type / author / topics).
  */
 
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { cva } from 'class-variance-authority';
 import {
@@ -114,8 +114,8 @@ const SearchResultsComponent = ({
   const t = useTranslations();
   const {
     widgetRef,
-    actions: { onPageNumberChange, onItemClick, onSortChange, onFacetClick, onClearFilters },
-    state: { sortType, page, itemsPerPage },
+    actions: { onPageNumberChange, onItemClick, onSortChange, onFacetClick, onClearFilters, onKeyphraseChange },
+    state: { sortType, page, itemsPerPage, keyphrase },
     queryResult: {
       isLoading,
       isFetching,
@@ -150,6 +150,14 @@ const SearchResultsComponent = ({
       itemsPerPage: defaultItemsPerPage,
     },
   });
+
+  // `useSearchResults` only applies `state.keyphrase` on first init. Header submit
+  // on this page is a same-route `?q=` change, so without this the widget keeps the
+  // empty browse query (the full 60-document index) for every subsequent search.
+  useEffect(() => {
+    if ((defaultKeyphrase || '') === (keyphrase || '')) return;
+    onKeyphraseChange({ keyphrase: defaultKeyphrase });
+  }, [defaultKeyphrase, keyphrase, onKeyphraseChange]);
 
   // Build a lookup of currently-selected facet values so we can mark checkboxes.
   // Selected values are keyed by `facetValueId` (the `facetid_…` token), which matches
@@ -240,11 +248,11 @@ const SearchResultsComponent = ({
                 <>
                   <span className="font-semibold text-zinc-900">{totalItems}</span>{' '}
                   {totalItems === 1 ? t(dictionaryKeys.SEARCH_RESULT) : t(dictionaryKeys.SEARCH_RESULTS)}
-                  {defaultKeyphrase ? (
+                  {keyphrase ? (
                     <>
                       {' '}
                       {t(dictionaryKeys.SEARCH_RESULTS_FOR)}{' '}
-                      <span className="font-medium text-zinc-900">&quot;{defaultKeyphrase}&quot;</span>
+                      <span className="font-medium text-zinc-900">&quot;{keyphrase}&quot;</span>
                     </>
                   ) : null}
                 </>
@@ -407,7 +415,7 @@ const SearchResultsContent = ({ params }: ComponentProps) => {
     <section className={cn(searchResultsVariants({ colorScheme }), params?.styles)}>
       <div className="mx-auto w-full max-w-screen-xl px-4 xl:px-8">
         {configured && rfkId ? (
-          <SearchResultsWidget rfkId={rfkId} defaultKeyphrase={q} />
+          <SearchResultsWidget key={q || '__all__'} rfkId={rfkId} defaultKeyphrase={q} />
         ) : (
           <div className="rounded-xl border border-zinc-200 bg-white p-8">
             <p className="font-semibold text-zinc-900">Search is not configured yet.</p>
