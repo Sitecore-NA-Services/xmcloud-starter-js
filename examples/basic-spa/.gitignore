@@ -1,6 +1,35 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
 # dependencies
 /node_modules
 
+# Angular
+/.angular
+/dist
+/coverage
+/tmp
+/out-tsc
 
-/.pnpm-store
+# misc
+.DS_Store
+
+# local env files
+.env
+.env.local
+.env.dev
+.env.prod
+.env.*.local
+
+# generated environment files
+/src/environments/environment.dev.ts
+/src/environments/environment.prod.ts
+
+# Log files
+*.log*
+
+# sitecore temp files
+.sitecore/*
+# except for component-map
+!.sitecore/component-map.ts
+!.sitecore/component-map.client.ts
+!.sitecore/import-map.ts

@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@import './base/variables.css';
+@import './base/base.css';
+@import './base/app.css';
+@import './base/tailwind-bootstrap-grid.css';
+@import './base/components-common.css';
+@import './components/layout.css';
+@import './components/container.css';
+@import './components/rich-text.css';
+@import './components/image.css';
+@import './components/promo.css';
+@import './components/navigation.css';
+
+/* bootstrap grid to tailwind plugin */
+@plugin 'tailwind-bootstrap-grid' {
+  container_max_widths: 'sm', '576px', 'md', '768px', 'lg', '992px', 'xl', '1200px', '2xl', '1400px';
+}
+
+sc-placeholder {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+sc-placeholder.row {
+  flex-direction: row;
+}
+
+/* Header placeholder layout — xmcloud basic-spa basic/_header.scss (.prod-mode #header; mobile-large = 992px) */
+@media only screen and (max-width: 992px) {
+  .prod-mode #header {
+    padding-bottom: 0;
+  }
+
+  .prod-mode #header sc-placeholder {
+    flex-direction: column-reverse;
+  }
+}
+
+/* preload tailwind-bootstrap-grid utility classes; */
+/* responsive classes are in base/tailwind-bootstrap-grid */
+@source inline("col-{1..12}");
+@source inline("offset-{1..12}");

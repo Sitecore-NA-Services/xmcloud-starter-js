@@ -24,7 +24,7 @@ Available Examples:
 - `kit-nextjs-location-finder` - **Alaris** - Car brand template with location finder functionality
 - `kit-nextjs-product-listing` - **SYNC** - Product-focused template for audio gear companies
 - `kit-nextjs-skate-park` - Simple demo site showcasing component examples
-- `basic-spa` - SPA starter kit with Angular and Node proxy
+- `basic-spa` - Angular Content SDK 1.0 SSR starter
 
 Each starter demonstrates:
 - Tailwind-based styling with Shadcn/ui components

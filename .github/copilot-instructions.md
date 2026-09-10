@@ -16,7 +16,7 @@ This is a **multi-starter monorepo** for Sitecore XM Cloud headless applications
 - `kit-nextjs-product-listing` - Product showcase template (SYNC)
 - `kit-nextjs-skate-park` - Component demo site
 - `basic-nextjs` - Minimal Next.js starter
-- `basic-spa` - Angular SPA with Node proxy
+- `basic-spa` - Angular Content SDK 1.0 SSR starter
 - `lighthouse` - Lighthouse Lifestyle demo site (migrated from Sitecore-Lighthouse-2026)
 - `round-rock-sasquatch` - Second Lighthouse project site (migrated from Sitecore-Lighthouse-2026)
 
@@ -55,6 +55,26 @@ npm run start  # Production server (runs build first, then next start)
 1. `sitecore-tools:generate-map` - Generates component mapping from Sitecore
 2. `sitecore-tools:build` - Builds Sitecore configuration
 3. `next:build` - Builds Next.js application
+
+### Build Commands (Angular Starter)
+`examples/basic-spa` is a standalone Angular 21 Content SDK 1.0 SSR app (no Node proxy). Work from that directory:
+
+```bash
+cd examples/basic-spa
+cp .env.example .env
+npm install
+npm run dev     # gen:env:dev → generate-map → ng serve
+npm run build   # gen:env:prod → generate-map → sitecore-tools:build → ng build
+npm start       # production build, then serve SSR bundle
+```
+
+**Critical:** Never run `ng build` directly. Always use `npm run build` which includes Sitecore tooling steps:
+1. `gen:env:prod` - Writes browser-safe `CSDK_PUBLIC_*` values to `src/environments/environment.prod.ts`
+2. `sitecore-tools:generate-map` - Generates `.sitecore/component-map.ts`
+3. `sitecore-tools:build` - Generates `.sitecore/sites.json` and `metadata.json`
+4. `ng build` - Builds the Angular SSR application
+
+The XM Cloud editing host (`angularstarter`) uses `buildCommand: "build"` and `runCommand: "serve:ssr"`.
 
 ### Local Sitecore Container Development
 **Windows-only** Docker setup for disconnected development:

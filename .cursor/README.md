@@ -32,7 +32,7 @@ This repository contains multiple starter applications:
 - **kit-nextjs-location-finder** - Car brand template with location finder (Alaris)
 - **kit-nextjs-product-listing** - Product-focused template (SYNC)
 - **kit-nextjs-skate-park** - Simple demo site with component examples
-- **basic-spa** - SPA starter kit with Angular and Node proxy
+- **basic-spa** - Angular Content SDK 1.0 SSR starter
 
 Each starter follows the same patterns and conventions defined in these rules while maintaining their unique functionality and design.
 
