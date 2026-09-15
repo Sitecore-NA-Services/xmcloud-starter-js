@@ -1,0 +1,217 @@
+.park-finder,
+.lesson-booking,
+.live-scoreboard {
+  max-width: none;
+  margin: 0;
+  padding: 0.5rem 0 2rem;
+}
+
+.park-finder__title,
+.lesson-booking__title,
+.live-scoreboard h1 {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  letter-spacing: 0.04em;
+  margin: 0 0 0.4rem;
+  color: var(--sp-cream, #f6f1e8);
+}
+
+.park-finder__intro,
+.lesson-booking__intro,
+.live-scoreboard__header p,
+.live-scoreboard__header div {
+  color: var(--sp-muted, #a8aeb8);
+  max-width: 42rem;
+  font-size: 1.05rem;
+}
+
+.park-finder__filters,
+.lesson-booking__form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  margin: 1.75rem 0 1.25rem;
+  padding: 1.15rem;
+  background: var(--sp-card, #1b1f28);
+  border: 1px solid var(--sp-line, rgba(255, 255, 255, 0.08));
+  border-radius: 1rem;
+}
+
+.park-finder__filters label,
+.lesson-booking__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sp-muted, #a8aeb8);
+}
+
+.park-finder__filters input,
+.park-finder__filters select,
+.lesson-booking__form input,
+.lesson-booking__form select,
+.lesson-booking__form textarea {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #10131a;
+  color: var(--sp-cream, #f6f1e8);
+  border-radius: 0.55rem;
+  padding: 0.7rem 0.85rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.park-finder__filters input:focus,
+.park-finder__filters select:focus,
+.lesson-booking__form input:focus,
+.lesson-booking__form select:focus,
+.lesson-booking__form textarea:focus {
+  outline: 2px solid var(--sp-volt, #c8ff3d);
+  outline-offset: 1px;
+}
+
+.park-finder__count {
+  color: var(--sp-volt, #c8ff3d);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.park-finder__grid,
+.live-scoreboard__grid,
+.lesson-booking__catalog {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.park-card,
+.live-scoreboard__grid li,
+.lesson-booking__catalog li {
+  border: 1px solid var(--sp-line, rgba(255, 255, 255, 0.08));
+  border-radius: 1rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+  background: var(--sp-card, #1b1f28);
+  color: var(--sp-cream, #f6f1e8);
+  box-shadow: var(--sp-shadow, 0 24px 60px rgba(0, 0, 0, 0.35));
+}
+
+.park-card h2,
+.live-scoreboard__grid h2,
+.lesson-booking__catalog strong {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.03em;
+  display: block;
+  margin: 0 0 0.35rem;
+}
+
+.park-card p,
+.live-scoreboard__grid p,
+.lesson-booking__catalog span {
+  color: var(--sp-muted, #a8aeb8);
+  margin: 0.15rem 0;
+  display: block;
+}
+
+.park-card__hours {
+  color: var(--sp-volt, #c8ff3d) !important;
+  font-weight: 600;
+}
+
+.park-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.85rem 0 0;
+}
+
+.park-card__tags li {
+  background: rgba(200, 255, 61, 0.12);
+  color: var(--sp-volt, #c8ff3d);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lesson-booking__form button {
+  grid-column: 1 / -1;
+  background: var(--sp-orange, #ff4d1c);
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lesson-booking__form button:hover {
+  background: var(--sp-orange-dark, #e03d12);
+}
+
+.lesson-booking__form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.lesson-booking__error {
+  color: #ff8a80;
+  grid-column: 1 / -1;
+}
+
+.lesson-booking__thanks {
+  background: rgba(200, 255, 61, 0.12);
+  border: 1px solid rgba(200, 255, 61, 0.4);
+  color: var(--sp-cream, #f6f1e8);
+  padding: 1rem 1.2rem;
+  border-radius: 0.75rem;
+}
+
+.live-scoreboard__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.live-scoreboard__stamp {
+  font-size: 0.8rem;
+  color: var(--sp-muted, #a8aeb8);
+  background: var(--sp-card, #1b1f28);
+  border: 1px solid var(--sp-line, rgba(255, 255, 255, 0.08));
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  margin: 0;
+}
+
+.live-scoreboard__grid li.busy {
+  border-color: var(--sp-orange, #ff4d1c);
+  background: linear-gradient(180deg, rgba(255, 77, 28, 0.18), var(--sp-card, #1b1f28));
+}
+
+.live-scoreboard__occupancy {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--sp-cream, #f6f1e8) !important;
+}
+
+.park-finder__empty,
+.live-scoreboard__error {
+  color: var(--sp-muted, #a8aeb8);
+}

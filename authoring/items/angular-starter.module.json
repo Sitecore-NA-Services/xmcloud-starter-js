@@ -1,0 +1,75 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.angular-starter",
+    "items": {
+        "path": "angular-starter",
+        "includes": [
+            {
+                "name": "as.templates",
+                "path": "/sitecore/templates/Project/angular-starter",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "as.renderings",
+                "path": "/sitecore/layout/Renderings/Project/angular-starter",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "as.placeholderSettings",
+                "path": "/sitecore/layout/Placeholder Settings/Project/angular-starter",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "as.availableRenderings",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Presentation/Available Renderings/Angular",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.data.parks",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Data/Parks",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.data.lessons",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Data/Lessons",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.data.live",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Data/Live",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.dictionary",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Dictionary/Angular",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.pages.find-a-park",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Find-a-Park",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.pages.lessons",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Lessons",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.pages.live",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Live",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            }
+        ]
+    }
+}

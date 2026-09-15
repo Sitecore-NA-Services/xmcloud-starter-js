@@ -1,0 +1,498 @@
+/* Skate Park brand overlay — keeps SXA class names, restyles the chrome. */
+
+:root {
+  --sp-ink: #0b0c10;
+  --sp-surface: #13151c;
+  --sp-card: #1b1f28;
+  --sp-line: rgba(255, 255, 255, 0.08);
+  --sp-cream: #f6f1e8;
+  --sp-muted: #a8aeb8;
+  --sp-orange: #ff4d1c;
+  --sp-orange-dark: #e03d12;
+  --sp-volt: #c8ff3d;
+  --sp-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: var(--sp-cream);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(255, 77, 28, 0.18), transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, rgba(200, 255, 61, 0.08), transparent 45%),
+    var(--sp-ink);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--sp-volt);
+  font-size: inherit;
+}
+
+a:hover {
+  color: #e7ff8a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  letter-spacing: 0.04em;
+  color: var(--sp-cream);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.prod-mode,
+.editing-mode {
+  background: transparent;
+}
+
+#header,
+#content,
+#footer {
+  display: block;
+  width: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(11, 12, 16, 0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--sp-line);
+}
+
+#header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+#header .title,
+#header .bs-title {
+  flex: 0 0 auto;
+}
+
+#header .title h1,
+#header .bs-title h1,
+#header .rich-text h1 {
+  font-size: clamp(1.6rem, 2vw, 2.1rem);
+  margin: 0;
+  padding: 0;
+  color: var(--sp-cream);
+}
+
+#header .title h1::before,
+#header .bs-title h1::before {
+  content: '';
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.55rem;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--sp-orange), var(--sp-volt));
+  transform: rotate(12deg);
+  vertical-align: 0.05em;
+}
+
+#header .navigation {
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+}
+
+.navigation.navigation-horizontal {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation .level0 > .navigation-title > a,
+.navigation .level1 > .navigation-title > a,
+.navigation li > .navigation-title > a {
+  border: 0;
+  padding: 0.55rem 0.9rem;
+  margin: 0;
+  border-radius: 999px;
+  color: var(--sp-cream);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.navigation li > .navigation-title > a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--sp-volt);
+}
+
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+.hero-banner .component-content {
+  height: min(68vh, 640px);
+  min-height: 280px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--sp-shadow);
+}
+
+.hero-banner .component-content::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 35%, rgba(11, 12, 16, 0.78) 100%);
+  pointer-events: none;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rich-text,
+.content {
+  color: var(--sp-muted);
+  font-size: 1.05rem;
+  overflow: visible;
+  padding: 0;
+}
+
+.rich-text h1,
+.rich-text h2,
+.rich-text h3,
+.rich-text h4,
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  color: var(--sp-cream);
+}
+
+.rich-text h2 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.rich-text h4 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--sp-volt);
+  margin: 0 0 0.5rem;
+}
+
+.promo {
+  background: transparent;
+  padding: 0;
+}
+
+.promo > .component-content {
+  background: var(--sp-card);
+  border: 1px solid var(--sp-line);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  box-shadow: var(--sp-shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.promo > .component-content:hover {
+  transform: translateY(-4px);
+  border-color: rgba(200, 255, 61, 0.35);
+}
+
+.promo .field-promoicon img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.promo .promo-text,
+.promo > .component-content > div {
+  padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.promo .field-promotext h3 {
+  font-size: 1.8rem;
+  margin: 0 0 0.4rem;
+}
+
+.promo .field-promotext p {
+  color: var(--sp-muted);
+  margin: 0;
+}
+
+.promo .field-promolink a,
+.default-link-button,
+.promo.link-button a {
+  display: inline-flex;
+  align-items: center;
+  background: var(--sp-orange);
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.promo .field-promolink a:hover,
+.default-link-button:hover {
+  background: var(--sp-orange-dark);
+  color: #fff;
+}
+
+footer {
+  background: #08090c;
+  border-top: 3px solid var(--sp-orange);
+  margin-top: auto;
+}
+
+#footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+}
+
+footer .contacts p,
+footer .contacts span,
+footer .contacts a,
+footer .rich-text,
+footer .rich-text p {
+  color: var(--sp-muted);
+}
+
+footer .rich-text h1,
+footer .rich-text h2,
+footer .rich-text h3,
+footer .title h1 {
+  color: var(--sp-cream);
+}
+
+.container-dark-background {
+  background: transparent;
+}
+
+@media only screen and (max-width: 992px) {
+  #header {
+    display: block;
+  }
+
+  .navigation.navigation-horizontal {
+    width: auto;
+    padding: 0;
+    position: absolute;
+    top: 0.85rem;
+    right: 1.25rem;
+  }
+
+  .navigation.navigation-horizontal .component-content {
+    display: none;
+  }
+
+  .navigation.navigation-horizontal .menu-mobile-navigate:checked ~ .component-content {
+    display: block;
+    background: rgba(11, 12, 16, 0.96);
+  }
+
+  .navigation.navigation-horizontal .menu-humburger::before {
+    border-color: var(--sp-cream);
+    margin-top: 0;
+  }
+
+  .navigation.navigation-horizontal .component-content .level0 > .navigation-title > a > span,
+  .navigation.navigation-horizontal .level0 > .navigation-title > a {
+    color: var(--sp-cream);
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .navigation.navigation-horizontal {
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .navigation.navigation-horizontal .component-content {
+    display: block !important;
+    position: static;
+    background: transparent;
+  }
+
+  .navigation.navigation-horizontal .component-content .level0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.35rem;
+    margin: 0;
+  }
+
+  .navigation.navigation-horizontal .level0,
+  .navigation.navigation-horizontal .level1 {
+    float: none;
+    margin: 0;
+  }
+
+  .navigation.navigation-horizontal .menu-humburger {
+    display: none;
+  }
+}
+
+.park-finder,
+.lesson-booking,
+.live-scoreboard {
+  max-width: none;
+  margin: 0;
+  padding: 0.5rem 0 2rem;
+}
+
+.park-finder__title,
+.lesson-booking__title,
+.live-scoreboard h1 {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  letter-spacing: 0.04em;
+  margin: 0 0 0.4rem;
+  color: var(--sp-cream);
+}
+
+.park-finder__intro,
+.lesson-booking__intro,
+.live-scoreboard__header div {
+  color: var(--sp-muted);
+  max-width: 42rem;
+  font-size: 1.05rem;
+}
+
+.park-finder__filters,
+.lesson-booking__form {
+  margin: 1.75rem 0 1.25rem;
+  padding: 1.15rem;
+  background: var(--sp-card);
+  border: 1px solid var(--sp-line);
+  border-radius: 1rem;
+}
+
+.park-finder__filters label,
+.lesson-booking__form label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sp-muted);
+}
+
+.park-finder__filters input,
+.park-finder__filters select,
+.lesson-booking__form input,
+.lesson-booking__form select,
+.lesson-booking__form textarea {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #10131a;
+  color: var(--sp-cream);
+  border-radius: 0.55rem;
+  padding: 0.7rem 0.85rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.park-finder__count {
+  color: var(--sp-volt);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.park-card,
+.live-scoreboard__grid li,
+.lesson-booking__catalog li {
+  border: 1px solid var(--sp-line) !important;
+  border-radius: 1rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+  background: var(--sp-card) !important;
+  color: var(--sp-cream);
+  box-shadow: var(--sp-shadow);
+}
+
+.park-card h2,
+.live-scoreboard__grid h2,
+.lesson-booking__catalog strong {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.03em;
+  display: block;
+  margin: 0 0 0.35rem;
+}
+
+.park-card p,
+.live-scoreboard__grid p,
+.lesson-booking__catalog span {
+  color: var(--sp-muted);
+}
+
+.park-card__hours {
+  color: var(--sp-volt) !important;
+  font-weight: 600;
+}
+
+.park-card__tags li {
+  background: rgba(200, 255, 61, 0.12);
+  color: var(--sp-volt);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lesson-booking__form button {
+  background: var(--sp-orange);
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lesson-booking__form button:hover {
+  background: var(--sp-orange-dark);
+}
+
+.lesson-booking__thanks {
+  background: rgba(200, 255, 61, 0.12);
+  border: 1px solid rgba(200, 255, 61, 0.4);
+  color: var(--sp-cream);
+}
+
+.live-scoreboard__stamp {
+  color: var(--sp-muted);
+  background: var(--sp-card);
+  border: 1px solid var(--sp-line);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+}
+
+.live-scoreboard__grid li.busy {
+  border-color: var(--sp-orange);
+  background: linear-gradient(180deg, rgba(255, 77, 28, 0.18), var(--sp-card));
+}
+
+.live-scoreboard__occupancy {
+  color: var(--sp-cream) !important;
+}

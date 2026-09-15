@@ -1,0 +1,30 @@
+[
+  {
+    "id": "venice",
+    "name": "Venice Beach Skatepark",
+    "occupancy": 62,
+    "waitMinutes": 8,
+    "lightsOn": true
+  },
+  {
+    "id": "burnside",
+    "name": "Burnside",
+    "occupancy": 81,
+    "waitMinutes": 14,
+    "lightsOn": false
+  },
+  {
+    "id": "fdr",
+    "name": "FDR Skatepark",
+    "occupancy": 44,
+    "waitMinutes": 3,
+    "lightsOn": false
+  },
+  {
+    "id": "smo",
+    "name": "SMO Skatepark",
+    "occupancy": 27,
+    "waitMinutes": 0,
+    "lightsOn": true
+  }
+]

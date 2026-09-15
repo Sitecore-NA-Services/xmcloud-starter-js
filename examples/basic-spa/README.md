@@ -22,6 +22,30 @@ npm run dev
 
 The XM Cloud editing host (`angularstarter` in `xmcloud.build.json`) uses `build` / `serve:ssr`.
 
+## Vercel (production host)
+
+Work from this starter directory, the same way as the article starter — not the repo root:
+
+```bash
+cd examples/basic-spa
+vercel --prod
+```
+
+The Express SSR entry is `dist/content-sdk-angular/server/server.mjs` (`npm run serve:ssr`). `vercel.json` runs `npm run build` and uses that server output.
+
+Set these environment variables on the Vercel project (Production, Preview, and Development), matching `.env.example`:
+
+```
+SITECORE_EDGE_CONTEXT_ID
+CSDK_PUBLIC_SITECORE_EDGE_CONTEXT_ID
+CSDK_PUBLIC_DEFAULT_SITE_NAME
+CSDK_PUBLIC_DEFAULT_SITE
+SITECORE_DEFAULT_SITE
+CSDK_PUBLIC_DEFAULT_LANGUAGE
+```
+
+Do not commit `.env` or `.vercel`.
+
 Required environment variables (see `.env.example`):
 
 ```

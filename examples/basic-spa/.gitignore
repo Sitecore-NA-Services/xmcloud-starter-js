@@ -27,6 +27,9 @@
 # Log files
 *.log*
 
+# vercel
+.vercel
+
 # sitecore temp files
 .sitecore/*
 # except for component-map

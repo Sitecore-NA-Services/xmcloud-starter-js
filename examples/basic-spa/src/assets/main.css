@@ -11,6 +11,8 @@
 @import './components/image.css';
 @import './components/promo.css';
 @import './components/navigation.css';
+@import './components/angular-widgets.css';
+@import './components/skatepark-theme.css';
 
 /* bootstrap grid to tailwind plugin */
 @plugin 'tailwind-bootstrap-grid' {
