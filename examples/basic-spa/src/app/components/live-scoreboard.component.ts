@@ -42,6 +42,7 @@ const MOCK_PARKS = [
   { id: 'burnside', name: 'Burnside' },
   { id: 'fdr', name: 'FDR Skatepark' },
   { id: 'smo', name: 'SMO Skatepark' },
+  { id: 'louisville', name: 'Louisville Extreme Park' },
 ];
 
 function mockStatuses(): ParkStatus[] {

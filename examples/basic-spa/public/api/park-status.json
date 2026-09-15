@@ -26,5 +26,12 @@
     "occupancy": 27,
     "waitMinutes": 0,
     "lightsOn": true
+  },
+  {
+    "id": "louisville",
+    "name": "Louisville Extreme Park",
+    "occupancy": 51,
+    "waitMinutes": 5,
+    "lightsOn": true
   }
 ]
