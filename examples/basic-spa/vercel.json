@@ -3,5 +3,11 @@
   "framework": "express",
   "buildCommand": "npm run build",
   "installCommand": "npm install",
-  "outputDirectory": "dist/content-sdk-angular/server"
+  "outputDirectory": "dist/content-sdk-angular/server",
+  "functions": {
+    "dist/content-sdk-angular/server/server.mjs": {
+      "includeFiles": "dist/content-sdk-angular/**",
+      "maxDuration": 60
+    }
+  }
 }

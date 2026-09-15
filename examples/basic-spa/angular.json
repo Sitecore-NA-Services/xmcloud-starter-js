@@ -24,7 +24,7 @@
               "@sitecore-content-sdk/angular/codegen"
             ],
             "security": {
-              "allowedHosts": ["localhost", "*.localhost"]
+              "allowedHosts": ["localhost", "*.localhost", "*.vercel.app"]
             },
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.json",
@@ -37,6 +37,7 @@
             "styles": ["src/styles.css"],
             "server": "src/main.server.ts",
             "outputMode": "server",
+            "externalDependencies": ["express"],
             "ssr": {
               "entry": "src/server.ts"
             }
