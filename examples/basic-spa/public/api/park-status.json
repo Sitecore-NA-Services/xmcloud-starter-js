@@ -1,37 +1,21 @@
 [
-  {
-    "id": "venice",
-    "name": "Venice Beach Skatepark",
-    "occupancy": 62,
-    "waitMinutes": 8,
-    "lightsOn": true
-  },
-  {
-    "id": "burnside",
-    "name": "Burnside",
-    "occupancy": 81,
-    "waitMinutes": 14,
-    "lightsOn": false
-  },
-  {
-    "id": "fdr",
-    "name": "FDR Skatepark",
-    "occupancy": 44,
-    "waitMinutes": 3,
-    "lightsOn": false
-  },
-  {
-    "id": "smo",
-    "name": "SMO Skatepark",
-    "occupancy": 27,
-    "waitMinutes": 0,
-    "lightsOn": true
-  },
-  {
-    "id": "louisville",
-    "name": "Louisville Extreme Park",
-    "occupancy": 51,
-    "waitMinutes": 5,
-    "lightsOn": true
-  }
+  { "id": "warehouse", "name": "Warehouse", "occupancy": 34, "waitMinutes": 2, "lightsOn": true },
+  { "id": "school", "name": "School", "occupancy": 71, "waitMinutes": 9, "lightsOn": false },
+  { "id": "mall", "name": "The Mall", "occupancy": 58, "waitMinutes": 6, "lightsOn": true },
+  { "id": "chicago", "name": "Chicago", "occupancy": 82, "waitMinutes": 14, "lightsOn": true },
+  { "id": "downtown", "name": "Downtown", "occupancy": 47, "waitMinutes": 4, "lightsOn": true },
+  { "id": "downhill-jam", "name": "Downhill Jam", "occupancy": 29, "waitMinutes": 0, "lightsOn": false },
+  { "id": "burnside", "name": "Burnside", "occupancy": 88, "waitMinutes": 16, "lightsOn": false },
+  { "id": "streets", "name": "Streets", "occupancy": 63, "waitMinutes": 8, "lightsOn": true },
+  { "id": "roswell", "name": "Roswell", "occupancy": 21, "waitMinutes": 0, "lightsOn": true },
+  { "id": "hangar", "name": "The Hangar", "occupancy": 54, "waitMinutes": 5, "lightsOn": true },
+  { "id": "school-ii", "name": "School II", "occupancy": 76, "waitMinutes": 11, "lightsOn": false },
+  { "id": "marseille", "name": "Marseille", "occupancy": 41, "waitMinutes": 3, "lightsOn": true },
+  { "id": "nyc", "name": "NY City", "occupancy": 91, "waitMinutes": 18, "lightsOn": true },
+  { "id": "venice", "name": "Venice Beach", "occupancy": 67, "waitMinutes": 7, "lightsOn": true },
+  { "id": "skatestreet", "name": "Skatestreet", "occupancy": 52, "waitMinutes": 5, "lightsOn": true },
+  { "id": "philadelphia", "name": "Philadelphia", "occupancy": 44, "waitMinutes": 3, "lightsOn": false },
+  { "id": "bullring", "name": "Bullring", "occupancy": 38, "waitMinutes": 2, "lightsOn": false },
+  { "id": "chopper-drop", "name": "Chopper Drop", "occupancy": 19, "waitMinutes": 0, "lightsOn": false },
+  { "id": "skate-heaven", "name": "Skate Heaven", "occupancy": 12, "waitMinutes": 0, "lightsOn": true }
 ]

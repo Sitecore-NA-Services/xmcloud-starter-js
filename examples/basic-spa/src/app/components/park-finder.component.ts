@@ -28,20 +28,20 @@ interface ParkFinderFields {
 
 const FALLBACK_PARKS: Park[] = [
   {
-    id: 'venice',
-    name: 'Venice Beach Skatepark',
-    city: 'Los Angeles',
-    difficulty: 'Intermediate',
-    features: ['Bowl', 'Street', 'Lights'],
+    id: 'warehouse',
+    name: 'Warehouse',
+    city: 'Woodland Hills',
+    difficulty: 'Beginner',
+    features: ['Indoor', 'Street', 'Rails'],
     hours: '6am – 10pm',
   },
   {
-    id: 'burnside',
-    name: 'Burnside',
-    city: 'Portland',
-    difficulty: 'Advanced',
-    features: ['Bowl', 'DIY'],
-    hours: 'Dawn – dusk',
+    id: 'venice',
+    name: 'Venice Beach',
+    city: 'Los Angeles',
+    difficulty: 'Intermediate',
+    features: ['Street', 'Bowl', 'Beach'],
+    hours: '6am – 10pm',
   },
 ];
 
