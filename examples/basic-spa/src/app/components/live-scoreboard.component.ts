@@ -38,25 +38,15 @@ interface LiveScoreboardFields {
 }
 
 const MOCK_PARKS = [
-  { id: 'warehouse', name: 'Warehouse' },
-  { id: 'school', name: 'School' },
-  { id: 'mall', name: 'The Mall' },
-  { id: 'chicago', name: 'Chicago' },
-  { id: 'downtown', name: 'Downtown' },
-  { id: 'downhill-jam', name: 'Downhill Jam' },
   { id: 'burnside', name: 'Burnside' },
-  { id: 'streets', name: 'Streets' },
-  { id: 'roswell', name: 'Roswell' },
-  { id: 'hangar', name: 'The Hangar' },
-  { id: 'school-ii', name: 'School II' },
-  { id: 'marseille', name: 'Marseille' },
-  { id: 'nyc', name: 'NY City' },
-  { id: 'venice', name: 'Venice Beach' },
+  { id: 'venice', name: 'Venice Beach Skatepark' },
+  { id: 'marseille', name: 'Marseille Skatepark' },
   { id: 'skatestreet', name: 'Skatestreet' },
-  { id: 'philadelphia', name: 'Philadelphia' },
-  { id: 'bullring', name: 'Bullring' },
-  { id: 'chopper-drop', name: 'Chopper Drop' },
-  { id: 'skate-heaven', name: 'Skate Heaven' },
+  { id: 'skater-island', name: 'Skater Island' },
+  { id: 'kona', name: 'Kona Skatepark' },
+  { id: 'skatopia', name: 'Skatopia' },
+  { id: 'old-skool', name: 'Old Skool Park' },
+  { id: 'berrics', name: 'The Berrics' },
 ];
 
 function mockStatuses(): ParkStatus[] {
