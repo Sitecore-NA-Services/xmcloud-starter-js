@@ -29,15 +29,35 @@ function loadEnvFiles(mode: 'dev' | 'prod'): void {
 }
 
 function serialize(production: boolean): string {
-  const lines: string[] = [`  production: '${production}',`] 
+  const publicEnv: Record<string, string> = {};
 
-  const keys = Object.keys(process.env).sort();
-  for (const key of keys) {
-    if (!key.startsWith('CSDK_PUBLIC_')) {
-      continue;
+  for (const key of Object.keys(process.env)) {
+    if (key.startsWith('CSDK_PUBLIC_')) {
+      publicEnv[key] = process.env[key] ?? '';
     }
-    const value = process.env[key] ?? '';
-    lines.push(`  ${JSON.stringify(key)}: ${JSON.stringify(value)},`);
+  }
+
+  // XM Cloud - and the Deploy app's Developer settings panel, even with Angular selected -
+  // only ever exposes the unprefixed SITECORE_EDGE_CONTEXT_ID, never a CSDK_PUBLIC_* variant,
+  // so the filter above can never pick it up on a clean build container. Map it across: the
+  // browser needs it as `clientContextId`, and the client context ID is public by design.
+  if (!publicEnv.CSDK_PUBLIC_SITECORE_EDGE_CONTEXT_ID && process.env.SITECORE_EDGE_CONTEXT_ID) {
+    publicEnv.CSDK_PUBLIC_SITECORE_EDGE_CONTEXT_ID = process.env.SITECORE_EDGE_CONTEXT_ID;
+  }
+
+  // Without a context ID the browser bundle gets an empty `clientContextId`, the SDK falls back
+  // to a relative '/api/graphql' endpoint, and GraphQLRequestClient throws on it - the app never
+  // bootstraps and the page renders blank. Fail the build instead of shipping that.
+  if (production && !publicEnv.CSDK_PUBLIC_SITECORE_EDGE_CONTEXT_ID) {
+    throw new Error(
+      'No Edge context ID resolved for a production build. Set SITECORE_EDGE_CONTEXT_ID or ' +
+        'CSDK_PUBLIC_SITECORE_EDGE_CONTEXT_ID in the build environment.'
+    );
+  }
+
+  const lines: string[] = [`  production: '${production}',`];
+  for (const key of Object.keys(publicEnv).sort()) {
+    lines.push(`  ${JSON.stringify(key)}: ${JSON.stringify(publicEnv[key])},`);
   }
 
   return `\
