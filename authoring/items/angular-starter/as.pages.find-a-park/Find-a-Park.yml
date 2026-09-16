@@ -1,0 +1,72 @@
+﻿---
+ID: "80c690f3-1f3f-4518-97b5-6889f5e17f42"
+Parent: "ee791008-b3fa-49de-bd13-730d27031636"
+Template: "b9abc268-670f-46a2-b4d0-d36cf24a352d"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Home/Find-a-Park"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{B4F49B23-4BBA-4C79-BA22-F89F5F0D4E4F}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{601D4FC5-C58F-4726-83EC-B90304984A2E}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "cc5b925f-1603-48a8-8be0-6330833ddcef"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{C8A1F4E2-9B3D-4A71-8E2C-1D5F7A9B3C21}"
+          s:ds="{991D75C3-3E42-4AA0-B367-2E9A3D2F7092}"
+          s:id="{872B4674-DE56-4A6D-87B7-00F23489D573}"
+          s:par=""
+          s:ph="headless-main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
+      Hint: Content
+      Value: <p>Dedicated skateparks in the Concrete Circuit. Filter by city or difficulty, then check hours before you drop in.</p>
+    - ID: "18d39473-673e-485e-90ce-12425acbc005"
+      Hint: Title
+      Value: Find a Park
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260915T140449Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Find a Park
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b5457ac7-c7d0-473f-805c-b49fef2031b6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260916T124345Z

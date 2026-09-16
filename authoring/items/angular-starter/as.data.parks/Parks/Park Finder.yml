@@ -1,0 +1,37 @@
+﻿---
+ID: "991d75c3-3e42-4aa0-b367-2e9a3d2f7092"
+Parent: "d166f3a4-a3fe-4464-aa68-7c34ae583bfc"
+Template: "47defa23-c122-4227-88ff-3aa946d3024b"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Data/Parks/Park Finder"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260915T140449Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "68899cba-7f4d-49fd-bfbb-943553df82b8"
+      Hint: Intro
+      Value: <p>Dedicated skateparks only — bowls, plazas, and indoor parks. Filter by city, difficulty, or name. Hours, features, and lights are listed so you know what you are rolling into.</p>
+    - ID: "6e16535a-25e3-478b-b757-883938268a21"
+      Hint: Heading
+      Value: Find your park
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "63f76103-9d86-4e87-8738-95535ede1795"
+    - ID: "98f9547c-1530-489a-8c83-62b2a1ea3303"
+      Hint: ParksJson
+      Value: |
+        [{"id":"burnside","name":"Burnside","city":"Portland","difficulty":"Advanced","features":["Bowl","DIY"],"hours":"Dawn – dusk"},{"id":"venice","name":"Venice Beach Skatepark","city":"Los Angeles","difficulty":"Intermediate","features":["Bowl","Street","Lights"],"hours":"6am – 10pm"},{"id":"marseille","name":"Marseille Skatepark","city":"Marseille","difficulty":"Intermediate","features":["Park","Bowl","Street"],"hours":"8am – 9pm"},{"id":"skatestreet","name":"Skatestreet","city":"Ventura","difficulty":"Intermediate","features":["Indoor","Bowl","Street"],"hours":"9am – 9pm"},{"id":"skater-island","name":"Skater Island","city":"Middletown","difficulty":"Intermediate","features":["Indoor","Bowl","Vert"],"hours":"10am – 10pm"},{"id":"kona","name":"Kona Skatepark","city":"Jacksonville","difficulty":"Intermediate","features":["Park","Bowl","Street"],"hours":"10am – 10pm"},{"id":"skatopia","name":"Skatopia","city":"Rutland","difficulty":"Advanced","features":["DIY","Bowl","Vert"],"hours":"Dawn – dusk"},{"id":"old-skool","name":"Old Skool Park","city":"Los Angeles","difficulty":"Intermediate","features":["Park","Bowl","Street"],"hours":"8am – 10pm"},{"id":"berrics","name":"The Berrics","city":"Los Angeles","difficulty":"Advanced","features":["Indoor","Street","Ledges"],"hours":"By session"}]
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260916T122530Z

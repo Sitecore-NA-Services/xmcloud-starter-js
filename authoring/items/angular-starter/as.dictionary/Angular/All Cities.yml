@@ -1,0 +1,45 @@
+﻿---
+ID: "d9a3ef65-8f05-4f41-bc31-36ab5182ccd1"
+Parent: "3d2381c2-edb7-48d2-a2cf-bac3f293b384"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Dictionary/Angular/All Cities"
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: parkfinder.allCities
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "f322c3d1-5972-4a57-ba29-99977ba89c34"
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: All cities
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "73cb949e-0a1a-4b8e-8fb7-23b069bfd46e"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260915T140509Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "81d69f86-6a82-430f-9645-1198d21f1bbd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260915T140511Z

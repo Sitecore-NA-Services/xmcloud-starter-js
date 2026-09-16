@@ -1,0 +1,36 @@
+﻿---
+ID: "121329f7-a188-4082-bc24-6701f5fe6c36"
+Parent: "746aedf0-b374-450e-9b0d-c9ebba51ffd5"
+Template: "5145d6a0-50b7-48c0-812c-d9236347aab2"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Data/Live/Live Board"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "01ecdef4-936f-49ab-a49d-bd3ce440c1ef"
+      Hint: Intro
+      Value: <p>Occupancy, wait times, and lights at dedicated skateparks across the circuit. Packed sessions light up orange so you can pick a quieter park.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260915T140449Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e63351ee-e557-4a34-adc7-e2a0b05256c5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "d5d1b92b-45d0-4f5f-9577-ff1b76f09fb6"
+      Hint: PollIntervalSeconds
+      Value: 15
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260916T124533Z
+    - ID: "f583002b-57f5-45da-8652-aaa9f531d5f7"
+      Hint: Heading
+      Value: Live park status

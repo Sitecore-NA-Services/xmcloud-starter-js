@@ -37,25 +37,52 @@ interface LiveScoreboardFields {
   Endpoint?: TextField;
 }
 
-const MOCK_PARKS = [
-  { id: 'burnside', name: 'Burnside' },
-  { id: 'venice', name: 'Venice Beach Skatepark' },
-  { id: 'marseille', name: 'Marseille Skatepark' },
-  { id: 'skatestreet', name: 'Skatestreet' },
-  { id: 'skater-island', name: 'Skater Island' },
-  { id: 'kona', name: 'Kona Skatepark' },
-  { id: 'skatopia', name: 'Skatopia' },
-  { id: 'old-skool', name: 'Old Skool Park' },
-  { id: 'berrics', name: 'The Berrics' },
+const MOCK_PARKS: ParkStatus[] = [
+  { id: 'burnside', name: 'Burnside', occupancy: 68, waitMinutes: 6, lightsOn: false },
+  { id: 'venice', name: 'Venice Beach Skatepark', occupancy: 54, waitMinutes: 3, lightsOn: true },
+  { id: 'marseille', name: 'Marseille Skatepark', occupancy: 47, waitMinutes: 2, lightsOn: true },
+  { id: 'skatestreet', name: 'Skatestreet', occupancy: 61, waitMinutes: 5, lightsOn: true },
+  { id: 'skater-island', name: 'Skater Island', occupancy: 58, waitMinutes: 4, lightsOn: true },
+  { id: 'kona', name: 'Kona Skatepark', occupancy: 42, waitMinutes: 1, lightsOn: true },
+  { id: 'skatopia', name: 'Skatopia', occupancy: 73, waitMinutes: 8, lightsOn: false },
+  { id: 'old-skool', name: 'Old Skool Park', occupancy: 36, waitMinutes: 0, lightsOn: true },
+  { id: 'berrics', name: 'The Berrics', occupancy: 79, waitMinutes: 10, lightsOn: true },
 ];
 
+const OCCUPANCY_MIN = 28;
+const OCCUPANCY_MAX = 91;
+const DRIFT_RANGE = 2;
+
+function waitForOccupancy(occupancy: number): number {
+  if (occupancy >= 85) {
+    return 10 + Math.floor((occupancy - 85) / 2);
+  }
+  if (occupancy >= 70) {
+    return 5 + Math.floor((occupancy - 70) / 4);
+  }
+  if (occupancy >= 50) {
+    return 1 + Math.floor((occupancy - 50) / 10);
+  }
+  return 0;
+}
+
+function cloneStatuses(rows: ParkStatus[]): ParkStatus[] {
+  return rows.map((park) => ({ ...park }));
+}
+
+let sessionStatuses = cloneStatuses(MOCK_PARKS);
+
 function mockStatuses(): ParkStatus[] {
-  return MOCK_PARKS.map((park) => ({
-    ...park,
-    occupancy: 20 + Math.floor(Math.random() * 75),
-    waitMinutes: Math.floor(Math.random() * 18),
-    lightsOn: Math.random() > 0.35,
-  }));
+  sessionStatuses = sessionStatuses.map((park) => {
+    const drift = Math.floor(Math.random() * (DRIFT_RANGE * 2 + 1)) - DRIFT_RANGE;
+    const occupancy = Math.min(OCCUPANCY_MAX, Math.max(OCCUPANCY_MIN, park.occupancy + drift));
+    return {
+      ...park,
+      occupancy,
+      waitMinutes: waitForOccupancy(occupancy),
+    };
+  });
+  return cloneStatuses(sessionStatuses);
 }
 
 @Component({
@@ -103,7 +130,7 @@ export class LiveScoreboardComponent {
   private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
   private poll?: Subscription;
 
-  readonly parks = signal<ParkStatus[]>(mockStatuses());
+  readonly parks = signal<ParkStatus[]>(cloneStatuses(MOCK_PARKS));
   readonly lastUpdated = signal('');
   readonly error = signal('');
 
@@ -120,7 +147,7 @@ export class LiveScoreboardComponent {
         return;
       }
       const seconds =
-        Number(sitecoreFieldValue((this.fields() as LiveScoreboardFields).PollIntervalSeconds)) || 8;
+        Number(sitecoreFieldValue((this.fields() as LiveScoreboardFields).PollIntervalSeconds)) || 15;
       const endpoint = sitecoreFieldValue((this.fields() as LiveScoreboardFields).Endpoint).trim();
 
       this.poll = interval(Math.max(seconds, 3) * 1000)

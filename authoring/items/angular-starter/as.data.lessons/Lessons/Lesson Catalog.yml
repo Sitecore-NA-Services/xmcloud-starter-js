@@ -1,0 +1,37 @@
+﻿---
+ID: "48c516d7-8e02-4e46-b487-95bbdc238290"
+Parent: "0273889c-fd3a-4b1b-8201-7eb39c44c0e0"
+Template: "e403aaf8-a18e-49fa-b448-46df8740dec9"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Data/Lessons/Lesson Catalog"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260915T140449Z
+    - ID: "2a71c583-e3f3-4a47-a3f0-98a88db99d40"
+      Hint: Intro
+      Value: <p>Coaches on concrete. Pick a session, a date, and we will hold a spot in the plaza or bowl.</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fefed2ed-6228-4bb0-bc58-16a733e35900"
+    - ID: "90aed2f5-f89f-4b82-bd5c-90d45b591b83"
+      Hint: Heading
+      Value: Book a lesson
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260915T190942Z
+    - ID: "e7c1d8d1-6711-48bf-826b-2bb343a0c5de"
+      Hint: LessonsJson
+      Value: |
+        [{"id":"beginner-bowl","title":"Beginner Bowl","level":"Beginner","duration":60,"price":45,"coach":"Maya Chen"},{"id":"street-flow","title":"Street Flow","level":"Intermediate","duration":90,"price":70,"coach":"Luis Ortega"},{"id":"vert-clinic","title":"Vert Clinic","level":"Advanced","duration":75,"price":85,"coach":"Jordan Hale"},{"id":"kids-intro","title":"Kids Intro","level":"Beginner","duration":45,"price":35,"coach":"Priya Shah"}]
