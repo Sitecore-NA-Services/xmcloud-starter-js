@@ -31,7 +31,28 @@ import config from '../sitecore.config';
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
-const angularApp = new AngularNodeAppEngine();
+/**
+ * XM Cloud fronts the rendering host with a proxy that sends `x-forwarded-for`, `x-forwarded-port`
+ * and `x-forwarded-path` alongside `-host` / `-proto`. Angular's SSR engine trusts only `-host` and
+ * `-proto` by default and "deopts to CSR" on any other `x-forwarded-*` header, serving
+ * `index.csr.html` for every request. That silently disables SSR - and with it the Sitecore Pages
+ * canvas scripts, which ScEditingScriptsComponent injects server-side only, so the editor spinner
+ * never resolves and inline editing never attaches.
+ *
+ * `trustProxyHeaders: true` is NOT enough: its built-in set omits `x-forwarded-path`, which this
+ * proxy does send. List the headers explicitly. Hostnames are still checked against
+ * `security.allowedHosts` in angular.json, so trusting these does not widen host spoofing.
+ */
+const angularApp = new AngularNodeAppEngine({
+  trustProxyHeaders: [
+    'x-forwarded-host',
+    'x-forwarded-proto',
+    'x-forwarded-port',
+    'x-forwarded-for',
+    'x-forwarded-path',
+    'x-forwarded-prefix',
+  ],
+});
 
 /**
  * Loader cache driver selection (server only).
