@@ -24,7 +24,7 @@
               "@sitecore-content-sdk/angular/codegen"
             ],
             "security": {
-              "allowedHosts": ["localhost", "*.localhost", "*.vercel.app"]
+              "allowedHosts": ["localhost", "*.localhost", "*.vercel.app", "*.sitecorecloud.io"]
             },
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.json",
