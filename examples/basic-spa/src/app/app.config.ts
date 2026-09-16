@@ -1,6 +1,6 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter, UrlSerializer, withNavigationErrorHandler } from '@angular/router';
-import { provideHttpClient, withFetch } from '@angular/common/http';
+import { provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 import {
   provideLoaderRegistry,
   handleNavigationError,
@@ -11,6 +11,7 @@ import {
   LocaleUrlSerializer,
 } from '@sitecore-content-sdk/angular';
 import { routes } from './app.routes';
+import { editingParamsInterceptor } from './editing-params.interceptor';
 import scConfig from '../../sitecore.config';
 import { getClient } from '../content-sdk/client/sitecore-client';
 import { LOADERS } from '../content-sdk/loaders';
@@ -26,7 +27,7 @@ import { provideTranslateLoader, provideTranslateService } from '@ngx-translate/
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideHttpClient(withFetch()),
+    provideHttpClient(withFetch(), withInterceptors([editingParamsInterceptor])),
     provideRouter(routes, withNavigationErrorHandler(handleNavigationError())),
     provideSitecoreAngular({
       notFoundRoute: '/404',
