@@ -47,7 +47,7 @@ Languages:
       Value: 80
     - ID: "c1a70072-0000-4000-8000-000000000008"
       Hint: HeroImage
-      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000005}" alt="Skateboarder grinding a ledge" />'
+      Value: <image mediaid="{C1A700A1-0000-4000-8000-000000000005}" alt="Skateboarder grinding a ledge" />
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: Indoor wood park with a legendary keyhole bowl.

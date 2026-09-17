@@ -46,7 +46,7 @@ Languages:
       Value: 60
     - ID: "c1a70072-0000-4000-8000-000000000008"
       Hint: HeroImage
-      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000003}" alt="Skateboarder dropping into a concrete bowl" />'
+      Value: <image mediaid="{C1A700A1-0000-4000-8000-000000000003}" alt="Skateboarder dropping into a concrete bowl" />
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: Raw DIY concrete under the bridge. No rules, no lights, no mercy.

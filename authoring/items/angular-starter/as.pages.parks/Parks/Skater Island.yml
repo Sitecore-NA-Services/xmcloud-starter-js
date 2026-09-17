@@ -47,7 +47,7 @@ Languages:
       Value: 75
     - ID: "c1a70072-0000-4000-8000-000000000008"
       Hint: HeroImage
-      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000002}" alt="Skateboarder carving a bowl transition" />'
+      Value: <image mediaid="{C1A700A1-0000-4000-8000-000000000002}" alt="Skateboarder carving a bowl transition" />
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: Indoor park built around a full vert ramp.

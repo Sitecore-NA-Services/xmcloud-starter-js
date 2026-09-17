@@ -47,7 +47,7 @@ Languages:
       Value: 50
     - ID: "c1a70072-0000-4000-8000-000000000008"
       Hint: HeroImage
-      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000008}" alt="Skateboarder setting up for a trick" />'
+      Value: <image mediaid="{C1A700A1-0000-4000-8000-000000000008}" alt="Skateboarder setting up for a trick" />
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: The private indoor street park that defined modern filming.
