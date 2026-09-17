@@ -7,6 +7,7 @@ import * as RichTextcomponent from 'src/app/components/rich-text.component';
 import * as Promocomponent from 'src/app/components/promo.component';
 import * as PartialDesignDynamicPlaceholdercomponent from 'src/app/components/partial-design-dynamic-placeholder.component';
 import * as ParkFindercomponent from 'src/app/components/park-finder.component';
+import * as ParkDetailcomponent from 'src/app/components/park-detail.component';
 import * as Navigationcomponent from 'src/app/components/navigation.component';
 import * as LiveScoreboardcomponent from 'src/app/components/live-scoreboard.component';
 import * as LessonBookingcomponent from 'src/app/components/lesson-booking.component';
@@ -19,6 +20,7 @@ export const componentMap = new Map<string, AngularContentSdkComponent>([
   ['Promo', { ...Promocomponent }],
   ['PartialDesignDynamicPlaceholder', { ...PartialDesignDynamicPlaceholdercomponent }],
   ['ParkFinder', { ...ParkFindercomponent }],
+  ['ParkDetail', { ...ParkDetailcomponent }],
   ['Navigation', { ...Navigationcomponent }],
   ['LiveScoreboard', { ...LiveScoreboardcomponent }],
   ['LessonBooking', { ...LessonBookingcomponent }],
