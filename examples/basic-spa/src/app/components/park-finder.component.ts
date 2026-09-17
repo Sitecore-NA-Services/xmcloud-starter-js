@@ -75,10 +75,12 @@ interface ParkFinderFields {
 
         <ul class="park-finder__grid">
           @for (park of filtered(); track park.id) {
-            <li class="park-card">
+            <li class="park-card" [class.park-card--linked]="park.url">
               <h2>
                 @if (park.url) {
-                  <a [routerLink]="park.url">{{ park.name }}</a>
+                  <!-- Anchor stays on the title so the accessible name is the park name;
+                       .park-card__link::after stretches the hit area over the whole card. -->
+                  <a class="park-card__link" [routerLink]="park.url">{{ park.name }}</a>
                 } @else {
                   {{ park.name }}
                 }

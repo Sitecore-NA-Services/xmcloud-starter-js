@@ -122,6 +122,49 @@
   display: block;
 }
 
+/* Whole-card link: the anchor sits on the title (so the accessible name is the park
+   name), and this pseudo-element stretches its hit area across the card. Keep the card
+   positioned so the overlay is bounded by it. */
+.park-card--linked {
+  position: relative;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.park-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.park-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.park-card--linked:hover,
+.park-card--linked:focus-within {
+  border-color: var(--sp-volt, #c8ff3d);
+  transform: translateY(-2px);
+}
+
+.park-card__link:focus-visible::after {
+  outline: 2px solid var(--sp-volt, #c8ff3d);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .park-card--linked {
+    transition: none;
+  }
+  .park-card--linked:hover,
+  .park-card--linked:focus-within {
+    transform: none;
+  }
+}
+
 .park-card__hours {
   color: var(--sp-volt, #c8ff3d) !important;
   font-weight: 600;
