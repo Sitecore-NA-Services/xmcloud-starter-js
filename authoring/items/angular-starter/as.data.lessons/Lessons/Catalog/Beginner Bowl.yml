@@ -1,0 +1,32 @@
+﻿---
+ID: "c1a70086-0000-4000-8000-000000000001"
+Parent: "c1a70082-0000-4000-8000-00000000c182"
+Template: "c1a70080-0000-4000-8000-00000000c180"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Data/Lessons/Catalog/Beginner Bowl"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "c1a70085-0000-4000-8000-000000000001"
+      Hint: Title
+      Value: Beginner Bowl
+    - ID: "c1a70085-0000-4000-8000-000000000002"
+      Hint: Level
+      Value: "{C1A70073-0000-4000-8000-000000000001}"
+    - ID: "c1a70085-0000-4000-8000-000000000003"
+      Hint: Duration
+      Value: 60
+    - ID: "c1a70085-0000-4000-8000-000000000004"
+      Hint: Price
+      Value: 45
+    - ID: "c1a70085-0000-4000-8000-000000000005"
+      Hint: Coach
+      Value: Maya Chen
+    - ID: "c1a70085-0000-4000-8000-000000000006"
+      Hint: Summary
+      Value: Drop-in mechanics and pumping transitions in a shallow bowl.

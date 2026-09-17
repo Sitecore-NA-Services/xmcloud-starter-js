@@ -1,0 +1,23 @@
+﻿---
+ID: "c1a70050-0000-4000-8000-00000000c150"
+Parent: "d4fc8494-bb80-49f6-ba61-f15b62f9d97e"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Presentation/Partial Designs/Park Detail"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: Signature
+  Value: park-detail
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{C1A70052-0000-4000-8000-00000000C152}"
+          s:id="{C1A70020-0000-4000-8000-00000000C120}"
+          s:par=""
+          s:ph="headless-main" />
+      </d>
+    </r>

@@ -35,3 +35,6 @@ Languages:
       Hint: LessonsJson
       Value: |
         [{"id":"beginner-bowl","title":"Beginner Bowl","level":"Beginner","duration":60,"price":45,"coach":"Maya Chen"},{"id":"street-flow","title":"Street Flow","level":"Intermediate","duration":90,"price":70,"coach":"Luis Ortega"},{"id":"vert-clinic","title":"Vert Clinic","level":"Advanced","duration":75,"price":85,"coach":"Jordan Hale"},{"id":"kids-intro","title":"Kids Intro","level":"Beginner","duration":45,"price":35,"coach":"Priya Shah"}]
+    - ID: "c1a70083-0000-4000-8000-00000000c183"
+      Hint: Lessons
+      Value: "{C1A70086-0000-4000-8000-000000000001}|{C1A70086-0000-4000-8000-000000000004}|{C1A70086-0000-4000-8000-000000000002}|{C1A70086-0000-4000-8000-000000000003}"

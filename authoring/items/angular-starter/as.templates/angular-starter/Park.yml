@@ -1,0 +1,9 @@
+﻿---
+ID: "c1a70010-0000-4000-8000-00000000c110"
+Parent: "b304ab0e-e596-4a8e-bacc-5c0f0f6d3c7a"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: "/sitecore/templates/Project/angular-starter/Park"
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{B9ABC268-670F-46A2-B4D0-D36CF24A352D}"

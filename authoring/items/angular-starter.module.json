@@ -53,12 +53,6 @@
                 "allowedPushOperations": "CreateAndUpdate"
             },
             {
-                "name": "as.pages.find-a-park",
-                "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Find-a-Park",
-                "scope": "itemAndDescendants",
-                "allowedPushOperations": "CreateAndUpdate"
-            },
-            {
                 "name": "as.pages.lessons",
                 "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Lessons",
                 "scope": "itemAndDescendants",
@@ -67,6 +61,30 @@
             {
                 "name": "as.pages.live",
                 "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Live",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.presentation.pageDesigns",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Presentation/Page Designs",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.presentation.partialDesigns",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Presentation/Partial Designs",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.data.taxonomy",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Data/Taxonomy",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.pages.parks",
+                "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Parks",
                 "scope": "itemAndDescendants",
                 "allowedPushOperations": "CreateAndUpdate"
             }

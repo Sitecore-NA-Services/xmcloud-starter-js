@@ -37,6 +37,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
       Value: <p>Beginner bowl through vert clinic. Book with a local coach and show up ready to skate.</p>
@@ -48,7 +51,7 @@ Languages:
       Value: 20260915T140449Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Lessons
@@ -62,11 +65,11 @@ Languages:
         sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7b4fe6d4-7633-47eb-9108-bed51c89ccb9"
+      Value: "910537f3-c554-43d1-93d4-1d0180250bb1"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+        sitecore\kevin.buckley@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260916T124345Z
+      Value: 20260916T174306Z

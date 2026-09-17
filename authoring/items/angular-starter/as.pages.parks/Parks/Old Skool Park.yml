@@ -1,0 +1,50 @@
+﻿---
+ID: "c1a70075-0000-4000-8000-000000000008"
+Parent: "80c690f3-1f3f-4518-97b5-6889f5e17f42"
+Template: "c1a70010-0000-4000-8000-00000000c110"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Home/Parks/Old Skool Park"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{B4F49B23-4BBA-4C79-BA22-F89F5F0D4E4F}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
+      Hint: Content
+      Value: "<p>Backyard-pool geometry reproduced in public concrete: tight corners, real coping and a street plaza for when your legs give out.</p>"
+    - ID: "18d39473-673e-485e-90ce-12425acbc005"
+      Hint: Title
+      Value: Old Skool Park
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Old Skool Park
+    - ID: "c1a70072-0000-4000-8000-000000000001"
+      Hint: City
+      Value: Los Angeles
+    - ID: "c1a70072-0000-4000-8000-000000000002"
+      Hint: Difficulty
+      Value: "{C1A70073-0000-4000-8000-000000000002}"
+    - ID: "c1a70072-0000-4000-8000-000000000003"
+      Hint: Features
+      Value: "{C1A70074-0000-4000-8000-000000000008}|{C1A70074-0000-4000-8000-000000000001}|{C1A70074-0000-4000-8000-000000000002}"
+    - ID: "c1a70072-0000-4000-8000-000000000004"
+      Hint: Hours
+      Value: 8am - 10pm
+    - ID: "c1a70072-0000-4000-8000-000000000005"
+      Hint: Capacity
+      Value: 95
+    - ID: "c1a70072-0000-4000-8000-000000000006"
+      Hint: Summary
+      Value: Classic transitions rebuilt for a new generation.
+    - ID: "c1a70072-0000-4000-8000-000000000007"
+      Hint: Description
+      Value: "<p>Backyard-pool geometry reproduced in public concrete: tight corners, real coping and a street plaza for when your legs give out.</p>"

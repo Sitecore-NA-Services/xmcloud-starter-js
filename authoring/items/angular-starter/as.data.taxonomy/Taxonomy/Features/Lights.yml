@@ -1,0 +1,17 @@
+﻿---
+ID: "c1a70074-0000-4000-8000-000000000006"
+Parent: "c1a70032-0000-4000-8000-00000000c132"
+Template: "c1a70001-0000-4000-8000-00000000c101"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Data/Taxonomy/Features/Lights"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "c1a70071-0000-4000-8000-000000000001"
+      Hint: Label
+      Value: Lights

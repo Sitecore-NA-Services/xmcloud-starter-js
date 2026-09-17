@@ -20,11 +20,14 @@ import {
 } from '@sitecore-content-sdk/angular';
 import { Subscription, catchError, interval, of, startWith, switchMap } from 'rxjs';
 import { sitecoreFieldValue } from '../lib/sitecore-field';
+import { toParks, type Park } from '../lib/park';
 import { sxaComponentClass, sxaRenderingId, type SxaParams } from './sxa-params';
 
 export interface ParkStatus {
   id: string;
   name: string;
+  url: string;
+  capacity: number;
   occupancy: number;
   waitMinutes: number;
   lightsOn: boolean;
@@ -35,20 +38,31 @@ interface LiveScoreboardFields {
   Intro?: TextField;
   PollIntervalSeconds?: TextField;
   Endpoint?: TextField;
+  /** Multilist of Park pages - the roster the board reports on. */
+  Parks?: unknown;
 }
 
-const MOCK_PARKS: ParkStatus[] = [
-  { id: 'burnside', name: 'Burnside', occupancy: 68, waitMinutes: 6, lightsOn: false },
-  { id: 'venice', name: 'Venice Beach Skatepark', occupancy: 54, waitMinutes: 3, lightsOn: true },
-  { id: 'marseille', name: 'Marseille Skatepark', occupancy: 47, waitMinutes: 2, lightsOn: true },
-  { id: 'skatestreet', name: 'Skatestreet', occupancy: 61, waitMinutes: 5, lightsOn: true },
-  { id: 'skater-island', name: 'Skater Island', occupancy: 58, waitMinutes: 4, lightsOn: true },
-  { id: 'kona', name: 'Kona Skatepark', occupancy: 42, waitMinutes: 1, lightsOn: true },
-  { id: 'skatopia', name: 'Skatopia', occupancy: 73, waitMinutes: 8, lightsOn: false },
-  { id: 'old-skool', name: 'Old Skool Park', occupancy: 36, waitMinutes: 0, lightsOn: true },
-  { id: 'berrics', name: 'The Berrics', occupancy: 79, waitMinutes: 10, lightsOn: true },
-];
-
+/**
+ * Seed a board row from a Sitecore Park item. Occupancy is derived from the park id so a
+ * reload starts from the same place rather than jumping, then drifts per tick. Capacity and
+ * lights come from authored content; only the live number is simulated.
+ */
+function seedStatus(park: Park): ParkStatus {
+  let hash = 0;
+  for (const ch of park.id) {
+    hash = (hash * 31 + ch.charCodeAt(0)) % 997;
+  }
+  const occupancy = OCCUPANCY_MIN + (hash % (OCCUPANCY_MAX - OCCUPANCY_MIN));
+  return {
+    id: park.id,
+    name: park.name,
+    url: park.url,
+    capacity: park.capacity,
+    occupancy,
+    waitMinutes: waitForOccupancy(occupancy),
+    lightsOn: park.features.includes('Lights'),
+  };
+}
 const OCCUPANCY_MIN = 28;
 const OCCUPANCY_MAX = 91;
 const DRIFT_RANGE = 2;
@@ -70,9 +84,13 @@ function cloneStatuses(rows: ParkStatus[]): ParkStatus[] {
   return rows.map((park) => ({ ...park }));
 }
 
-let sessionStatuses = cloneStatuses(MOCK_PARKS);
+let sessionStatuses: ParkStatus[] = [];
 
-function mockStatuses(): ParkStatus[] {
+/** Drift each row a little, keeping the roster itself content-driven. */
+function mockStatuses(seed: ParkStatus[]): ParkStatus[] {
+  if (sessionStatuses.length !== seed.length) {
+    sessionStatuses = cloneStatuses(seed);
+  }
   sessionStatuses = sessionStatuses.map((park) => {
     const drift = Math.floor(Math.random() * (DRIFT_RANGE * 2 + 1)) - DRIFT_RANGE;
     const occupancy = Math.min(OCCUPANCY_MAX, Math.max(OCCUPANCY_MIN, park.occupancy + drift));
@@ -130,12 +148,16 @@ export class LiveScoreboardComponent {
   private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
   private poll?: Subscription;
 
-  readonly parks = signal<ParkStatus[]>(cloneStatuses(MOCK_PARKS));
+  readonly parks = signal<ParkStatus[]>([]);
   readonly lastUpdated = signal('');
   readonly error = signal('');
 
   readonly headingField = computed(() => (this.fields() as LiveScoreboardFields).Heading);
   readonly introField = computed(() => (this.fields() as LiveScoreboardFields).Intro);
+  /** Roster comes from the datasource's Multilist of Park pages. */
+  readonly seed = computed(() =>
+    toParks((this.fields() as LiveScoreboardFields).Parks).map(seedStatus)
+  );
   readonly componentClass = computed(() =>
     sxaComponentClass('component live-scoreboard', this.params())
   );
@@ -155,12 +177,12 @@ export class LiveScoreboardComponent {
           startWith(0),
           switchMap(() => {
             if (!endpoint) {
-              return of(mockStatuses());
+              return of(mockStatuses(this.seed()));
             }
             return this.http.get<ParkStatus[]>(endpoint).pipe(
               catchError(() => {
                 this.error.set('Live feed unavailable — showing simulated occupancy.');
-                return of(mockStatuses());
+                return of(mockStatuses(this.seed()));
               })
             );
           }),

@@ -1,0 +1,42 @@
+﻿---
+ID: "a49457cb-1421-453a-9d9f-4a9849a8794f"
+Parent: "8427592c-20e7-4841-b7db-292d313d3b91"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Presentation/Partial Designs/Footer/Data/Contact info"
+BranchID: "8204a950-cbaa-4d06-878b-11ced5ddc1ad"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{24280E66-0C0C-42B5-9B03-B8D789E81922}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250827T175635Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kevin.buckley@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <p>desk@concretecircuit.park</p>
+        <p>(310) 555-0199</p>
+        <p><a href="/live">Live occupancy</a> · <a href="/lessons">Lessons</a></p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "281adaa1-dadf-4ece-8639-d9f09bbfcc5f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\xtGHiXAezuWnoKk27zhXOQPI5ivHTK6g
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260915T204504Z

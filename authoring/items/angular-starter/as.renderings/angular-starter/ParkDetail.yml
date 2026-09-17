@@ -1,0 +1,9 @@
+﻿---
+ID: "c1a70020-0000-4000-8000-00000000c120"
+Parent: "87f4404d-ec8d-4a13-8644-b42ef1fdc3f8"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: "/sitecore/layout/Renderings/Project/angular-starter/ParkDetail"
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: ParkDetail

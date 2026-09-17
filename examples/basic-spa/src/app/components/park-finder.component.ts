@@ -1,6 +1,6 @@
 import { Component, computed, effect, inject, input, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import {
   ComponentRendering,
@@ -8,46 +8,19 @@ import {
   ScTextDirective,
   TextField,
 } from '@sitecore-content-sdk/angular';
-import { parseJsonArray, sitecoreFieldValue } from '../lib/sitecore-field';
+import { toParks, type Park } from '../lib/park';
 import { sxaComponentClass, sxaRenderingId, type SxaParams } from './sxa-params';
-
-export interface Park {
-  id: string;
-  name: string;
-  city: string;
-  difficulty: string;
-  features: string[];
-  hours: string;
-}
 
 interface ParkFinderFields {
   Heading?: TextField;
   Intro?: TextField;
-  ParksJson?: TextField;
+  /** Multilist of Park page items - the only source of parks. */
+  Parks?: unknown;
 }
-
-const FALLBACK_PARKS: Park[] = [
-  {
-    id: 'burnside',
-    name: 'Burnside',
-    city: 'Portland',
-    difficulty: 'Advanced',
-    features: ['Bowl', 'DIY'],
-    hours: 'Dawn – dusk',
-  },
-  {
-    id: 'venice',
-    name: 'Venice Beach Skatepark',
-    city: 'Los Angeles',
-    difficulty: 'Intermediate',
-    features: ['Bowl', 'Street', 'Lights'],
-    hours: '6am – 10pm',
-  },
-];
 
 @Component({
   selector: 'app-park-finder',
-  imports: [FormsModule, TranslatePipe, ScTextDirective, ScRichTextDirective],
+  imports: [FormsModule, RouterLink, TranslatePipe, ScTextDirective, ScRichTextDirective],
   template: `
     <section class="{{ componentClass() }}" [attr.id]="renderingId()">
       <div class="component-content park-finder">
@@ -76,9 +49,22 @@ const FALLBACK_PARKS: Park[] = [
           </label>
           <label>
             <span>Difficulty</span>
-            <select [ngModel]="difficulty()" (ngModelChange)="onDifficulty($event)" name="difficulty">
+            <select
+              [ngModel]="difficulty()"
+              (ngModelChange)="onDifficulty($event)"
+              name="difficulty"
+            >
               <option value="">All levels</option>
               @for (option of difficulties(); track option) {
+                <option [value]="option">{{ option }}</option>
+              }
+            </select>
+          </label>
+          <label>
+            <span>Feature</span>
+            <select [ngModel]="feature()" (ngModelChange)="onFeature($event)" name="feature">
+              <option value="">All features</option>
+              @for (option of features(); track option) {
                 <option [value]="option">{{ option }}</option>
               }
             </select>
@@ -90,9 +76,18 @@ const FALLBACK_PARKS: Park[] = [
         <ul class="park-finder__grid">
           @for (park of filtered(); track park.id) {
             <li class="park-card">
-              <h2>{{ park.name }}</h2>
+              <h2>
+                @if (park.url) {
+                  <a [routerLink]="park.url">{{ park.name }}</a>
+                } @else {
+                  {{ park.name }}
+                }
+              </h2>
               <p>{{ park.city }} · {{ park.difficulty }}</p>
               <p class="park-card__hours">{{ park.hours }}</p>
+              @if (park.summary) {
+                <p class="park-card__summary">{{ park.summary }}</p>
+              }
               <ul class="park-card__tags">
                 @for (feature of park.features; track feature) {
                   <li>{{ feature }}</li>
@@ -118,31 +113,42 @@ export class ParkFinderComponent {
   readonly query = signal('');
   readonly city = signal('');
   readonly difficulty = signal('');
+  readonly feature = signal('');
 
   readonly headingField = computed(() => (this.fields() as ParkFinderFields).Heading);
   readonly introField = computed(() => (this.fields() as ParkFinderFields).Intro);
-  readonly parks = computed(() => {
-    const parsed = parseJsonArray<Park>(sitecoreFieldValue((this.fields() as ParkFinderFields).ParksJson));
-    return parsed.length ? parsed : FALLBACK_PARKS;
-  });
-  readonly cities = computed(() => [...new Set(this.parks().map((park) => park.city))].sort());
-  readonly difficulties = computed(() =>
-    [...new Set(this.parks().map((park) => park.difficulty))].sort()
-  );
+
+  /** Parks come from the datasource's Multilist of Park pages - no JSON, no fallback. */
+  readonly parks = computed<Park[]>(() => toParks((this.fields() as ParkFinderFields).Parks));
+
+  readonly cities = computed(() => distinct(this.parks().map((park) => park.city)));
+  readonly difficulties = computed(() => distinct(this.parks().map((park) => park.difficulty)));
+  readonly features = computed(() => distinct(this.parks().flatMap((park) => park.features)));
+
   readonly filtered = computed(() => {
     const q = this.query().trim().toLowerCase();
     const city = this.city();
     const difficulty = this.difficulty();
+    const feature = this.feature();
     return this.parks().filter((park) => {
       const matchesQuery =
         !q ||
         park.name.toLowerCase().includes(q) ||
         park.city.toLowerCase().includes(q) ||
-        park.features.some((feature) => feature.toLowerCase().includes(q));
-      return matchesQuery && (!city || park.city === city) && (!difficulty || park.difficulty === difficulty);
+        park.summary.toLowerCase().includes(q) ||
+        park.features.some((value) => value.toLowerCase().includes(q));
+      return (
+        matchesQuery &&
+        (!city || park.city === city) &&
+        (!difficulty || park.difficulty === difficulty) &&
+        (!feature || park.features.includes(feature))
+      );
     });
   });
-  readonly componentClass = computed(() => sxaComponentClass('component park-finder', this.params()));
+
+  readonly componentClass = computed(() =>
+    sxaComponentClass('component park-finder', this.params())
+  );
   readonly renderingId = computed(() => sxaRenderingId(this.params()));
 
   constructor() {
@@ -150,6 +156,7 @@ export class ParkFinderComponent {
       const params = this.route.snapshot.queryParamMap;
       this.city.set(params.get('city') ?? '');
       this.difficulty.set(params.get('difficulty') ?? '');
+      this.feature.set(params.get('feature') ?? '');
       this.query.set(params.get('q') ?? '');
     });
   }
@@ -169,18 +176,28 @@ export class ParkFinderComponent {
     this.syncUrl();
   }
 
+  onFeature(value: string): void {
+    this.feature.set(value);
+    this.syncUrl();
+  }
+
   private syncUrl(): void {
     void this.router.navigate([], {
       relativeTo: this.route,
       queryParams: {
         city: this.city() || null,
         difficulty: this.difficulty() || null,
+        feature: this.feature() || null,
         q: this.query() || null,
       },
       queryParamsHandling: 'merge',
       replaceUrl: true,
     });
   }
+}
+
+function distinct(values: string[]): string[] {
+  return [...new Set(values.filter(Boolean))].sort();
 }
 
 export default ParkFinderComponent;

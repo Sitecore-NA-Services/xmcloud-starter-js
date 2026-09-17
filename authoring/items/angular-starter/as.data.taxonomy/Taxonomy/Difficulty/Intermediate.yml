@@ -1,0 +1,17 @@
+﻿---
+ID: "c1a70073-0000-4000-8000-000000000002"
+Parent: "c1a70031-0000-4000-8000-00000000c131"
+Template: "c1a70001-0000-4000-8000-00000000c101"
+Path: "/sitecore/content/angular-starter/angular-skate-park/Data/Taxonomy/Difficulty/Intermediate"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "c1a70071-0000-4000-8000-000000000001"
+      Hint: Label
+      Value: Intermediate

@@ -7,34 +7,18 @@ import {
   ScTextDirective,
   TextField,
 } from '@sitecore-content-sdk/angular';
-import { parseJsonArray, sitecoreFieldValue } from '../lib/sitecore-field';
+import { toLessons } from '../lib/park';
 import { sxaComponentClass, sxaRenderingId, type SxaParams } from './sxa-params';
 
-export interface Lesson {
-  id: string;
-  title: string;
-  level: string;
-  duration: number;
-  price: number;
-  coach: string;
-}
+export type { Lesson } from '../lib/park';
 
 interface LessonBookingFields {
   Heading?: TextField;
   Intro?: TextField;
-  LessonsJson?: TextField;
+  /** Multilist of Lesson items - the only source of lessons. */
+  Lessons?: unknown;
 }
 
-const FALLBACK_LESSONS: Lesson[] = [
-  {
-    id: 'beginner-bowl',
-    title: 'Beginner Bowl',
-    level: 'Beginner',
-    duration: 60,
-    price: 45,
-    coach: 'Maya Chen',
-  },
-];
 
 @Component({
   selector: 'app-lesson-booking',
@@ -122,12 +106,7 @@ export class LessonBookingComponent {
 
   readonly headingField = computed(() => (this.fields() as LessonBookingFields).Heading);
   readonly introField = computed(() => (this.fields() as LessonBookingFields).Intro);
-  readonly lessons = computed(() => {
-    const parsed = parseJsonArray<Lesson>(
-      sitecoreFieldValue((this.fields() as LessonBookingFields).LessonsJson)
-    );
-    return parsed.length ? parsed : FALLBACK_LESSONS;
-  });
+  readonly lessons = computed(() => toLessons((this.fields() as LessonBookingFields).Lessons));
   readonly componentClass = computed(() =>
     sxaComponentClass('component lesson-booking', this.params())
   );
