@@ -258,3 +258,63 @@
 .live-scoreboard__error {
   color: var(--sp-muted, #a8aeb8);
 }
+
+/* --- Park detail page ------------------------------------------------- */
+.park-detail__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--sp-muted, #a8aeb8);
+  margin: 0 0 0.75rem;
+}
+
+.park-detail__difficulty {
+  color: var(--sp-volt, #c8ff3d);
+  font-weight: 600;
+}
+
+.park-detail__summary {
+  font-size: 1.1rem;
+  margin: 0 0 1.25rem;
+}
+
+/* Facts read as a row of labelled stats rather than a stacked dl. */
+.park-detail__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin: 0 0 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--sp-line, rgba(255, 255, 255, 0.08));
+  border-bottom: 1px solid var(--sp-line, rgba(255, 255, 255, 0.08));
+}
+
+.park-detail__facts dt {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sp-muted, #a8aeb8);
+  margin: 0 0 0.25rem;
+}
+
+.park-detail__facts dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.park-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.park-detail__hero {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin: 0 0 1.25rem;
+}

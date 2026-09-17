@@ -26,6 +26,9 @@ import { sxaComponentClass, sxaRenderingId, type SxaParams } from './sxa-params'
           <h1 class="park-detail__title" *scText="field('Title')"></h1>
           <p class="park-detail__meta">
             <span class="park-detail__city">{{ city() }}</span>
+            @if (city() && difficulty()) {
+              <span class="park-detail__sep" aria-hidden="true">·</span>
+            }
             @if (difficulty()) {
               <span class="park-detail__difficulty">{{ difficulty() }}</span>
             }
