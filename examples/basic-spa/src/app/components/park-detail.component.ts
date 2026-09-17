@@ -25,11 +25,13 @@ import { sxaComponentClass, sxaRenderingId, type SxaParams } from './sxa-params'
         <header class="park-detail__header">
           <h1 class="park-detail__title" *scText="field('Title')"></h1>
           <p class="park-detail__meta">
-            <span class="park-detail__city">{{ city() }}</span>
+            <span class="park-detail__city" *scText="field('City')"></span>
             @if (city() && difficulty()) {
               <span class="park-detail__sep" aria-hidden="true">·</span>
             }
             @if (difficulty()) {
+              <!-- Droplink to a taxonomy item: edited through the field editor on the page,
+                   not inline, so it is read out rather than bound with *scText. -->
               <span class="park-detail__difficulty">{{ difficulty() }}</span>
             }
           </p>
@@ -40,15 +42,18 @@ import { sxaComponentClass, sxaRenderingId, type SxaParams } from './sxa-params'
         }
 
         @if (summary()) {
-          <p class="park-detail__summary">{{ summary() }}</p>
+          <p class="park-detail__summary" *scText="field('Summary')"></p>
         }
 
         <dl class="park-detail__facts">
           @if (hours()) {
-            <div><dt>Hours</dt><dd>{{ hours() }}</dd></div>
+            <div><dt>Hours</dt><dd *scText="field('Hours')"></dd></div>
           }
           @if (capacity()) {
-            <div><dt>Capacity</dt><dd>{{ capacity() }} riders</dd></div>
+            <div>
+              <dt>Capacity</dt>
+              <dd><span *scText="field('Capacity')"></span> riders</dd>
+            </div>
           }
           @if (features().length) {
             <div>
@@ -64,7 +69,7 @@ import { sxaComponentClass, sxaRenderingId, type SxaParams } from './sxa-params'
           }
         </dl>
 
-        <div class="park-detail__body" *scRichText="field('Description')"></div>
+        <div class="park-detail__body" *scRichText="field('Content')"></div>
       </div>
     </article>
   `,

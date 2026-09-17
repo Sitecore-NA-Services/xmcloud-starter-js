@@ -1,0 +1,20 @@
+﻿---
+ID: "c1a70092-0000-4000-8000-00000000c192"
+Parent: "c1a70001-0000-4000-8000-00000000c101"
+Template: "c1a70001-0000-4000-8000-00000000c101"
+Path: "/sitecore/templates/Project/angular-starter/Taxonomy Item/__Standard Values"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/tag.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T140000Z
+    - ID: "c1a70071-0000-4000-8000-000000000001"
+      Hint: Label
+      Value: $name

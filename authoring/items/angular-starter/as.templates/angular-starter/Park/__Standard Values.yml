@@ -1,0 +1,17 @@
+﻿---
+ID: "c1a70090-0000-4000-8000-00000000c190"
+Parent: "c1a70010-0000-4000-8000-00000000c110"
+Template: "c1a70010-0000-4000-8000-00000000c110"
+Path: "/sitecore/templates/Project/angular-starter/Park/__Standard Values"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/globe.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260917T140000Z
