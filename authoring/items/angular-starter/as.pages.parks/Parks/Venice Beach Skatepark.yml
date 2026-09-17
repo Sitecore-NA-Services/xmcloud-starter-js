@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Sixteen thousand square feet of concrete sitting directly on the sand. Two pool-style bowls, a snake run and a compact street section, all lit until 10pm.</p>"
+      Value: "<p>Sixteen thousand square feet of concrete sitting directly on the sand, a few metres from the Pacific. Two pool-style bowls, a snake run and a compact street section, with a crowd that ranges from first-timers to people filming parts.</p><p>The light here is the reason photographers turn up at sunset. The sand is the reason you should check your bearings afterwards.</p><h3>Before you drop in</h3><ul><li>Lit until 10pm, so evening sessions are on</li><li>Busiest late afternoon - mornings are far calmer</li><li>Sand gets everywhere; bring spare bearings</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Venice Beach Skatepark
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 120
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000001}" alt="Skateboarder riding past graffiti" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: "Ocean-front concrete with two bowls and a street course."

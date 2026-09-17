@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Flat ground, perfect ledges, controlled light. Built for filming rather than for flow - every surface here has appeared in a part you have seen.</p>"
+      Value: "<p>Flat ground, perfect ledges, controlled light. Built for filming rather than for flow, which means every surface here has appeared in a part you have seen.</p><p>Access is by session rather than drop-in, and the place is kept immaculate because the whole point is that the footage looks good.</p><h3>Before you drop in</h3><ul><li>By session only - not a walk-up park</li><li>Street and ledges; no transition to speak of</li><li>Indoor, so the light is the same every day</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: The Berrics
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 50
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000008}" alt="Skateboarder setting up for a trick" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: The private indoor street park that defined modern filming.

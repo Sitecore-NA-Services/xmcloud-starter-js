@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: <p>A vert ramp, a capsule bowl and a street course, all indoors. The vert wall is the reason most people make the trip.</p>
+      Value: "<p>Built around a full vert ramp, with a capsule bowl and a street course filling out the rest of the building. The vert wall is the reason most people make the trip, and the reason most people watch rather than ride it.</p><p>If vert is not your thing, the street course is a complete session on its own.</p><h3>Before you drop in</h3><ul><li>Full vert ramp - pads and a helmet, no exceptions</li><li>Indoor and lit until 10pm</li><li>Street course is approachable for most levels</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Skater Island
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 75
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000002}" alt="Skateboarder carving a bowl transition" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: Indoor park built around a full vert ramp.

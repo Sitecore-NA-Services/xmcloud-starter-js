@@ -87,6 +87,12 @@
                 "path": "/sitecore/content/angular-starter/angular-skate-park/Home/Parks",
                 "scope": "itemAndDescendants",
                 "allowedPushOperations": "CreateAndUpdate"
+            },
+            {
+                "name": "as.media",
+                "path": "/sitecore/media library/Project/angular-starter/angular-skate-park/Parks",
+                "scope": "itemAndDescendants",
+                "allowedPushOperations": "CreateAndUpdate"
             }
         ]
     }

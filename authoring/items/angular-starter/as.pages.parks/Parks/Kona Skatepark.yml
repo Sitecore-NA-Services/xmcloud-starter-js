@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Open since 1977 and still family-run. Snake run, bowls and a huge street course spread across shaded Florida acreage.</p>"
+      Value: "<p>Open since 1977 and still family-run, which makes it the oldest continuously operating skatepark on earth. Snake run, bowls and a large street course spread across shaded Florida acreage.</p><p>Several generations of the same families have learned to skate here. It shows in how the place is looked after.</p><h3>Before you drop in</h3><ul><li>Something rideable for every level</li><li>Shaded, which matters in a Florida summer</li><li>Open 10am to 10pm</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Kona Skatepark
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 100
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000004}" alt="Skateboarder mid-trick at a busy skatepark" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: The oldest continuously operating skatepark on earth.

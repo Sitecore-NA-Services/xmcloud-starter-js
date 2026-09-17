@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: <p>Wood transitions, a keyhole bowl and a street course under one roof. Rain never cancels a session here.</p>
+      Value: "<p>Wood transitions, a keyhole bowl and a street course under one roof. Rain never cancels a session here, which is the entire point of an indoor park.</p><p>Wood rides faster than concrete and is less forgiving of a hung-up wheel, so give yourself a few runs to adjust if you have come off the street.</p><h3>Before you drop in</h3><ul><li>Indoor, so weather is never a factor</li><li>Wood runs fast - expect a different feel from concrete</li><li>Pads required in the bowl</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Skatestreet
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 80
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000005}" alt="Skateboarder grinding a ledge" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: Indoor wood park with a legendary keyhole bowl.

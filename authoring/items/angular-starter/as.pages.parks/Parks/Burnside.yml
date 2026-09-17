@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Poured by skaters in 1990 under the east end of the Burnside Bridge, this is the DIY park every other DIY park is measured against. Steep transitions, a full pool corner, and zero hand-holding.</p>"
+      Value: "<p>Poured by skaters in 1990 under the east end of the Burnside Bridge, this is the DIY park every other DIY park is measured against. Nobody asked permission. The first loads of concrete went down at night, and the city eventually decided the result was better than what had been there before.</p><p>The transitions are steep and unforgiving, the pool corner is genuinely deep, and the whole thing sits under a bridge deck that keeps it dry when Portland does what Portland does. There are no lights, so the session ends when the light does.</p><h3>Before you drop in</h3><ul><li>Not a beginner park - watch a few runs before you commit</li><li>Covered, so it stays rideable through the rain</li><li>Dawn to dusk only</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Burnside
@@ -44,6 +44,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 60
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000003}" alt="Skateboarder dropping into a concrete bowl" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: Raw DIY concrete under the bridge. No rules, no lights, no mercy.

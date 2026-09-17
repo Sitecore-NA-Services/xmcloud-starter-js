@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Backyard-pool geometry reproduced in public concrete: tight corners, real coping and a street plaza for when your legs give out.</p>"
+      Value: "<p>Backyard-pool geometry reproduced in public concrete: tight corners, real coping and a street plaza for when your legs give out. Built deliberately to ride like the empty pools that started all of this.</p><p>The corners come at you faster than a modern park would, which is exactly what it was designed to do.</p><h3>Before you drop in</h3><ul><li>Pool-style corners - tighter than they look</li><li>Street plaza for a lower-intensity session</li><li>Open 8am to 10pm</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Old Skool Park
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 95
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000009}" alt="Skateboarder riding through a lit tunnel" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: Classic transitions rebuilt for a new generation.

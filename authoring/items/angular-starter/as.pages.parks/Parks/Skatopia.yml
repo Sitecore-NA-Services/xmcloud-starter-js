@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: <p>Part skatepark, part commune, part demolition derby. Multiple bowls, a full vert ramp in the barn, and a strong recommendation that you know what you are doing.</p>
+      Value: "<p>Eighty-eight acres that function as part skatepark, part commune, part demolition derby. Multiple bowls, a full vert ramp in the barn, and a strong recommendation that you know what you are doing before you turn up.</p><p>This is not a municipal facility and makes no attempt to be one. Come for the bowls; understand what you are walking into.</p><h3>Before you drop in</h3><ul><li>Advanced riders - not a learning environment</li><li>Vert ramp housed in the barn</li><li>Dawn to dusk, no lights</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Skatopia
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 40
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000006}" alt="Skateboarder airing out of a bowl" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: "Eighty-eight acres of anarchy, bowls and a barn."

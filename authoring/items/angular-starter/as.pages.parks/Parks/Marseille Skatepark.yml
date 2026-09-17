@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Bowl-heavy park on the Mediterranean coast. The deep end has humbled visiting pros for forty years; the street section is friendlier.</p>"
+      Value: "<p>The Prado bowl has been a European proving ground since the eighties, sat on the Mediterranean coast with the sea on one side and the city behind it. The deep end has humbled visiting professionals for forty years.</p><p>The street section is considerably friendlier, which is where most people start before working up the nerve.</p><h3>Before you drop in</h3><ul><li>The deep end is deeper than it photographs</li><li>Shade is limited - summer afternoons are brutal</li><li>Open 8am to 9pm</li></ul>"
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Marseille Skatepark
@@ -45,6 +45,9 @@ Languages:
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 90
+    - ID: "c1a70072-0000-4000-8000-000000000008"
+      Hint: HeroImage
+      Value: '<image mediaid="{C1A700A1-0000-4000-8000-000000000007}" alt="Skateboarder pushing along a sunlit street" />'
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
       Value: "The Prado bowl - a European proving ground since the eighties."
