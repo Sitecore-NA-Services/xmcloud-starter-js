@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>A vert ramp, a capsule bowl and a street course, all indoors. The vert wall is the reason most people make the trip.</p>"
+      Value: <p>A vert ramp, a capsule bowl and a street course, all indoors. The vert wall is the reason most people make the trip.</p>
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Skater Island
@@ -35,10 +35,13 @@ Languages:
       Value: "{C1A70073-0000-4000-8000-000000000002}"
     - ID: "c1a70072-0000-4000-8000-000000000003"
       Hint: Features
-      Value: "{C1A70074-0000-4000-8000-000000000004}|{C1A70074-0000-4000-8000-000000000001}|{C1A70074-0000-4000-8000-000000000003}"
+      Value: |
+        {C1A70074-0000-4000-8000-000000000004}
+        {C1A70074-0000-4000-8000-000000000001}
+        {C1A70074-0000-4000-8000-000000000003}
     - ID: "c1a70072-0000-4000-8000-000000000004"
       Hint: Hours
-      Value: 10am - 10pm
+      Value: "10am - 10pm"
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 75
@@ -47,4 +50,4 @@ Languages:
       Value: Indoor park built around a full vert ramp.
     - ID: "c1a70072-0000-4000-8000-000000000007"
       Hint: Description
-      Value: "<p>A vert ramp, a capsule bowl and a street course, all indoors. The vert wall is the reason most people make the trip.</p>"
+      Value: <p>A vert ramp, a capsule bowl and a street course, all indoors. The vert wall is the reason most people make the trip.</p>

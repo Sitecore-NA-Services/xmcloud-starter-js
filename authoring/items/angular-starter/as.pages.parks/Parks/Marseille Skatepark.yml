@@ -35,16 +35,19 @@ Languages:
       Value: "{C1A70073-0000-4000-8000-000000000002}"
     - ID: "c1a70072-0000-4000-8000-000000000003"
       Hint: Features
-      Value: "{C1A70074-0000-4000-8000-000000000008}|{C1A70074-0000-4000-8000-000000000001}|{C1A70074-0000-4000-8000-000000000002}"
+      Value: |
+        {C1A70074-0000-4000-8000-000000000008}
+        {C1A70074-0000-4000-8000-000000000001}
+        {C1A70074-0000-4000-8000-000000000002}
     - ID: "c1a70072-0000-4000-8000-000000000004"
       Hint: Hours
-      Value: 8am - 9pm
+      Value: "8am - 9pm"
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 90
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
-      Value: The Prado bowl - a European proving ground since the eighties.
+      Value: "The Prado bowl - a European proving ground since the eighties."
     - ID: "c1a70072-0000-4000-8000-000000000007"
       Hint: Description
       Value: "<p>Bowl-heavy park on the Mediterranean coast. The deep end has humbled visiting pros for forty years; the street section is friendlier.</p>"

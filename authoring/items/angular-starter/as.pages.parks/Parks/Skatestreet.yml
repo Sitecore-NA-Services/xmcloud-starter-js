@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Wood transitions, a keyhole bowl and a street course under one roof. Rain never cancels a session here.</p>"
+      Value: <p>Wood transitions, a keyhole bowl and a street course under one roof. Rain never cancels a session here.</p>
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Skatestreet
@@ -35,10 +35,13 @@ Languages:
       Value: "{C1A70073-0000-4000-8000-000000000002}"
     - ID: "c1a70072-0000-4000-8000-000000000003"
       Hint: Features
-      Value: "{C1A70074-0000-4000-8000-000000000004}|{C1A70074-0000-4000-8000-000000000001}|{C1A70074-0000-4000-8000-000000000002}"
+      Value: |
+        {C1A70074-0000-4000-8000-000000000004}
+        {C1A70074-0000-4000-8000-000000000001}
+        {C1A70074-0000-4000-8000-000000000002}
     - ID: "c1a70072-0000-4000-8000-000000000004"
       Hint: Hours
-      Value: 9am - 9pm
+      Value: "9am - 9pm"
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 80
@@ -47,4 +50,4 @@ Languages:
       Value: Indoor wood park with a legendary keyhole bowl.
     - ID: "c1a70072-0000-4000-8000-000000000007"
       Hint: Description
-      Value: "<p>Wood transitions, a keyhole bowl and a street course under one roof. Rain never cancels a session here.</p>"
+      Value: <p>Wood transitions, a keyhole bowl and a street course under one roof. Rain never cancels a session here.</p>

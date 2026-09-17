@@ -4,7 +4,7 @@ Parent: "d4fc8494-bb80-49f6-ba61-f15b62f9d97e"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
 Path: "/sitecore/content/angular-starter/angular-skate-park/Presentation/Partial Designs/Park Detail"
 SharedFields:
-- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: park-detail
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"

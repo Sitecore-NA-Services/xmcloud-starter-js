@@ -17,7 +17,7 @@ Languages:
     Fields:
     - ID: "05918db7-821b-4487-98cc-b7aec81de5dd"
       Hint: Content
-      Value: "<p>Part skatepark, part commune, part demolition derby. Multiple bowls, a full vert ramp in the barn, and a strong recommendation that you know what you are doing.</p>"
+      Value: <p>Part skatepark, part commune, part demolition derby. Multiple bowls, a full vert ramp in the barn, and a strong recommendation that you know what you are doing.</p>
     - ID: "18d39473-673e-485e-90ce-12425acbc005"
       Hint: Title
       Value: Skatopia
@@ -35,16 +35,19 @@ Languages:
       Value: "{C1A70073-0000-4000-8000-000000000003}"
     - ID: "c1a70072-0000-4000-8000-000000000003"
       Hint: Features
-      Value: "{C1A70074-0000-4000-8000-000000000005}|{C1A70074-0000-4000-8000-000000000001}|{C1A70074-0000-4000-8000-000000000003}"
+      Value: |
+        {C1A70074-0000-4000-8000-000000000005}
+        {C1A70074-0000-4000-8000-000000000001}
+        {C1A70074-0000-4000-8000-000000000003}
     - ID: "c1a70072-0000-4000-8000-000000000004"
       Hint: Hours
-      Value: Dawn - dusk
+      Value: "Dawn - dusk"
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 40
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
-      Value: Eighty-eight acres of anarchy, bowls and a barn.
+      Value: "Eighty-eight acres of anarchy, bowls and a barn."
     - ID: "c1a70072-0000-4000-8000-000000000007"
       Hint: Description
-      Value: "<p>Part skatepark, part commune, part demolition derby. Multiple bowls, a full vert ramp in the barn, and a strong recommendation that you know what you are doing.</p>"
+      Value: <p>Part skatepark, part commune, part demolition derby. Multiple bowls, a full vert ramp in the barn, and a strong recommendation that you know what you are doing.</p>

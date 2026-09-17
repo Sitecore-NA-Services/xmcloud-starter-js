@@ -35,16 +35,19 @@ Languages:
       Value: "{C1A70073-0000-4000-8000-000000000002}"
     - ID: "c1a70072-0000-4000-8000-000000000003"
       Hint: Features
-      Value: "{C1A70074-0000-4000-8000-000000000001}|{C1A70074-0000-4000-8000-000000000002}|{C1A70074-0000-4000-8000-000000000006}"
+      Value: |
+        {C1A70074-0000-4000-8000-000000000001}
+        {C1A70074-0000-4000-8000-000000000002}
+        {C1A70074-0000-4000-8000-000000000006}
     - ID: "c1a70072-0000-4000-8000-000000000004"
       Hint: Hours
-      Value: 6am - 10pm
+      Value: "6am - 10pm"
     - ID: "c1a70072-0000-4000-8000-000000000005"
       Hint: Capacity
       Value: 120
     - ID: "c1a70072-0000-4000-8000-000000000006"
       Hint: Summary
-      Value: Ocean-front concrete with two bowls and a street course.
+      Value: "Ocean-front concrete with two bowls and a street course."
     - ID: "c1a70072-0000-4000-8000-000000000007"
       Hint: Description
       Value: "<p>Sixteen thousand square feet of concrete sitting directly on the sand. Two pool-style bowls, a snake run and a compact street section, all lit until 10pm.</p>"

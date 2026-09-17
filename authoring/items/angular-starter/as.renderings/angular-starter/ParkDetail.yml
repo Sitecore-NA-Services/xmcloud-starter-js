@@ -7,3 +7,6 @@ SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
   Value: ParkDetail
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{8CA06D6A-B353-44E8-BC31-B528C7306971}"
