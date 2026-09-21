@@ -117,38 +117,38 @@ module.exports = {
                         '--tw-prose-links': theme('colors.brand.DEFAULT'),
                         ...proseVars.reduce((acc, key) => ({ ...acc, [key]: 'inherit' }), {}),
                         h1: {
-                            fontSize: theme('fontSize.5xl'),
+                            fontSize: theme('fontSize.5xl[0]'),
                             fontWeight: 'normal',
-                            '@screen md': {
-                                fontSize: theme('fontSize.6xl'),
+                            '@media (min-width: 768px)': {
+                                fontSize: theme('fontSize.6xl[0]'),
                             },
                         },
                         h2: {
-                            fontSize: theme('fontSize.4xl'),
+                            fontSize: theme('fontSize.4xl[0]'),
                             fontWeight: 'normal',
-                            '@screen md': {
-                                fontSize: theme('fontSize.5xl'),
+                            '@media (min-width: 768px)': {
+                                fontSize: theme('fontSize.5xl[0]'),
                             },
                         },
                         h3: {
-                            fontSize: theme('fontSize.3xl'),
+                            fontSize: theme('fontSize.3xl[0]'),
                             fontWeight: 'normal',
-                            '@screen md': {
-                                fontSize: theme('fontSize.4xl'),
+                            '@media (min-width: 768px)': {
+                                fontSize: theme('fontSize.4xl[0]'),
                             },
                         },
                         h4: {
-                            fontSize: theme('fontSize.2xl'),
+                            fontSize: theme('fontSize.2xl[0]'),
                             fontWeight: 'normal',
-                            '@screen md': {
-                                fontSize: theme('fontSize.3xl'),
+                            '@media (min-width: 768px)': {
+                                fontSize: theme('fontSize.3xl[0]'),
                             },
                         },
                         h5: {
-                            fontSize: theme('fontSize.xl'),
+                            fontSize: theme('fontSize.xl[0]'),
                             fontWeight: 'normal',
-                            '@screen md': {
-                                fontSize: theme('fontSize.2xl'),
+                            '@media (min-width: 768px)': {
+                                fontSize: theme('fontSize.2xl[0]'),
                             },
                         },
                     },
