@@ -47,7 +47,7 @@ const Bootstrap = (props: SitecorePageProps): JSX.Element | null => {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page?.siteName]);}
+  }, [page?.siteName]);
 
   return null;
 };

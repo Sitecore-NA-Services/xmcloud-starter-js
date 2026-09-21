@@ -7,23 +7,23 @@ import {
 } from '@sitecore-content-sdk/nextjs/codegen';
 // end of built-in imports
 
-import { useEffect } from 'react';
-import React from 'react';
+import { jsx, Fragment } from 'react/jsx-runtime';
 import { Placeholder, CdpHelper, useSitecore } from '@sitecore-content-sdk/nextjs';
 import Head from 'next/head';
 import client from 'lib/sitecore-client';
 import Image from 'next/image';
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 import nextConfig from 'next.config';
-import { pageView } from '@sitecore-cloudsdk/events/browser';
+import { useEffect } from 'react';
+import { pageView } from '@sitecore-content-sdk/events';
 import config from 'sitecore.config';
 
 const importMap = [
   {
-    module: 'react',
+    module: 'react/jsx-runtime',
     exports: [
-      { name: 'useEffect', value: useEffect },
-      { name: 'default', value: React },
+      { name: 'jsx', value: jsx },
+      { name: 'Fragment', value: Fragment },
     ]
   },
   {
@@ -65,7 +65,13 @@ const importMap = [
     ]
   },
   {
-    module: '@sitecore-cloudsdk/events/browser',
+    module: 'react',
+    exports: [
+      { name: 'useEffect', value: useEffect },
+    ]
+  },
+  {
+    module: '@sitecore-content-sdk/events',
     exports: [
       { name: 'pageView', value: pageView },
     ]
