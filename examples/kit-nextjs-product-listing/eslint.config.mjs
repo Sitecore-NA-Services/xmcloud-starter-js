@@ -1,28 +1,22 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
+import nextTypeScript from 'eslint-config-next/typescript';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
+// eslint-config-next 16 ships native flat configs, so they are imported directly.
+// Routing them through FlatCompat crashes config validation with
+// "Converting circular structure to JSON" (the plugins.react object self-references).
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-  { 
+  // A config object containing ONLY `ignores` is the global ignore list; combining
+  // `ignores` with `rules` would instead just scope those rules.
+  {
+    ignores: ['node_modules/**', '.next/**', 'out/**', 'build/**', 'next-env.d.ts'],
+  },
+  ...nextCoreWebVitals,
+  ...nextTypeScript,
+  {
     rules: {
       // Don't force alt for <Image/> (sourced from Sitecore media)
-      "jsx-a11y/alt-text": "off",
+      'jsx-a11y/alt-text': 'off',
     },
-    ignores: [
-      "node_modules/**",
-      ".next/**",
-      "out/**",
-      "build/**",
-      "next-env.d.ts",
-    ],
   },
 ];
 
