@@ -9,6 +9,7 @@ import { Form } from '@sitecore-content-sdk/nextjs';
 import * as Title from 'src/components/Title';
 import * as RowSplitter from 'src/components/RowSplitter';
 import * as RichText from 'src/components/RichText';
+import * as PromoImage from 'src/components/PromoImage';
 import * as Promo from 'src/components/Promo';
 import * as ProductGrid from 'src/components/ProductGrid';
 import * as ProductDetail from 'src/components/ProductDetail';
@@ -37,6 +38,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Title', { ...Title }],
   ['RowSplitter', { ...RowSplitter }],
   ['RichText', { ...RichText }],
+  ['PromoImage', { ...PromoImage }],
   ['Promo', { ...Promo }],
   ['ProductGrid', { ...ProductGrid }],
   ['ProductDetail', { ...ProductDetail }],

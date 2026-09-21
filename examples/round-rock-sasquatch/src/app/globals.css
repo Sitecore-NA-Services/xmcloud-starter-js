@@ -1704,6 +1704,18 @@ main {
   }
 }
 
+/* Promo cards with no media (e.g. PromoImage field reports) stay single-column
+   so the text is not left beside an empty panel. */
+.sxa-promo-card--no-media {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .sxa-promo-card--no-media {
+    grid-template-columns: 1fr;
+  }
+}
+
 .sxa-promo-media {
   background: var(--forest-deep);
   display: flex;
