@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
+import { imageRemotePatterns } from './src/lib/image-remote-patterns';
 
 const nextConfig: NextConfig = {
   // Allow specifying a distinct distDir when concurrently running app in a container
@@ -15,18 +16,7 @@ const nextConfig: NextConfig = {
   // can be served from the Next.js Image Optimization API
   // see https://nextjs.org/docs/app/api-reference/components/image#remotepatterns
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'edge*.**',
-        port: '',
-      },
-      {
-        protocol: 'https',
-        hostname: 'xmc-*.**',
-        port: '',
-      },
-    ],
+    remotePatterns: imageRemotePatterns,
     // Disable image optimization in development to avoid upstream timeouts
     unoptimized: process.env.NODE_ENV === 'development',
   },
