@@ -10,12 +10,14 @@ import { ArticleHeaderDictionaryKeys } from '@/components/article-header/article
 import { SubscriptionBannerDictionaryKeys } from '@/components/subscription-banner/subscription-banner.dictionary';
 import { PreviewSearchDictionaryKeys } from '@/components/sitecore-search/preview-search.dictionary';
 import { SearchResultsDictionaryKeys } from '@/components/sitecore-search/search-results.dictionary';
+import { SearchQuestionsDictionaryKeys } from '@/components/sitecore-search/search-questions.dictionary';
 
 export const dictionaryKeys = {
   ...SubscriptionBannerDictionaryKeys,
   ...ArticleHeaderDictionaryKeys,
   ...PreviewSearchDictionaryKeys,
   ...SearchResultsDictionaryKeys,
+  ...SearchQuestionsDictionaryKeys,
 };
 
 export const mockDictionary = (dictionary: Record<string, string>): Record<string, string> => {

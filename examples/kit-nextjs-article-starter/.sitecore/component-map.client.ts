@@ -17,6 +17,7 @@ import * as Navigation from 'src/components/sxa/Navigation';
 import * as Image from 'src/components/sxa/Image';
 import * as SubscriptionBanner from 'src/components/subscription-banner/SubscriptionBanner';
 import * as SearchResults from 'src/components/sitecore-search/SearchResults';
+import * as SearchQuestions from 'src/components/sitecore-search/SearchQuestions';
 import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
 import * as SearchLocale from 'src/components/sitecore-search/SearchLocale';
 import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
@@ -68,6 +69,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Image', { ...Image }],
   ['SubscriptionBanner', { ...SubscriptionBanner }],
   ['SearchResults', { ...SearchResults }],
+  ['SearchQuestions', { ...SearchQuestions }],
   ['SearchProvider', { ...SearchProvider }],
   ['SearchLocale', { ...SearchLocale }],
   ['PreviewSearchBox', { ...PreviewSearchBox }],

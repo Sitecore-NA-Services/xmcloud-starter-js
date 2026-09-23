@@ -42,9 +42,11 @@ import * as SubscriptionBanner from 'src/components/subscription-banner/Subscrip
 import * as subscriptionbannerprops from 'src/components/subscription-banner/subscription-banner.props';
 import * as subscriptionbannerdictionary from 'src/components/subscription-banner/subscription-banner.dictionary';
 import * as SearchResults from 'src/components/sitecore-search/SearchResults';
+import * as SearchQuestions from 'src/components/sitecore-search/SearchQuestions';
 import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
 import * as SearchLocale from 'src/components/sitecore-search/SearchLocale';
 import * as searchresultsdictionary from 'src/components/sitecore-search/search-results.dictionary';
+import * as searchquestionsdictionary from 'src/components/sitecore-search/search-questions.dictionary';
 import * as searchconfig from 'src/components/sitecore-search/search-config';
 import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
 import * as previewsearchdictionary from 'src/components/sitecore-search/preview-search.dictionary';
@@ -184,9 +186,11 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SubscriptionBanner', { ...SubscriptionBanner, componentType: 'client' }],
   ['subscription-banner', { ...subscriptionbannerprops, ...subscriptionbannerdictionary }],
   ['SearchResults', { ...SearchResults, componentType: 'client' }],
+  ['SearchQuestions', { ...SearchQuestions, componentType: 'client' }],
   ['SearchProvider', { ...SearchProvider, componentType: 'client' }],
   ['SearchLocale', { ...SearchLocale, componentType: 'client' }],
   ['search-results', { ...searchresultsdictionary }],
+  ['search-questions', { ...searchquestionsdictionary }],
   ['search-config', { ...searchconfig }],
   ['PreviewSearchBox', { ...PreviewSearchBox, componentType: 'client' }],
   ['preview-search', { ...previewsearchdictionary }],
