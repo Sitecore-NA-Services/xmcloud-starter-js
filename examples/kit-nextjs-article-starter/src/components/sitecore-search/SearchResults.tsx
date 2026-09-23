@@ -19,6 +19,7 @@
 
 import { Suspense, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import { cva } from 'class-variance-authority';
 import {
   WidgetDataType,
@@ -42,6 +43,7 @@ import {
 import type { ComponentProps } from '@/lib/component-props';
 import { SEARCH_SOURCE_IDS } from './search-config';
 import { SearchQuestionsPanel } from './SearchQuestions';
+import { useLocalizeHref } from '@/lib/localize-href';
 
 /** Index document shape (attributes configured on the `content` entity). */
 type ArticleModel = {
@@ -405,6 +407,7 @@ type ColorScheme = 'primary' | 'secondary' | 'tertiary' | 'dark' | 'light';
 const SearchResultsContent = ({ params }: ComponentProps) => {
   const colorScheme = ((params?.colorScheme as ColorScheme) || 'light') as ColorScheme;
   const q = useSearchParams()?.get('q') ?? '';
+  const localizeHref = useLocalizeHref();
 
   const rfkId = process.env.NEXT_PUBLIC_SEARCH_RESULTS_RFKID;
   const configured =
@@ -433,6 +436,66 @@ const SearchResultsContent = ({ params }: ComponentProps) => {
             </p>
           </div>
         )}
+
+        {/* Same teaching panel the Agent Chat and RAG Chat pages carry, so the
+            three Search surfaces can be compared side by side. */}
+        <div className="mt-6 rounded-xl border border-dashed border-zinc-300 p-4 text-sm text-zinc-500">
+          <h2 className="mb-2 font-semibold text-zinc-900">How this demo works</h2>
+          <ul className="list-disc space-y-1 pl-5">
+            <li>
+              This page queries <strong>two separate Sitecore Search widgets</strong>: a{' '}
+              <code>content_grid</code> for the result list, and a <code>questions_answers</code>{' '}
+              widget for the answer above it. Nothing in the platform routes a question-shaped
+              query to Q&amp;A on its own — the page asks both and composes the results.
+            </li>
+            <li>
+              The answer panel only appears when you <strong>ask a question</strong>. A keyword
+              browse such as &quot;solar&quot; just returns the list, which is most searches.
+            </li>
+            <li>
+              Answers say where they came from, in small type beside &quot;Answer&quot;.{' '}
+              <strong>FAQ Generated</strong> is a curated Q&amp;A pair maintained by the site team
+              in Sitecore Search — editors can correct or hide any answer, and the change shows up
+              here and in the chat demos. <strong>AI Generated</strong> is written on the spot when
+              the Q&amp;A knowledge base has nothing for that question.
+            </li>
+            <li>
+              An AI-generated answer is <strong>grounded in the article index</strong>: the model
+              gets a search tool and no site knowledge of its own, weak matches are filtered out
+              before it sees them, and if the articles do not actually answer the question it
+              returns nothing and this panel stays hidden rather than guessing.
+            </li>
+            <li>
+              <strong>Continue this conversation</strong> carries the question over to Agent Chat,
+              which re-answers it with its own tools — the same curated answer plus related
+              articles — so a short answer can become a longer, cited one without retyping.
+            </li>
+            <li>
+              Facets (content type, author, topics) are requested{' '}
+              <strong>explicitly in code</strong> rather than relying on the widget&apos;s default
+              set, and results are scoped to this site&apos;s crawler source, since one Search
+              domain holds a single index shared by every site that feeds it.
+            </li>
+            <li>
+              Compare with the{' '}
+              <Link
+                href={localizeHref('/Agent-Chat') ?? '/Agent-Chat'}
+                className="font-semibold text-zinc-900 underline underline-offset-2"
+              >
+                Agent Chat
+              </Link>{' '}
+              and{' '}
+              <Link
+                href={localizeHref('/RAG-Chat') ?? '/RAG-Chat'}
+                className="font-semibold text-zinc-900 underline underline-offset-2"
+              >
+                RAG Chat
+              </Link>{' '}
+              pages, which reach the same index and the same Q&amp;A pairs through a conversation
+              instead of a result list.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
