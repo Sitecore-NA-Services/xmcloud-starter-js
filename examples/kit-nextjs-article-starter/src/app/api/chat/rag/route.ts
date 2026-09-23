@@ -1,6 +1,6 @@
 import { streamText, StreamData, type Message } from 'ai';
 import { chatModel } from '@/lib/azure-openai';
-import { querySitecoreSearch } from '@/lib/sitecore-search-query';
+import { querySitecoreSearch, querySitecoreQuestions } from '@/lib/sitecore-search-query';
 import { rerankByRelevance, filterByRelevance } from '@/lib/rerank';
 
 export const maxDuration = 30;
@@ -18,7 +18,12 @@ export async function POST(req: Request) {
   const lastUserMessage = [...messages].reverse().find((m) => m.role === 'user');
   const keyphrase = lastUserMessage?.content ?? '';
 
-  const rawDocs = await querySitecoreSearch(keyphrase, 5, undefined, locale);
+  // Retrieve articles and curated Q&A in parallel — they are separate widgets in
+  // Sitecore Search and neither can reach the other's data.
+  const [rawDocs, qa] = await Promise.all([
+    querySitecoreSearch(keyphrase, 5, undefined, locale),
+    querySitecoreQuestions(keyphrase, 4, locale),
+  ]);
   const rankedDocs = await rerankByRelevance(keyphrase, rawDocs);
   const docs = filterByRelevance(rankedDocs);
 
@@ -30,6 +35,14 @@ export async function POST(req: Request) {
         })
         .join('\n\n')
     : 'No matching articles were found in the index.';
+
+  // Curated Q&A is editorially reviewed in the Sitecore Q&A Browser — an author can
+  // correct or hide an answer there — so it outranks raw article text when both
+  // cover the same ground.
+  const qaContext = [
+    ...(qa.exact ? [`[Curated answer] Q: ${qa.exact.question}\nA: ${qa.exact.answer}`] : []),
+    ...qa.related.map((r) => `[Curated Q&A] Q: ${r.question}\nA: ${r.answer}`),
+  ].join('\n\n');
 
   // The retrieved context is in whichever language the Search index returned it in
   // (locale-scoped), so the answer should match that same site language.
@@ -58,6 +71,12 @@ export async function POST(req: Request) {
       `${languageNote} ` +
       'Answer ONLY using the retrieved context below. If the context does not contain ' +
       'the answer, say you do not have that information. Cite sources by title and URL.\n\n' +
+      (qaContext
+        ? 'Curated Q&A has been editorially reviewed by the site team. Prefer it over the ' +
+          'article extracts when the two overlap, but still cite the article sources for ' +
+          'further reading.\n\n' +
+          `Curated Q&A:\n${qaContext}\n\n`
+        : '') +
       `Retrieved context:\n${context}`,
     messages,
     onFinish: () => {

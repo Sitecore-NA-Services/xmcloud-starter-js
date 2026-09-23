@@ -41,6 +41,7 @@ import {
 } from '@/components/ui/select';
 import type { ComponentProps } from '@/lib/component-props';
 import { SEARCH_SOURCE_IDS } from './search-config';
+import { SearchQuestionsPanel } from './SearchQuestions';
 
 /** Index document shape (attributes configured on the `content` entity). */
 type ArticleModel = {
@@ -414,6 +415,12 @@ const SearchResultsContent = ({ params }: ComponentProps) => {
   return (
     <section className={cn(searchResultsVariants({ colorScheme }), params?.styles)}>
       <div className="mx-auto w-full max-w-screen-xl px-4 xl:px-8">
+        {/* Sitecore Search answers questions and returns documents through two
+            separate widgets — nothing in the platform routes a question-shaped
+            query to Q&A on its own. Render the Q&A panel above the list so an
+            answer leads, with the matching articles underneath. */}
+        <SearchQuestionsPanel keyphrase={q} />
+
         {configured && rfkId ? (
           <SearchResultsWidget key={q || '__all__'} rfkId={rfkId} defaultKeyphrase={q} />
         ) : (

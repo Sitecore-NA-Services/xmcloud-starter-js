@@ -253,11 +253,14 @@ vercel logs <url>      # View logs for a deployment
 - Shared patterns are **copied**, not shared via imports
 - Each starter can be developed and deployed independently
 
-**DMZ Git Workflow (Planned):**
-- Feature branches from `main`, PRs to `dmz` branch
-- `dmz` acts as integration/staging branch
-- `main` is always clean and deployable
-- PRs merged to `dmz` after review, then to `main` periodically
+**Git Workflow — single branch:**
+- This repo has one branch: `main`. Commit directly to it.
+- Do not create feature branches or open PRs; it is a solo repo, so the
+  branch-and-merge overhead buys nothing.
+- Ask before pushing — `main` tracks `origin/main` and pushing is the step that
+  leaves the machine.
+- `main` is always clean and deployable, so build before committing anything
+  that ships (`npm run build` from the starter directory).
 
 **File Safety:**
 - Never edit compiled artifacts in `/dist`, `/build`, `.next`

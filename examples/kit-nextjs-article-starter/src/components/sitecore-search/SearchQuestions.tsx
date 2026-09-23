@@ -191,15 +191,15 @@ const searchQuestionsVariants = cva('w-full py-6', {
 type ColorScheme = 'primary' | 'secondary' | 'tertiary' | 'dark' | 'light';
 
 /**
- * Sitecore rendering entry. Reads the `colorScheme` rendering parameter and the
- * `?q=` query string. Renders nothing at all when there is no question to ask,
- * when Search is unconfigured, or outside English — a Q&A block with no question
- * is just empty chrome on the page.
+ * Embeddable Q&A panel — the widget without any section chrome, so it can be
+ * composed into another rendering (it sits above the list in `SearchResults`)
+ * as well as stand alone as its own rendering.
+ *
+ * Renders nothing when there is no question to ask, when Search is
+ * unconfigured, or outside English: a Q&A block with no question is just empty
+ * chrome on the page.
  */
-const SearchQuestionsContent = ({ params }: ComponentProps) => {
-  const colorScheme = ((params?.colorScheme as ColorScheme) || 'light') as ColorScheme;
-  const q = useSearchParams()?.get('q') ?? '';
-
+export const SearchQuestionsPanel = ({ keyphrase }: { keyphrase: string }) => {
   const rfkId = process.env.NEXT_PUBLIC_SEARCH_QUESTIONS_RFKID;
   const configured =
     !!process.env.NEXT_PUBLIC_SEARCH_ENV &&
@@ -208,12 +208,27 @@ const SearchQuestionsContent = ({ params }: ComponentProps) => {
 
   // `keyphrase` has a minimum length of 1 — an empty query is an API error, not
   // a "browse all" request, so there is nothing to render until someone asks.
-  if (!configured || !rfkId || !q.trim() || SEARCH_LANGUAGE !== 'en') return null;
+  if (!configured || !rfkId || !keyphrase.trim() || SEARCH_LANGUAGE !== 'en') return null;
+
+  return <SearchQuestionsWidget key={keyphrase} rfkId={rfkId} defaultKeyphrase={keyphrase} />;
+};
+
+/**
+ * Sitecore rendering entry. Reads the `colorScheme` rendering parameter and the
+ * `?q=` query string, and wraps the panel in a brand-styled section. Use this
+ * when placing Q&A on a page as its own component; `SearchResults` embeds
+ * `SearchQuestionsPanel` directly instead.
+ */
+const SearchQuestionsContent = ({ params }: ComponentProps) => {
+  const colorScheme = ((params?.colorScheme as ColorScheme) || 'light') as ColorScheme;
+  const q = useSearchParams()?.get('q') ?? '';
+
+  if (!q.trim()) return null;
 
   return (
     <section className={cn(searchQuestionsVariants({ colorScheme }), params?.styles)}>
       <div className="mx-auto w-full max-w-screen-xl px-4 xl:px-8">
-        <SearchQuestionsWidget key={q} rfkId={rfkId} defaultKeyphrase={q} />
+        <SearchQuestionsPanel keyphrase={q} />
       </div>
     </section>
   );

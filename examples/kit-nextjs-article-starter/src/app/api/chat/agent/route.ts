@@ -1,7 +1,7 @@
 import { streamText, tool, type Message } from 'ai';
 import { z } from 'zod';
 import { chatModel } from '@/lib/azure-openai';
-import { querySitecoreSearch, listSearchFacetValues } from '@/lib/sitecore-search-query';
+import { querySitecoreSearch, listSearchFacetValues, querySitecoreQuestions } from '@/lib/sitecore-search-query';
 import { rerankByRelevance } from '@/lib/rerank';
 
 export const maxDuration = 30;
@@ -32,6 +32,9 @@ export async function POST(req: Request) {
     system:
       'You are a helpful assistant for the Solterra & Co. article site. ' +
       `${languageNote} ` +
+      'When the user asks a direct question, call askKnowledgeBase first — those answers are ' +
+      'editorially reviewed, so they are more trustworthy than raw article text. If it returns ' +
+      'nothing useful, fall back to searchArticles. ' +
       'Use the searchArticles tool whenever the user asks about article content, ' +
       'topics, or facts that may be covered by the site. If the user wants to narrow ' +
       'results by content type, author, or topic, call listArticleFacets first to see the ' +
@@ -51,6 +54,18 @@ export async function POST(req: Request) {
           'article index, with result counts, so a search can be narrowed accurately.',
         parameters: z.object({}),
         execute: async () => listSearchFacetValues('the', locale),
+      }),
+      askKnowledgeBase: tool({
+        description:
+          'Ask the Solterra curated Q&A knowledge base a natural-language question. Returns an ' +
+          'editorially reviewed answer plus related question/answer pairs. Prefer this over ' +
+          'searchArticles when the user asks a direct question ("what is X", "how does Y work"), ' +
+          'since these answers are reviewed by the site team. Falls back to empty when the ' +
+          'knowledge base has nothing on the topic — use searchArticles then. English only.',
+        parameters: z.object({
+          question: z.string().describe("The user's question, phrased as a full question"),
+        }),
+        execute: async ({ question }) => querySitecoreQuestions(question, 4, locale),
       }),
       searchArticles: tool({
         description:

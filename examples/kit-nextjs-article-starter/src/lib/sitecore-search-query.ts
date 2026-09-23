@@ -21,6 +21,15 @@ const API_KEY = process.env.SITECORE_SEARCH_API_KEY || process.env.NEXT_PUBLIC_S
 
 const RFK_ID = process.env.SITECORE_SEARCH_WIDGET_ID || process.env.NEXT_PUBLIC_SEARCH_RESULTS_RFKID || '';
 
+/**
+ * The `questions_answers` widget auto-created by the Q&A group in
+ * CEC > Domain Settings > Feature Configuration > Question & Answer Groups.
+ * Separate from RFK_ID: Q&A pairs are NOT part of the `content` entity index,
+ * so they are unreachable through a normal content search.
+ */
+const QUESTIONS_RFK_ID =
+  process.env.SITECORE_SEARCH_QUESTIONS_WIDGET_ID || process.env.NEXT_PUBLIC_SEARCH_QUESTIONS_RFKID || '';
+
 const ENTITY = process.env.SITECORE_SEARCH_ENTITY || 'content';
 
 const SOURCE_IDS = (process.env.SITECORE_SEARCH_SOURCE_IDS || process.env.NEXT_PUBLIC_SEARCH_SOURCE_IDS || '')
@@ -202,6 +211,101 @@ export async function listSearchFacetValues(keyphrase = 'the', locale?: string):
       authors: valuesOf('author'),
       tags: valuesOf('tags'),
     };
+  } catch {
+    return empty;
+  }
+}
+
+/** A generated question/answer pair from the Sitecore Search Q&A capability. */
+export type QuestionAnswer = {
+  id?: string;
+  question: string;
+  answer: string;
+};
+
+export type QuestionsResult = {
+  /** The single best answer to the asked question, when the engine can produce one. */
+  exact?: QuestionAnswer;
+  /** Pre-generated pairs related to the question. */
+  related: QuestionAnswer[];
+};
+
+/**
+ * Query the Sitecore Search Questions & Answers capability.
+ *
+ * These are editorially curated, AI-generated Q&A pairs — an author can correct
+ * or hide an answer in the Q&A Browser, and that curation is invisible to a plain
+ * content search. That is the whole reason to call this in addition to
+ * `querySitecoreSearch`, which only ever returns article documents.
+ *
+ * Behaviour notes that are easy to get wrong:
+ *  - Scoping comes from the Q&A group config; a request-level `sources` filter is
+ *    silently ignored on this widget, so none is sent.
+ *  - `exact_answer` must be an empty object. Passing `query_types: ['*']`
+ *    suppresses exact-answer generation entirely.
+ *  - When no exact answer can be produced the API returns error code 103
+ *    (`machine_cannot_generate_answer`) and omits `answer`. That is expected, not
+ *    a failure — the related questions are still useful.
+ *  - The capability is English-only today, so non-English locales return nothing
+ *    rather than a confusing English answer on a Spanish page.
+ */
+export async function querySitecoreQuestions(
+  keyphrase: string,
+  relatedLimit = 4,
+  locale?: string,
+): Promise<QuestionsResult> {
+  const empty: QuestionsResult = { related: [] };
+  if (!DOMAIN_ID || !API_KEY || !QUESTIONS_RFK_ID) return empty;
+
+  const trimmed = keyphrase?.trim();
+  // Minimum keyphrase length is 1; an empty one is an API error, not "browse all".
+  if (!trimmed) return empty;
+
+  const [language, country] = toSearchLocale(locale || LOCALE);
+  if (language !== 'en') return empty;
+
+  const body = {
+    context: {
+      locale: { language, country },
+      page: { uri: '/chat' },
+    },
+    widget: {
+      items: [
+        {
+          rfk_id: QUESTIONS_RFK_ID,
+          entity: ENTITY,
+          questions: {
+            keyphrase: trimmed,
+            exact_answer: {},
+            related_questions: { limit: relatedLimit, offset: 0 },
+          },
+        },
+      ],
+    },
+  };
+
+  try {
+    const res = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: API_KEY },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) return empty;
+    const json = await res.json();
+    const w = json?.widgets?.[0];
+    if (!w) return empty;
+
+    const normalize = (x: { id?: string; question?: string; answer?: string } | undefined) =>
+      x?.question && x?.answer ? { id: x.id, question: x.question, answer: x.answer } : undefined;
+
+    const exact = normalize(w.answer);
+    const related = (w.related_questions ?? [])
+      .map(normalize)
+      .filter((x: QuestionAnswer | undefined): x is QuestionAnswer => !!x)
+      // The exact answer is often also the top related question; don't repeat it.
+      .filter((x: QuestionAnswer) => !exact || x.question !== exact.question);
+
+    return { exact, related };
   } catch {
     return empty;
   }
