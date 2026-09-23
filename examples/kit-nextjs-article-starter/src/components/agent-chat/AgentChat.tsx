@@ -7,8 +7,10 @@
  * inline so visitors can see when/why the model searched.
  */
 
+import { Suspense, useEffect, useRef } from 'react';
 import { useChat } from '@ai-sdk/react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 import { useSitecore } from '@sitecore-content-sdk/nextjs';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -17,18 +19,34 @@ import { useLocalizeHref } from '@/lib/localize-href';
 
 type ToolSearchResult = { id: string; title: string; url?: string; relevanceScore?: number };
 type FacetValues = { contentTypes: string[]; authors: string[]; tags: string[] };
+type QuestionAnswer = { id?: string; question: string; answer: string };
+type KnowledgeBaseResult = { exact?: QuestionAnswer; related: QuestionAnswer[] };
 
 const relevanceLabel = (score?: number) =>
   score === undefined ? null : `${Math.round(score * 100)}% match`;
 
-export const Default: React.FC = () => {
+const AgentChatContent: React.FC = () => {
   const { page } = useSitecore();
   const locale = page?.layout?.sitecore?.context?.language;
   const localizeHref = useLocalizeHref();
-  const { messages, input, handleInputChange, handleSubmit, status } = useChat({
+  const { messages, input, handleInputChange, handleSubmit, status, append } = useChat({
     api: '/api/chat/agent',
     body: { locale },
   });
+
+  // Arriving from the "Continue this conversation" link on a search answer:
+  // `?q=` carries the question the visitor already saw a short answer to. Ask it
+  // straight away so they land on a reply rather than an empty box — the agent
+  // re-answers it with its own tools, which is what makes the hand-off worth
+  // taking. Guarded by a ref so React's double-invoked effects in development,
+  // and any later re-render, cannot fire the same question twice.
+  const seededRef = useRef(false);
+  const seededQuestion = useSearchParams()?.get('q')?.trim();
+  useEffect(() => {
+    if (seededRef.current || !seededQuestion) return;
+    seededRef.current = true;
+    void append({ role: 'user', content: seededQuestion });
+  }, [seededQuestion, append]);
 
   const busy = status === 'streaming' || status === 'submitted';
 
@@ -65,6 +83,23 @@ export const Default: React.FC = () => {
                           <li>Authors: {facets.authors.join(', ') || '—'}</li>
                           <li>Tags: {facets.tags.join(', ') || '—'}</li>
                         </ul>
+                      ) : null}
+                    </div>
+                  );
+                }
+                if (ti.toolName === 'askKnowledgeBase') {
+                  const asked = (ti.args as { question?: string } | undefined)?.question;
+                  const kb = ti.state === 'result' ? (ti.result as KnowledgeBaseResult | undefined) : undefined;
+                  const hit = !!kb?.exact?.answer;
+                  return (
+                    <div key={ti.toolCallId} className="mb-1 rounded bg-black/10 px-2 py-1 text-xs italic">
+                      <div>💬 asked the Q&amp;A knowledge base{asked ? <> “{asked}”</> : null}</div>
+                      {kb ? (
+                        <div className="mt-1 not-italic">
+                          {hit
+                            ? `found a curated answer${kb.related?.length ? ` + ${kb.related.length} related` : ''}`
+                            : 'no curated answer on this topic'}
+                        </div>
                       ) : null}
                     </div>
                   );
@@ -119,10 +154,12 @@ export const Default: React.FC = () => {
         <h2 className="mb-2 font-semibold text-foreground">How this demo works</h2>
         <ul className="list-disc space-y-1 pl-5">
           <li>
-            The LLM (Azure OpenAI) is given two <strong>tools</strong>: <code>listArticleFacets</code>,
-            which discovers the exact content type, author, and topic values available in the
-            index, and <code>searchArticles</code>, which queries the index by keyphrase and can
-            optionally filter by any of those facets.
+            The LLM (Azure OpenAI) is given three <strong>tools</strong>:{' '}
+            <code>askKnowledgeBase</code>, which puts a question to the curated Sitecore Search
+            Q&amp;A pairs the site team maintains; <code>listArticleFacets</code>, which discovers
+            the exact content type, author, and topic values available in the index; and{' '}
+            <code>searchArticles</code>, which queries the index by keyphrase and can optionally
+            filter by any of those facets.
           </li>
           <li>
             The model decides <strong>for itself</strong>, turn by turn, whether a question needs a
@@ -157,3 +194,14 @@ export const Default: React.FC = () => {
     </section>
   );
 };
+
+/**
+ * `useSearchParams` needs a Suspense boundary so the page can still be
+ * prerendered; without one Next.js bails the whole route out of static
+ * rendering.
+ */
+export const Default: React.FC = () => (
+  <Suspense fallback={null}>
+    <AgentChatContent />
+  </Suspense>
+);

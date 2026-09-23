@@ -29,6 +29,7 @@
 
 import { Suspense, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import { cva } from 'class-variance-authority';
 import { WidgetDataType, useQuestions, widget } from '@sitecore-search/react';
 import { useTranslations } from 'next-intl';
@@ -42,6 +43,10 @@ import {
 } from '@/components/ui/accordion';
 import type { ComponentProps } from '@/lib/component-props';
 import { SEARCH_LANGUAGE } from './search-config';
+import { useLocalizeHref } from '@/lib/localize-href';
+
+/** Sitecore item path of the Agent Chat page. */
+const AGENT_CHAT_PATH = '/Agent-Chat';
 
 /** One generated Q&A pair, as returned by the questions widget. */
 type QuestionAnswer = {
@@ -87,6 +92,7 @@ const SearchQuestionsComponent = ({
   relatedQuestions = 5,
 }: SearchQuestionsProps) => {
   const t = useTranslations();
+  const localizeHref = useLocalizeHref();
   const {
     widgetRef,
     actions: { onKeyphraseChanged },
@@ -141,6 +147,20 @@ const SearchQuestionsComponent = ({
             <h2 className="mt-2 text-lg font-semibold text-zinc-900">{exact.question}</h2>
           )}
           <p className="mt-2 text-sm leading-relaxed text-zinc-700">{exact.answer}</p>
+
+          {/* Hand the question off to the agent, which re-answers it with its own
+              tools — the curated answer plus whatever articles it finds — so the
+              visitor picks up where the short answer left off instead of
+              retyping it. */}
+          <Link
+            href={`${localizeHref(AGENT_CHAT_PATH) ?? AGENT_CHAT_PATH}?q=${encodeURIComponent(
+              exact.question ?? defaultKeyphrase,
+            )}`}
+            className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent underline underline-offset-2"
+          >
+            {label(t, dictionaryKeys.SEARCH_QA_CONTINUE, 'Continue this conversation')}
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
       )}
 
