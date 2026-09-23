@@ -27,7 +27,7 @@
  *    non-fatal outcome: we just fall back to the related questions.
  */
 
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { cva } from 'class-variance-authority';
@@ -47,6 +47,25 @@ import { useLocalizeHref } from '@/lib/localize-href';
 
 /** Sitecore item path of the Agent Chat page. */
 const AGENT_CHAT_PATH = '/Agent-Chat';
+
+/**
+ * Words that open a question. Used with a trailing "?" to decide whether a query
+ * is worth spending a model call on — "solar panels" is a browse, "how do solar
+ * panels work" is a question, and only the second deserves a written answer.
+ */
+const QUESTION_OPENERS =
+  /^(who|what|when|where|why|how|which|is|are|was|were|do|does|did|can|could|should|would|will|has|have|had|am)\b/i;
+
+/** True when the query reads as a question rather than a keyword browse. */
+export const looksLikeQuestion = (q: string): boolean => {
+  const trimmed = q.trim();
+  if (trimmed.length < 8) return false;
+  if (trimmed.endsWith('?')) return true;
+  // Needs a few words behind it: "how" alone is a keyword, "how do I apply" is not.
+  return QUESTION_OPENERS.test(trimmed) && trimmed.split(/\s+/).length >= 4;
+};
+
+type GeneratedAnswer = { answer: string | null };
 
 /** One generated Q&A pair, as returned by the questions widget. */
 type QuestionAnswer = {
@@ -122,9 +141,47 @@ const SearchQuestionsComponent = ({
   // both to the shape actually on the wire.
   const related = showRelated ? (relatedRaw as Array<QuestionAnswer>) : [];
   const exact = answer as QuestionAnswer | undefined;
-  const hasContent = !!exact?.answer || related.length > 0;
 
-  if (loading) {
+  // Fallback: no curated answer, but the visitor clearly asked something. Have the
+  // model write a short answer grounded in the article index. Deliberately not run
+  // for keyword browses — most searches are those, and a model call per search
+  // would be both slow and pointless.
+  // Tagged with the keyphrase it was produced for, so a result arriving after the
+  // visitor has moved on is simply ignored rather than needing to be cleared —
+  // which also keeps every setState below inside an async callback.
+  const [result, setResult] = useState<{ q: string; answer: string | null } | null>(null);
+
+  const needsGenerated = !loading && !exact?.answer && looksLikeQuestion(defaultKeyphrase);
+  const settled = result?.q === defaultKeyphrase;
+  const generated = settled ? result.answer : null;
+  const generating = needsGenerated && !settled;
+
+  useEffect(() => {
+    if (!needsGenerated || settled) return;
+    const controller = new AbortController();
+    const finish = (answer: string | null) => {
+      if (!controller.signal.aborted) setResult({ q: defaultKeyphrase, answer });
+    };
+    fetch('/api/search-answer', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ question: defaultKeyphrase }),
+      signal: controller.signal,
+    })
+      .then((r) => (r.ok ? (r.json() as Promise<GeneratedAnswer>) : { answer: null }))
+      .then((d) => finish(d.answer))
+      .catch(() => finish(null));
+    return () => controller.abort();
+  }, [needsGenerated, settled, defaultKeyphrase]);
+
+  const shownAnswer = exact?.answer ?? generated ?? undefined;
+  const shownQuestion = exact?.question ?? defaultKeyphrase;
+  const provenance = exact?.answer
+    ? label(t, dictionaryKeys.SEARCH_QA_FROM_FAQ, 'FAQ Generated')
+    : label(t, dictionaryKeys.SEARCH_QA_FROM_AI, 'AI Generated');
+  const hasContent = !!shownAnswer || related.length > 0;
+
+  if (loading || generating) {
     return (
       <div ref={widgetRef}>
         <QuestionsSkeleton />
@@ -138,15 +195,21 @@ const SearchQuestionsComponent = ({
 
   return (
     <div ref={widgetRef} className="rounded-xl border border-zinc-200 bg-white p-5 md:p-6">
-      {exact?.answer && (
+      {shownAnswer && (
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+          <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">
             {label(t, dictionaryKeys.SEARCH_QA_ANSWER_LABEL, 'Answer')}
+            {/* Where this answer came from: the curated Q&A knowledge base, or the
+                model writing one on the spot from the article index. Different
+                things with different reliability, so say which. */}
+            <span className="text-[10px] font-normal normal-case tracking-normal text-zinc-400">
+              {provenance}
+            </span>
           </p>
-          {exact.question && (
-            <h2 className="mt-2 text-lg font-semibold text-zinc-900">{exact.question}</h2>
+          {shownQuestion && (
+            <h2 className="mt-2 text-lg font-semibold text-zinc-900">{shownQuestion}</h2>
           )}
-          <p className="mt-2 text-sm leading-relaxed text-zinc-700">{exact.answer}</p>
+          <p className="mt-2 text-sm leading-relaxed text-zinc-700">{shownAnswer}</p>
 
           {/* Hand the question off to the agent, which re-answers it with its own
               tools — the curated answer plus whatever articles it finds — so the
@@ -154,7 +217,7 @@ const SearchQuestionsComponent = ({
               retyping it. */}
           <Link
             href={`${localizeHref(AGENT_CHAT_PATH) ?? AGENT_CHAT_PATH}?q=${encodeURIComponent(
-              exact.question ?? defaultKeyphrase,
+              shownQuestion,
             )}`}
             className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent underline underline-offset-2"
           >
@@ -165,7 +228,7 @@ const SearchQuestionsComponent = ({
       )}
 
       {related.length > 0 && (
-        <div className={cn(exact?.answer && 'mt-6 border-t border-zinc-200 pt-5')}>
+        <div className={cn(shownAnswer && 'mt-6 border-t border-zinc-200 pt-5')}>
           <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
             {label(t, dictionaryKeys.SEARCH_QA_RELATED_LABEL, 'People also ask')}
           </p>
