@@ -53,6 +53,13 @@ type QuestionAnswer = {
 
 type SearchQuestionsProps = {
   defaultKeyphrase: string;
+  /**
+   * Show the "People also ask" list of related pairs. Off by default: on the
+   * search page the answer leads and the results list follows, so a second list
+   * of questions in between just pushes the results down. Browsing related
+   * questions belongs on an FAQ page.
+   */
+  showRelated?: boolean;
   relatedQuestions?: number;
 };
 
@@ -76,6 +83,7 @@ const QuestionsSkeleton = () => (
 
 const SearchQuestionsComponent = ({
   defaultKeyphrase,
+  showRelated = false,
   relatedQuestions = 5,
 }: SearchQuestionsProps) => {
   const t = useTranslations();
@@ -106,7 +114,7 @@ const SearchQuestionsComponent = ({
   const loading = isLoading || isFetching;
   // The SDK's response type omits the `id` the API returns on each pair, so widen
   // both to the shape actually on the wire.
-  const related = relatedRaw as Array<QuestionAnswer>;
+  const related = showRelated ? (relatedRaw as Array<QuestionAnswer>) : [];
   const exact = answer as QuestionAnswer | undefined;
   const hasContent = !!exact?.answer || related.length > 0;
 
@@ -155,14 +163,6 @@ const SearchQuestionsComponent = ({
           </Accordion>
         </div>
       )}
-
-      <p className="mt-4 text-xs text-zinc-400">
-        {label(
-          t,
-          dictionaryKeys.SEARCH_QA_SOURCE_NOTE,
-          'AI-generated from this site’s content.',
-        )}
-      </p>
     </div>
   );
 };
@@ -199,7 +199,13 @@ type ColorScheme = 'primary' | 'secondary' | 'tertiary' | 'dark' | 'light';
  * unconfigured, or outside English: a Q&A block with no question is just empty
  * chrome on the page.
  */
-export const SearchQuestionsPanel = ({ keyphrase }: { keyphrase: string }) => {
+export const SearchQuestionsPanel = ({
+  keyphrase,
+  showRelated = false,
+}: {
+  keyphrase: string;
+  showRelated?: boolean;
+}) => {
   const rfkId = process.env.NEXT_PUBLIC_SEARCH_QUESTIONS_RFKID;
   const configured =
     !!process.env.NEXT_PUBLIC_SEARCH_ENV &&
@@ -210,7 +216,14 @@ export const SearchQuestionsPanel = ({ keyphrase }: { keyphrase: string }) => {
   // a "browse all" request, so there is nothing to render until someone asks.
   if (!configured || !rfkId || !keyphrase.trim() || SEARCH_LANGUAGE !== 'en') return null;
 
-  return <SearchQuestionsWidget key={keyphrase} rfkId={rfkId} defaultKeyphrase={keyphrase} />;
+  return (
+    <SearchQuestionsWidget
+      key={keyphrase}
+      rfkId={rfkId}
+      defaultKeyphrase={keyphrase}
+      showRelated={showRelated}
+    />
+  );
 };
 
 /**
@@ -218,9 +231,14 @@ export const SearchQuestionsPanel = ({ keyphrase }: { keyphrase: string }) => {
  * `?q=` query string, and wraps the panel in a brand-styled section. Use this
  * when placing Q&A on a page as its own component; `SearchResults` embeds
  * `SearchQuestionsPanel` directly instead.
+ *
+ * Set the `showRelated` rendering parameter to "true" to include the related
+ * questions list — intended for an FAQ page, where browsing questions is the
+ * point, rather than the search page, where the results are.
  */
 const SearchQuestionsContent = ({ params }: ComponentProps) => {
   const colorScheme = ((params?.colorScheme as ColorScheme) || 'light') as ColorScheme;
+  const showRelated = String(params?.showRelated ?? '').toLowerCase() === 'true';
   const q = useSearchParams()?.get('q') ?? '';
 
   if (!q.trim()) return null;
@@ -228,7 +246,7 @@ const SearchQuestionsContent = ({ params }: ComponentProps) => {
   return (
     <section className={cn(searchQuestionsVariants({ colorScheme }), params?.styles)}>
       <div className="mx-auto w-full max-w-screen-xl px-4 xl:px-8">
-        <SearchQuestionsPanel keyphrase={q} />
+        <SearchQuestionsPanel keyphrase={q} showRelated={showRelated} />
       </div>
     </section>
   );

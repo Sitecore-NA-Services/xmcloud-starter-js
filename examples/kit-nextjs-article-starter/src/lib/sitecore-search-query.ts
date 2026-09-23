@@ -233,10 +233,15 @@ export type QuestionsResult = {
 /**
  * Query the Sitecore Search Questions & Answers capability.
  *
- * These are editorially curated, AI-generated Q&A pairs — an author can correct
- * or hide an answer in the Q&A Browser, and that curation is invisible to a plain
- * content search. That is the whole reason to call this in addition to
- * `querySitecoreSearch`, which only ever returns article documents.
+ * Q&A pairs are authored or curated by the site team in the Q&A Browser — some
+ * are entered by hand, some are machine-generated and then reviewed, edited or
+ * hidden. The runtime response carries no provenance field, so callers cannot
+ * tell the two apart and should not claim either in user-facing copy.
+ *
+ * Either way that curation is invisible to a plain content search, which is the
+ * whole reason to call this in addition to `querySitecoreSearch` — Q&A pairs are
+ * not part of the `content` entity index, so no phrasing of a content query
+ * reaches them.
  *
  * Behaviour notes that are easy to get wrong:
  *  - Scoping comes from the Q&A group config; a request-level `sources` filter is
