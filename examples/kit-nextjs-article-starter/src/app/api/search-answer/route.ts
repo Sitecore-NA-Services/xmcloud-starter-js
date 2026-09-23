@@ -18,8 +18,9 @@ export const maxDuration = 15;
  *
  * Grounding is the whole point — an ungrounded guess next to the word "Answer"
  * on a search page would be worse than showing nothing. So the model only sees
- * the retrieved articles, weak matches are filtered out before it does, and it is
- * told to emit the NO_ANSWER sentinel when those articles fall short.
+ * the retrieved articles, an off-topic question is turned away before any
+ * generation happens, and it is told to emit the NO_ANSWER sentinel when the
+ * articles it does get contain nothing relevant.
  */
 
 /** Sentinel the model returns instead of guessing when the index falls short. */
@@ -84,14 +85,22 @@ export async function POST(req: Request) {
   // model deciding to search, then waiting on it — before it can write a word,
   // which measured at ~7s to first byte and made streaming almost pointless. The
   // model has no judgement to exercise here anyway: this pipeline always searches.
-  const docs = await querySitecoreSearch(trimmed, 5, undefined, locale);
+  const docs = await querySitecoreSearch(trimmed, 8, undefined, locale);
   const ranked = await rerankByRelevance(trimmed, docs);
-  // Drop weak matches before the model ever sees them, so a low-relevance result
-  // can't be spun into a confident-sounding answer.
-  const relevant = filterByRelevance(ranked);
 
-  // Nothing relevant indexed: answer no without paying for a generation at all.
-  if (!relevant.length) return new Response('', { headers: textHeaders('miss') });
+  // The threshold decides *whether* the index covers this question at all, not
+  // which articles the model may read. Measured: an off-topic question ("who won
+  // the 2022 World Cup") clears it with zero articles, so this stays a reliable
+  // early exit that costs no generation.
+  if (!filterByRelevance(ranked).length) return new Response('', { headers: textHeaders('miss') });
+
+  // Once the topic is covered, hand over the best few *regardless* of threshold.
+  // Filtering down to only the survivors starved the model: "why would a school
+  // choose geothermal over rooftop solar" kept just 2 articles and it declined to
+  // answer, where the near-miss articles held exactly the comparison it needed.
+  // Grounding does not depend on this cut — the model still sees only these
+  // articles and still answers NO_ANSWER when they fall short.
+  const relevant = ranked.slice(0, 5);
 
   const languageNote =
     locale && locale.toLowerCase().startsWith('es') ? 'Respond in Spanish.' : 'Respond in English.';
@@ -100,23 +109,28 @@ export async function POST(req: Request) {
     .map((d, i) => `[${i + 1}] ${d.title}\n${d.description ?? ''}`)
     .join('\n\n');
 
+  const systemPrompt =
+    'You answer a visitor question on the Solterra & Co. search page, where your answer ' +
+    'sits above the search results. ' +
+    `${languageNote} ` +
+    'Answer in AT MOST three sentences, plain prose, no markdown, no bullet points, ' +
+    'no headings, and no links: the page renders your text as a single paragraph. ' +
+    'Use ONLY facts present in the articles below. Do not add background knowledge ' +
+    'of your own, even if you are confident it is correct. ' +
+    'You MAY combine facts from several articles — a comparison question rarely has one ' +
+    'article answering it outright, and drawing the relevant points from two or three is ' +
+    'the expected way to answer it, not a reason to decline. ' +
+    `Reply with exactly ${NO_ANSWER} and nothing else ONLY when the articles contain nothing ` +
+    'relevant to the question. That is better than a vague or hedged answer, but do not use ' +
+    'it merely because no single article covers the whole question.\n\n' +
+    `Articles:\n${articles}`;
+
   const result = streamText({
     model: chatModel,
     // Stop generating as soon as the browser disconnects — the answer is
     // non-blocking and discarded on timeout, so finishing it just costs money.
     abortSignal: req.signal,
-    system:
-      'You answer a visitor question on the Solterra & Co. search page, where your answer ' +
-      'sits above the search results. ' +
-      `${languageNote} ` +
-      'Answer in AT MOST three sentences, plain prose, no markdown, no bullet points, ' +
-      'no headings, and no links: the page renders your text as a single paragraph. ' +
-      'Use ONLY facts present in the articles below. Do not add background knowledge ' +
-      'of your own, even if you are confident it is correct. ' +
-      `If the articles do not actually answer the question, reply with exactly ${NO_ANSWER} ` +
-      'and nothing else. Prefer that over a vague or hedged answer — the page simply hides ' +
-      'the panel, which is a better outcome than a weak one.\n\n' +
-      `Articles:\n${articles}`,
+    system: systemPrompt,
     prompt: trimmed,
   });
 
