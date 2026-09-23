@@ -27,7 +27,7 @@
  *    non-fatal outcome: we just fall back to the related questions.
  */
 
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { cva } from 'class-variance-authority';
@@ -65,7 +65,15 @@ export const looksLikeQuestion = (q: string): boolean => {
   return QUESTION_OPENERS.test(trimmed) && trimmed.split(/\s+/).length >= 4;
 };
 
-type GeneratedAnswer = { answer: string | null };
+/**
+ * How long to wait for a written answer before giving up on it. This does NOT
+ * hold up the page — the results list renders independently and the answer slots
+ * in above it whenever it arrives — so the budget only exists to stop a stuck
+ * request spinning forever. Measured end-to-end cost is ~3.5-4.5s warm (two model
+ * round-trips with a search between them), so a 3s budget would discard almost
+ * every answer.
+ */
+const ANSWER_TIMEOUT_MS = Number(process.env.NEXT_PUBLIC_SEARCH_ANSWER_TIMEOUT_MS) || 10000;
 
 /** One generated Q&A pair, as returned by the questions widget. */
 type QuestionAnswer = {
@@ -154,25 +162,56 @@ const SearchQuestionsComponent = ({
   const needsGenerated = !loading && !exact?.answer && looksLikeQuestion(defaultKeyphrase);
   const settled = result?.q === defaultKeyphrase;
   const generated = settled ? result.answer : null;
-  const generating = needsGenerated && !settled;
+
+  // `settled` deliberately stays out of the dependencies below: each streamed chunk
+  // updates state, and if that re-ran the effect the cleanup would abort the very
+  // stream being read. A ref records which keyphrase has already been started.
+  const startedRef = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!needsGenerated || settled) return;
+    if (!needsGenerated) return;
+    if (startedRef.current === defaultKeyphrase) return;
+    startedRef.current = defaultKeyphrase;
+
     const controller = new AbortController();
-    const finish = (answer: string | null) => {
-      if (!controller.signal.aborted) setResult({ q: defaultKeyphrase, answer });
+    const timer = setTimeout(() => controller.abort(), ANSWER_TIMEOUT_MS);
+    let cancelled = false;
+
+    (async () => {
+      let accumulated = '';
+      try {
+        const res = await fetch('/api/search-answer', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ question: defaultKeyphrase }),
+          signal: controller.signal,
+        });
+        if (res.ok && res.body) {
+          const reader = res.body.getReader();
+          const decoder = new TextDecoder();
+          for (;;) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            accumulated += decoder.decode(value, { stream: true });
+            // Render as it arrives, so the answer forms in place rather than
+            // appearing all at once several seconds later.
+            if (!cancelled && accumulated) setResult({ q: defaultKeyphrase, answer: accumulated });
+          }
+        }
+      } catch {
+        // Aborted or failed: keep whatever already streamed in.
+      }
+      clearTimeout(timer);
+      // An empty body is the "no answer" signal; settle so we stop waiting on it.
+      if (!cancelled) setResult({ q: defaultKeyphrase, answer: accumulated.trim() || null });
+    })();
+
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+      controller.abort();
     };
-    fetch('/api/search-answer', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ question: defaultKeyphrase }),
-      signal: controller.signal,
-    })
-      .then((r) => (r.ok ? (r.json() as Promise<GeneratedAnswer>) : { answer: null }))
-      .then((d) => finish(d.answer))
-      .catch(() => finish(null));
-    return () => controller.abort();
-  }, [needsGenerated, settled, defaultKeyphrase]);
+  }, [needsGenerated, defaultKeyphrase]);
 
   const shownAnswer = exact?.answer ?? generated ?? undefined;
   const shownQuestion = exact?.question ?? defaultKeyphrase;
@@ -181,7 +220,10 @@ const SearchQuestionsComponent = ({
     : label(t, dictionaryKeys.SEARCH_QA_FROM_AI, 'AI Generated');
   const hasContent = !!shownAnswer || related.length > 0;
 
-  if (loading || generating) {
+  // Only the Q&A widget blocks this panel. The written answer is fetched after
+  // the page has rendered and slotted in when it arrives, so a slow model call
+  // never delays the results underneath.
+  if (loading) {
     return (
       <div ref={widgetRef}>
         <QuestionsSkeleton />
