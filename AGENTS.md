@@ -15,7 +15,8 @@ This is a **multi-starter monorepo** for Sitecore XM Cloud headless applications
 - `kit-nextjs-location-finder` - Automotive with location finder (Alaris)
 - `kit-nextjs-product-listing` - Product showcase template (SYNC)
 - `kit-nextjs-skate-park` - Component demo site
-- `basic-nextjs` - Minimal Next.js starter
+- `basic-nextjs` - Minimal Next.js starter (App Router)
+- `basic-nextjs-pages-router` - Minimal Next.js starter (Pages Router)
 - `basic-spa` - Angular Content SDK 1.0 SSR starter
 - `lighthouse` - Lighthouse Lifestyle demo site
 - `round-rock-sasquatch` - Second Lighthouse project site
@@ -98,8 +99,7 @@ All Sitecore components follow this structure:
 ```typescript
 // File: src/components/hero/Hero.tsx
 import { ComponentProps } from '@/lib/component-props';
-import { Text, Image, useSitecore } from '@sitecore-content-sdk/nextjs';
-import { Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text, Image, useSitecore, Field, ImageField } from '@sitecore-content-sdk/nextjs';
 
 interface HeroFields {
   title?: { jsonValue: Field<string> };
@@ -361,9 +361,18 @@ dotnet sitecore ser validate
 - Dictionary files in `src/i18n/` or `src/dictionaries/`
 
 **Sitecore Content SDK:**
-- Modern SDK replacing legacy `@sitecore-jss/sitecore-jss-nextjs` (still used for field types)
-- Use `@sitecore-content-sdk/nextjs` for all new components
+- All 8 Next.js starters are on `@sitecore-content-sdk/nextjs` 2.3.0. No starter depends on
+  `@sitecore-jss/*` any more — field types (`Field`, `ImageField`, `LinkField`, etc.) and
+  components (`Text`, `Image`, `Link`, `RichText`) both come from `@sitecore-content-sdk/nextjs`.
 - SDK handles editing host integration and content fetching
+
+**Deeper guidance:**
+For audit-style checks beyond this file's scope — project structure, headless config,
+GraphQL, editor experience, front-end performance, security, SXA — install
+[sitecoreai-skills](https://github.com/kevin-buckley/sitecoreai-skills): `/plugin marketplace add
+kevin-buckley/sitecoreai-skills` in Claude Code, or `gh skill install kevin-buckley/sitecoreai-skills`
+for other agents. It's a separate, generically-maintained skill set — nothing repo- or
+starter-specific belongs there; that stays here.
 
 ## Reference Files
 
