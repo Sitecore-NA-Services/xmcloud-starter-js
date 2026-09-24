@@ -6,12 +6,12 @@ import {
   Field,
   ImageField,
   AppPlaceholder,
+  ComponentMap,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { ArrowLeft } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import componentMap from '.sitecore/component-map';
 import { MegaMenuToggle, MegaMenuContent, MegaMenuBackButton } from './MegaMenuItemWrapper';
 
 interface Fields {
@@ -30,6 +30,7 @@ interface Fields {
 type MegaMenuItemProps = ComponentProps & {
   params: { [key: string]: string };
   fields: Fields;
+  componentMap: ComponentMap;
 };
 
 const DICTIONARY_KEYS = {
@@ -87,7 +88,7 @@ export const Default = (props: MegaMenuItemProps) => {
               name={`mega-menu-item-primary-links-${props.params?.DynamicPlaceholderId}`}
               rendering={props.rendering}
               page={props.page}
-              componentMap={componentMap}
+              componentMap={props.componentMap}
             />
           </div>
           <div className="flex flex-col gap-6 pb-8">
@@ -95,7 +96,7 @@ export const Default = (props: MegaMenuItemProps) => {
               name={`mega-menu-item-secondary-links-${props.params?.DynamicPlaceholderId}`}
               rendering={props.rendering}
               page={props.page}
-              componentMap={componentMap}
+              componentMap={props.componentMap}
             />
           </div>
 

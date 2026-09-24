@@ -2,13 +2,12 @@ import {
   getContainerPlaceholderProps,
   isContainerPlaceholderEmpty,
 } from '@/components/container/container.util';
-import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { AppPlaceholder, ComponentMap } from '@sitecore-content-sdk/nextjs';
 import { cn } from '@/lib/utils';
 import { ComponentProps } from '@/lib/component-props';
 
 import type { JSX } from 'react';
 
-import componentMap from '.sitecore/component-map';
 
 export type Container6321Props = ComponentProps & {
   col1?: JSX.Element;
@@ -20,8 +19,10 @@ export type Container6321Props = ComponentProps & {
   children: Element;
 };
 
-export const Default: React.FC<Container6321Props> = (props) => {
-  const { rendering, col1, col2, col3, col4, col5, col6, page } = props;
+export const Default: React.FC<Container6321Props & { componentMap: ComponentMap }> = (
+  props
+) => {
+  const { rendering, col1, col2, col3, col4, col5, col6, page, componentMap } = props;
 
   const isPageEditing = page.mode.isEditing;
 

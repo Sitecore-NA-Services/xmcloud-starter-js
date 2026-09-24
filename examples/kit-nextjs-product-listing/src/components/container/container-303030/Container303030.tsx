@@ -3,13 +3,14 @@ import {
   getContainerPlaceholderProps,
   isContainerPlaceholderEmpty,
 } from '@/components/container/container.util';
-import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { AppPlaceholder, ComponentMap } from '@sitecore-content-sdk/nextjs';
 import { cn } from '@/lib/utils';
 import { FlexItemProps } from 'components/flex/Flex.dev';
-import componentMap from '.sitecore/component-map';
 
-export const Default: React.FC<Container303030Props> = (props) => {
-  const { rendering, left, center, right, page } = props;
+export const Default: React.FC<Container303030Props & { componentMap: ComponentMap }> = (
+  props
+) => {
+  const { rendering, left, center, right, page, componentMap } = props;
 
   const isPageEditing = page.mode.isEditing;
 

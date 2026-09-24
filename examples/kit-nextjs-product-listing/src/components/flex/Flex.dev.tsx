@@ -5,13 +5,13 @@ import {
   AppPlaceholder,
   ComponentFields,
   ComponentParams,
+  ComponentMap,
   ComponentRendering,
   getFieldValue,
 } from '@sitecore-content-sdk/nextjs';
 import { Slot } from '@radix-ui/react-slot';
 import { EnumValues } from '@/enumerations/generic.enum';
 import { twMerge } from 'tailwind-merge';
-import componentMap from '.sitecore/component-map';
 import type { ComponentProps } from '@/lib/component-props';
 
 /** Flex Component
@@ -266,6 +266,13 @@ export interface FlexItemProps {
 export interface XMComponent extends ComponentProps {
   rendering: ComponentRendering & { params: ComponentParams };
   fields: ComponentFields;
+  /**
+   * Injected automatically by the parent AppPlaceholder that renders this component.
+   * Received as a prop rather than imported from `.sitecore/component-map` here: that
+   * generated file imports this module to register it, so importing it back at module
+   * scope creates a cycle that can fail with a TDZ error on some component orderings.
+   */
+  componentMap: ComponentMap;
 }
 
 const getVariantString = <T extends FlexVariantKey>(
@@ -337,7 +344,13 @@ export const FlexItem: React.FC<FlexItemProps> = ({
   );
 };
 
-export const XMFlex: React.FC<XMComponent> = ({ params, rendering, fields, page }) => {
+export const XMFlex: React.FC<XMComponent> = ({
+  params,
+  rendering,
+  fields,
+  page,
+  componentMap,
+}) => {
   const phKey = `flex-${params.DynamicPlaceholderId}`;
   return (
     <Flex
@@ -352,7 +365,13 @@ export const XMFlex: React.FC<XMComponent> = ({ params, rendering, fields, page 
   );
 };
 
-export const XMFlexItem: React.FC<XMComponent> = ({ params, rendering, fields, page }) => {
+export const XMFlexItem: React.FC<XMComponent> = ({
+  params,
+  rendering,
+  fields,
+  page,
+  componentMap,
+}) => {
   const phKey = `flex-item-${params.DynamicPlaceholderId}`;
   return (
     <FlexItem

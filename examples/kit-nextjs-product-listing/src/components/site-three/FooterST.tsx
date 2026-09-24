@@ -8,9 +8,9 @@ import {
   RichTextField,
   LinkField,
   AppPlaceholder,
+  ComponentMap,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import componentMap from '.sitecore/component-map';
 
 interface Fields {
   Title: Field<string>;
@@ -23,6 +23,7 @@ interface Fields {
 type FooterSTProps = ComponentProps & {
   params: { [key: string]: string };
   fields: Fields;
+  componentMap: ComponentMap;
 };
 
 export const Default = (props: FooterSTProps) => {
@@ -41,7 +42,7 @@ export const Default = (props: FooterSTProps) => {
             name={`footer-primary-links-${props.params.DynamicPlaceholderId}`}
             rendering={props.rendering}
             page={props.page}
-            componentMap={componentMap}
+            componentMap={props.componentMap}
           />
         </div>
         <div className="max-w-5xl mx-auto font-(family-name:--font-accent) font-medium">
@@ -49,7 +50,7 @@ export const Default = (props: FooterSTProps) => {
             name={`footer-secondary-links-${props.params.DynamicPlaceholderId}`}
             rendering={props.rendering}
             page={props.page}
-            componentMap={componentMap}
+            componentMap={props.componentMap}
           />
         </div>
       </div>
@@ -106,7 +107,7 @@ export const LogoLeft = (props: FooterSTProps) => {
                 name={`footer-primary-links-${props.params.DynamicPlaceholderId}`}
                 rendering={props.rendering}
                 page={props.page}
-                componentMap={componentMap}
+                componentMap={props.componentMap}
               />
             </div>
             <div className="font-(family-name:--font-accent) font-medium">
@@ -114,7 +115,7 @@ export const LogoLeft = (props: FooterSTProps) => {
                 name={`footer-secondary-links-${props.params.DynamicPlaceholderId}`}
                 rendering={props.rendering}
                 page={props.page}
-                componentMap={componentMap}
+                componentMap={props.componentMap}
               />
             </div>
           </div>
@@ -172,7 +173,7 @@ export const LogoRight = (props: FooterSTProps) => {
                 name={`footer-primary-links-${props.params.DynamicPlaceholderId}`}
                 rendering={props.rendering}
                 page={props.page}
-                componentMap={componentMap}
+                componentMap={props.componentMap}
               />
             </div>
             <div className="font-(family-name:--font-accent) font-medium">
@@ -180,7 +181,7 @@ export const LogoRight = (props: FooterSTProps) => {
                 name={`footer-secondary-links-${props.params.DynamicPlaceholderId}`}
                 rendering={props.rendering}
                 page={props.page}
-                componentMap={componentMap}
+                componentMap={props.componentMap}
               />
             </div>
           </div>
@@ -237,7 +238,7 @@ export const Centered = (props: FooterSTProps) => {
                 name={`footer-primary-links-${props.params.DynamicPlaceholderId}`}
                 rendering={props.rendering}
                 page={props.page}
-                componentMap={componentMap}
+                componentMap={props.componentMap}
               />
             </div>
             <div className="font-(family-name:--font-accent) font-medium">
@@ -245,7 +246,7 @@ export const Centered = (props: FooterSTProps) => {
                 name={`footer-secondary-links-${props.params.DynamicPlaceholderId}`}
                 rendering={props.rendering}
                 page={props.page}
-                componentMap={componentMap}
+                componentMap={props.componentMap}
               />
             </div>
           </div>

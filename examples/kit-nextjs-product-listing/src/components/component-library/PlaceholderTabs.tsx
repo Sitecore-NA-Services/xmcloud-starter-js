@@ -1,9 +1,8 @@
-import { Text as ContentSdkText, AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { Text as ContentSdkText, AppPlaceholder, ComponentMap } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { useMemo, type JSX } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from 'shadcd/components/ui/tabs';
 import { IGQLTextField } from 'types/igql';
-import componentMap from '.sitecore/component-map';
 
 type Fields = {
   data: {
@@ -21,6 +20,7 @@ type Fields = {
 type PlaceholderTabsProps = ComponentProps & {
   params: { [key: string]: string };
   fields: Fields;
+  componentMap: ComponentMap;
 };
 
 export const Default = (props: PlaceholderTabsProps): JSX.Element => {
@@ -59,7 +59,7 @@ export const Default = (props: PlaceholderTabsProps): JSX.Element => {
                   name={`tab-content-${phSuffixes[index]}-${props.params.DynamicPlaceholderId}`}
                   rendering={props.rendering}
                   page={props.page}
-                  componentMap={componentMap}
+                  componentMap={props.componentMap}
                 />
               </TabsContent>
             ))}

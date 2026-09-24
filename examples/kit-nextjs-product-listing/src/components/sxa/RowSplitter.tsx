@@ -1,7 +1,6 @@
 import React, { JSX } from 'react';
-import { AppPlaceholder, ComponentRendering } from '@sitecore-content-sdk/nextjs';
+import { AppPlaceholder, ComponentRendering, ComponentMap } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import componentMap from '.sitecore/component-map';
 
 /**
  * The number of rows that can be inserted into the row splitter component.
@@ -21,9 +20,22 @@ interface RowSplitterProps extends ComponentProps {
   rendering: ComponentRendering;
   params: ComponentProps['params'] & RowStyles;
   page: ComponentProps['page'];
+  /**
+   * Injected automatically by the parent AppPlaceholder that renders this component
+   * (see @sitecore-content-sdk/react's getPlaceholderComponents). Received as a prop
+   * rather than imported from `.sitecore/component-map` here: that generated file
+   * imports RowSplitter to register it, so importing it back at module scope creates
+   * a cycle that can fail with a TDZ error on some component orderings.
+   */
+  componentMap: ComponentMap;
 }
 
-export const Default = ({ params, rendering, page }: RowSplitterProps): JSX.Element => {
+export const Default = ({
+  params,
+  rendering,
+  page,
+  componentMap,
+}: RowSplitterProps): JSX.Element => {
   const enabledPlaceholders = params.EnabledPlaceholders?.split(',') ?? [];
   const id = params.RenderingIdentifier;
 

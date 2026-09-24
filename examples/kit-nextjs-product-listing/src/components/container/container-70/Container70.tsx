@@ -1,11 +1,12 @@
 import { Container70Props } from '@/components/container/container-70/container-70.props';
 import { Flex, FlexItem } from '@/components/flex/Flex.dev';
 import { cn } from '@/lib/utils';
-import componentMap from '.sitecore/component-map';
-import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { AppPlaceholder, ComponentMap } from '@sitecore-content-sdk/nextjs';
 
-export const Default: React.FC<Container70Props> = (props) => {
-  const { rendering, children, page } = props;
+export const Default: React.FC<Container70Props & { componentMap: ComponentMap }> = (
+  props
+) => {
+  const { rendering, children, page, componentMap } = props;
 
   const isPageEditing = page.mode.isEditing;
 

@@ -6,12 +6,12 @@ import {
   LinkField,
   ImageField,
   AppPlaceholder,
+  ComponentMap,
 } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 import { MiniCart } from './non-sitecore/MiniCart';
 import { SearchBox } from './non-sitecore/SearchBox';
 import { ComponentProps } from 'lib/component-props';
-import componentMap from '.sitecore/component-map';
 import { MobileMenuWrapper } from './MobileMenuWrapper';
 
 interface Fields {
@@ -24,6 +24,7 @@ interface Fields {
 type HeaderSTProps = ComponentProps & {
   params: { [key: string]: string };
   fields: Fields;
+  componentMap: ComponentMap;
 };
 
 export const Default = (props: HeaderSTProps) => {
@@ -47,7 +48,7 @@ export const Default = (props: HeaderSTProps) => {
               name={`header-navigation-${props.params?.DynamicPlaceholderId}`}
               rendering={props.rendering}
               page={props.page}
-              componentMap={componentMap}
+              componentMap={props.componentMap}
             />
           </ul>
           <div className="basis-full lg:basis-auto lg:ml-auto">
@@ -78,7 +79,7 @@ export const Default = (props: HeaderSTProps) => {
                         name={`header-navigation-${props.params?.DynamicPlaceholderId}`}
                         rendering={props.rendering}
                         page={props.page}
-                        componentMap={componentMap}
+                        componentMap={props.componentMap}
                       />
                     </ul>
                   </div>

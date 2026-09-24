@@ -1,7 +1,6 @@
 import React, { JSX } from 'react';
-import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { AppPlaceholder, ComponentMap } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import componentMap from '.sitecore/component-map';
 
 /**
  * The number of columns that can be inserted into the column splitter component.
@@ -28,9 +27,22 @@ type ColumnStyles = {
 interface ColumnSplitterProps extends ComponentProps {
   params: ComponentProps['params'] & ColumnWidths & ColumnStyles;
   page: ComponentProps['page'];
+  /**
+   * Injected automatically by the parent AppPlaceholder that renders this component
+   * (see @sitecore-content-sdk/react's getPlaceholderComponents). Received as a prop
+   * rather than imported from `.sitecore/component-map` here: that generated file
+   * imports ColumnSplitter to register it, so importing it back at module scope
+   * creates a cycle that can fail with a TDZ error on some component orderings.
+   */
+  componentMap: ComponentMap;
 }
 
-export const Default = ({ params, rendering, page }: ColumnSplitterProps): JSX.Element => {
+export const Default = ({
+  params,
+  rendering,
+  page,
+  componentMap,
+}: ColumnSplitterProps): JSX.Element => {
   const { EnabledPlaceholders, RenderingIdentifier: id, styles } = params;
 
   const enabledColumns = EnabledPlaceholders?.split(',') ?? [];

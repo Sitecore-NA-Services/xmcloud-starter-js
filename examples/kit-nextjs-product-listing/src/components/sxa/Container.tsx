@@ -2,15 +2,22 @@ import {
   AppPlaceholder,
   ComponentParams,
   ComponentRendering,
+  ComponentMap,
   Page,
 } from '@sitecore-content-sdk/nextjs';
 import React, { type JSX } from 'react';
-import componentMap from '.sitecore/component-map';
 
 interface ComponentProps {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
   page: Page;
+  /**
+   * Injected automatically by the parent AppPlaceholder that renders this component.
+   * Received as a prop rather than imported from `.sitecore/component-map` here: that
+   * generated file imports Container to register it, so importing it back at module
+   * scope creates a cycle that can fail with a TDZ error on some component orderings.
+   */
+  componentMap: ComponentMap;
 }
 
 const DefaultContainer = (props: ComponentProps): JSX.Element => {
@@ -38,7 +45,7 @@ const DefaultContainer = (props: ComponentProps): JSX.Element => {
             name={phKey}
             rendering={props.rendering}
             page={props.page}
-            componentMap={componentMap}
+            componentMap={props.componentMap}
           />
         </div>
       </div>

@@ -1,11 +1,12 @@
 import { ContainerFullBleedProps } from '@/components/container/container-full-bleed/container-full-bleed.props';
-import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
+import { AppPlaceholder, ComponentMap } from '@sitecore-content-sdk/nextjs';
 import { Flex, FlexItem } from '@/components/flex/Flex.dev';
 import { cva } from 'class-variance-authority';
-import componentMap from '.sitecore/component-map';
 
-export const Default: React.FC<ContainerFullBleedProps> = (props) => {
-  const { rendering, page } = props;
+export const Default: React.FC<ContainerFullBleedProps & { componentMap: ComponentMap }> = (
+  props
+) => {
+  const { rendering, page, componentMap } = props;
 
   const PLACEHOLDER_NAME = `container-fullbleed-${props.params.DynamicPlaceholderId}`;
 
