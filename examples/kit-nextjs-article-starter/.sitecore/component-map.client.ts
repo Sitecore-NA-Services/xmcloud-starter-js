@@ -1,15 +1,19 @@
 // Client-safe component map for App Router
+import { NextjsContentSdkComponent } from '@sitecore-content-sdk/nextjs';
 
-import { BYOCClientWrapper, NextjsContentSdkComponent, FEaaSClientWrapper } from '@sitecore-content-sdk/nextjs';
+
+import { BYOCClientWrapper, FEaaSClientWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
+// end of built-in import section
 import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
 import * as Video from 'src/components/video/Video';
 import * as VerticalImageAccordion from 'src/components/vertical-image-accordion/VerticalImageAccordion';
 import * as HtmlLang from 'src/components/util/HtmlLang';
+import * as ChatMarkdown from 'src/components/util/ChatMarkdown';
 import * as TopicItemdev from 'src/components/topic-listing/TopicItem.dev';
-import * as themeproviderdev from 'src/components/theme-provider/theme-provider.dev';
+import * as ThemeProviderdev from 'src/components/theme-provider/theme-provider.dev';
 import * as TestimonialCarousel from 'src/components/testimonial-carousel/TestimonialCarousel';
 import * as Title from 'src/components/sxa/Title';
 import * as PageContent from 'src/components/sxa/PageContent';
@@ -26,22 +30,22 @@ import * as RagChat from 'src/components/rag-chat/RagChat';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
 import * as PromoAnimated from 'src/components/promo-animated/PromoAnimated';
-import * as portaldev from 'src/components/portal/portal.dev';
+import * as Portaldev from 'src/components/portal/portal.dev';
 import * as PageHeader from 'src/components/page-header/PageHeader';
 import * as MultiPromoTabs from 'src/components/multi-promo-tabs/MultiPromoTabs';
 import * as MultiPromo from 'src/components/multi-promo/MultiPromo';
-import * as modetoggledev from 'src/components/mode-toggle/mode-toggle.dev';
+import * as ModeToggledev from 'src/components/mode-toggle/mode-toggle.dev';
 import * as MediaSectiondev from 'src/components/media-section/MediaSection.dev';
-import * as meteors from 'src/components/magicui/meteors';
+import * as Meteors from 'src/components/magicui/meteors';
 import * as LogoTabs from 'src/components/logo-tabs/LogoTabs';
-import * as nextImageSrcdev from 'src/components/image/nextImageSrc.dev';
+import * as NextImageSrcdev from 'src/components/image/nextImageSrc.dev';
 import * as ImageWrapperdev from 'src/components/image/ImageWrapper.dev';
-import * as imageoptimizationcontext from 'src/components/image/image-optimization.context';
+import * as ImageOptimizationcontext from 'src/components/image/image-optimization.context';
 import * as Icon from 'src/components/icon/Icon';
 import * as Hero from 'src/components/hero/Hero';
 import * as GlobalHeader from 'src/components/global-header/GlobalHeader';
 import * as FooterNavigationColumn from 'src/components/global-footer/FooterNavigationColumn';
-import * as floatingdockdev from 'src/components/floating-dock/floating-dock.dev';
+import * as FloatingDockdev from 'src/components/floating-dock/floating-dock.dev';
 import * as BackgroundThumbnaildev from 'src/components/background-thumbnail/BackgroundThumbnail.dev';
 import * as ArticleListing from 'src/components/article-listing/ArticleListing';
 import * as ArticleHeader from 'src/components/article-header/ArticleHeader';
@@ -60,8 +64,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Video', { ...Video }],
   ['VerticalImageAccordion', { ...VerticalImageAccordion }],
   ['HtmlLang', { ...HtmlLang }],
+  ['ChatMarkdown', { ...ChatMarkdown }],
   ['TopicItem', { ...TopicItemdev }],
-  ['theme-provider', { ...themeproviderdev }],
+  ['ThemeProvider', { ...ThemeProviderdev }],
   ['TestimonialCarousel', { ...TestimonialCarousel }],
   ['Title', { ...Title }],
   ['PageContent', { ...PageContent }],
@@ -78,22 +83,22 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
   ['PromoAnimated', { ...PromoAnimated }],
-  ['portal', { ...portaldev }],
+  ['Portal', { ...Portaldev }],
   ['PageHeader', { ...PageHeader }],
   ['MultiPromoTabs', { ...MultiPromoTabs }],
   ['MultiPromo', { ...MultiPromo }],
-  ['mode-toggle', { ...modetoggledev }],
+  ['ModeToggle', { ...ModeToggledev }],
   ['MediaSection', { ...MediaSectiondev }],
-  ['meteors', { ...meteors }],
+  ['Meteors', { ...Meteors }],
   ['LogoTabs', { ...LogoTabs }],
-  ['nextImageSrc', { ...nextImageSrcdev }],
+  ['NextImageSrc', { ...NextImageSrcdev }],
   ['ImageWrapper', { ...ImageWrapperdev }],
-  ['image-optimization', { ...imageoptimizationcontext }],
+  ['ImageOptimization', { ...ImageOptimizationcontext }],
   ['Icon', { ...Icon }],
   ['Hero', { ...Hero }],
   ['GlobalHeader', { ...GlobalHeader }],
   ['FooterNavigationColumn', { ...FooterNavigationColumn }],
-  ['floating-dock', { ...floatingdockdev }],
+  ['FloatingDock', { ...FloatingDockdev }],
   ['BackgroundThumbnail', { ...BackgroundThumbnaildev }],
   ['ArticleListing', { ...ArticleListing }],
   ['ArticleHeader', { ...ArticleHeader }],

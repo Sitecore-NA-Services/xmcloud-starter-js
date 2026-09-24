@@ -1,31 +1,34 @@
 // Below are built-in components that are available in the app, it's recommended to keep them as is
+import { NextjsContentSdkComponent } from '@sitecore-content-sdk/nextjs';
 
-import { BYOCServerWrapper, NextjsContentSdkComponent, FEaaSServerWrapper } from '@sitecore-content-sdk/nextjs';
+
+import { BYOCServerWrapper, FEaaSServerWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
-// end of built-in components
+// end of built-in import section
+import * as Widgetprops from 'src/components/widget/widget.props';
 import * as Widget from 'src/components/widget/Widget';
-import * as widgetprops from 'src/components/widget/widget.props';
 import * as Whatsit from 'src/components/whatsit/Whatsit';
 import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
 import * as Video from 'src/components/video/Video';
-import * as videoprops from 'src/components/video/video-props';
+import * as VideoProps from 'src/components/video/video-props';
+import * as VerticalImageAccordionprops from 'src/components/vertical-image-accordion/vertical-image-accordion.props';
 import * as VerticalImageAccordion from 'src/components/vertical-image-accordion/VerticalImageAccordion';
-import * as verticalimageaccordionprops from 'src/components/vertical-image-accordion/vertical-image-accordion.props';
 import * as HtmlLang from 'src/components/util/HtmlLang';
+import * as ChatMarkdown from 'src/components/util/ChatMarkdown';
+import * as TopicListingprops from 'src/components/topic-listing/topic-listing.props';
 import * as TopicListing from 'src/components/topic-listing/TopicListing';
 import * as TopicItemdev from 'src/components/topic-listing/TopicItem.dev';
-import * as topiclistingprops from 'src/components/topic-listing/topic-listing.props';
-import * as themeproviderdev from 'src/components/theme-provider/theme-provider.dev';
+import * as ThemeProviderdev from 'src/components/theme-provider/theme-provider.dev';
 import * as TextBannerDefaultdev from 'src/components/text-banner/TextBannerDefault.dev';
 import * as TextBanner02dev from 'src/components/text-banner/TextBanner02.dev';
 import * as TextBanner01dev from 'src/components/text-banner/TextBanner01.dev';
+import * as TextBannerprops from 'src/components/text-banner/text-banner.props';
 import * as TextBanner from 'src/components/text-banner/TextBanner';
-import * as textbannerprops from 'src/components/text-banner/text-banner.props';
 import * as TestimonialCarouselItem from 'src/components/testimonial-carousel/TestimonialCarouselItem';
+import * as TestimonialCarouselprops from 'src/components/testimonial-carousel/testimonial-carousel.props';
 import * as TestimonialCarousel from 'src/components/testimonial-carousel/TestimonialCarousel';
-import * as testimonialcarouselprops from 'src/components/testimonial-carousel/testimonial-carousel.props';
 import * as Title from 'src/components/sxa/Title';
 import * as RowSplitter from 'src/components/sxa/RowSplitter';
 import * as RichText from 'src/components/sxa/RichText';
@@ -38,60 +41,60 @@ import * as Image from 'src/components/sxa/Image';
 import * as ContentBlock from 'src/components/sxa/ContentBlock';
 import * as Container from 'src/components/sxa/Container';
 import * as ColumnSplitter from 'src/components/sxa/ColumnSplitter';
+import * as SubscriptionBannerprops from 'src/components/subscription-banner/subscription-banner.props';
+import * as SubscriptionBannerdictionary from 'src/components/subscription-banner/subscription-banner.dictionary';
 import * as SubscriptionBanner from 'src/components/subscription-banner/SubscriptionBanner';
-import * as subscriptionbannerprops from 'src/components/subscription-banner/subscription-banner.props';
-import * as subscriptionbannerdictionary from 'src/components/subscription-banner/subscription-banner.dictionary';
+import * as SearchResultsdictionary from 'src/components/sitecore-search/search-results.dictionary';
 import * as SearchResults from 'src/components/sitecore-search/SearchResults';
+import * as SearchQuestionsdictionary from 'src/components/sitecore-search/search-questions.dictionary';
 import * as SearchQuestions from 'src/components/sitecore-search/SearchQuestions';
 import * as SearchProvider from 'src/components/sitecore-search/SearchProvider';
 import * as SearchLocale from 'src/components/sitecore-search/SearchLocale';
-import * as searchresultsdictionary from 'src/components/sitecore-search/search-results.dictionary';
-import * as searchquestionsdictionary from 'src/components/sitecore-search/search-questions.dictionary';
-import * as searchconfig from 'src/components/sitecore-search/search-config';
+import * as SearchConfig from 'src/components/sitecore-search/search-config';
 import * as PreviewSearchBox from 'src/components/sitecore-search/PreviewSearchBox';
-import * as previewsearchdictionary from 'src/components/sitecore-search/preview-search.dictionary';
+import * as PreviewSearchdictionary from 'src/components/sitecore-search/preview-search.dictionary';
+import * as SiteMetadataprops from 'src/components/site-metadata/site-metadata.props';
 import * as SiteMetadata from 'src/components/site-metadata/SiteMetadata';
-import * as sitemetadataprops from 'src/components/site-metadata/site-metadata.props';
+import * as SecondaryNavigationprops from 'src/components/secondary-navigation/secondary-navigation.props';
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
-import * as secondarynavigationprops from 'src/components/secondary-navigation/secondary-navigation.props';
+import * as RichTextBlockprops from 'src/components/rich-text-block/rich-text-block.props';
 import * as RichTextBlock from 'src/components/rich-text-block/RichTextBlock';
-import * as richtextblockprops from 'src/components/rich-text-block/rich-text-block.props';
 import * as RagChat from 'src/components/rag-chat/RagChat';
+import * as PromoBlockprops from 'src/components/promo-block/promo-block.props';
 import * as PromoBlock from 'src/components/promo-block/PromoBlock';
-import * as promoblockprops from 'src/components/promo-block/promo-block.props';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
+import * as PromoAnimatedutil from 'src/components/promo-animated/promo-animated.util';
+import * as PromoAnimatedprops from 'src/components/promo-animated/promo-animated.props';
 import * as PromoAnimated from 'src/components/promo-animated/PromoAnimated';
-import * as promoanimatedutil from 'src/components/promo-animated/promo-animated.util';
-import * as promoanimatedprops from 'src/components/promo-animated/promo-animated.props';
-import * as portaldev from 'src/components/portal/portal.dev';
+import * as Portaldev from 'src/components/portal/portal.dev';
+import * as PageHeaderprops from 'src/components/page-header/page-header.props';
 import * as PageHeader from 'src/components/page-header/PageHeader';
-import * as pageheaderprops from 'src/components/page-header/page-header.props';
+import * as MultiPromoTabsprops from 'src/components/multi-promo-tabs/multi-promo-tabs.props';
 import * as MultiPromoTabs from 'src/components/multi-promo-tabs/MultiPromoTabs';
 import * as MultiPromoTabdev from 'src/components/multi-promo-tabs/MultiPromoTab.dev';
-import * as multipromotabsprops from 'src/components/multi-promo-tabs/multi-promo-tabs.props';
 import * as MultiPromoItemdev from 'src/components/multi-promo/MultiPromoItem.dev';
+import * as MultiPromoprops from 'src/components/multi-promo/multi-promo.props';
 import * as MultiPromo from 'src/components/multi-promo/MultiPromo';
-import * as multipromoprops from 'src/components/multi-promo/multi-promo.props';
-import * as modetoggledev from 'src/components/mode-toggle/mode-toggle.dev';
+import * as ModeToggledev from 'src/components/mode-toggle/mode-toggle.dev';
 import * as MediaSectiondev from 'src/components/media-section/MediaSection.dev';
-import * as mediasectionprops from 'src/components/media-section/media-section.props';
-import * as meteors from 'src/components/magicui/meteors';
+import * as MediaSectionprops from 'src/components/media-section/media-section.props';
+import * as Meteors from 'src/components/magicui/meteors';
+import * as LogoTabsprops from 'src/components/logo-tabs/logo-tabs.props';
 import * as LogoTabs from 'src/components/logo-tabs/LogoTabs';
 import * as LogoItem from 'src/components/logo-tabs/LogoItem';
-import * as logotabsprops from 'src/components/logo-tabs/logo-tabs.props';
-import * as logoprops from 'src/components/logo/logo.props';
+import * as Logoprops from 'src/components/logo/logo.props';
 import * as Logodev from 'src/components/logo/Logo.dev';
-import * as nextImageSrcdev from 'src/components/image/nextImageSrc.dev';
+import * as NextImageSrcdev from 'src/components/image/nextImageSrc.dev';
 import * as ImageWrapperdev from 'src/components/image/ImageWrapper.dev';
 import * as ImageBlock from 'src/components/image/ImageBlock';
-import * as imageprops from 'src/components/image/image.props';
-import * as imageoptimizationcontext from 'src/components/image/image-optimization.context';
+import * as Imageprops from 'src/components/image/image.props';
+import * as ImageOptimizationcontext from 'src/components/image/image-optimization.context';
 import * as Icon from 'src/components/icon/Icon';
 import * as YoutubeIcondev from 'src/components/icon/svg/YoutubeIcon.dev';
 import * as TwitterIcondev from 'src/components/icon/svg/TwitterIcon.dev';
-import * as signaldev from 'src/components/icon/svg/signal.dev';
-import * as playdev from 'src/components/icon/svg/play.dev';
+import * as Signaldev from 'src/components/icon/svg/signal.dev';
+import * as Playdev from 'src/components/icon/svg/play.dev';
 import * as LinkedInIcondev from 'src/components/icon/svg/LinkedInIcon.dev';
 import * as InternalIcondev from 'src/components/icon/svg/InternalIcon.dev';
 import * as InstagramIcondev from 'src/components/icon/svg/InstagramIcon.dev';
@@ -99,24 +102,24 @@ import * as FileIcondev from 'src/components/icon/svg/FileIcon.dev';
 import * as FacebookIcondev from 'src/components/icon/svg/FacebookIcon.dev';
 import * as ExternalIcondev from 'src/components/icon/svg/ExternalIcon.dev';
 import * as EmailIcondev from 'src/components/icon/svg/EmailIcon.dev';
-import * as diversitydev from 'src/components/icon/svg/diversity.dev';
-import * as crossarrowsdev from 'src/components/icon/svg/cross-arrows.dev';
-import * as communitiesdev from 'src/components/icon/svg/communities.dev';
-import * as arrowuprightdev from 'src/components/icon/svg/arrow-up-right.dev';
-import * as arrowrightdev from 'src/components/icon/svg/arrow-right.dev';
-import * as arrowleftdev from 'src/components/icon/svg/arrow-left.dev';
+import * as Diversitydev from 'src/components/icon/svg/diversity.dev';
+import * as CrossArrowsdev from 'src/components/icon/svg/cross-arrows.dev';
+import * as Communitiesdev from 'src/components/icon/svg/communities.dev';
+import * as ArrowUpRightdev from 'src/components/icon/svg/arrow-up-right.dev';
+import * as ArrowRightdev from 'src/components/icon/svg/arrow-right.dev';
+import * as ArrowLeftdev from 'src/components/icon/svg/arrow-left.dev';
+import * as Heroprops from 'src/components/hero/hero.props';
 import * as Hero from 'src/components/hero/Hero';
-import * as heroprops from 'src/components/hero/hero.props';
+import * as GlobalHeaderprops from 'src/components/global-header/global-header.props';
 import * as GlobalHeader from 'src/components/global-header/GlobalHeader';
-import * as globalheaderprops from 'src/components/global-header/global-header.props';
+import * as GlobalFooterprops from 'src/components/global-footer/global-footer.props';
 import * as GlobalFooter from 'src/components/global-footer/GlobalFooter';
-import * as globalfooterprops from 'src/components/global-footer/global-footer.props';
 import * as FooterNavigationColumn from 'src/components/global-footer/FooterNavigationColumn';
 import * as FooterNavigationCalloutdev from 'src/components/footer-navigation-callout/FooterNavigationCallout.dev';
-import * as floatingdockdev from 'src/components/floating-dock/floating-dock.dev';
+import * as FloatingDockdev from 'src/components/floating-dock/floating-dock.dev';
 import * as Flexdev from 'src/components/flex/Flex.dev';
 import * as CtaBanner from 'src/components/cta-banner/CtaBanner';
-import * as containerutil from 'src/components/container/container.util';
+import * as Containerutil from 'src/components/container/container.util';
 import * as ContainerFullWidth from 'src/components/container/container-full-width/ContainerFullWidth';
 import * as ContainerFullBleed from 'src/components/container/container-full-bleed/ContainerFullBleed';
 import * as Container7030 from 'src/components/container/container-7030/Container7030';
@@ -133,8 +136,8 @@ import * as ButtonComponent from 'src/components/button-component/ButtonComponen
 import * as Breadcrumbs from 'src/components/breadcrumbs/Breadcrumbs';
 import * as BackgroundThumbnaildev from 'src/components/background-thumbnail/BackgroundThumbnail.dev';
 import * as ArticleListing from 'src/components/article-listing/ArticleListing';
+import * as ArticleHeaderdictionary from 'src/components/article-header/article-header.dictionary';
 import * as ArticleHeader from 'src/components/article-header/ArticleHeader';
-import * as articleheaderdictionary from 'src/components/article-header/article-header.dictionary';
 import * as ArticleFullprops from 'src/components/article-full/ArticleFull.props';
 import * as ArticleFull from 'src/components/article-full/ArticleFull';
 import * as AnimatedSectiondev from 'src/components/animated-section/AnimatedSection.dev';
@@ -142,35 +145,31 @@ import * as AlertBannerdev from 'src/components/alert-banner/AlertBanner.dev';
 import * as AgentChat from 'src/components/agent-chat/AgentChat';
 import * as AccordionBlockItemdev from 'src/components/accordion-block/AccordionBlockItem.dev';
 import * as AccordionBlockDefaultdev from 'src/components/accordion-block/AccordionBlockDefault.dev';
+import * as AccordionBlockprops from 'src/components/accordion-block/accordion-block.props';
 import * as AccordionBlock from 'src/components/accordion-block/AccordionBlock';
-import * as accordionblockprops from 'src/components/accordion-block/accordion-block.props';
 
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BYOCWrapper', BYOCServerWrapper],
   ['FEaaSWrapper', FEaaSServerWrapper],
   ['Form', { ...Form, componentType: 'client' }],
-  ['Widget', { ...Widget }],
-  ['widget', { ...widgetprops }],
+  ['Widget', { ...Widgetprops, ...Widget }],
   ['Whatsit', { ...Whatsit }],
   ['VideoPlayer', { ...VideoPlayerdev }],
   ['VideoModal', { ...VideoModaldev }],
   ['Video', { ...Video, componentType: 'client' }],
-  ['video-props', { ...videoprops }],
-  ['VerticalImageAccordion', { ...VerticalImageAccordion, componentType: 'client' }],
-  ['vertical-image-accordion', { ...verticalimageaccordionprops }],
+  ['VideoProps', { ...VideoProps }],
+  ['VerticalImageAccordion', { ...VerticalImageAccordionprops, ...VerticalImageAccordion, componentType: 'client' }],
   ['HtmlLang', { ...HtmlLang, componentType: 'client' }],
-  ['TopicListing', { ...TopicListing }],
+  ['ChatMarkdown', { ...ChatMarkdown, componentType: 'client' }],
+  ['TopicListing', { ...TopicListingprops, ...TopicListing }],
   ['TopicItem', { ...TopicItemdev }],
-  ['topic-listing', { ...topiclistingprops }],
-  ['theme-provider', { ...themeproviderdev }],
+  ['ThemeProvider', { ...ThemeProviderdev }],
   ['TextBannerDefault', { ...TextBannerDefaultdev }],
   ['TextBanner02', { ...TextBanner02dev }],
   ['TextBanner01', { ...TextBanner01dev }],
-  ['TextBanner', { ...TextBanner }],
-  ['text-banner', { ...textbannerprops }],
+  ['TextBanner', { ...TextBannerprops, ...TextBanner }],
   ['TestimonialCarouselItem', { ...TestimonialCarouselItem }],
-  ['TestimonialCarousel', { ...TestimonialCarousel, componentType: 'client' }],
-  ['testimonial-carousel', { ...testimonialcarouselprops }],
+  ['TestimonialCarousel', { ...TestimonialCarouselprops, ...TestimonialCarousel, componentType: 'client' }],
   ['Title', { ...Title, componentType: 'client' }],
   ['RowSplitter', { ...RowSplitter }],
   ['RichText', { ...RichText }],
@@ -183,58 +182,44 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['ContentBlock', { ...ContentBlock }],
   ['Container', { ...Container }],
   ['ColumnSplitter', { ...ColumnSplitter }],
-  ['SubscriptionBanner', { ...SubscriptionBanner, componentType: 'client' }],
-  ['subscription-banner', { ...subscriptionbannerprops, ...subscriptionbannerdictionary }],
-  ['SearchResults', { ...SearchResults, componentType: 'client' }],
-  ['SearchQuestions', { ...SearchQuestions, componentType: 'client' }],
+  ['SubscriptionBanner', { ...SubscriptionBannerprops, ...SubscriptionBannerdictionary, ...SubscriptionBanner, componentType: 'client' }],
+  ['SearchResults', { ...SearchResultsdictionary, ...SearchResults, componentType: 'client' }],
+  ['SearchQuestions', { ...SearchQuestionsdictionary, ...SearchQuestions, componentType: 'client' }],
   ['SearchProvider', { ...SearchProvider, componentType: 'client' }],
   ['SearchLocale', { ...SearchLocale, componentType: 'client' }],
-  ['search-results', { ...searchresultsdictionary }],
-  ['search-questions', { ...searchquestionsdictionary }],
-  ['search-config', { ...searchconfig }],
+  ['SearchConfig', { ...SearchConfig }],
   ['PreviewSearchBox', { ...PreviewSearchBox, componentType: 'client' }],
-  ['preview-search', { ...previewsearchdictionary }],
-  ['SiteMetadata', { ...SiteMetadata }],
-  ['site-metadata', { ...sitemetadataprops }],
-  ['SecondaryNavigation', { ...SecondaryNavigation, componentType: 'client' }],
-  ['secondary-navigation', { ...secondarynavigationprops }],
-  ['RichTextBlock', { ...RichTextBlock }],
-  ['rich-text-block', { ...richtextblockprops }],
+  ['PreviewSearch', { ...PreviewSearchdictionary }],
+  ['SiteMetadata', { ...SiteMetadataprops, ...SiteMetadata }],
+  ['SecondaryNavigation', { ...SecondaryNavigationprops, ...SecondaryNavigation, componentType: 'client' }],
+  ['RichTextBlock', { ...RichTextBlockprops, ...RichTextBlock }],
   ['RagChat', { ...RagChat, componentType: 'client' }],
-  ['PromoBlock', { ...PromoBlock }],
-  ['promo-block', { ...promoblockprops }],
+  ['PromoBlock', { ...PromoBlockprops, ...PromoBlock }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
-  ['PromoAnimated', { ...PromoAnimated, componentType: 'client' }],
-  ['promo-animated', { ...promoanimatedutil, ...promoanimatedprops }],
-  ['portal', { ...portaldev }],
-  ['PageHeader', { ...PageHeader, componentType: 'client' }],
-  ['page-header', { ...pageheaderprops }],
-  ['MultiPromoTabs', { ...MultiPromoTabs, componentType: 'client' }],
+  ['PromoAnimated', { ...PromoAnimatedutil, ...PromoAnimatedprops, ...PromoAnimated, componentType: 'client' }],
+  ['Portal', { ...Portaldev }],
+  ['PageHeader', { ...PageHeaderprops, ...PageHeader, componentType: 'client' }],
+  ['MultiPromoTabs', { ...MultiPromoTabsprops, ...MultiPromoTabs, componentType: 'client' }],
   ['MultiPromoTab', { ...MultiPromoTabdev }],
-  ['multi-promo-tabs', { ...multipromotabsprops }],
   ['MultiPromoItem', { ...MultiPromoItemdev }],
-  ['MultiPromo', { ...MultiPromo, componentType: 'client' }],
-  ['multi-promo', { ...multipromoprops }],
-  ['mode-toggle', { ...modetoggledev }],
-  ['MediaSection', { ...MediaSectiondev }],
-  ['media-section', { ...mediasectionprops }],
-  ['meteors', { ...meteors, componentType: 'client' }],
-  ['LogoTabs', { ...LogoTabs, componentType: 'client' }],
+  ['MultiPromo', { ...MultiPromoprops, ...MultiPromo, componentType: 'client' }],
+  ['ModeToggle', { ...ModeToggledev }],
+  ['MediaSection', { ...MediaSectiondev, ...MediaSectionprops }],
+  ['Meteors', { ...Meteors, componentType: 'client' }],
+  ['LogoTabs', { ...LogoTabsprops, ...LogoTabs, componentType: 'client' }],
   ['LogoItem', { ...LogoItem }],
-  ['logo-tabs', { ...logotabsprops }],
-  ['logo', { ...logoprops }],
-  ['Logo', { ...Logodev }],
-  ['nextImageSrc', { ...nextImageSrcdev }],
+  ['Logo', { ...Logoprops, ...Logodev }],
+  ['NextImageSrc', { ...NextImageSrcdev }],
   ['ImageWrapper', { ...ImageWrapperdev }],
   ['ImageBlock', { ...ImageBlock }],
-  ['image', { ...imageprops }],
-  ['image-optimization', { ...imageoptimizationcontext }],
+  ['Image', { ...Imageprops }],
+  ['ImageOptimization', { ...ImageOptimizationcontext }],
   ['Icon', { ...Icon, componentType: 'client' }],
   ['YoutubeIcon', { ...YoutubeIcondev }],
   ['TwitterIcon', { ...TwitterIcondev }],
-  ['signal', { ...signaldev }],
-  ['play', { ...playdev }],
+  ['Signal', { ...Signaldev }],
+  ['Play', { ...Playdev }],
   ['LinkedInIcon', { ...LinkedInIcondev }],
   ['InternalIcon', { ...InternalIcondev }],
   ['InstagramIcon', { ...InstagramIcondev }],
@@ -242,24 +227,21 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['FacebookIcon', { ...FacebookIcondev }],
   ['ExternalIcon', { ...ExternalIcondev }],
   ['EmailIcon', { ...EmailIcondev }],
-  ['diversity', { ...diversitydev }],
-  ['cross-arrows', { ...crossarrowsdev }],
-  ['communities', { ...communitiesdev }],
-  ['arrow-up-right', { ...arrowuprightdev }],
-  ['arrow-right', { ...arrowrightdev }],
-  ['arrow-left', { ...arrowleftdev }],
-  ['Hero', { ...Hero, componentType: 'client' }],
-  ['hero', { ...heroprops }],
-  ['GlobalHeader', { ...GlobalHeader, componentType: 'client' }],
-  ['global-header', { ...globalheaderprops }],
-  ['GlobalFooter', { ...GlobalFooter }],
-  ['global-footer', { ...globalfooterprops }],
+  ['Diversity', { ...Diversitydev }],
+  ['CrossArrows', { ...CrossArrowsdev }],
+  ['Communities', { ...Communitiesdev }],
+  ['ArrowUpRight', { ...ArrowUpRightdev }],
+  ['ArrowRight', { ...ArrowRightdev }],
+  ['ArrowLeft', { ...ArrowLeftdev }],
+  ['Hero', { ...Heroprops, ...Hero, componentType: 'client' }],
+  ['GlobalHeader', { ...GlobalHeaderprops, ...GlobalHeader, componentType: 'client' }],
+  ['GlobalFooter', { ...GlobalFooterprops, ...GlobalFooter }],
   ['FooterNavigationColumn', { ...FooterNavigationColumn, componentType: 'client' }],
   ['FooterNavigationCallout', { ...FooterNavigationCalloutdev }],
-  ['floating-dock', { ...floatingdockdev }],
+  ['FloatingDock', { ...FloatingDockdev }],
   ['Flex', { ...Flexdev }],
   ['CtaBanner', { ...CtaBanner }],
-  ['container', { ...containerutil }],
+  ['Container', { ...Containerutil }],
   ['ContainerFullWidth', { ...ContainerFullWidth }],
   ['ContainerFullBleed', { ...ContainerFullBleed }],
   ['Container7030', { ...Container7030 }],
@@ -276,16 +258,14 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Breadcrumbs', { ...Breadcrumbs }],
   ['BackgroundThumbnail', { ...BackgroundThumbnaildev }],
   ['ArticleListing', { ...ArticleListing, componentType: 'client' }],
-  ['ArticleHeader', { ...ArticleHeader, componentType: 'client' }],
-  ['article-header', { ...articleheaderdictionary }],
+  ['ArticleHeader', { ...ArticleHeaderdictionary, ...ArticleHeader, componentType: 'client' }],
   ['ArticleFull', { ...ArticleFullprops, ...ArticleFull, componentType: 'client' }],
   ['AnimatedSection', { ...AnimatedSectiondev }],
   ['AlertBanner', { ...AlertBannerdev }],
   ['AgentChat', { ...AgentChat, componentType: 'client' }],
   ['AccordionBlockItem', { ...AccordionBlockItemdev }],
   ['AccordionBlockDefault', { ...AccordionBlockDefaultdev }],
-  ['AccordionBlock', { ...AccordionBlock, componentType: 'client' }],
-  ['accordion-block', { ...accordionblockprops }],
+  ['AccordionBlock', { ...AccordionBlockprops, ...AccordionBlock, componentType: 'client' }],
 ]);
 
 export default componentMap;
