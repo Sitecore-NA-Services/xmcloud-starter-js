@@ -7,6 +7,7 @@ import {
 } from '@sitecore-content-sdk/nextjs/codegen';
 // end of built-in imports
 
+import { jsx, Fragment } from 'react/jsx-runtime';
 import { Placeholder, CdpHelper, useSitecore } from '@sitecore-content-sdk/nextjs';
 import Head from 'next/head';
 import client from 'lib/sitecore-client';
@@ -18,6 +19,13 @@ import { pageView } from '@sitecore-content-sdk/events';
 import config from 'sitecore.config';
 
 const importMap = [
+  {
+    module: 'react/jsx-runtime',
+    exports: [
+      { name: 'jsx', value: jsx },
+      { name: 'Fragment', value: Fragment },
+    ]
+  },
   {
     module: '@sitecore-content-sdk/nextjs',
     exports: [
