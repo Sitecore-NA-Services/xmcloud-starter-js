@@ -165,6 +165,14 @@ Used by Agent Chat, RAG Chat, and the `/search` AI-answer fallback:
   comment in `azure-openai.ts` — this is a real footgun, not a hypothetical).
 - `RAG_RELEVANCE_THRESHOLD` — optional override of the `0.45` default.
 
+**Verified configuration:** this starter has actually been exercised against
+`AZURE_OPENAI_DEPLOYMENT=gpt-5.6-luna` (a reasoning-class deployment, hence the
+`max_completion_tokens` middleware) and `AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-small`,
+on `AZURE_OPENAI_API_VERSION=2024-10-21`. Any chat-capable deployment and any
+embedding deployment should work, but the `0.45` relevance threshold and the
+0.6–0.75 vs. 0.15–0.4 score clusters it's tuned against (see `rerank.ts`) were
+measured with this exact embedding deployment — re-measure if you swap it.
+
 Leave the Azure OpenAI vars blank to leave Agent Chat/RAG Chat/the AI answer
 panel unconfigured; the rest of the app (search widgets, Q&A) still works.
 
