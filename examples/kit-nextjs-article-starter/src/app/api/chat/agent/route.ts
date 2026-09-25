@@ -42,10 +42,13 @@ export async function POST(req: Request) {
       'searchArticles. The query keyphrase is matched against article text semantically, so ' +
       'when filtering by author or content type, do NOT put the author name or content type ' +
       'in the query - use a topical keyword instead, or omit query entirely if the user just ' +
-      "wants everything by that author/type. Cite article titles and URLs in your answer. If " +
-      'the tool returns no results, say so honestly instead of guessing. Each result includes ' +
-      'a relevanceScore (0-1, cosine similarity to the query); if the best results score below ' +
-      'roughly 0.45, tell the user the match is weak rather than presenting it as a confident answer.',
+      "wants everything by that author/type. Cite article titles and URLs in your answer. Each " +
+      'result includes a relevanceScore (0-1, cosine similarity to the query). Answer ONLY using ' +
+      'what askKnowledgeBase and searchArticles returned - never fall back on your own general ' +
+      'knowledge of the topic. If both tools return nothing, or nothing scoring at least roughly ' +
+      "0.45, tell the user Solterra's content does not cover this topic and STOP there; do not " +
+      'follow that disclosure with an answer from outside knowledge. Below that threshold, treat ' +
+      'the result as unusable context, not as a weak answer to present with caveats.',
     messages,
     tools: {
       listArticleFacets: tool({

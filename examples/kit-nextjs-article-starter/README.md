@@ -54,10 +54,13 @@ Additional Info: You do not have to create rendering host items in XM Cloud as t
 
 ## Sitecore Search Integration
 
-This starter includes a Sitecore Search API proxy and a header search box for article lookup.
+This starter includes Sitecore Search-powered widgets (header typeahead,
+`/search` results + Q&A panel) and two Azure OpenAI chat experiences (Agent
+Chat, RAG Chat) built on top of the same index.
 
-- API route: `src/app/api/search/articles/route.ts`
-- UI component: `src/components/sitecore-search/ArticleSearchBox.tsx`
-- Setup guide: `SITECORE_SEARCH_SETUP.md`
+- Indexing/crawler setup guide: `SITECORE_SEARCH_SETUP.md`
+- Chat/agent architecture, required Search + Azure OpenAI configuration, and
+  how to extend it: `SearchAgent.md`
 
-To enable it, populate the `SITECORE_SEARCH_*` environment variables in `.env.local`.
+To enable it, populate the `NEXT_PUBLIC_SEARCH_*` and `AZURE_OPENAI_*`
+environment variables in `.env.local` (see `SearchAgent.md` for the full list).

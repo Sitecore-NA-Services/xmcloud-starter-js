@@ -130,6 +130,15 @@ const SearchQuestionsComponent = ({
       data: { answer, related_questions: relatedRaw = [] } = {},
     },
   } = useQuestions<QuestionAnswer, { keyphrase: string; relatedQuestions: number }>({
+    query: (query) => {
+      // By default the SDK batches same-page widget queries into one Discover
+      // request (see WidgetDataAdapter's context-based grouping). The Q&A
+      // widget's exact_answer generation can take several seconds — sometimes
+      // failing outright — and without this it drags the search results and
+      // preview widgets down with it, since all three share one response.
+      // A distinct debounce group gives this widget its own request instead.
+      query.setDebounceBy('questions');
+    },
     state: {
       keyphrase: defaultKeyphrase,
       relatedQuestions,
